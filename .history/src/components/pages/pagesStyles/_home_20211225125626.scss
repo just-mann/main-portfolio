@@ -113,24 +113,18 @@
         .whatIdo-container {
             max-width: 1320px;
             padding: 3rem 4rem;
-            height: 85%;
+            height: 80%;
             margin: auto;
             display: grid;
             grid-template-columns: repeat(3, 0.9fr);
-            justify-content: center;
             
 
             .myCard {
                 height: 100%;
                 background-color: $secondaryColor;
-                border: solid $secondaryColor 1px;
+                border: solid black 1px;
                 margin: 0 1.4rem;
             }
         }
-    }
-
-    .selectedProjects {
-        height: 70vh;
-        text-align: center;
     }
 }

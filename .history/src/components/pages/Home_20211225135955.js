@@ -26,13 +26,13 @@ const Home = () => {
             <div className="whatIDo">
                 <div className="whatIdo-container">
                     <div className="myCard">
-                        <img src="" alt="frontEnd" />
+                        <img src="" alt="" />
                         <h3>Front End</h3>
                         <p>Commodo quis imperdiet massa tincidunt nunc pulvinar.</p>
                         <button>Link</button>
                     </div>
                     <div className="myCard">
-                        <img src="" alt="webDev" />
+                        <img src="" alt="" />
                         <h3>Web Developer</h3>
                         <p>Commodo quis imperdiet massa tincidunt nunc pulvinar.</p>
                         <button>Link</button>

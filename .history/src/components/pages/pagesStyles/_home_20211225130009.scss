@@ -123,14 +123,9 @@
             .myCard {
                 height: 100%;
                 background-color: $secondaryColor;
-                border: solid $secondaryColor 1px;
+                border: solid black 1px;
                 margin: 0 1.4rem;
             }
         }
-    }
-
-    .selectedProjects {
-        height: 70vh;
-        text-align: center;
     }
 }

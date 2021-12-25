@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import profImg from './images/profileImg.jpg';
 
 const Home = () => {
@@ -19,21 +18,21 @@ const Home = () => {
                         <h3>Front End Web Developer & Designer</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aliquid in id quisquam odit optio laborum impedit dicta architecto doloremque?</p>
                         <button className="heroBtn dnldResume">See Resume</button>
-                        <Link to="/contact-me" className="heroBtn heroHireMe">Hire Me</Link>
+                        <button className="heroBtn heroHireMe">Hire Me</button>
                     </div>
                 </div>
             </div>
             <div className="whatIDo">
                 <div className="whatIdo-container">
                     <div className="myCard">
-                        <img src="" alt="frontEnd" />
-                        <h3>Front End</h3>
+                        <img src="" alt="" />
+                        <h3>Product Title</h3>
                         <p>Commodo quis imperdiet massa tincidunt nunc pulvinar.</p>
                         <button>Link</button>
                     </div>
                     <div className="myCard">
-                        <img src="" alt="webDev" />
-                        <h3>Web Developer</h3>
+                        <img src="" alt="" />
+                        <h3>Product Title</h3>
                         <p>Commodo quis imperdiet massa tincidunt nunc pulvinar.</p>
                         <button>Link</button>
                     </div>
