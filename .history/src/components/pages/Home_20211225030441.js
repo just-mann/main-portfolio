@@ -9,8 +9,8 @@ const Home = () => {
                     <div className="heroLeft">
                         <div className="grayCircle"></div>
                         {/* <img src={profImg} alt="heroImage" className="heroImage" /> */}
-                        <div className="title webdes">Web Designer</div>
-                        <div className="title webdev">Web Developer</div>
+                        <div className="title webdev">Web Designer</div>
+                        <div className="title webdes">Web Developer</div>
                         <div className="title frontE">Front End</div>
                     </div>
                     <div className="heroRight">
@@ -19,19 +19,6 @@ const Home = () => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aliquid in id quisquam odit optio laborum impedit dicta architecto doloremque?</p>
                         <button className="heroBtn dnldResume">See Resume</button>
                         <button className="heroBtn heroHireMe">Hire Me</button>
-                    </div>
-                </div>
-            </div>
-            <div className="whatIDo">
-                <div className="whatIdo-container">
-                    <div className="myCard">
-                        
-                    </div>
-                    <div className="myCard">
-
-                    </div>
-                    <div className="myCard">
-
                     </div>
                 </div>
             </div>

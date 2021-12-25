@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background: white;
-    padding: 1.5rem 3.5rem;
+    padding: 2.2rem 4rem;
     
     
     .myLogo {
@@ -39,7 +39,7 @@
         }
 
         .link {
-            font-size: 1.25rem;
+            font-size: 1.19rem;
             margin: 0 1rem;
 
             &:hover {
@@ -54,12 +54,12 @@
         align-items: center;
 
         .hireMe {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-right: 1.3rem;
-            padding: 12px 32px;
+            padding: 10px 32px;
             background-color: $secondaryColor;
             color: white;
-            border-radius: 3px;
+            border-radius: 70px;
         }
 
         .switch {
@@ -68,6 +68,7 @@
             width: 80px;
             height: 40px;
             background-color: #bcc9d4;
+            margin-right: 1.3rem;
             border-radius: 20px;
             user-select: none;
 
@@ -95,7 +96,6 @@
             padding: 1px;
             cursor: pointer;
             user-select: none;
-            display: none;
 
             span {
                 height: 6px;

@@ -22,19 +22,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="whatIDo">
-                <div className="whatIdo-container">
-                    <div className="myCard">
-                        
-                    </div>
-                    <div className="myCard">
-
-                    </div>
-                    <div className="myCard">
-
-                    </div>
-                </div>
-            </div>
         </div>
     )
 }

@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .Home .hero {
   background-color: #E9F0F8;
-  padding: 7rem 0;
-  height: 710px;
+  padding: 8.6rem 0;
+  height: 75vh;
+  max-width: 100%;
+  margin: auto;
 }
 
 .Home .hero .heroContainer {
-  max-width: 1312px;
+  max-width: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +37,7 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-color: #E3EBF3;
+  background-color: #dadee2;
 }
 
 .Home .hero .heroContainer .heroLeft .heroImage {
@@ -44,14 +46,14 @@
   height: 400px;
 }
 
-.Home .hero .heroContainer .heroLeft .webdev {
-  position: absolute;
-  top: 17rem;
-}
-
 .Home .hero .heroContainer .heroLeft .webdes {
   position: absolute;
-  top: 3rem;
+  top: 19rem;
+}
+
+.Home .hero .heroContainer .heroLeft .webdev {
+  position: absolute;
+  top: 6rem;
   right: 1rem;
 }
 
@@ -64,13 +66,54 @@
 .Home .hero .heroContainer .heroLeft .title {
   background-color: #ffffff;
   padding: 1rem 2rem;
+  border-radius: 3px;
 }
 
 .Home .hero .heroContainer .heroRight {
   padding: 2rem 4rem;
-  background: green;
   width: 35%;
   min-height: 100%;
+}
+
+.Home .hero .heroContainer .heroRight h2 {
+  color: #464caa;
+  margin-bottom: 1.8rem;
+}
+
+.Home .hero .heroContainer .heroRight h3 {
+  color: black;
+  font-size: 40px;
+  margin-bottom: 1.8rem;
+  line-height: 3.4rem;
+}
+
+.Home .hero .heroContainer .heroRight p {
+  width: 500px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 2.05rem;
+}
+
+.Home .hero .heroContainer .heroRight .heroBtn {
+  padding: 0.77rem 2.3rem;
+  margin-right: 1.8rem;
+  font-size: 1.1rem;
+  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.Home .hero .heroContainer .heroRight .dnldResume {
+  background-color: #dadee2;
+}
+
+.Home .hero .heroContainer .heroRight .heroHireMe {
+  background-color: #464caa;
+  color: white;
 }
 
 .Navbar {
@@ -83,8 +126,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #E9F0F8;
-  padding: 2.2rem 4.5rem;
+  background: white;
+  padding: 1.5rem 3.5rem;
 }
 
 .Navbar .myLogo {
@@ -109,7 +152,7 @@
 }
 
 .Navbar .navLinks .link {
-  font-size: 1.19rem;
+  font-size: 1.25rem;
   margin: 0 1rem;
 }
 
@@ -130,12 +173,12 @@
 }
 
 .Navbar .nav-right .hireMe {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-right: 1.3rem;
-  padding: 10px 32px;
+  padding: 12px 32px;
   background-color: #464caa;
   color: white;
-  border-radius: 70px;
+  border-radius: 3px;
 }
 
 .Navbar .nav-right .switch {
@@ -144,7 +187,6 @@
   width: 80px;
   height: 40px;
   background-color: #bcc9d4;
-  margin-right: 1.3rem;
   border-radius: 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -174,6 +216,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  display: none;
 }
 
 .Navbar .nav-right .h-menu span {
