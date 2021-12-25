@@ -1,0 +1,24 @@
+.Home {
+    .hero {
+        background-color: $mainColor;
+        height: 650px;
+
+        .heroContainer {
+            max-width: 1420px;
+            margin: auto;
+            background-color: yellow;
+            display: flex;
+            justify-content: space-between;
+
+            .heroLeft {
+                padding: 2rem 4rem;
+                background: red;
+            }
+
+            .heroRight {
+                padding: 2rem 4rem;
+                background: green;
+            }
+        }
+    }
+}

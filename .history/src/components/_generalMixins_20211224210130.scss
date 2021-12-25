@@ -1,0 +1,4 @@
+@mixin container(x, y) {
+    padding: x y;
+    max-width: 1100px;
+}

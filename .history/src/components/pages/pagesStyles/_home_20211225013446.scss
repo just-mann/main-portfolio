@@ -1,0 +1,11 @@
+.Home {
+    .hero {
+        background-color: $mainColor;
+        height: 650px;
+
+        .heroContainer {
+            max-width: 1100px;
+            margin: auto;
+        }
+    }
+}

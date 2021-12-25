@@ -1,0 +1,9 @@
+.Home {
+    .myContainer {
+        .header {
+            @include container(2.3rem, 3rem);
+            background-color: $mainColor;
+            height: 820px;
+        }
+    }
+}

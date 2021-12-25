@@ -1,0 +1,64 @@
+.Home {
+    .hero {
+        background-color: $mainColor;
+        padding: 7rem 0;
+        height: 710px;
+
+        .heroContainer {
+            max-width: 1312px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            height: 100%;
+
+            .heroLeft {
+                position: relative;
+                padding: 2rem 4rem;
+                background: rgb(207, 47, 47);
+                width: 35%;
+                min-height: 100%;
+
+                .grayCircle {
+                    position: absolute;
+                    top: 4.3rem;
+                    right: 1px;
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 50%;
+                    background-color: rgb(129, 129, 129);
+                }
+                .heroImage {
+                    position: absolute;
+                    
+                }
+                .webdev {
+                    position: absolute;
+                    
+                }
+                .webdes {
+                    position: absolute;
+                    top: 3rem;
+                    right: 1rem;                    
+                }
+                .frontE {
+                    position: absolute;
+                    top: 1rem;
+                    right: -1rem;
+                }
+
+                .title {
+                    background-color: white;
+                }
+            }
+
+            .heroRight {
+                padding: 2rem 4rem;
+                background: green;
+                width: 35%;
+                min-height: 100%;
+            }
+        }
+    }
+}
