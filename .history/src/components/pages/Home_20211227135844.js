@@ -126,7 +126,7 @@ class Home extends Component{
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
                             <div>
-                                <h4>GIT & GITHUB</h4>
+                                <h4>GIT</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
                                 </p>
@@ -135,7 +135,7 @@ class Home extends Component{
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
                             <div>
-                                <h4>BOOTSTRAP</h4>
+                                <h4>GITHUB</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
                                 </p>
@@ -162,7 +162,7 @@ class Home extends Component{
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
                             <div>
-                                <h4>NODE & EXPRESS BASICS</h4>
+                                <h4>EXPRESS BASICS</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
                                 </p>

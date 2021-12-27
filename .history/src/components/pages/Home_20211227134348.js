@@ -5,7 +5,7 @@ import webDevImg from './images/webDevImages.jpg';
 import frontEndImg from './images/frontEndImg.jpg';
 import {FiArrowRight} from 'react-icons/fi';
 import {FaRegCheckCircle} from 'react-icons/fa';
-import { Button } from 'reactstrap';
+import { Progress } from 'reactstrap';
 
 class Home extends Component{
 
@@ -98,76 +98,48 @@ class Home extends Component{
                     <div className="skillzDiv">
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
-                            <div>
-                                <h4>FRONT END WEB DEVELOPMENT</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
-                                </p>
-                            </div>
+                            <h4>HTML5</h4>
                         </div>
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
-                            <div>
-                                <h4>RESPONSIVE DESIGN</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
-                                </p>
-                            </div>
+                            <h4>CSS3</h4>
                         </div>
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
-                            <div>
-                                <h4>Sass</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
-                                </p>
-                            </div>
+                            <h4>JAVASCRIPT</h4>
                         </div>
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
-                            <div>
-                                <h4>GIT & GITHUB</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
-                                </p>
-                            </div>
+                            <h4>BOOTSTRAP4</h4>
                         </div>
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
-                            <div>
-                                <h4>BOOTSTRAP</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
-                                </p>
-                            </div>
+                            <h4>SASS</h4>
                         </div>
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
-                            <div>
-                                <h4>TERMINAL</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
-                                </p>
-                            </div>
+                            <h4>REACTJS</h4>
                         </div>
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
-                            <div>
-                                <h4>ReactJS</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
-                                </p>
-                            </div>
-                        </div>
+                            <h4>GIT</h4>
+                        </div>  
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
-                            <div>
-                                <h4>NODE & EXPRESS BASICS</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
-                                </p>
-                            </div>
-                        </div>
+                            <h4>GITHUB</h4>
+                        </div>  
+                        <div className="skill">
+                            <FaRegCheckCircle className="checkMark" />
+                            <h4>TERMINAL</h4>
+                        </div>  
+                        <div className="skill">
+                            <FaRegCheckCircle className="checkMark" />
+                            <h4>Responsive Design</h4>
+                        </div>  
+                        <div className="skill">
+                            <FaRegCheckCircle className="checkMark" />
+                            <h4>TERMINAL</h4>
+                        </div>  
                     </div>
                 </div>
             </div>

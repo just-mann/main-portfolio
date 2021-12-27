@@ -5,7 +5,7 @@ import webDevImg from './images/webDevImages.jpg';
 import frontEndImg from './images/frontEndImg.jpg';
 import {FiArrowRight} from 'react-icons/fi';
 import {FaRegCheckCircle} from 'react-icons/fa';
-import { Button } from 'reactstrap';
+import { Progress } from 'reactstrap';
 
 class Home extends Component{
 
@@ -99,16 +99,16 @@ class Home extends Component{
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
                             <div>
-                                <h4>FRONT END WEB DEVELOPMENT</h4>
+                                <h4>HTML5</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    <Progress value={90} />
                                 </p>
                             </div>
                         </div>
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
                             <div>
-                                <h4>RESPONSIVE DESIGN</h4>
+                                <h4>CSS3</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
                                 </p>
@@ -126,7 +126,7 @@ class Home extends Component{
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
                             <div>
-                                <h4>GIT & GITHUB</h4>
+                                <h4>Bootstrap 4</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
                                 </p>
@@ -135,7 +135,7 @@ class Home extends Component{
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
                             <div>
-                                <h4>BOOTSTRAP</h4>
+                                <h4>JavaScript</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
                                 </p>
@@ -144,7 +144,7 @@ class Home extends Component{
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
                             <div>
-                                <h4>TERMINAL</h4>
+                                <h4>jQuery</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
                                 </p>
@@ -162,7 +162,7 @@ class Home extends Component{
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
                             <div>
-                                <h4>NODE & EXPRESS BASICS</h4>
+                                <h4>NodeJS / ExpressJS</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
                                 </p>
