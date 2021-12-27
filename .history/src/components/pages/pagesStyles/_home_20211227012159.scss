@@ -1,0 +1,228 @@
+.Home {
+    .hero {
+        background-color: $mainColor;
+        padding: 8.6rem 0;
+        height: 80vh;
+        max-width: 100%;
+        margin: auto;
+
+        .heroContainer {
+            max-width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            height: 100%;
+
+            .heroLeft {
+                position: relative;
+                padding: 2rem 4rem;
+                width: 35%;
+                min-height: 100%;
+
+                .grayCircle {
+                    position: absolute;
+                    top: 1.2rem;
+                    right: 1px;
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    background-color: #dadee2;
+                }
+                .heroImage {
+                    position: absolute;
+                    left: 0;
+                    height: 400px;
+                }
+                .webdes {
+                    position: absolute;
+                    top: 19rem;                    
+                }
+                .webdev {
+                    position: absolute;
+                    top: 6rem;
+                    right: 1rem;                    
+                }
+                .frontE {
+                    position: absolute;
+                    top: 1rem;
+                    right: -1rem;
+                }
+
+                .title {
+                    background-color: #ffffff;
+                    padding: 1rem 2rem;
+                    border-radius: 3px;
+                }
+            }
+
+            .heroRight {
+                padding: 2rem 4rem;
+                width: 39%;
+                min-height: 100%;
+
+                h2 {
+                    color: $secondaryColor;
+                    margin-bottom: 1.8rem;
+                }
+
+                h3 {
+                    color: black;
+                    font-size: 40px;
+                    margin-bottom: 1.8rem;
+                    line-height: 3.4rem;
+                }
+
+                p {
+                    width: 500px;
+                    font-size: 1.2rem;
+                    margin-bottom: 2rem;
+                    line-height: 2.05rem;
+                }
+
+                .heroBtn {
+                    padding: 0.77rem 2.3rem;
+                    margin-right: 1.8rem;
+                    font-size: 1.1rem;
+                    border: none;
+                    user-select: none;
+                    cursor: pointer;
+                    border-radius: 3px;
+                }
+
+                .dnldResume {
+                    background-color: #dadee2;
+                }
+
+                .heroHireMe {
+                    background-color: $secondaryColor;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .whatIDo {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .whatIdo-container {
+            max-width: 1320px;
+            padding: 3rem 4rem;
+            height: 85%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 0.3fr);
+            justify-content: center;
+            
+
+            .myCard {
+                height: 100%;
+                background-color: $secondaryColor;
+                border: solid $secondaryColor 1px;
+                margin: 0 1.4rem;
+                width: 330px;
+                color: white;
+                padding: 2rem 2rem;
+                text-align: center;
+
+                img {
+                    max-width: 225px;
+                    height: 220px;
+                    transition: all 0.4s ease;
+                    margin-bottom: 1.4rem;
+
+                    &:hover {
+                        transform: scale(1.08);
+                    }
+                }
+
+                h3 {
+                    margin: 2rem 0 1rem 0;
+                    font-size: 1.3rem;
+                }
+
+                p {
+                    margin: 1rem 0 1.5rem 0;
+                    font-size: 1rem;
+                    line-height: 1.45rem;
+                }
+
+                button {
+                    height: 45px;
+                    width: 45px;
+                    margin: 2rem auto 0.3rem auto;
+                    border-radius: 50%;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.4s ease;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            .card1, .card3 {
+                background-color: $cardColor;
+                border-color: $cardColor;
+
+                button {
+                    background-color: #F5BA42;
+                    color: $cardColor;
+                }
+            }
+
+            .card2 {
+                
+            }
+        }
+    }
+
+    .selectedProjects {
+        max-width: 100%;
+        margin: 4rem 0;
+        height: 70vh;
+        text-align: center;
+
+        h3 {
+
+        }
+
+        .projectDiv {
+            width: 1415px;
+            margin: auto;
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: repeat(3, 0.3fr);
+            justify-content: center;
+            gap: 2rem;
+
+            > div {
+                width: 450px;
+                height: 400px;
+                margin: auto;
+                border: solid black 1px;
+
+                a {
+                    width: 100%;
+                    height: 25%;
+
+                    img {
+                        width: 100%;
+                        height: 275px;
+                    }
+                }
+            }
+        }
+    }
+}
