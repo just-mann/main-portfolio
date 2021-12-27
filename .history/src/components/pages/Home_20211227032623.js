@@ -96,56 +96,56 @@ class Home extends Component{
                     <h3>My Skills</h3>
                     <div className="skillzDiv">
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaRegCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaRegCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaRegCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaRegCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaRegCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaRegCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>

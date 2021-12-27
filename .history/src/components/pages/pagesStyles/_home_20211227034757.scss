@@ -268,10 +268,9 @@
                 display: grid;
                 grid-template-columns: 1fr 10fr;
                 grid: 1.5rem;
-                padding: 2.3rem 4.5rem;
+                padding: 2.3rem 4rem;
                 margin: 0 1rem 1rem 1rem;
-                background-color: transparent;
-                transition: all 0.07s ease-in-out;
+                transition: all 0.4s ease;
 
 
                 &:hover {

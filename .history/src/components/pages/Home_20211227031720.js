@@ -4,7 +4,7 @@ import profImg from './images/profileImg.jpg';
 import webDevImg from './images/webDevImages.jpg';
 import frontEndImg from './images/frontEndImg.jpg';
 import {FiArrowRight} from 'react-icons/fi';
-import {FaRegCheckCircle} from 'react-icons/fa';
+import {FaCheckCircle} from 'react-icons/fa';
 
 class Home extends Component{
 
@@ -96,56 +96,56 @@ class Home extends Component{
                     <h3>My Skills</h3>
                     <div className="skillzDiv">
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>
                         <div className="skill">
-                            <FaRegCheckCircle className="checkMark" />
+                            <div><FaCheckCircle /></div>
                             <div>
                                 <h4>Skill Title</h4>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem, ipsa minima repudiandae asperiores?
                                 </p>
                             </div>
                         </div>
