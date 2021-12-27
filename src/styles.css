@@ -238,21 +238,31 @@
 
 .Home .selectedProjects .projectDiv > div {
   max-width: 380px;
-  height: 450px;
+  height: 420px;
   margin: auto;
-  border: solid black 1px;
 }
 
 .Home .selectedProjects .projectDiv > div a {
   width: 100%;
-  height: 25%;
+  height: 20%;
 }
 
 .Home .selectedProjects .projectDiv > div a img {
   width: 100%;
-  height: 280px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.Home .selectedProjects .projectDiv > div .lowerDiv {
+  padding: 2rem 0rem;
+  text-align: left;
+}
+
+.Home .selectedProjects .projectDiv > div .lowerDiv h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
 }
 
 .Navbar {
