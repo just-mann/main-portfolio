@@ -2,10 +2,6 @@ import React from 'react';
 
 const About = () => {
     return (
-<<<<<<< HEAD
-        <div className='About'>
-            <h2>About Me</h2>
-=======
         <div className="About">
             <div className="aboutContainer">
                 <div className="aboutLeft">
@@ -28,7 +24,6 @@ const About = () => {
                     <img src="" alt="" />
                 </div>
             </div>
->>>>>>> 4f7d97f4e9636b963dc97dd7bad1712f5e8eecae
         </div>
     )
 }

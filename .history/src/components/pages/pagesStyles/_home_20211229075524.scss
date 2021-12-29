@@ -106,10 +106,6 @@
                 .heroHireMe {
                     text-decoration: none;
                     background-color: $secondaryColor;
-<<<<<<< HEAD
-                    // background-color: $secondaryColor;
-=======
->>>>>>> 4f7d97f4e9636b963dc97dd7bad1712f5e8eecae
                     color: white;
                 }
             }
@@ -190,7 +186,7 @@
                 border-color: $cardColor;
 
                 button {
-                    background-color: $myGold;
+                    background-color: #F5BA42;
                     color: $cardColor;
                 }
             }
@@ -232,10 +228,10 @@
                     min-height: 20%;
                     background-color: $mainColor;
                     padding: 2rem;
-                    transition: all 0.5s ease;
+                    transition: all 0.4s ease;
 
                     &:hover {
-                        transform: translateY(-25px);
+                        transform: translateY(-10px);
                     }
 
 
@@ -244,18 +240,6 @@
                         height: 200px;
                         object-fit: cover;
                     }
-                }
-
-                .iTheater {
-                    background-color: $mainColor;
-                }
-
-                .Express {
-                    background-color: $cardColor;
-                }
-
-                .Blog {
-                    background-color: wheat;
                 }
 
                 .lowerDiv {

@@ -40,14 +40,14 @@ class Home extends Component{
                             {/* <img src={profImg} alt="heroImage" className="heroImage" /> */}
                             <div className="title webdes">Responsive Design</div>
                             <div className="title webdev">Web Developer</div>
-                            <div className="title frontE">Front End just</div>
+                            <div className="title frontE">Front End</div>
                         </div>
                         <div className="heroRight">
                             <h2>Hello, I am Justin Kollie</h2>
                             <h3>Front End Web Developer & Designer</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aliquid in id quisquam odit optio laborum impedit dicta architecto doloremque?</p>
-                            <Link to="/aboutMe" className="heroBtn dnldResume">See Resume</Link>
-                            <Link to="/contact-me" className="heroBtn heroHireMe">Hire Me Now</Link>
+                            <button className="heroBtn dnldResume">See Resume</button>
+                            <Link to="/contact-me" className="heroBtn heroHireMe">Hire Me</Link>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ class Home extends Component{
                             this.state.myProjects.slice(0, 6).map(project => {
                                 return (
                                     <div key={project.id}>
-                                        <a href={project.projectUrl} className={project.name}>
+                                        <a href={project.projectUrl}>
                                             <img src={project.projectImg1} alt={project.name} />
                                         </a>
                                         <div className="lowerDiv">

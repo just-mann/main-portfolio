@@ -80,7 +80,7 @@ class Home extends Component{
                             this.state.myProjects.slice(0, 6).map(project => {
                                 return (
                                     <div key={project.id}>
-                                        <a href={project.projectUrl} className={project.name}>
+                                        <a href={project.projectUrl}>
                                             <img src={project.projectImg1} alt={project.name} />
                                         </a>
                                         <div className="lowerDiv">
@@ -117,7 +117,7 @@ class Home extends Component{
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
                             <div>
-                                <h4>Sass</h4>
+                                <h4>CSS3, Bootstrap4 & Sass</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
                                 </p>
