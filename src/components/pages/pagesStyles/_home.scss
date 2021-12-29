@@ -105,7 +105,7 @@
 
                 .heroHireMe {
                     text-decoration: none;
-                    background-color: #F5BA42;
+                    background-color: $secondaryColor;
                     // background-color: $secondaryColor;
                     color: white;
                 }
@@ -187,7 +187,7 @@
                 border-color: $cardColor;
 
                 button {
-                    background-color: #F5BA42;
+                    background-color: $myGold;
                     color: $cardColor;
                 }
             }
@@ -241,6 +241,18 @@
                         height: 200px;
                         object-fit: cover;
                     }
+                }
+
+                .iTheater {
+                    background-color: $mainColor;
+                }
+
+                .Express {
+                    background-color: $cardColor;
+                }
+
+                .Blog {
+                    background-color: wheat;
                 }
 
                 .lowerDiv {

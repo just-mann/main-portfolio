@@ -80,7 +80,7 @@ class Home extends Component{
                             this.state.myProjects.slice(0, 6).map(project => {
                                 return (
                                     <div key={project.id}>
-                                        <a href={project.projectUrl}>
+                                        <a href={project.projectUrl} className={project.name}>
                                             <img src={project.projectImg1} alt={project.name} />
                                         </a>
                                         <div className="lowerDiv">

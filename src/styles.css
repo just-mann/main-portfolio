@@ -94,9 +94,14 @@
   line-height: 2.05rem;
 }
 
+.Home .hero .heroContainer .heroRight a {
+  text-decoration: none;
+}
+
 .Home .hero .heroContainer .heroRight .heroBtn {
   padding: 0.77rem 2.3rem;
   margin-right: 1.8rem;
+  text-decoration: none;
   font-size: 1.1rem;
   border: none;
   -webkit-user-select: none;
@@ -109,9 +114,12 @@
 
 .Home .hero .heroContainer .heroRight .dnldResume {
   background-color: #dadee2;
+  color: #202131;
+  text-decoration: none;
 }
 
 .Home .hero .heroContainer .heroRight .heroHireMe {
+  text-decoration: none;
   background-color: #464CAC;
   color: white;
 }
@@ -212,7 +220,7 @@
 }
 
 .Home .whatIDo .whatIdo-container .card1 button, .Home .whatIDo .whatIdo-container .card3 button {
-  background-color: #F5BA42;
+  background-color: #ffaa00;
   color: #202131;
 }
 
@@ -267,6 +275,18 @@
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.Home .selectedProjects .projectDiv > div .iTheater {
+  background-color: #E9F0F8;
+}
+
+.Home .selectedProjects .projectDiv > div .Express {
+  background-color: #202131;
+}
+
+.Home .selectedProjects .projectDiv > div .Blog {
+  background-color: wheat;
 }
 
 .Home .selectedProjects .projectDiv > div .lowerDiv {
