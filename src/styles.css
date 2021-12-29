@@ -97,6 +97,7 @@
 .Home .hero .heroContainer .heroRight .heroBtn {
   padding: 0.77rem 2.3rem;
   margin-right: 1.8rem;
+  text-decoration: none;
   font-size: 1.1rem;
   border: none;
   -webkit-user-select: none;

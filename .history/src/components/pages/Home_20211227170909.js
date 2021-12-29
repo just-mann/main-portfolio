@@ -43,7 +43,7 @@ class Home extends Component{
                             <div className="title frontE">Front End</div>
                         </div>
                         <div className="heroRight">
-                            <h2>Hello, I am Justin Kollie</h2>
+                            <h2>Hello, I am Jeally Leon</h2>
                             <h3>Front End Web Developer & Designer</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aliquid in id quisquam odit optio laborum impedit dicta architecto doloremque?</p>
                             <button className="heroBtn dnldResume">See Resume</button>
@@ -135,7 +135,7 @@ class Home extends Component{
                         <div className="skill">
                             <FaRegCheckCircle className="checkMark" />
                             <div>
-                                <h4>BOOTSTRAP4</h4>
+                                <h4>BOOTSTRAP</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum laudantium porro quidem?
                                 </p>
@@ -173,6 +173,7 @@ class Home extends Component{
             </div>
         )
     }
+    
 }
 
 export default Home;
