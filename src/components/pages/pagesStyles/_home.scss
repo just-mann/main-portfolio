@@ -82,6 +82,10 @@
                     line-height: 2.05rem;
                 }
 
+                a {
+                    text-decoration: none;
+                }
+
                 .heroBtn {
                     padding: 0.77rem 2.3rem;
                     margin-right: 1.8rem;
@@ -95,10 +99,14 @@
 
                 .dnldResume {
                     background-color: #dadee2;
+                    color: $cardColor;
+                    text-decoration: none;
                 }
 
                 .heroHireMe {
-                    background-color: $secondaryColor;
+                    text-decoration: none;
+                    background-color: #F5BA42;
+                    // background-color: $secondaryColor;
                     color: white;
                 }
             }
