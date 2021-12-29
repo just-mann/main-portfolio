@@ -10,18 +10,12 @@ const About = () => {
                     <p>
                         Lorem ipsum dolor sit amet consectetur 
                         adipisicing elit. Quibusdam perspiciatis a rem in? 
-                        Magnam, aperiam laboriosam porro nobis illum ducimus harum, 
-                        culpa nisi animi sit quod obcaecati reprehenderit dolorem minima architecto? Totam, 
-                        vero! Voluptatibus doloremque provident dolores 
+                        Magnam, aperiam laboriosam porro nobis illum ducimus harum, culpa nisi animi sit quod obcaecati reprehenderit dolorem minima architecto? Totam, vero! Voluptatibus doloremque provident dolores 
                         exercitationem nam cumque?
-                    </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Iste eos numquam vero placeat obcaecati corrupti, quasi, 
-                        molestiae sequi dolore itaque blanditiis libero deserunt cum labore!
                     </p>
                 </div>
                 <div className="aboutRight">
-                    <img src="" alt="" />
+
                 </div>
             </div>
         </div>

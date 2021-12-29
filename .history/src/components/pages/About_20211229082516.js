@@ -21,7 +21,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className="aboutRight">
-                    <img src="" alt="" />
+
                 </div>
             </div>
         </div>
