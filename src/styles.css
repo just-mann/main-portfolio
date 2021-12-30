@@ -1,12 +1,191 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.Navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E9F0F8;
+  padding: 1.5rem 3rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  max-width: 100%;
+}
+
+.Navbar .myLogo {
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #464CAC;
+}
+
+.Navbar .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.Navbar .navLinks .link {
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin: 0 1rem;
+  color: #202131;
+}
+
+.Navbar .navLinks .link:hover {
+  color: #464CAC;
+}
+
+.Navbar .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navbar .nav-right .hireMe {
+  font-size: 1.3rem;
+  margin-right: 1.3rem;
+  padding: 9px 32px;
+  background-color: #464CAC;
+  color: white;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.Navbar .nav-right .switch {
+  position: relative;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  background-color: #bcc9d4;
+  border-radius: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.Navbar .nav-right .switch .flicker {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  left: 7px;
+  top: 5px;
+  background: white;
+  -webkit-box-shadow: inset 4px 4px 4px #89a5b8, inset -4px -4px -4px rgba(255, 255, 255, 0.9);
+          box-shadow: inset 4px 4px 4px #89a5b8, inset -4px -4px -4px rgba(255, 255, 255, 0.9);
+}
+
+.Navbar .nav-right .h-menu {
+  min-width: 35px;
+  height: 35px;
+  background: red;
+  padding: 1px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: none;
+}
+
+.Navbar .nav-right .h-menu span {
+  height: 6px;
+  width: 90%;
+  color: black;
+  margin: 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .About {
   max-width: 100%;
-  padding: 4.5rem 3rem;
+  min-height: 100vh;
+  padding: 5rem 1rem;
 }
 
 .About .aboutContainer {
   max-width: 1130px;
+  min-height: 100%;
   margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  gap: 1.5rem;
+}
+
+.About .aboutContainer .aboutLeft {
+  padding: 2rem;
+  min-height: auto;
+}
+
+.About .aboutContainer .aboutLeft h3 {
+  text-transform: uppercase;
+  color: #202131;
+  font-size: 1.3rem;
+}
+
+.About .aboutContainer .aboutLeft h2 {
+  position: relative;
+  text-transform: uppercase;
+  color: #202131;
+  font-size: 1.65rem;
+  margin: 1rem 0 4.2rem 0;
+  max-width: 300px;
+  line-height: 2.2rem;
+}
+
+.About .aboutContainer .aboutLeft h2::after {
+  position: absolute;
+  content: '';
+  top: 95px;
+  left: 0;
+  height: 3.5px;
+  width: 70px;
+  border-radius: 1000px;
+  background-color: #ffaa00;
+}
+
+.About .aboutContainer .aboutLeft p {
+  font-size: 1rem;
+}
+
+.About .aboutContainer .aboutRight {
+  background-color: #ffaa00;
+  padding: 1.5rem;
+  min-height: 100%;
+}
+
+.About .aboutContainer .aboutRight img {
+  max-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .Home .hero {
@@ -370,130 +549,6 @@
   line-height: 1.5rem;
 }
 
-.Navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* background: white; */
-  background-color: #E9F0F8;
-  padding: 1.5rem 3rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  max-width: 100%;
-}
-
-.Navbar .myLogo {
-  font-size: 1.9rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #464CAC;
-}
-
-.Navbar .navLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 100%;
-  margin: auto;
-}
-
-.Navbar .navLinks .link {
-  text-decoration: none;
-  font-size: 1.25rem;
-  margin: 0 1rem;
-  color: #202131;
-}
-
-.Navbar .navLinks .link:hover {
-  color: #464CAC;
-}
-
-.Navbar .nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.Navbar .nav-right .hireMe {
-  font-size: 1.3rem;
-  margin-right: 1.3rem;
-  padding: 12px 32px;
-  background-color: #464CAC;
-  color: white;
-  border-radius: 3px;
-  text-decoration: none;
-}
-
-.Navbar .nav-right .switch {
-  position: relative;
-  cursor: pointer;
-  width: 80px;
-  height: 40px;
-  background-color: #bcc9d4;
-  border-radius: 20px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.Navbar .nav-right .switch .flicker {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  left: 7px;
-  top: 5px;
-  background: white;
-  -webkit-box-shadow: inset 4px 4px 4px #89a5b8, inset -4px -4px -4px rgba(255, 255, 255, 0.9);
-          box-shadow: inset 4px 4px 4px #89a5b8, inset -4px -4px -4px rgba(255, 255, 255, 0.9);
-}
-
-.Navbar .nav-right .h-menu {
-  min-width: 35px;
-  height: 35px;
-  background: red;
-  padding: 1px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  display: none;
-}
-
-.Navbar .nav-right .h-menu span {
-  height: 6px;
-  width: 90%;
-  color: black;
-  margin: 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -505,7 +560,7 @@
 a {
   text-decoration: none;
   color: #000000;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .darkTheme {
