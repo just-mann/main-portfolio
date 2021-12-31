@@ -5,7 +5,7 @@ const Home = () => {
         <div className='Home'>
             <div className="heroSection">
                 <Navbar />
-                
+
             </div>
         </div>
     )

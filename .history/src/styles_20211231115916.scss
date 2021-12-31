@@ -9,24 +9,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    //font-family: $primaryFont;
-}
-
-
-@mixin example($offset, $padding) {
-    $divider-offset: (2 * $padding) + $offset;
-    @debug "divider offset: #{$divider-offset}";
-    margin-left: $divider-offset;
-    width: calc(100% - #{$divider-offset});
+    font-family: $primaryFont;
 }
 
 .anchor {
     text-decoration: none;
     color: $black;
     font-size: 1rem;
-    @include example;
 }
 
+@mixin example($offset, $padding) {
+    $divider-offset: (2 * $padding) + $offset;
+    @debug "divider offset: #{$divider-offset}";
+}
 
 
 
