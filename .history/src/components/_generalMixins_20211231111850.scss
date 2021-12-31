@@ -16,20 +16,20 @@
     // styles go here
 }
   
-// 640px, 1024px, 1400px
-$breakpoints-up: ("medium": "40rrem", "large": "64rem", "xlarge": "87.5rem");
-
-// 639px, 1023px, 1399px
-$breakpoints-down: ("small": "39.9375rem", "medium": "63.9375rem", "large": "87.4375rem");
-
-@mixin breakpoint-desktop($size){
+  // 640px, 1024px, 1400px
+  $breakpoints-up: ("medium": "40rrem", "large": "64rem", "xlarge": "87.5rem");
+  
+  // 639px, 1023px, 1399px
+  $breakpoints-down: ("small": "39.9375rem", "medium": "63.9375rem", "large": "87.4375rem");
+  
+  @mixin breakpoint-desktop($size){
     @media (min-width: map-get($breakpoints-up, $size)){
-        @content;
+      @content;
     }
-}
-
-@mixin breakpoint-mobile($size){
+  }
+  
+  @mixin breakpoint-mobile($size){
     @media (max-width: map-get($breakpoints-down, $size)){
-        @content;
+      @content;
     }
-}
+  }
