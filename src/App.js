@@ -6,13 +6,13 @@ import Portfolio from './components/pages/Portfolio';
 import Contact from './components/pages/Contact';
 import NotFound from './components/pages/Contact';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/pages/partials/Navbar';
+// import Navbar from './components/pages/partials/Navbar';
 
 const App = () => {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
           <Route exact path="/" >
             <Home />

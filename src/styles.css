@@ -9,7 +9,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #E9F0F8;
+  background-color: #202131;
   padding: 1.5rem 3rem;
   position: -webkit-sticky;
   position: sticky;
@@ -23,7 +23,7 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  color: #464CAC;
+  color: white;
 }
 
 .Navbar .navLinks {
@@ -44,11 +44,7 @@
   text-decoration: none;
   font-size: 1.25rem;
   margin: 0 1rem;
-  color: #202131;
-}
-
-.Navbar .navLinks .link:hover {
-  color: #464CAC;
+  color: white;
 }
 
 .Navbar .nav-right {
@@ -63,12 +59,12 @@
           align-items: center;
 }
 
-.Navbar .nav-right .hireMe {
+.Navbar .nav-right .contactMe {
   font-size: 1.3rem;
   margin-right: 1.3rem;
   padding: 9px 32px;
-  background-color: #464CAC;
-  color: white;
+  background-color: white;
+  color: #202131;
   border-radius: 3px;
   text-decoration: none;
 }
@@ -189,11 +185,8 @@
 }
 
 .Home .hero {
-  background-color: #E9F0F8;
-  padding: 6.5rem 0;
-  min-height: 80vh;
-  max-width: 100%;
-  margin: auto;
+  background: url("/src/components/pages/images/frontEndImg.jpg");
+  min-height: 100vh;
 }
 
 .Home .hero .heroContainer {
@@ -265,12 +258,12 @@
 }
 
 .Home .hero .heroContainer .heroRight h2 {
-  color: #464CAC;
+  color: white;
   margin-bottom: 1.8rem;
 }
 
 .Home .hero .heroContainer .heroRight h3 {
-  color: black;
+  color: white;
   font-size: 40px;
   margin-bottom: 1.8rem;
   line-height: 3.4rem;
@@ -281,6 +274,7 @@
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 2.05rem;
+  color: white;
 }
 
 .Home .hero .heroContainer .heroRight a {
