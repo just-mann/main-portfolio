@@ -1,0 +1,44 @@
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
+
+
+const Navbar = () => {
+
+    
+    const [ham, setHam] = useState(false);
+    
+    const toggleHam = () => {
+        const menu = document.querySelector('.menu');
+        setHam(!ham);
+        console.log(ham)
+
+        if (ham === false) {
+            menu.classList.remove('open')
+        } else {
+            menu.classList.add('open')
+        }
+    }
+
+    return (
+        <div className='Navbar'>
+            <div>
+                <Link to="/"className="myLogo">
+                    <h3>justin</h3>
+                </Link>
+                <div className="navLinks">
+                    <Link to='/' className='home'>Home</Link>
+                    <Link to="/about-me"className='about'>About</Link>
+                    <Link to='/portfolio' className='work'>Work</Link>
+                    <Link to='/contact-me' className='contact'>Contact</Link>
+                </div>
+                <div className="menu" id='menu' onClick={toggleHam}>
+                    <span className='lines line1'></span>
+                    <span className='lines line2'></span>
+                    <span className='lines line3'></span>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Navbar;

@@ -1,0 +1,82 @@
+.Navbar {
+    max-width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    min-height: auto;
+
+
+    @include breakpoint-mobile(medium) {
+        padding: 0.85rem 0;
+    }
+    
+    
+    
+    max-width: 100%;
+
+    > div {
+        // background-color: lightblue;
+        @include myContainer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .myLogo {
+            text-decoration: none;
+            
+            h3 {
+                font-size: 2rem;
+                color: $white;
+                text-transform: uppercase;
+            }
+        }
+
+        .navLinks {
+            display: block;
+
+            @include breakpoint-mobile(medium) {
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+                margin: 0 1rem;
+                font-size: 1.3rem;
+                padding: 0.75rem 1.2rem;
+                color: $white;
+            }
+
+            .contact {
+                border: 1px solid $lightBlack;
+                background-color: $lightBlack;
+            }
+
+            
+        }
+
+        .menu {
+            display: none;
+            cursor: pointer;
+            
+            span {
+                width: 30px;
+                height: 6px;
+                background-color: $white;
+            }
+
+            @include breakpoint-mobile(medium) {
+                display: block;
+
+                span {
+                    display: block;
+                    width: 40px;
+                    height: 3px;
+                    border-radius: 2000px;
+                    margin: 0 0 7px 0;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}

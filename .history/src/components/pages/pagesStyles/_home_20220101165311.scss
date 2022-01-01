@@ -1,0 +1,34 @@
+.Home {
+    max-width: 100%;
+
+    .heroSection {
+        position: absolute;
+        min-height: 90vh;
+        max-width: 100%;
+
+
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($darkBlack, 0.90);
+        }
+        
+
+
+        @include breakpoint-mobile(medium) {
+            min-height: 75vh;
+        }
+
+        
+
+
+        //Home container section
+        .homeContainer {
+
+        }
+    }
+}

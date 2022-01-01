@@ -1,0 +1,20 @@
+
+
+.Home {
+    width: 100%;
+    .heroSection {
+        min-height: 90vh;
+        max-width: 100%;
+        //background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        //background-color: $darkBlack;
+        
+
+
+        @include breakpoint-mobile(medium) {
+            min-height: 70vh;
+        }
+    }
+}

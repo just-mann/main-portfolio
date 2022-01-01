@@ -1,0 +1,44 @@
+@mixin container($x, $y) {
+    padding: $x $y;
+    max-width: $mxWdth;
+    margin: auto;
+}
+
+@mixin btnStyle() {
+    border-radius: 4px;
+    padding: 2rem 3rem;
+}
+
+@mixin myContainer {
+    width: 1450px;
+    padding: max(0.75rem, 1.4rem) 4rem;
+
+    @include breakpoint-mobile(medium) {
+        padding: max(0.5rem, 1.3rem) 1.4rem;
+    }
+}
+
+
+//Responsive Design
+// Breakpoints
+@media (min-width: 64rem){
+    // styles go here
+}
+  
+// 640px, 1024px, 1400px
+$breakpoints-up: ("medium": "40rrem", "large": "64rem", "xlarge": "87.5rem");
+
+// 639px, 1023px, 1399px
+$breakpoints-down: ("small": "39.9375rem", "medium": "63.9375rem", "large": "87.4375rem");
+
+@mixin breakpoint-desktop($size){
+    @media (min-width: map-get($breakpoints-up, $size)){
+        @content;
+    }
+}
+
+@mixin breakpoint-mobile($size){
+    @media (max-width: map-get($breakpoints-down, $size)){
+        @content;
+    }
+}

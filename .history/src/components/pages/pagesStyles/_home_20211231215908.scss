@@ -1,0 +1,11 @@
+.Home {
+    .heroSection {
+        min-height: 100vh;
+        background-color: $darkBlack;
+
+
+        @include breakpoint-mobile(medium) {
+            min-height: 50vh;
+        }
+    }
+}
