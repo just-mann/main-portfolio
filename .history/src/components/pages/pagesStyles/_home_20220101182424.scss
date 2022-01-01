@@ -43,10 +43,6 @@
                 //background-color: $lightBlack;
                 max-width: 5rem;
                 z-index: 2;
-
-                @include breakpoint-mobile(medium) {
-                    top: 14rem;
-                }
     
                 a {
                     text-decoration: none;

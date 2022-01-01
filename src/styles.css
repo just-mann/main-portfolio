@@ -120,6 +120,7 @@
   text-transform: uppercase;
   transition: display 300ms ease-in-out;
   display: none;
+  z-index: 150;
 }
 .Navbar > div .respNav a {
   display: inline-block;
@@ -188,6 +189,12 @@
   flex-direction: column;
   justify-content: space-between;
   max-width: 5rem;
+  z-index: 2;
+}
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroSocial {
+    top: 14rem;
+  }
 }
 .Home .heroSection .heroSocial a {
   text-decoration: none;
