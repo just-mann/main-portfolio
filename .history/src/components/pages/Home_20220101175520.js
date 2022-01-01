@@ -23,8 +23,8 @@ const Home = () => {
                         <a href="#"><BsTwitter /></a>
                         <a href="#"><BsInstagram /></a>
                     </div>
-                    <div className="heroMain">
-                        
+                    <div className="heroEmail">
+                        <p>kolliejustin418@gmail.com</p>
                     </div>
                 
             </div>

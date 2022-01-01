@@ -17,15 +17,18 @@ const Home = () => {
             <div className="heroSection" style={myBackground}>
                 <Navbar />
                 
-                    <div className="heroSocial">
-                        <a href="#"><BsLinkedin /></a>
-                        <a href="#"><BsGithub /></a>
-                        <a href="#"><BsTwitter /></a>
-                        <a href="#"><BsInstagram /></a>
-                    </div>
-                    <div className="heroMain">
-                        
-                    </div>
+                <div className="heroSocial">
+                    <a href="#"><BsLinkedin /></a>
+                    <a href="#"><BsGithub /></a>
+                    <a href="#"><BsTwitter /></a>
+                    <a href="#"><BsInstagram /></a>
+                </div>
+                <div className="heroMain">
+                    
+                </div>
+                <div className="heroEmail">
+                    <p>kolliejustin418@gmail.com</p>
+                </div>
                 
             </div>
         </div>

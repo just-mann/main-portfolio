@@ -16,7 +16,7 @@ const Home = () => {
         <div className='Home'>
             <div className="heroSection" style={myBackground}>
                 <Navbar />
-                
+                <div>
                     <div className="heroSocial">
                         <a href="#"><BsLinkedin /></a>
                         <a href="#"><BsGithub /></a>
@@ -26,7 +26,10 @@ const Home = () => {
                     <div className="heroMain">
                         
                     </div>
-                
+                    <div className="heroEmail">
+                        <p>kolliejustin418@gmail.com</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

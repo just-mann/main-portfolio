@@ -31,41 +31,47 @@
         }
 
 
-        
 
+
+        //Home container section
+        
+            
             .heroSocial {
                 position: absolute;
-                top: 17rem;
+                top: 11rem;
                 left: 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                align-items: center;
                 //background-color: $lightBlack;
-                max-width: 5rem;
-    
+                width: 5rem;
+
                 a {
                     text-decoration: none;
-                    text-align: center;
                     color: $white;
                     font-size: 1.2rem;
                     padding: 1.2rem 1.75rem;
                     border: 1px solid $lightBlack;
                     transition: display 300ms ease-in-out;
-    
+
                     &:hover {
                         border: 1px solid $lightBlack;
                         background-color: $lightBlack;
                     }
                 }
             }
-    
-            .heroMain {
-                position: absolute;
-                background-color: yellow;
-                height: 100%;
 
+            .heroEmail {
+                position: absolute;
+                top: 11rem;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                //background-color: $lightBlack;
+                width: 5rem;
             }
-        
         
     }
 }

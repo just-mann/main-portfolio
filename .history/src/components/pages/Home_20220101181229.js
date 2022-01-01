@@ -16,7 +16,7 @@ const Home = () => {
         <div className='Home'>
             <div className="heroSection" style={myBackground}>
                 <Navbar />
-                
+                <div className="just">
                     <div className="heroSocial">
                         <a href="#"><BsLinkedin /></a>
                         <a href="#"><BsGithub /></a>
@@ -26,7 +26,7 @@ const Home = () => {
                     <div className="heroMain">
                         
                     </div>
-                
+                </div>
             </div>
         </div>
     )

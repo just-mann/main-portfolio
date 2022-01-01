@@ -180,43 +180,32 @@
     min-height: 75vh;
   }
 }
-.Home .heroSection .homeContainer {
+.Home .heroSection .heroSocial {
   position: absolute;
-  margin: auto;
-  background: red;
-  height: 100%;
-  z-index: 100;
-}
-.Home .heroSection .homeContainer .heroSocial {
-  position: absolute;
-  top: 11rem;
+  top: 17rem;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  width: 5rem;
+  max-width: 5rem;
 }
-.Home .heroSection .homeContainer .heroSocial a {
+.Home .heroSection .heroSocial a {
   text-decoration: none;
+  text-align: center;
   color: #ffffff;
   font-size: 1.2rem;
   padding: 1.2rem 1.75rem;
   border: 1px solid #1f1d1d;
   transition: display 300ms ease-in-out;
 }
-.Home .heroSection .homeContainer .heroSocial a:hover {
+.Home .heroSection .heroSocial a:hover {
   border: 1px solid #1f1d1d;
   background-color: #1f1d1d;
 }
-.Home .heroSection .homeContainer .heroEmail {
+.Home .heroSection .heroMain {
   position: absolute;
-  top: 11rem;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 5rem;
+  background-color: yellow;
+  height: 100%;
 }
 
 * {
