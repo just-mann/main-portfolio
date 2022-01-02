@@ -11,7 +11,7 @@ const Home = () => {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         width: '100%',
-        minHeight: '90vh'
+        minHeight: '100vh'
     }
 
     return (
@@ -31,9 +31,8 @@ const Home = () => {
                                 <h3 className='mainHeading'>I am <span>Justin Kollie</span></h3>
                                 <h2 className='subHeading'>I am a front-end web developer</h2>
                                 <p className="description">
-                                    Lorem, ipsum. Accusantium quod libero quasi veritatis 
-                                    consectetur vel natus, facere modi doloribus non. 
-                                    Dolorum soluta aperiam vero.
+                                A Frontend focused Web Developer building the Frontend of Websites and Web Applications that 
+                                leads to the success of the overall product
                                 </p>
                                 <Link to='/' className="downloadResumeBtn">See Resume</Link>
                                 <Link to='/contact-me' className="heroContactBtn">Contact Me</Link>

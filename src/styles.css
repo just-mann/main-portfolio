@@ -7,7 +7,7 @@
   position: sticky;
   top: 0;
   max-width: 100%;
-  padding: 0.3rem 0;
+  padding: 1.4rem 4rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,7 +29,7 @@
 
 .Navbar > div {
   width: 1650px;
-  padding: 1.4rem 8rem;
+  padding: 1.4rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +244,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  height: 90vh;
+  height: 100%;
   background: rgba(7, 7, 7, 0.9);
   z-index: 0.7;
 }
@@ -264,7 +264,7 @@
   max-width: 1500px;
   height: 75%;
   margin: auto;
-  padding: 3.4rem 4rem;
+  padding: 1.4rem 8rem;
 }
 
 @media (max-width: 63.9375rem) {
@@ -275,7 +275,7 @@
 
 .Home .heroSection .heroContainer .mydiv .heroSocial {
   position: absolute;
-  top: 12rem;
+  top: 16rem;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,14 +325,27 @@
           align-items: center;
 }
 
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroContainer .mydiv .heroMain {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .Home .heroSection .heroContainer .mydiv .heroMain * {
   color: #ffffff;
   text-align: left;
 }
 
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroContainer .mydiv .heroMain * {
+    text-align: center;
+  }
+}
+
 .Home .heroSection .heroContainer .mydiv .heroMain h3 {
   font-size: 1.6rem;
-  margin: 2rem 0 1rem 0;
+  margin: 4rem 0 1rem 0;
 }
 
 .Home .heroSection .heroContainer .mydiv .heroMain h3 span {
@@ -341,10 +354,22 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroContainer .mydiv .heroMain h3 {
+    font-size: 1.4rem;
+  }
+}
+
 .Home .heroSection .heroContainer .mydiv .heroMain h2 {
   font-size: 3.9rem;
   text-transform: uppercase;
   line-height: l 0.5rem;
+}
+
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroContainer .mydiv .heroMain h2 {
+    font-size: 2.3rem;
+  }
 }
 
 .Home .heroSection .heroContainer .mydiv .heroMain .description {
@@ -352,6 +377,14 @@
   line-height: 1.9rem;
   margin: 1.2rem 0 2.2rem 0;
   max-width: 550px;
+}
+
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroContainer .mydiv .heroMain .description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-inline: auto;
+  }
 }
 
 .Home .heroSection .heroContainer .mydiv .heroMain .downloadResumeBtn, .Home .heroSection .heroContainer .mydiv .heroMain .heroContactBtn {
