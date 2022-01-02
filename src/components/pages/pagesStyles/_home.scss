@@ -1,10 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .Home {
     max-width: 100%;
 
     .heroSection {
         position: relative;
-        min-height: 90vh;
-        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        
 
         > * {
             z-index: 100;
@@ -19,7 +26,7 @@
             left: 0;
             right: 0;
             width: 100%;
-            height: 100%;
+            height: 90vh;
             background: rgba($darkBlack, 0.90);
             z-index: 0.7;
         }
@@ -30,47 +37,105 @@
             min-height: 75vh;
         }
 
+        .heroContainer {
+            width: 100%;
+            min-height: 100%;
+            
+            // background-color: yellow;
 
-        
-
-            .heroSocial {
-                position: absolute;
-                top: 17rem;
-                left: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                //background-color: $lightBlack;
-                max-width: 5rem;
-                z-index: 2;
+            .mydiv {
+                max-width: 1500px;
+                height: 75%;
+                margin: auto;
+                // background-color: yellow;
+                padding: max(0.75rem, 3.4rem) 4rem;
 
                 @include breakpoint-mobile(medium) {
-                    top: 14rem;
+                    padding: max(0.5rem, 2rem) 1.4rem;
                 }
-    
-                a {
-                    text-decoration: none;
-                    text-align: center;
-                    color: $white;
-                    font-size: 1.2rem;
-                    padding: 1.2rem 1.75rem;
-                    border: 1px solid $lightBlack;
-                    transition: display 300ms ease-in-out;
-    
-                    &:hover {
+
+
+                .heroSocial {
+                    position: absolute;
+                    top: 12rem;
+                    left: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    // background-color: $lightBlack;
+                    width: 70px;
+
+                    @include breakpoint-mobile(medium) {
+                        display: none;
+                        top: 13rem;
+                    }
+                    
+
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                        padding: 1.2rem 1.4rem;
+                        font-weight: bold;
+                        font-size: 1.3rem;
                         border: 1px solid $lightBlack;
+                        transition: background-color 300ms ease-in-out;
+
+                        &:hover {
+                            background-color: $lightBlack;
+                        }
+                    }
+                }
+
+                .heroMain {
+                    display: grid;
+                    grid-template-columns: 2fr 2fr;
+                    align-items: center;
+
+                    * {
+                        color: $white;
+                        text-align: left;
+                    }
+
+                    h3 {
+                        // text-transform: uppercase;
+                        font-size: 1.6rem;
+                        margin: 2rem 0 1rem 0;
+
+                        span {
+                            font-family: $cursiveFont;
+                            color: $secondColor;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    h2 {
+                        font-size: 3.9rem;
+                        text-transform: uppercase;
+                        line-height: l.5rem
+                    }
+
+                    .description {
+                        font-size: 1.3rem;
+                        line-height: 1.9rem;
+                        margin: 1.2rem 0 2.2rem 0;
+                        max-width: 550px;
+                    }
+
+                    .downloadResumeBtn, .heroContactBtn {
+                        @include btnStyle;
                         background-color: $lightBlack;
+                        margin-top: 3rem;
+                        margin-right: 1rem;
+                        text-decoration: none;
+                    }
+
+                    .heroContactBtn {
+                        background-color: $secondColor;
                     }
                 }
             }
-    
-            .heroMain {
-                position: absolute;
-                background-color: yellow;
-                height: 100%;
-
-            }
-        
-        
+                
+        }
     }
 }
