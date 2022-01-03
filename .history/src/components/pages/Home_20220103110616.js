@@ -17,14 +17,14 @@ const Home = () => {
     }
 
     return (
-        <div className='Home' style={myBackground}>
+        <div className='Home'>
             <div className="heroSocial">
                 <a href="#"><BsLinkedin /></a>
                 <a href="#"><BsGithub /></a>
                 <a href="#"><BsTwitter /></a>
                 <a href="#"><BsInstagram /></a>
             </div>
-            <div className="heroSection">
+            <div className="heroSection" style={myBackground}>
                 <Navbar />
                 <div className="heroMain">
                     <div className="heroMainLeft">
@@ -38,7 +38,7 @@ const Home = () => {
                         <Link to='/contact-me' className="heroContactBtn">Contact Me</Link>
                     </div>
                     <div className="heroMainRight">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, consequatur.</p>
+
                     </div>
                 </div>
             </div>

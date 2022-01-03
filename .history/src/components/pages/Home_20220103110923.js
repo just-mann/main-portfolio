@@ -38,7 +38,7 @@ const Home = () => {
                         <Link to='/contact-me' className="heroContactBtn">Contact Me</Link>
                     </div>
                     <div className="heroMainRight">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, consequatur.</p>
+
                     </div>
                 </div>
             </div>

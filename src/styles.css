@@ -170,7 +170,6 @@
 }
 @media (min-width: 64rem) {
   .Navbar {
-    background-color: #070707;
     max-width: 100%;
     z-index: 100;
   }
@@ -261,28 +260,91 @@
   .Home {
     position: relative;
     z-index: 0;
-    min-height: 100vh;
+    min-height: 70vh;
     width: 100%;
   }
-  .Home background .heroSocial {
+  .Home::before {
     position: absolute;
-    top: 12rem;
-    display: flex;
-    justify-content: space-between;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(7, 7, 7, 0.95);
+    min-height: 100%;
+    width: 100%;
+  }
+  .Home .heroSocial {
+    display: none;
   }
   .Home .heroSection {
     position: relative;
+    height: 100%;
+  }
+  .Home .heroSection .heroMain {
+    max-width: 1650px;
+    margin: auto;
+    padding: 7rem 1.5rem;
+    color: #ffffff;
+    grid-template-columns: 1;
+  }
+  .Home .heroSection .heroMain .heroMainLeft {
+    text-align: center;
+  }
+  .Home .heroSection .heroMain .heroMainRight {
+    display: none;
+    background-color: lightblue;
   }
 }
 @media (min-width: 64rem) {
   .Home {
+    position: relative;
     z-index: 0;
-    height: 90vh;
+    min-height: 90vh;
     width: 100%;
-    background-color: yellow;
+  }
+  .Home::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: rgba(7, 7, 7, 0.95);
+    min-height: 100%;
+    width: 100%;
+  }
+  .Home .heroSocial {
+    position: absolute;
+    top: 19rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    z-index: 5;
+  }
+  .Home .heroSocial a {
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border: 1px solid #1f1d1d;
+    transition: background-color 300ms ease-in-out;
+  }
+  .Home .heroSocial a:not(:last-child) {
+    border-bottom: none;
+  }
+  .Home .heroSocial a:hover {
+    background-color: #1f1d1d;
   }
   .Home .heroSection {
+    position: relative;
     height: 100%;
+  }
+  .Home .heroSection .heroMain {
+    max-width: 1650px;
+    margin: auto;
+    padding: 10rem 3rem;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 2.8fr 2fr;
+    gap: 3rem;
   }
 }
 
