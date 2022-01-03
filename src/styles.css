@@ -1,51 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 .Navbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   max-width: 100%;
-  padding: 0.3rem 0;
+  padding: 1.4rem 4rem;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: auto;
   background-color: #070707;
+  -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
+
 @media (max-width: 63.9375rem) {
   .Navbar {
     padding: 0.2rem 0;
   }
 }
+
 .Navbar > div {
   width: 1650px;
-  padding: max(0.75rem, 1.4rem) 5rem;
+  padding: 1.4rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 @media (max-width: 63.9375rem) {
   .Navbar > div {
-    padding: max(0.5rem, 1.3rem) 1.4rem;
+    padding: 1.3rem 1.4rem;
   }
 }
+
 .Navbar > div .myLogo {
   text-decoration: none;
 }
+
 .Navbar > div .myLogo h3 {
   font-size: 2rem;
   color: #ffffff;
+  font-family: "Geostar", sans-serif;
   text-transform: uppercase;
 }
+
 .Navbar > div .navLinks {
   display: block;
 }
+
 @media (max-width: 63.9375rem) {
   .Navbar > div .navLinks {
     display: none;
   }
 }
+
 .Navbar > div .navLinks a {
   text-decoration: none;
   text-transform: uppercase;
@@ -53,29 +75,36 @@
   font-size: 1.3rem;
   padding: 0.5rem 1.2rem;
   color: #ffffff;
+  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+
 .Navbar > div .navLinks a:hover {
   color: #c5c5c5;
 }
+
 .Navbar > div .navLinks .contact {
   border: 1px solid #F9373A;
   background-color: #F9373A;
   color: #ffffff;
   border-radius: 5px;
 }
+
 .Navbar > div .navLinks .contact:hover {
   color: #ffffff;
 }
+
 .Navbar > div .menu {
   display: none;
   cursor: pointer;
 }
+
 .Navbar > div .menu span {
   width: 1rem;
   height: 3px;
   background-color: #ffffff;
 }
+
 @media (max-width: 63.9375rem) {
   .Navbar > div .menu {
     display: block;
@@ -87,28 +116,39 @@
     border-radius: 2000px;
     margin: 0 0 7px 0;
     background-color: #ffffff;
-    transform-origin: 2px 2px;
+    -webkit-transform-origin: 2px 2px;
+            transform-origin: 2px 2px;
+    -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
   }
 }
+
 .Navbar > div .open span {
-  transform-origin: 2px 1.3px;
+  -webkit-transform-origin: 2px 1.3px;
+          transform-origin: 2px 1.3px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
+
 @media (max-width: 63.9375rem) {
   .Navbar > div .open {
     display: block;
   }
   .Navbar > div .open .line1 {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .Navbar > div .open .line2 {
     opacity: 0;
   }
   .Navbar > div .open .line3 {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 }
+
 .Navbar > div .respNav {
   position: fixed;
   right: 0;
@@ -118,10 +158,12 @@
   height: auto;
   padding: 0 0 2rem 0;
   text-transform: uppercase;
+  -webkit-transition: display 300ms ease-in-out;
   transition: display 300ms ease-in-out;
   display: none;
   z-index: 150;
 }
+
 .Navbar > div .respNav a {
   display: inline-block;
   width: inherit;
@@ -132,42 +174,72 @@
   text-decoration: none;
   border-bottom: 1px solid #3d3939;
   padding: 1rem 2rem;
+  -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
+  -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
 }
+
 .Navbar > div .respNav a:hover {
   background-color: #070707;
   color: #c5c5c5;
 }
+
 .Navbar > div .respNav a:first-child {
   border-top: 1px solid #3d3939;
 }
+
 @media (max-width: 63.9375rem) {
   .Navbar > div .respNav {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
+
 .Navbar > div .respNavOpen {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transition: display 300ms ease-in-out;
   transition: display 300ms ease-in-out;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .Home {
   max-width: 100%;
 }
+
 .Home .heroSection {
   position: relative;
-  min-height: 90vh;
-  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .Home .heroSection > * {
   z-index: 100;
 }
+
 .Home .heroSection::before {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   right: 0;
@@ -176,48 +248,167 @@
   background: rgba(7, 7, 7, 0.9);
   z-index: 0.7;
 }
+
 @media (max-width: 63.9375rem) {
   .Home .heroSection {
     min-height: 75vh;
   }
 }
-.Home .heroSection .heroSocial {
-  position: absolute;
-  top: 17rem;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 5rem;
-  z-index: 2;
+
+.Home .heroSection .heroContainer {
+  width: 100%;
+  min-height: 100%;
 }
+
+.Home .heroSection .heroContainer .mydiv {
+  max-width: 1500px;
+  height: 75%;
+  margin: auto;
+  padding: 1.4rem 8rem;
+}
+
 @media (max-width: 63.9375rem) {
-  .Home .heroSection .heroSocial {
-    top: 14rem;
+  .Home .heroSection .heroContainer .mydiv {
+    padding: 2rem 1.4rem;
   }
 }
-.Home .heroSection .heroSocial a {
-  text-decoration: none;
-  text-align: center;
-  color: #ffffff;
-  font-size: 1.2rem;
-  padding: 1.2rem 1.75rem;
-  border: 1px solid #1f1d1d;
-  transition: display 300ms ease-in-out;
+
+.Home .heroSection .heroContainer .mydiv .heroSocial {
+  position: absolute;
+  top: 16rem;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
 }
-.Home .heroSection .heroSocial a:hover {
+
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroContainer .mydiv .heroSocial {
+    display: none;
+    top: 13rem;
+  }
+}
+
+.Home .heroSection .heroContainer .mydiv .heroSocial a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1.2rem 1.4rem;
+  font-weight: bold;
+  font-size: 1.3rem;
   border: 1px solid #1f1d1d;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+.Home .heroSection .heroContainer .mydiv .heroSocial a:hover {
   background-color: #1f1d1d;
 }
-.Home .heroSection .heroMain {
-  position: absolute;
-  background-color: yellow;
-  height: 100%;
+
+.Home .heroSection .heroContainer .mydiv .heroMain {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroContainer .mydiv .heroMain {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.Home .heroSection .heroContainer .mydiv .heroMain * {
+  color: #ffffff;
+  text-align: left;
+}
+
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroContainer .mydiv .heroMain * {
+    text-align: center;
+  }
+}
+
+.Home .heroSection .heroContainer .mydiv .heroMain h3 {
+  font-size: 1.6rem;
+  margin: 4rem 0 1rem 0;
+}
+
+.Home .heroSection .heroContainer .mydiv .heroMain h3 span {
+  font-family: "Geostar", sans-serif;
+  color: #F9373A;
+  text-transform: uppercase;
+}
+
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroContainer .mydiv .heroMain h3 {
+    font-size: 1.4rem;
+  }
+}
+
+.Home .heroSection .heroContainer .mydiv .heroMain h2 {
+  font-size: 3.9rem;
+  text-transform: uppercase;
+  line-height: l 0.5rem;
+}
+
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroContainer .mydiv .heroMain h2 {
+    font-size: 2.3rem;
+  }
+}
+
+.Home .heroSection .heroContainer .mydiv .heroMain .description {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  margin: 1.2rem 0 2.2rem 0;
+  max-width: 550px;
+}
+
+@media (max-width: 63.9375rem) {
+  .Home .heroSection .heroContainer .mydiv .heroMain .description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-inline: auto;
+  }
+}
+
+.Home .heroSection .heroContainer .mydiv .heroMain .downloadResumeBtn, .Home .heroSection .heroContainer .mydiv .heroMain .heroContactBtn {
+  border-radius: 4px;
+  padding: 1rem 1.3rem;
+  background-color: #1f1d1d;
+  margin-top: 3rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.Home .heroSection .heroContainer .mydiv .heroMain .heroContactBtn {
+  background-color: #F9373A;
 }
 
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+body {
+  position: relative;
+}
+/*# sourceMappingURL=styles.css.map */
