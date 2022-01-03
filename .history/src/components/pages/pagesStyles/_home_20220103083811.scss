@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Home {
+    //Mobile Responsive Design
+    @include breakpoint-mobile(medium) {
+        .heroSocial {
+            display: none;
+        }
+
+
+
+    }
+
+
+
+    //Desktop Design
+    
+}

@@ -1,0 +1,23 @@
+.Navbar {
+    //Mobile Responsive Design
+    @include breakpoint-mobile(medium) {
+        background-color: $darkBlack;
+        height: 70px;
+        max-width: 100%;
+
+        .NavbarContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            color: $white;
+
+
+
+
+        }
+    }
+
+    //Desktop Design
+
+}

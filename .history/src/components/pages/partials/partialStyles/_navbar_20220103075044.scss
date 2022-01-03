@@ -1,0 +1,50 @@
+.Navbar {
+    //Mobile Responsive Design
+    @include breakpoint-mobile(medium) {
+        background-color: $darkBlack;
+        height: 70px;
+        max-width: 100%;
+
+        .NavbarContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+
+
+            .myLogo {
+                text-decoration: none;
+                color: $white;
+            }
+
+            .navLinks {
+                display: none;
+                justify-content: space-between;
+            }
+
+            .menu {
+                border: 1px solid yellow;
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+
+                span {
+                    display: block;
+                    height: 2px;
+                    width: 26px;
+                    background: #ffffff;
+                }
+            }
+
+
+
+        }
+
+        .respNav {
+            display: none;
+        }
+    }
+
+    //Desktop Design
+
+}
