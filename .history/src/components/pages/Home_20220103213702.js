@@ -28,11 +28,11 @@ const Home = () => {
                 <Navbar />
                 <div className="heroMain">
                     <div className="heroMainLeft">
-                        <h3 className='mainHeading'>Hey there, I am Justin Kollie</h3>
+                        <h3 className='mainHeading'>Hey, I am <span>Justin Kollie</span></h3>
                         <h2 className='subHeading'>I am a front-end web developer</h2>
                         <p className="description">
-                            A Frontend focused Web Developer building the Frontend of Websites and Web Applications that 
-                            leads to the success of the overall product
+                        A Frontend focused Web Developer building the Frontend of Websites and Web Applications that 
+                        leads to the success of the overall product
                         </p>
                         <Link to='/' className="downloadResumeBtn">See Resume</Link>
                         <Link to='/contact-me' className="heroContactBtn">Contact Me</Link>

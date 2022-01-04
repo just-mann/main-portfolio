@@ -5,7 +5,7 @@
         top: 0;
         left: 0;
         right: 0;
-        background-color: $darkBlue;
+        background-color: $darkBlack;
         height: 70px;
         max-width: 100%;
 
@@ -27,7 +27,7 @@
                 color: $white;
                 text-decoration: none solid rgb(0, 119, 181);
                 text-align: start;
-                text-indent: 0rem;
+                text-indent: 0px;
             }
 
             .navLinks {
@@ -84,7 +84,7 @@
             display: none;
             flex-direction: column;
             justify-content: flex-end;
-            background-color: rgba($lightBlue, 0.99);
+            background-color: rgba($lightBlack, 0.99);
             max-width: 100%;
             padding: 0 0 2.9rem 0;
             z-index: 100;
@@ -104,7 +104,7 @@
                 
 
                 &:hover {
-                    background-color: $lightBlue;
+                    background-color: $darkBlack;
                 }
             }
 
@@ -118,7 +118,7 @@
 
     //Desktop Design
     @include breakpoint-desktop(large) {
-        background-color: $darkBlue;
+        background-color: $darkBlack;
         max-width: 100%;
         z-index: 100;
 
@@ -223,7 +223,7 @@
     
     //Desktop Design
     @include breakpoint-desktop(large) {
-        //background-color: $darkBlue;
+        //background-color: $darkBlack;
         max-width: 100%;
         z-index: 100;
 

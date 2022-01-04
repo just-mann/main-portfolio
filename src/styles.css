@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #070707;
+    background-color: #222438;
     height: 70px;
     max-width: 100%;
   }
@@ -21,8 +21,16 @@
   }
   .Navbar .NavbarContainer .myLogo {
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.008rem;
+    font-weight: 700;
+    line-height: 1.512rem;
     font-family: "Source Sans Pro", sans-serif;
     color: #ffffff;
+    -webkit-text-decoration: none solid #0077b5;
+            text-decoration: none solid #0077b5;
+    text-align: start;
+    text-indent: 0rem;
   }
   .Navbar .NavbarContainer .navLinks {
     display: none;
@@ -62,7 +70,7 @@
     display: none;
     flex-direction: column;
     justify-content: flex-end;
-    background-color: rgba(31, 29, 29, 0.98);
+    background-color: rgba(31, 29, 29, 0.99);
     max-width: 100%;
     padding: 0 0 2.9rem 0;
     z-index: 100;
@@ -71,7 +79,7 @@
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.97rem;
+    font-size: 0.875rem;
     letter-spacing: 0.1rem;
     color: #ffffff;
     text-align: right;
@@ -80,7 +88,7 @@
     transition: background-color 300ms ease-in-out;
   }
   .Navbar .respNav a:hover {
-    background-color: #070707;
+    background-color: #222438;
   }
   .Navbar .respNav .home {
     border-top: 1px solid #353434;
@@ -88,7 +96,7 @@
 }
 @media (min-width: 64rem) {
   .Navbar {
-    background-color: #070707;
+    background-color: #222438;
     max-width: 100%;
     z-index: 100;
   }
@@ -268,7 +276,7 @@
     content: "";
     top: 0;
     left: 0;
-    background: rgba(7, 7, 7, 0.95);
+    background: rgba(34, 36, 56, 0.95);
     min-height: 100%;
     width: 100%;
   }
@@ -289,6 +297,42 @@
   .Home .heroSection .heroMain .heroMainLeft {
     text-align: center;
   }
+  .Home .heroSection .heroMain .heroMainLeft h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 3.78rem;
+    vertical-align: baseline;
+    word-spacing: 0;
+    padding: 0;
+    margin-top: 2.3rem;
+    text-indent: 0;
+    font-weight: 700;
+    font-variant: normal;
+  }
+  .Home .heroSection .heroMain .heroMainLeft h2 {
+    margin: 1.2rem 0;
+  }
+  .Home .heroSection .heroMain .heroMainLeft p {
+    font-size: 1.12rem;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    word-spacing: 0;
+    line-height: 1.792rem;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+  .Home .heroSection .heroMain .heroMainLeft a {
+    display: inline-block;
+    line-height: 1.68rem;
+    vertical-align: baseline;
+    letter-spacing: 0.125rem;
+    word-spacing: 0rem;
+    margin: 0rem;
+    padding: 0.84rem 4.48rem;
+  }
   .Home .heroSection .heroMain .heroMainRight {
     display: none;
     background-color: lightblue;
@@ -306,7 +350,7 @@
     content: "";
     top: 0;
     left: 0;
-    background: rgba(7, 7, 7, 0.95);
+    background: rgba(34, 36, 56, 0.95);
     min-height: 100%;
     width: 100%;
   }
