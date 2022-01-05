@@ -16,10 +16,10 @@ const Home = () => {
             <Navbar />
             <div className="mainSection">
                 <div className="mainLeft">
-                    <h3>I build & design unique websites</h3>
+
                 </div>
                 <div className="mainRight">
-
+                    
                 </div>
             </div>
         </div>
