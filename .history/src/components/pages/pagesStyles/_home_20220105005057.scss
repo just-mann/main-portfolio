@@ -32,7 +32,7 @@
                 color: $white;
                 text-transform: capitalize;
                 letter-spacing: -4px;
-                font-size: 5vw;
+                font-size: 76px;
                 line-height: 76px;
                 font-weight: 700;
                 text-align: center;
@@ -71,34 +71,26 @@
             display: grid;
             grid-template-columns: 1fr;
             justify-content: center;
-            align-items: center;
             margin: auto;
             z-index: 2;
     
             .mainLeft {
                 //background-color: lightblue;
-                text-align: center;
     
                 h3 {
                     color: $white;
                     letter-spacing: -4px;
-                    font-size: 12vw;
-                    line-height: 70px;
+                    font-size: 57px;
+                    line-height: 76px;
                     font-weight: 700;
-                    margin: 3.5rem 0 4rem 0;
+                    margin-top: 8.5rem;
                     text-align: center;
                 }
 
                 .contact {
-                    text-decoration: none;
                     background-color: $secondColor;
                     color: $white;
-                    margin: auto;
-                    text-align: center;
-                    font-size: 1.125rem;
-                    font-weight: 700;
-                    padding: 1rem 3.5rem;
-
+                    padding: 1.3rem;
                 }
             }
     

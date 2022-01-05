@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Navbar from './partials/Navbar';
 import bgImage from './images/lineBg.jpeg';
-import {Link} from 'react-router-dom';
+import Link from 'react-router-dom';
 
 const Home = () => {
 

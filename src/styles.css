@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: black;
     max-width: 100%;
     z-index: 200;
   }
@@ -16,20 +16,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22.4px 24px;
+    padding: 1.4rem 1.5rem;
   }
   .Navbar .NavbarContainer .myLogo {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16.128px;
+    font-size: 1.008rem;
     font-weight: 700;
-    line-height: 24.192px;
+    line-height: 1.512rem;
     font-family: "Source Sans Pro", sans-serif;
     color: #ffffff;
-    text-indent: 0px;
+    text-indent: 0rem;
   }
   .Navbar .NavbarContainer .myLogo h3 {
-    margin-top: 4.8px;
+    margin-top: 0.3rem;
+    font-size: 1.5625rem;
+    font-weight: 600;
+    line-height: 1.3928rem;
   }
   .Navbar .NavbarContainer .navLinks {
     display: none;
@@ -39,27 +42,27 @@
     display: none;
   }
   .Navbar .NavbarContainer .toggle {
-    width: 1.75rem;
-    height: 1.5625rem;
-    margin-top: 4.8px;
-    margin-right: 12.8px;
+    width: 28px;
+    height: 25px;
+    margin-top: 0.3rem;
+    margin-right: 0.25rem;
     display: flex;
     flex-direction: column;
     cursor: pointer;
   }
   .Navbar .NavbarContainer .toggle span {
     display: block;
-    height: 0.125rem;
-    width: 1.625rem;
+    height: 2px;
+    width: 26px;
     background: #ffffff;
-    transform-origin: 0.1875rem 0.0625rem;
+    transform-origin: 3px 1px;
     transition: all 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .toggle span:first-child() {
-    margin-top: 0.625rem;
+    margin-top: 10px;
   }
   .Navbar .NavbarContainer .toggle span:not(:last-child) {
-    margin-bottom: 0.3125rem;
+    margin-bottom: 5px;
   }
   .Navbar .NavbarContainer .open .line1 {
     transform: rotate(45deg);
@@ -78,7 +81,7 @@
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
-    padding: 0 0 46.4px 0;
+    padding: 0 0 2.9rem 0;
     z-index: 200;
     display: none;
   }
@@ -86,19 +89,19 @@
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1.6px;
+    font-size: 0.875rem;
+    letter-spacing: 0.1rem;
     color: #ffffff;
     text-align: right;
-    border-bottom: 0.0625rem solid #353434;
-    padding: 19.2px 32px;
+    border-bottom: 1px solid #353434;
+    padding: 1.2rem 2rem;
     transition: background-color 300ms ease-in-out;
   }
   .Navbar .respNav a:hover {
     background-color: #212122;
   }
   .Navbar .respNav .home {
-    border-top: 0.0625rem solid #353434;
+    border-top: 1px solid #353434;
   }
 }
 @media (min-width: 64rem) {
@@ -113,17 +116,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 48px;
-    max-width: 104.6875rem;
+    padding: 3rem;
+    max-width: 1675px;
     margin: auto;
   }
   .Navbar .NavbarContainer .myLogo {
     text-transform: uppercase;
     color: #ffffff;
-    font-size: 51.2px;
+    font-size: 3.2rem;
   }
   .Navbar .NavbarContainer .myLogo h3 {
-    margin-top: 4.8px;
+    margin-top: 0.3rem;
     font-weight: 700;
   }
   .Navbar .NavbarContainer .navLinks {
@@ -134,8 +137,8 @@
   .Navbar .NavbarContainer .navLinks a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 17.28px;
-    margin: 0 0 0 48px;
+    font-size: 1.08rem;
+    margin: 0 0 0 3rem;
     transition: color 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .navLinks a:hover {
@@ -145,8 +148,8 @@
     text-decoration: none;
     color: #ffffff;
     background-color: #F9373A;
-    padding: 8px 29.12px;
-    border-radius: 3.2px;
+    padding: 0.5rem 1.82rem;
+    border-radius: 0.2rem;
     font-weight: 700;
     transition: background-color 300ms ease-in-out;
   }
@@ -155,8 +158,8 @@
     background-color: #b92f31;
   }
   .Navbar .NavbarContainer .toggle {
-    width: 1.75rem;
-    height: 1.25rem;
+    width: 28px;
+    height: 20px;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -164,17 +167,17 @@
   }
   .Navbar .NavbarContainer .toggle span {
     display: block;
-    height: 0.125rem;
-    width: 1.625rem;
+    height: 2px;
+    width: 26px;
     background: #ffffff;
-    transform-origin: 0.1875rem 0.0625rem;
+    transform-origin: 3px 1px;
     transition: all 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .toggle span:first-child() {
-    margin-top: 0.625rem;
+    margin-top: 10px;
   }
   .Navbar .NavbarContainer .toggle span:not(:last-child) {
-    margin-bottom: 0.3125rem;
+    margin-bottom: 5px;
   }
   .Navbar .NavbarContainer .open {
     display: none;
@@ -201,7 +204,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 29.6px 48px;
+    padding: 1.85rem 3rem;
   }
   .Navbar .NavbarContainer .myLogo {
     text-decoration: none;
@@ -215,9 +218,9 @@
   .Navbar .NavbarContainer .navLinks a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 700;
-    margin: 0 0 0 48px;
+    margin: 0 0 0 3rem;
     transition: color 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .navLinks a:hover {
@@ -225,8 +228,8 @@
   }
   .Navbar .NavbarContainer .navLinks .contact {
     background-color: #F9373A;
-    padding: 8px 29.12px;
-    border-radius: 3.2px;
+    padding: 0.5rem 1.82rem;
+    border-radius: 0.2rem;
     font-weight: 700;
     transition: background-color 300ms ease-in-out;
   }
@@ -235,8 +238,8 @@
     background-color: #b92f31;
   }
   .Navbar .NavbarContainer .toggle {
-    width: 1.75rem;
-    height: 1.25rem;
+    width: 28px;
+    height: 20px;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -244,17 +247,17 @@
   }
   .Navbar .NavbarContainer .toggle span {
     display: block;
-    height: 0.125rem;
-    width: 1.625rem;
+    height: 2px;
+    width: 26px;
     background: #ffffff;
-    transform-origin: 0.1875rem 0.0625rem;
+    transform-origin: 3px 1px;
     transition: all 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .toggle span:first-child() {
-    margin-top: 0.625rem;
+    margin-top: 10px;
   }
   .Navbar .NavbarContainer .toggle span:not(:last-child) {
-    margin-bottom: 0.3125rem;
+    margin-bottom: 5px;
   }
   .Navbar .NavbarContainer .open {
     display: none;
@@ -300,7 +303,7 @@
   color: #ffffff;
   text-transform: capitalize;
   letter-spacing: -4px;
-  font-size: 76px;
+  font-size: 5vw;
   line-height: 76px;
   font-weight: 700;
   text-align: center;
@@ -327,17 +330,31 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
+    align-items: center;
     margin: auto;
     z-index: 2;
+  }
+  .Home .mainSection .mainLeft {
+    text-align: center;
   }
   .Home .mainSection .mainLeft h3 {
     color: #ffffff;
     letter-spacing: -4px;
-    font-size: 57px;
-    line-height: 76px;
+    font-size: 12vw;
+    line-height: 70px;
     font-weight: 700;
-    margin-top: 10rem;
+    margin: 3.5rem 0 4rem 0;
     text-align: center;
+  }
+  .Home .mainSection .mainLeft .contact {
+    text-decoration: none;
+    background-color: #F9373A;
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 1rem 3.5rem;
   }
 }
 * {
