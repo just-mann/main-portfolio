@@ -134,7 +134,7 @@
 
     //Desktop Design
     @include breakpoint-desktop(large) {
-        background-color: rgba($darkBlack, 1);
+        //background-color: rgba($darkBlack, 0.6);
         max-width: 100%;
         z-index: 200;
         position: sticky;
@@ -255,7 +255,7 @@
     
     //Desktop Design
     @include breakpoint-desktop(large) {
-        background-color: rgba($darkBlack, 1);
+        //background-color: rgba($darkBlack, 0.6);
         max-width: 100%;
         z-index: 200;
 
