@@ -5,7 +5,7 @@
         top: 0;
         left: 0;
         right: 0;
-        background-color: $darkBlack;
+        //background-color: $darkBlue;
         //height: 70px;
         max-width: 100%;
 
@@ -129,7 +129,7 @@
 
     //Desktop Design
     @include breakpoint-desktop(large) {
-        background-color: $darkBlack;
+        //background-color: $darkBlue;
         max-width: 100%;
         z-index: 100;
         position: sticky;
@@ -247,7 +247,7 @@
     
     //Desktop Design
     @include breakpoint-desktop(large) {
-        background-color: $darkBlack;
+        //background-color: $darkBlue;
         max-width: 100%;
         z-index: 100;
 

@@ -5,7 +5,7 @@
         top: 0;
         left: 0;
         right: 0;
-        background-color: $darkBlack;
+        //background-color: $darkBlue;
         //height: 70px;
         max-width: 100%;
 
@@ -129,7 +129,7 @@
 
     //Desktop Design
     @include breakpoint-desktop(large) {
-        background-color: $darkBlack;
+        //background-color: $darkBlue;
         max-width: 100%;
         z-index: 100;
         position: sticky;
@@ -141,7 +141,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 3rem;
-            max-width: 1675px;
+            max-width: 1450px;
             margin: auto;
 
 
@@ -247,7 +247,7 @@
     
     //Desktop Design
     @include breakpoint-desktop(large) {
-        background-color: $darkBlack;
+        //background-color: $darkBlue;
         max-width: 100%;
         z-index: 100;
 
@@ -256,7 +256,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.85rem 3rem;
+            padding: 1.8rem 3rem;
 
 
             .myLogo {

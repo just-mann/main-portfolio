@@ -5,7 +5,7 @@
         top: 0;
         left: 0;
         right: 0;
-        background-color: $darkBlack;
+        background-color: $darkBlue;
         //height: 70px;
         max-width: 100%;
 
@@ -13,7 +13,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.4rem 1.5rem;
+            padding: 1.2rem 1.5rem;
             
 
 
@@ -28,8 +28,7 @@
                 text-indent: 0rem;
 
                 h3 {
-                    margin-top: 0.3rem;
-                    //font-size: 1.2rem;
+                    font-size: 1.4rem;
                 }
             }
 
@@ -115,7 +114,7 @@
                 
 
                 &:hover {
-                    background-color: $darkBlack;
+                    background-color: $lightBlue;
                 }
             }
 
@@ -129,7 +128,7 @@
 
     //Desktop Design
     @include breakpoint-desktop(large) {
-        background-color: $darkBlack;
+        background-color: $darkBlue;
         max-width: 100%;
         z-index: 100;
         position: sticky;
@@ -141,7 +140,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 3rem;
-            max-width: 1675px;
+            max-width: 1450px;
             margin: auto;
 
 
@@ -151,10 +150,6 @@
                 //font-weight: 800;
                 color: $white;
                 font-size: 3.2rem;
-
-                h3 {
-                    margin-top: 0.3rem;
-                }
             }
 
             .navLinks {
@@ -247,7 +242,7 @@
     
     //Desktop Design
     @include breakpoint-desktop(large) {
-        background-color: $darkBlack;
+        //background-color: $darkBlue;
         max-width: 100%;
         z-index: 100;
 
@@ -256,7 +251,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.85rem 3rem;
+            padding: 1.5rem 3rem;
 
 
             .myLogo {
