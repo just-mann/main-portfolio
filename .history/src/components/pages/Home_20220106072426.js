@@ -40,19 +40,7 @@ const Home = () => {
                 
             </section>
             <section className="skills">
-                <h3>My Skills</h3>
-                <div className='skillsContainer'>
-                    <div className="skill"></div>
-                    <div className="skill"></div>
-                    <div className="skill"></div>
-                    <div className="skill"></div>
-                    <div className="skill"></div>
-                    <div className="skill"></div>
-                    <div className="skill"></div>
-                    <div className="skill"></div>
-                    <div className="skill"></div>
-                    <div className="skill"></div>
-                </div>
+                
             </section>
         </div>
     )

@@ -21,7 +21,9 @@
             max-width: 100%;
             height: 100%;
             margin: auto;
+            //border: 1px solid $white;
             z-index: 1;
+            //padding: 10rem 0;
             text-align: center;
 
             * {
@@ -69,8 +71,7 @@
     .whatIDo {
         display: flex;
         max-width: 100%;
-        height: auto;
-        align-items: center;
+        min-height: auto;
         background: #F8F5F2;
         padding: 4.5rem 1.8rem;
         z-index: 1;
@@ -85,7 +86,7 @@
 
 
             .whoAmI {
-                display: flex;
+                position: relative;
                 color: $darkBlack;
                 font-size: 4.7vw;
                 margin-left: 50px;

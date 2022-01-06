@@ -3,8 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @media (max-width: 39.9375rem) {
   .Navbar {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -203,6 +202,7 @@
     background-color: rgba(0, 0, 0, 0.9);
     max-width: 100%;
     z-index: 200;
+    display: fixed;
   }
   .Navbar .NavbarContainer {
     display: flex;
@@ -350,15 +350,12 @@
   }
 
   .whatIDo {
-    position: -webkit-sticky;
-    position: sticky;
+    display: flex;
     max-width: 100%;
-    min-height: auto;
+    height: auto;
+    align-items: center;
     background: #F8F5F2;
     padding: 4.5rem 1.8rem;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 1;
   }
   .whatIDo .whatIDoLeft {
@@ -369,7 +366,7 @@
     text-align: left;
   }
   .whatIDo .whatIDoRight .whoAmI {
-    position: relative;
+    display: flex;
     color: #000000;
     font-size: 4.7vw;
     margin-left: 50px;
@@ -408,6 +405,19 @@
   }
   .whatIDo .whatIDoRight .viewPortfolio:hover {
     background-color: #000000;
+  }
+
+  .skills {
+    background-color: yellow;
+    min-height: 85vh;
+    max-width: auto;
+    padding: 4.5rem 1.8rem;
+  }
+  .skills h3 {
+    position: relative;
+  }
+  .skills .skillsContainer {
+    position: relative;
   }
 }
 @media (min-width: 64rem) {
