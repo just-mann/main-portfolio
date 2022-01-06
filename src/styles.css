@@ -409,7 +409,7 @@
 
   .skills {
     background-color: yellow;
-    min-height: 85vh;
+    min-height: auto;
     max-width: auto;
     padding: 4.5rem 1.8rem;
   }
@@ -417,7 +417,14 @@
     position: relative;
   }
   .skills .skillsContainer {
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+  }
+  .skills .skillsContainer .skill {
+    width: 200px;
+    height: 80px;
+    border: 1px solid #212122;
   }
 }
 @media (min-width: 64rem) {
