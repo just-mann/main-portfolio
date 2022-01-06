@@ -1,0 +1,15 @@
+.Home {
+    position: relative;
+    min-height: 100vh;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($lightBlack, 0.98);
+        height: 100%;
+        width: 100%;
+    }
+}

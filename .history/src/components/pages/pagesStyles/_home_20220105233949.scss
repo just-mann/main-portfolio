@@ -1,0 +1,189 @@
+@include breakpoint-mobile(medium) {
+    .Home {
+        position: relative;
+        min-height: 100vh;
+    
+    
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba($lightBlack, 0.94);
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .mainSection {
+            position: sticky;
+            max-width: 100%;
+            min-height: 100%;
+            margin: auto;
+            z-index: 100;
+            padding: 10rem 0;
+            text-align: center;
+    
+            .mainHero {
+                max-width: 1675px;
+                min-height: 100px;
+                padding: 0 3rem;
+                margin: auto;
+
+                h3 {
+                    font-size: 9vw;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    color: $white;
+                    line-height: 70px;
+                    max-width: 600px;
+                    margin: 0 auto 2rem auto;
+                    text-align: center;
+                    transition: font-size 300ms ease;
+                }
+
+                p {
+                    color: white;
+                    font-size: 4vw;
+                    max-width: 380px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    margin: 0 auto 3.5rem auto;
+                    text-align: center;
+                    transition: font-size 300ms ease;
+                }
+
+                .contact {
+                    text-decoration: none;
+                    background-color: $secondColor;
+                    padding: 1rem 1.82rem;
+                    font-weight: 600;
+                    margin: auto;
+                    color: $white;
+                }
+            }
+    
+        }   
+    }
+
+    .whatIDo {
+        position: sticky;
+        max-width: 100%;
+        min-height: auto;
+        background: #F8F5F2;
+        padding: 4.5rem 1.8rem;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        .whatIDoLeft {
+            order: 2;
+        }
+
+        .whatIDoRight {
+            order: 1;
+
+
+            .whoAmI {
+                position: relative;
+                font-size: 5vw;
+                margin-left: 70px;
+                text-transform: capitalize;
+                text-align: left;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    top: 17px;
+                    left: -50px;
+                    width: 45px;
+                    height: 2.3px;
+                    background-color: $lightBlack;
+                }
+            }
+        }
+    }
+}
+
+
+@include breakpoint-desktop(large) {
+    .Home {
+        position: relative;
+        min-height: 100vh;
+    
+    
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba($lightBlack, 0.94);
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+    
+        .mainSection {
+            position: sticky;
+            max-width: 100%;
+            min-height: 100%;
+            margin: auto;
+            z-index: 100;
+            padding: 15rem 0;
+            text-align: center;
+    
+            .mainHero {
+                //background: yellow;
+                max-width: 1675px;
+                min-height: 100px;
+                //border: 1px solid white;
+                margin: auto;
+
+                h3 {
+                    font-size: 4.5vw;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    line-height: 85px;
+                    color: $white;
+                    max-width: 800px;
+                    margin: 0 auto 2rem auto;
+                    text-align: center;
+                }
+
+                p {
+                    color: white;
+                    font-size: 1.85vw;
+                    line-height: 50px;
+                    max-width: 780px;
+                    font-weight: 400;
+                    margin: 0 auto 3.5rem auto;
+                    text-align: center;
+                }
+
+                .contact {
+                    text-decoration: none;
+                    background-color: $secondColor;
+                    padding: 1.2rem 1.82rem;
+                    font-weight: 600;
+                    margin: auto;
+                    color: $white;
+                }
+            }
+    
+        }        
+    }
+    
+    .whatIDo {
+        position: sticky;
+        max-width: 100%;
+        min-height: 100vh;
+        background: white;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}

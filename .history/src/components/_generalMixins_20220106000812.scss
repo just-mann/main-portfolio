@@ -1,0 +1,61 @@
+@mixin container($x, $y) {
+    padding: $x $y;
+    max-width: $mxWdth;
+    margin: auto;
+}
+
+@mixin redBtnStyle() {
+    text-decoration: none;
+    color: $white;
+    background-color: $secondColor;
+    border: 1px solid $secondColor;
+    padding: 0.65rem 1.82rem;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    transition: background-color 300ms ease-in-out;
+}
+
+@mixin blackBtnStyle() {
+    text-decoration: none;
+    background-color: $lightBlack;
+    border: 1px solid $lightBlack;
+    color: $white;
+    padding: 0.65rem 1.82rem;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    transition: background-color 300ms ease-in-out;
+}
+
+@mixin myContainer {
+    width: 1650px;
+    padding: 0.4rem 4rem;
+
+    @include breakpoint-mobile(medium) {
+        padding: max(0.5rem, 1rem) 1.4rem;
+    }
+}
+
+
+//Responsive Design
+// Breakpoints
+@media (min-width: 64rem){
+    // styles go here
+}
+  
+// 640px, 1024px, 1400px
+$breakpoints-up: ("medium": "40rrem", "large": "64rem", "xlarge": "87.5rem");
+
+// 639px, 1023px, 1399px
+$breakpoints-down: ("small": "39.9375rem", "medium": "63.9375rem", "large": "87.4375rem");
+
+@mixin breakpoint-desktop($size){
+    @media (min-width: map-get($breakpoints-up, $size)){
+        @content;
+    }
+}
+
+@mixin breakpoint-mobile($size){
+    @media (max-width: map-get($breakpoints-down, $size)){
+        @content;
+    }
+}
