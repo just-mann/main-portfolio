@@ -12,9 +12,15 @@
     z-index: 500;
   }
   .Navbar .NavbarContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 1.4rem 1.5rem;
   }
   .Navbar .NavbarContainer .myLogo {
@@ -35,7 +41,9 @@
   }
   .Navbar .NavbarContainer .navLinks {
     display: none;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .Navbar .NavbarContainer .contact {
     display: none;
@@ -45,8 +53,13 @@
     height: 25px;
     margin-top: 0.3rem;
     margin-right: 0.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     cursor: pointer;
   }
   .Navbar .NavbarContainer .toggle span {
@@ -54,7 +67,9 @@
     height: 2px;
     width: 26px;
     background: #ffffff;
-    transform-origin: 3px 1px;
+    -webkit-transform-origin: 3px 1px;
+            transform-origin: 3px 1px;
+    -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .toggle span:first-child() {
@@ -64,21 +79,28 @@
     margin-bottom: 5px;
   }
   .Navbar .NavbarContainer .open .line1 {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .Navbar .NavbarContainer .open .line2 {
     opacity: 0;
   }
   .Navbar .NavbarContainer .open .line3 {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .Navbar .respNav {
     position: fixed;
     top: 80px;
     left: 0;
     right: 0;
-    flex-direction: column;
-    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.95);
     width: 100%;
     padding: 0 0 2.9rem 0;
@@ -89,13 +111,14 @@
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 2.5vw;
+    font-size: 2.1vw;
     letter-spacing: 0.1rem;
     color: #ffffff;
     text-align: right;
     border-bottom: 1px solid #353434;
     padding: 1.2rem 2rem;
     font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
   }
   .Navbar .respNav a:hover {
@@ -105,6 +128,7 @@
     border-top: 1px solid #353434;
   }
 }
+
 @media (min-width: 64rem) {
   .Navbar {
     max-width: 100%;
@@ -115,9 +139,15 @@
     left: 0;
   }
   .Navbar .NavbarContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 3rem;
     max-width: 1675px;
     margin: auto;
@@ -132,19 +162,26 @@
     font-weight: 700;
   }
   .Navbar .NavbarContainer .navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .Navbar .NavbarContainer .navLinks a {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.08rem;
     margin: 0 0 0 3rem;
+    -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .navLinks a:hover {
-    color: #c5c5c5;
+    color: #cac9c9;
   }
   .Navbar .NavbarContainer .navLinks .contact {
     text-decoration: none;
@@ -153,6 +190,7 @@
     padding: 0.5rem 1.82rem;
     border-radius: 0.2rem;
     font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .navLinks .contact:hover {
@@ -163,8 +201,13 @@
     width: 28px;
     height: 20px;
     display: none;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
   }
   .Navbar .NavbarContainer .toggle span {
@@ -172,7 +215,9 @@
     height: 2px;
     width: 26px;
     background: #ffffff;
-    transform-origin: 3px 1px;
+    -webkit-transform-origin: 3px 1px;
+            transform-origin: 3px 1px;
+    -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .toggle span:first-child() {
@@ -185,18 +230,21 @@
     display: none;
   }
   .Navbar .NavbarContainer .open .line1 {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .Navbar .NavbarContainer .open .line2 {
     opacity: 0;
   }
   .Navbar .NavbarContainer .open .line3 {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .Navbar .respNav {
     display: none;
   }
 }
+
 @media (min-width: 64rem) {
   .Navbar {
     background-color: rgba(0, 0, 0, 0.9);
@@ -205,9 +253,15 @@
     display: fixed;
   }
   .Navbar .NavbarContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 1.85rem 3rem;
   }
   .Navbar .NavbarContainer .myLogo {
@@ -215,9 +269,15 @@
     color: #ffffff;
   }
   .Navbar .NavbarContainer .navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .Navbar .NavbarContainer .navLinks a {
     color: #ffffff;
@@ -225,10 +285,11 @@
     font-size: 18px;
     font-weight: 700;
     margin: 0 0 0 3rem;
+    -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .navLinks a:hover {
-    color: #c5c5c5;
+    color: #cac9c9;
   }
   .Navbar .NavbarContainer .navLinks .contact {
     text-decoration: none;
@@ -238,6 +299,7 @@
     padding: 0.68rem 2.7rem;
     border-radius: 0.2rem;
     font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .navLinks .contact:hover {
@@ -248,8 +310,13 @@
     width: 28px;
     height: 20px;
     display: none;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
   }
   .Navbar .NavbarContainer .toggle span {
@@ -257,7 +324,9 @@
     height: 2px;
     width: 26px;
     background: #ffffff;
-    transform-origin: 3px 1px;
+    -webkit-transform-origin: 3px 1px;
+            transform-origin: 3px 1px;
+    -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
   }
   .Navbar .NavbarContainer .toggle span:first-child() {
@@ -270,27 +339,29 @@
     display: none;
   }
   .Navbar .NavbarContainer .open .line1 {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .Navbar .NavbarContainer .open .line2 {
     opacity: 0;
   }
   .Navbar .NavbarContainer .open .line3 {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
   .Navbar .respNav {
     display: none;
   }
 }
 
-@media (max-width: 63.9375rem) {
+@media (max-width: 39.9375rem) {
   .Home {
     position: relative;
-    min-height: 90vh;
+    min-height: 100vh;
   }
   .Home::before {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     left: 0;
     right: 0;
@@ -300,6 +371,8 @@
     z-index: 1;
   }
   .Home .mainSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 100%;
     height: 100%;
@@ -311,9 +384,9 @@
     z-index: 1;
   }
   .Home .mainSection .mainHero {
-    max-width: 1675px;
-    min-height: 100px;
-    padding: 0 3rem;
+    max-width: 104.6875rem;
+    min-height: 6.25rem;
+    padding: 0 48px;
     margin: 0 auto 0 auto;
   }
   .Home .mainSection .mainHero h3 {
@@ -321,20 +394,22 @@
     text-transform: capitalize;
     font-weight: 700;
     color: #ffffff;
-    line-height: 70px;
-    max-width: 600px;
-    margin: 10rem auto 2rem auto;
+    line-height: 4.375rem;
+    max-width: 37.5rem;
+    margin: 208px auto 32px auto;
     text-align: center;
+    -webkit-transition: font-size 300ms ease;
     transition: font-size 300ms ease;
   }
   .Home .mainSection .mainHero p {
     color: white;
     font-size: 4vw;
-    max-width: 380px;
-    line-height: 30px;
+    max-width: 23.75rem;
+    line-height: 1.875rem;
     font-weight: 400;
-    margin: 0 auto 3.5rem auto;
+    margin: 0 auto 56px auto;
     text-align: center;
+    -webkit-transition: font-size 300ms ease;
     transition: font-size 300ms ease;
   }
   .Home .mainSection .mainHero .contact {
@@ -345,51 +420,62 @@
     padding: 0.68rem 2.7rem;
     border-radius: 0.2rem;
     font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
     margin: auto;
   }
-
   .whatIDo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 100%;
     height: auto;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #F8F5F2;
-    padding: 4.5rem 1.8rem;
+    padding: 72px 28.8px;
     z-index: 1;
   }
   .whatIDo .whatIDoLeft {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .whatIDo .whatIDoRight {
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     text-align: left;
   }
   .whatIDo .whatIDoRight .whoAmI {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: #000000;
     font-size: 4.7vw;
-    margin-left: 50px;
+    margin-left: 3.125rem;
     text-transform: capitalize;
     text-align: left;
   }
   .whatIDo .whatIDoRight .whoAmI:before {
     position: absolute;
-    content: "";
-    top: 18px;
-    left: -50px;
-    width: 35px;
-    height: 2.2px;
+    content: '';
+    top: 1.25rem;
+    left: -3.125rem;
+    width: 2.1875rem;
+    height: 0.1375rem;
     background-color: #212122;
   }
   .whatIDo .whatIDoRight h3 {
-    font-size: 6.89vw;
-    margin-bottom: 1.6rem;
+    font-size: 6.49vw;
+    margin-bottom: 25.6px;
     font-weight: 450;
   }
   .whatIDo .whatIDoRight .description {
-    font-size: 3.7vw;
-    margin-bottom: 2.3rem;
+    font-size: 3.4vw;
+    margin-bottom: 36.8px;
     color: #292C3E;
   }
   .whatIDo .whatIDoRight .viewPortfolio {
@@ -400,33 +486,69 @@
     padding: 0.98rem 3rem;
     border-radius: 0.2rem;
     font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
-    margin: 3rem 0 0 0;
+    margin: 48px 0 0 0;
   }
   .whatIDo .whatIDoRight .viewPortfolio:hover {
     background-color: #000000;
   }
-
-  .skills {
-    background-color: yellow;
+  .mySkills {
+    background-color: #ffffff;
     min-height: auto;
-    max-width: auto;
-    padding: 4.5rem 1.8rem;
+    max-width: 100%;
+    padding: 72px 28.8px;
+    text-align: center;
   }
-  .skills h3 {
-    position: relative;
+  .mySkills h3 {
+    color: #212122;
+    font-weight: 500;
+    text-align: left;
   }
-  .skills .skillsContainer {
+  .mySkills .skillsContainer {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.2rem;
+    -ms-grid-columns: (minmax(15.625rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 24px;
   }
-  .skills .skillsContainer .skill {
-    width: 200px;
-    height: 80px;
-    border: 1px solid #212122;
+  .mySkills .skillsContainer .skill {
+    width: 15.625rem;
+    margin: auto;
+    font-size: 6.7vw;
+    font-weight: bold;
+    color: #746f6f;
+    height: 5rem;
+    border: 0.0625rem solid #212122;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+    border-radius: 0.25rem;
+  }
+  .mySkills .skillsContainer .skill:hover {
+    color: #000000;
+  }
+  .mySpecialty {
+    min-height: 75vh;
+    background-color: #F8F5F2;
+    padding: 72px 28.8px;
   }
 }
+
 @media (min-width: 64rem) {
   .Home {
     position: relative;
@@ -434,7 +556,7 @@
   }
   .Home::before {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     left: 0;
     right: 0;
@@ -450,42 +572,41 @@
     min-height: 100%;
     margin: auto;
     z-index: 100;
-    padding: 15rem 0;
+    padding: 240px 0;
     text-align: center;
   }
   .Home .mainSection .mainHero {
-    max-width: 1675px;
-    min-height: 100px;
+    max-width: 104.6875rem;
+    min-height: 6.25rem;
     margin: auto;
   }
   .Home .mainSection .mainHero h3 {
     font-size: 4.5vw;
     text-transform: capitalize;
     font-weight: 700;
-    line-height: 85px;
+    line-height: 5.3125rem;
     color: #ffffff;
-    max-width: 800px;
-    margin: 0 auto 2rem auto;
+    max-width: 50rem;
+    margin: 0 auto 32px auto;
     text-align: center;
   }
   .Home .mainSection .mainHero p {
     color: white;
     font-size: 1.85vw;
-    line-height: 50px;
-    max-width: 780px;
+    line-height: 3.125rem;
+    max-width: 48.75rem;
     font-weight: 400;
-    margin: 0 auto 3.5rem auto;
+    margin: 0 auto 56px auto;
     text-align: center;
   }
   .Home .mainSection .mainHero .contact {
     text-decoration: none;
     background-color: #F9373A;
-    padding: 1.2rem 1.82rem;
+    padding: 19.2px 29.12px;
     font-weight: 600;
     margin: auto;
     color: #ffffff;
   }
-
   .whatIDo {
     position: -webkit-sticky;
     position: sticky;
@@ -498,13 +619,16 @@
     right: 0;
   }
 }
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
 body {
   position: relative;
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */

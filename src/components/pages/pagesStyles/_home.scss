@@ -1,7 +1,7 @@
-@include breakpoint-mobile(medium) {
+@include breakpoint-mobile(small) {
     .Home {
         position: relative;
-        min-height: 90vh;
+        min-height: 100vh;
     
     
         &::before {
@@ -29,9 +29,9 @@
             }
     
             .mainHero {
-                max-width: 1675px;
-                min-height: 100px;
-                padding: 0 3rem;
+                max-width: 104.6875rem;
+                min-height: 6.25rem;
+                padding: 0 48px;
                 margin: 0 auto 0 auto;
 
                 h3 {
@@ -39,9 +39,9 @@
                     text-transform: capitalize;
                     font-weight: 700;
                     color: $white;
-                    line-height: 70px;
-                    max-width: 600px;
-                    margin: 10rem auto 2rem auto;
+                    line-height: 4.375rem;
+                    max-width: 37.5rem;
+                    margin: 208px auto 32px auto;
                     text-align: center;
                     transition: font-size 300ms ease;
                 }
@@ -49,10 +49,10 @@
                 p {
                     color: white;
                     font-size: 4vw;
-                    max-width: 380px;
-                    line-height: 30px;
+                    max-width: 23.75rem;
+                    line-height: 1.875rem;
                     font-weight: 400;
-                    margin: 0 auto 3.5rem auto;
+                    margin: 0 auto 56px auto;
                     text-align: center;
                     transition: font-size 300ms ease;
                 }
@@ -72,7 +72,7 @@
         height: auto;
         align-items: center;
         background: #F8F5F2;
-        padding: 4.5rem 1.8rem;
+        padding: 72px 28.8px;
         z-index: 1;
 
         .whatIDoLeft {
@@ -85,39 +85,40 @@
 
 
             .whoAmI {
+                position: relative;
                 display: flex;
                 color: $darkBlack;
                 font-size: 4.7vw;
-                margin-left: 50px;
+                margin-left: 3.125rem;
                 text-transform: capitalize;
                 text-align: left;
 
                 &:before {
                     position: absolute;
                     content: '';
-                    top: 18px;
-                    left: -50px;
-                    width: 35px;
-                    height: 2.2px;
+                    top: 1.25rem;
+                    left: -3.125rem;
+                    width: 2.1875rem;
+                    height: 0.1375rem;
                     background-color: $lightBlack;
                 }
             }
 
             h3 {
-                font-size: 6.89vw;
-                margin-bottom: 1.6rem;
+                font-size: 6.49vw;
+                margin-bottom: 25.6px;
                 font-weight: 450;
             }
 
             .description {
-                font-size: 3.7vw;
-                margin-bottom: 2.3rem;
+                font-size: 3.4vw;
+                margin-bottom: 36.8px;
                 color: $lightBlue;
             }
 
             .viewPortfolio {
                 @include blackBtnStyle;
-                margin: 3rem 0 0 0;
+                margin: 48px 0 0 0;
 
                 &:hover {
                     background-color: $darkBlack;
@@ -126,31 +127,54 @@
         }
     }
 
-    .skills {
-        background-color: yellow;
+    .mySkills {
+        background-color: $white;
         min-height: auto;
-        max-width: auto;
-        padding: 4.5rem 1.8rem;
+        max-width: 100%;
+        padding: 72px 28.8px;
+        text-align: center;
 
 
         h3 {
-            position: relative;
+            color: $lightBlack;
+            font-weight: 500;
+            text-align: left;
         }
 
         .skillsContainer {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.2rem;
-
+            grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            
             .skill {
-                width: 200px;
-                height: 80px;
-                border: 1px solid $lightBlack;
+                width: 15.625rem;
+                margin: auto;
+                font-size: 6.7vw;
+                font-weight: bold;
+                color: $lightGray;
+                height: 5rem;
+                border: 0.0625rem solid $lightBlack;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: color 300ms ease-in-out;
+                border-radius: 0.25rem;
+
+                &:hover {
+                    color: $darkBlack;
+                }
             }
-
-
-
         }
+
+
+    }
+
+    .mySpecialty {
+        min-height: 75vh;
+        background-color: #F8F5F2;
+        padding: 72px 28.8px;
 
 
     }
@@ -181,41 +205,41 @@
             min-height: 100%;
             margin: auto;
             z-index: 100;
-            padding: 15rem 0;
+            padding: 240px 0;
             text-align: center;
     
             .mainHero {
                 //background: yellow;
-                max-width: 1675px;
-                min-height: 100px;
-                //border: 1px solid white;
+                max-width: 104.6875rem;
+                min-height: 6.25rem;
+                //border: 0.0625rem solid white;
                 margin: auto;
 
                 h3 {
                     font-size: 4.5vw;
                     text-transform: capitalize;
                     font-weight: 700;
-                    line-height: 85px;
+                    line-height: 5.3125rem;
                     color: $white;
-                    max-width: 800px;
-                    margin: 0 auto 2rem auto;
+                    max-width: 50rem;
+                    margin: 0 auto 32px auto;
                     text-align: center;
                 }
 
                 p {
                     color: white;
                     font-size: 1.85vw;
-                    line-height: 50px;
-                    max-width: 780px;
+                    line-height: 3.125rem;
+                    max-width: 48.75rem;
                     font-weight: 400;
-                    margin: 0 auto 3.5rem auto;
+                    margin: 0 auto 56px auto;
                     text-align: center;
                 }
 
                 .contact {
                     text-decoration: none;
                     background-color: $secondColor;
-                    padding: 1.2rem 1.82rem;
+                    padding: 19.2px 29.12px;
                     font-weight: 600;
                     margin: auto;
                     color: $white;
