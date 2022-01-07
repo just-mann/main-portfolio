@@ -1,4 +1,4 @@
-@include breakpoint-mobile(small) {
+@include breakpoint-mobile(medium) {
     .Home {
         position: relative;
         min-height: 100vh;
@@ -72,7 +72,7 @@
         height: auto;
         align-items: center;
         background: #F8F5F2;
-        padding: 72px 28.8px;
+        padding: 72px 28.75px;
         z-index: 1;
 
         .whatIDoLeft {
@@ -131,7 +131,7 @@
         background-color: $white;
         min-height: auto;
         max-width: 100%;
-        padding: 72px 28.8px;
+        padding: 72px 28.75px;
         text-align: center;
 
 
@@ -154,7 +154,7 @@
                 font-size: 6.7vw;
                 font-weight: bold;
                 color: $lightGray;
-                height: 5rem;
+                height: 5.5rem;
                 border: 0.0625rem solid $lightGray;
                 display: flex;
                 justify-content: center;
@@ -174,48 +174,153 @@
     .mySpecialty {
         min-height: 75vh;
         background-color: #F8F5F2;
-        padding: 72px 28.8px;
-
+        padding: 72px 28.75px;
+        width: 100%;
+        // background: lightblue;
+        
         div {
             text-align: center;
-            max-width: 90%;
-            margin: 1.3rem auto 4rem auto;
+            min-height: auto;
+            max-width: 100%;
+            padding: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
+            
+            
+            div {
+                width: 100%;
+                background-color: #ebebeb;
+                border: 1px solid #ebebeb;
+                padding: 3.4vw 5vw;
+                border-radius: 0.275rem;
+                transition: box-shadow 300ms ease;
+                
+                
+                &:not(:last-child) {
+                    margin: 0 auto 2rem auto;
+                }
 
+                i {
+                    font-size: 8vw;
+    
+                }
+    
+                h3 {
+                    font-size: 4.2vw;
+                    color: $darkBlack;
+                    font-weight: 543;
 
-            i {
-                font-size: 8vw;
+                    
+                }
+    
+                p {
+                    font-size: 2.9vw;
+                }
+    
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    margin: auto;
+                    border-radius: 50%;
+                    text-decoration: none;
+                    font-size: 4.3vw;
+                    background-color: $darkBlack;
+                    color: $white;
+                    
+    
+                    * {
+                        // font-size: 6vw;
+                        color: $white;
+                    }
+                }
 
+                &:hover {
+                    box-shadow: 0.8px 3px 8px rgba($lightBlack, 0.2);
+                }
             }
 
-            h3 {
-                font-size: 4.2vw;
-                margin: 1.05rem auto;
-                color: $darkBlack;
-                font-weight: 543;
-            }
-
-            p {
-                font-size: 2.9vw;
-            }
-
-            a {
-                text-decoration: none;
-                margin: 1rem auto 1.9rem auto;
-                padding: 0.6rem;
-                font-size: 1.4rem;
-                color: $lightBlack;
-                background-color: $white;
-                border-radius: 50%;
+            .development {
+                border-color: $secondColor;
+                background-color: $secondColor;
+                color: $white;
 
                 * {
-                    color: $lightBlack;
+                    color: $white;
                 }
             }
         }
-
-
-
     }
+
+    .selectedProjects {
+        padding: 72px 28.2px;
+        min-height: auto;
+        max-width: 100%;
+        margin: auto;
+
+        .projectDiv {
+            max-width: 100%;
+            min-height: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
+            grid: 24px;
+            justify-content: center;
+            align-items: center;
+
+
+            .myFeatProj {
+                max-width: 100%;
+                margin: 1.56rem 0;
+                height: 300px;
+                position: relative;
+                transition: all 300ms ease;
+
+
+                * {
+                    position: absolute;
+                }
+
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                }
+
+                p {
+                    bottom: 45px;
+                    left: 40px;
+                    color: $white;
+                    display: none;
+                    
+                    &:hover {
+                        p, a {
+                            display: block;
+                        }
+                    }
+                }
+                
+                a {
+                    bottom: 25px;
+                    left: 40px;
+                    color: $white;
+                    display: none;
+                }
+
+
+                // &:hover {
+                //     p, a {
+                //         display: block;
+                //     }
+                // }
+            }
+
+        }
+    }
+
+
 }
 
 //Large Screen Design

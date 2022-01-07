@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {Component} from 'react';
 import Navbar from './partials/Navbar';
 import bgImage from './images/lineBg.jpeg';
 import {Link} from 'react-router-dom';
@@ -9,91 +9,132 @@ import {BiCodeAlt} from 'react-icons/bi';
 import {MdMobileFriendly} from 'react-icons/md';
 import {IoLogoJavascript, IoLogoSass} from 'react-icons/io';
 
-const Home = () => {
+class Home extends Component {
+    
+    constructor(props) {
+        super(props)
 
-    const myBackground = {
-        backgroundImage: `url(${bgImage})`,
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        objectFit: 'cover'
+        this.state = {
+            projects: []
+        }
+    }
+    // const [projects, setProjects] = useState([]);
+
+    componentDidMount() {
+        fetch('https://my-json-server.typicode.com/just-mann/my-database/projects')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                this.setState({
+                    projects: data
+                })
+            })
+            .catch(err => console.log(err));
     }
 
-    const designImg = <FaFigma />;
-    const devImg = <BiCodeAlt />;
-    const respDesImg = <MdMobileFriendly />;
+    
 
-    return (
-        <div>
-            <div className='Home' style={myBackground}>
-                <Navbar />
-                <div className="mainSection">
-                    <div className="mainHero">
-                        <h3>Hey there, I am Justin Kollie</h3>
-                        <p>
-                        A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
-                        </p>
-                        <Link to='/contact-me' className='contact'>Get In Touch</Link>
+    render() {
+
+        const myBackground = {
+            backgroundImage: `url(${bgImage})`,
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            objectFit: 'cover'
+        }
+    
+        const designImg = <FaFigma />;
+        const devImg = <BiCodeAlt />;
+        const respDesImg = <MdMobileFriendly />;
+
+        return (
+            <div>
+                <div className='Home' style={myBackground}>
+                    <Navbar />
+                    <div className="mainSection">
+                        <div className="mainHero">
+                            <h3>Hey there, I am Justin Kollie</h3>
+                            <p>
+                            A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
+                            </p>
+                            <Link to='/contact-me' className='contact'>Get In Touch</Link>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <section className='whatIDo'>
-                <div className="whatIDoLeft">
+                <section className='whatIDo'>
+                    <div className="whatIDoLeft">
+                        
+                    </div>
+                    <div className="whatIDoRight">
+                        <p className='whoAmI'>Who I Am</p>
+                        <h3 className='heading'>I design & build amazing websites</h3>
+                        <p className='description'>I want my clients to feel awesome and unique. Let work together to bring your projects to another level.</p>
+                        <Link to='/portfolio' className='viewPortfolio'>Portfolio</Link>
+                    </div>
                     
-                </div>
-                <div className="whatIDoRight">
-                    <p className='whoAmI'>Who I Am</p>
-                    <h3 className='heading'>I design & build amazing websites</h3>
-                    <p className='description'>We want our clients to feel awesome and unique. Let us bring your projects to another level!</p>
-                    <Link to='/portfolio' className='viewPortfolio'>Portfolio</Link>
-                </div>
-                
-            </section>
-            <section className="mySkills">
-                <h3>My Skills</h3>
-                <div className='skillsContainer'>
-                    <div className="skill" title='JavaScript'><IoLogoJavascript /></div>
-                    <div className="skill" title='ReactJS'><FaReact /></div>
-                    <div className="skill" title='NodeJS'><FaNodeJs /></div>
-                    <div className="skill" title='Sass'><IoLogoSass /></div>
-                    <div className="skill" title='Bootstrap'><BsBootstrap /></div>
-                    <div className="skill" title='jQuery'><SiJquery /></div>
-                    <div className="skill" title='Git'><FaGit /></div>
-                    <div className="skill" title='Github'><FaGithub /></div>
-                    <div className="skill" title='Express'><SiExpress /></div>
-                    <div className="skill" title='CSS3'><SiCsswizardry /></div>
-                </div>
-            </section>
-            <section className="mySpecialty">
-                <div className="specContainer">
-                    <div className='respDesign'>
-                        <i>{designImg}</i>
-                        <h3>Creative Design</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
-                        </p>
-                        <Link to='/'><BsArrowRight /></Link>
+                </section>
+                <section className="mySkills">
+                    <h3>My Skills</h3>
+                    <div className='skillsContainer'>
+                        <div className="skill" title='JavaScript'><IoLogoJavascript /></div>
+                        <div className="skill" title='ReactJS'><FaReact /></div>
+                        <div className="skill" title='NodeJS'><FaNodeJs /></div>
+                        <div className="skill" title='Sass'><IoLogoSass /></div>
+                        <div className="skill" title='Bootstrap'><BsBootstrap /></div>
+                        <div className="skill" title='jQuery'><SiJquery /></div>
+                        <div className="skill" title='Git'><FaGit /></div>
+                        <div className="skill" title='Github'><FaGithub /></div>
+                        <div className="skill" title='Express'><SiExpress /></div>
+                        <div className="skill" title='CSS3'><SiCsswizardry /></div>
                     </div>
-                    <div className='development'>
-                        <i class="fas fa-code">{devImg}</i>
-                        <h3>Web Development</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
-                        </p>
-                        <Link to='/'><BsArrowRight /></Link>
+                </section>
+                <section className="mySpecialty">
+                    <div className="specContainer">
+                        <div className='respDesign'>
+                            <i>{designImg}</i>
+                            <h3>Creative Design</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
+                            </p>
+                            <Link to='/'><BsArrowRight /></Link>
+                        </div>
+                        <div className='development'>
+                            <i class="fas fa-code">{devImg}</i>
+                            <h3>Web Development</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
+                            </p>
+                            <Link to='/'><BsArrowRight /></Link>
+                        </div>
+                        <div className='design'>
+                            <i>{respDesImg}</i>
+                            <h3>Mobile Friendly</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
+                            </p>
+                            <Link to='/'><BsArrowRight /></Link>
+                        </div>
                     </div>
-                    <div className='design'>
-                        <i>{respDesImg}</i>
-                        <h3>Mobile Friendly</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
-                        </p>
-                        <Link to='/'><BsArrowRight /></Link>
+                </section>
+                <section className="selectedProjects">
+                    <div className="projectDiv">
+                        {
+                            this.state.projects.map(project => {
+                                return (
+                                    <a href={project.projectUrl} key={project.id} className='myFeatProj'>
+                                        <img src={project.projectImg1} alt={project.name} />
+                                        <p>{project.projectKind}</p>
+                                        <a href={project.projectUrl}>{project.name}</a>
+                                    </a>
+                                )
+                            })
+                        }
                     </div>
-                </div>
-            </section>
-        </div>
-    )
+                </section>
+            </div>
+        )
+    }
 }
 
 export default Home;

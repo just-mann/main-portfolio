@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@media (max-width: 39.9375rem) {
+@media (max-width: 63.9375rem) {
   .Navbar {
     position: fixed;
     top: 0;
@@ -354,7 +354,7 @@
   }
 }
 
-@media (max-width: 39.9375rem) {
+@media (max-width: 63.9375rem) {
   .Home {
     position: relative;
     min-height: 100vh;
@@ -434,7 +434,7 @@
         -ms-flex-align: center;
             align-items: center;
     background: #F8F5F2;
-    padding: 72px 28.8px;
+    padding: 72px 28.75px;
     z-index: 1;
   }
   .whatIDo .whatIDoLeft {
@@ -497,7 +497,7 @@
     background-color: #ffffff;
     min-height: auto;
     max-width: 100%;
-    padding: 72px 28.8px;
+    padding: 72px 28.75px;
     text-align: center;
   }
   .mySkills h3 {
@@ -524,7 +524,7 @@
     font-size: 6.7vw;
     font-weight: bold;
     color: #746f6f;
-    height: 5rem;
+    height: 5.5rem;
     border: 0.0625rem solid #746f6f;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -545,36 +545,130 @@
   .mySpecialty {
     min-height: 75vh;
     background-color: #F8F5F2;
-    padding: 72px 28.8px;
+    padding: 72px 28.75px;
+    width: 100%;
   }
   .mySpecialty div {
     text-align: center;
-    max-width: 90%;
-    margin: 1.3rem auto 4rem auto;
+    min-height: auto;
+    max-width: 100%;
+    padding: 20px auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(15.75rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
   }
-  .mySpecialty div i {
+  .mySpecialty div div {
+    width: 100%;
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+    padding: 3.4vw 5vw;
+    border-radius: 0.275rem;
+    -webkit-transition: -webkit-box-shadow 300ms ease;
+    transition: -webkit-box-shadow 300ms ease;
+    transition: box-shadow 300ms ease;
+    transition: box-shadow 300ms ease, -webkit-box-shadow 300ms ease;
+  }
+  .mySpecialty div div:not(:last-child) {
+    margin: 0 auto 2rem auto;
+  }
+  .mySpecialty div div i {
     font-size: 8vw;
   }
-  .mySpecialty div h3 {
+  .mySpecialty div div h3 {
     font-size: 4.2vw;
-    margin: 1.05rem auto;
     color: #000000;
     font-weight: 543;
   }
-  .mySpecialty div p {
+  .mySpecialty div div p {
     font-size: 2.9vw;
   }
-  .mySpecialty div a {
-    text-decoration: none;
-    margin: 1rem auto 1.9rem auto;
-    padding: 0.6rem;
-    font-size: 1.4rem;
-    color: #212122;
-    background-color: #ffffff;
+  .mySpecialty div div a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: auto;
     border-radius: 50%;
+    text-decoration: none;
+    font-size: 4.3vw;
+    background-color: #000000;
+    color: #ffffff;
   }
-  .mySpecialty div a * {
-    color: #212122;
+  .mySpecialty div div a * {
+    color: #ffffff;
+  }
+  .mySpecialty div div:hover {
+    -webkit-box-shadow: 0.8px 3px 8px rgba(33, 33, 34, 0.2);
+            box-shadow: 0.8px 3px 8px rgba(33, 33, 34, 0.2);
+  }
+  .mySpecialty div .development {
+    border-color: #F9373A;
+    background-color: #F9373A;
+    color: #ffffff;
+  }
+  .mySpecialty div .development * {
+    color: #ffffff;
+  }
+  .selectedProjects {
+    padding: 72px 28.2px;
+    min-height: auto;
+    max-width: 100%;
+    margin: auto;
+  }
+  .selectedProjects .projectDiv {
+    max-width: 100%;
+    min-height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(15.75rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
+    grid: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .selectedProjects .projectDiv .myFeatProj {
+    max-width: 100%;
+    margin: 1.56rem 0;
+    height: 300px;
+    position: relative;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+  }
+  .selectedProjects .projectDiv .myFeatProj * {
+    position: absolute;
+  }
+  .selectedProjects .projectDiv .myFeatProj img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .selectedProjects .projectDiv .myFeatProj p {
+    bottom: 45px;
+    left: 40px;
+    color: #ffffff;
+    display: none;
+  }
+  .selectedProjects .projectDiv .myFeatProj p:hover p, .selectedProjects .projectDiv .myFeatProj p:hover a {
+    display: block;
+  }
+  .selectedProjects .projectDiv .myFeatProj a {
+    bottom: 25px;
+    left: 40px;
+    color: #ffffff;
+    display: none;
   }
 }
 
