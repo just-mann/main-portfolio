@@ -519,13 +519,13 @@
     gap: 24px;
   }
   .mySkills .skillsContainer .skill {
-    width: 15.625rem;
+    width: 100%;
     margin: auto;
     font-size: 6.7vw;
     font-weight: bold;
     color: #746f6f;
     height: 5rem;
-    border: 0.0625rem solid #212122;
+    border: 0.0625rem solid #746f6f;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -559,7 +559,7 @@
     font-size: 4.2vw;
     margin: 1.05rem auto;
     color: #000000;
-    font-weight: 553;
+    font-weight: 543;
   }
   .mySpecialty div p {
     font-size: 2.9vw;

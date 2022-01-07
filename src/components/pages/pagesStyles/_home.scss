@@ -149,13 +149,13 @@
             gap: 24px;
             
             .skill {
-                width: 15.625rem;
+                width: 100%;
                 margin: auto;
                 font-size: 6.7vw;
                 font-weight: bold;
                 color: $lightGray;
                 height: 5rem;
-                border: 0.0625rem solid $lightBlack;
+                border: 0.0625rem solid $lightGray;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -191,7 +191,7 @@
                 font-size: 4.2vw;
                 margin: 1.05rem auto;
                 color: $darkBlack;
-                font-weight: 553;
+                font-weight: 543;
             }
 
             p {
