@@ -143,14 +143,13 @@
 
         .skillsContainer {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
             justify-content: center;
             align-items: center;
             gap: 24px;
-            background-color: yellow;
-          
+            
             .skill {
-                width: 100%;
+                width: 15.625rem;
                 margin: auto;
                 font-size: 15px;
                 font-weight: bold;
@@ -179,7 +178,7 @@
 
         div {
             text-align: center;
-            max-width: 100%;
+            max-width: 0%;
             margin: 1.3rem auto 4rem auto;
 
 
