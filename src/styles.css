@@ -508,8 +508,8 @@
   .mySkills .skillsContainer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(15.625rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    -ms-grid-columns: (minmax(15.75rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -535,9 +535,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border-radius: 0.25rem;
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
-    border-radius: 0.25rem;
   }
   .mySkills .skillsContainer .skill:hover {
     color: #000000;
@@ -546,6 +546,35 @@
     min-height: 75vh;
     background-color: #F8F5F2;
     padding: 72px 28.8px;
+  }
+  .mySpecialty div {
+    text-align: center;
+    max-width: 90%;
+    margin: 1.3rem auto 4rem auto;
+  }
+  .mySpecialty div i {
+    font-size: 8vw;
+  }
+  .mySpecialty div h3 {
+    font-size: 4.2vw;
+    margin: 1.05rem auto;
+    color: #000000;
+    font-weight: 553;
+  }
+  .mySpecialty div p {
+    font-size: 2.9vw;
+  }
+  .mySpecialty div a {
+    text-decoration: none;
+    margin: 1rem auto 1.9rem auto;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    color: #212122;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  .mySpecialty div a * {
+    color: #212122;
   }
 }
 

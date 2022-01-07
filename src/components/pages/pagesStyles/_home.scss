@@ -143,7 +143,7 @@
 
         .skillsContainer {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
             justify-content: center;
             align-items: center;
             gap: 24px;
@@ -159,8 +159,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                transition: color 300ms ease-in-out;
                 border-radius: 0.25rem;
+                transition: color 300ms ease-in-out;
 
                 &:hover {
                     color: $darkBlack;
@@ -175,6 +175,44 @@
         min-height: 75vh;
         background-color: #F8F5F2;
         padding: 72px 28.8px;
+
+        div {
+            text-align: center;
+            max-width: 90%;
+            margin: 1.3rem auto 4rem auto;
+
+
+            i {
+                font-size: 8vw;
+
+            }
+
+            h3 {
+                font-size: 4.2vw;
+                margin: 1.05rem auto;
+                color: $darkBlack;
+                font-weight: 553;
+            }
+
+            p {
+                font-size: 2.9vw;
+            }
+
+            a {
+                text-decoration: none;
+                margin: 1rem auto 1.9rem auto;
+                padding: 0.6rem;
+                font-size: 1.4rem;
+                color: $lightBlack;
+                background-color: $white;
+                border-radius: 50%;
+
+                * {
+                    color: $lightBlack;
+                }
+            }
+        }
+
 
 
     }

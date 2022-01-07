@@ -2,9 +2,10 @@ import React, {useState, useEffect} from 'react';
 import Navbar from './partials/Navbar';
 import bgImage from './images/lineBg.jpeg';
 import {Link} from 'react-router-dom';
-import {FaReact, FaGit, FaGithub, FaNodeJs, FaFigma} from 'react-icons/fa';
+import {FaReact, FaGit, FaGithub, FaNodeJs, FaFigma,} from 'react-icons/fa';
 import {SiJquery, SiExpress, SiCsswizardry} from 'react-icons/si';
-import {BsBootstrap} from 'react-icons/bs';
+import {BsBootstrap, BsArrowRight} from 'react-icons/bs';
+import {BiCodeAlt} from 'react-icons/bi';
 import {MdMobileFriendly} from 'react-icons/md';
 import {IoLogoJavascript, IoLogoSass} from 'react-icons/io';
 
@@ -19,7 +20,7 @@ const Home = () => {
     }
 
     const designImg = <FaFigma />;
-    const devImg = <FaFigma />;
+    const devImg = <BiCodeAlt />;
     const respDesImg = <MdMobileFriendly />;
 
     return (
@@ -55,7 +56,7 @@ const Home = () => {
                     <div className="skill" title='ReactJS'><FaReact /></div>
                     <div className="skill" title='NodeJS'><FaNodeJs /></div>
                     <div className="skill" title='Sass'><IoLogoSass /></div>
-                    <div className="skill" title='Bootstrap4'><BsBootstrap /></div>
+                    <div className="skill" title='Bootstrap'><BsBootstrap /></div>
                     <div className="skill" title='jQuery'><SiJquery /></div>
                     <div className="skill" title='Git'><FaGit /></div>
                     <div className="skill" title='Github'><FaGithub /></div>
@@ -71,15 +72,15 @@ const Home = () => {
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
                         </p>
-                        <Link to='/'>Icon</Link>
+                        <Link to='/'><BsArrowRight /></Link>
                     </div>
                     <div className='development'>
-                        <i class="fas fa-code"></i>
-                        <h3>Development</h3>
+                        <i class="fas fa-code">{devImg}</i>
+                        <h3>Web Development</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
                         </p>
-                        <Link to='/'>Icon</Link>
+                        <Link to='/'><BsArrowRight /></Link>
                     </div>
                     <div className='design'>
                         <i>{respDesImg}</i>
@@ -87,7 +88,7 @@ const Home = () => {
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
                         </p>
-                        <Link to='/'>Icon</Link>
+                        <Link to='/'><BsArrowRight /></Link>
                     </div>
                 </div>
             </section>
