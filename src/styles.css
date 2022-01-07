@@ -641,34 +641,25 @@
   .selectedProjects .projectDiv .myFeatProj {
     max-width: 100%;
     margin: 1.56rem 0;
-    height: 300px;
-    position: relative;
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
+    min-height: 300px;
   }
   .selectedProjects .projectDiv .myFeatProj * {
-    position: absolute;
+    -webkit-transition: display 300ms ease;
+    transition: display 300ms ease;
   }
   .selectedProjects .projectDiv .myFeatProj img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     -o-object-fit: fill;
        object-fit: fill;
   }
   .selectedProjects .projectDiv .myFeatProj p {
-    bottom: 45px;
-    left: 40px;
-    color: #ffffff;
-    display: none;
-  }
-  .selectedProjects .projectDiv .myFeatProj p:hover p, .selectedProjects .projectDiv .myFeatProj p:hover a {
-    display: block;
+    -webkit-transition: display 300ms ease;
+    transition: display 300ms ease;
   }
   .selectedProjects .projectDiv .myFeatProj a {
-    bottom: 25px;
-    left: 40px;
-    color: #ffffff;
-    display: none;
+    -webkit-transition: display 300ms ease;
+    transition: display 300ms ease;
   }
 }
 

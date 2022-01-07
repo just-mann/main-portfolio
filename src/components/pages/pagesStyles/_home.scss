@@ -273,48 +273,28 @@
             .myFeatProj {
                 max-width: 100%;
                 margin: 1.56rem 0;
-                height: 300px;
-                position: relative;
-                transition: all 300ms ease;
-
-
+                min-height: 300px;
+                
+                
                 * {
-                    position: absolute;
+                    transition: display 300ms ease;
                 }
 
 
                 img {
                     width: 100%;
-                    height: 100%;
+                    height: 300px;
                     object-fit: fill;
                 }
 
                 p {
-                    bottom: 45px;
-                    left: 40px;
-                    color: $white;
-                    display: none;
-                    
-                    &:hover {
-                        p, a {
-                            display: block;
-                        }
-                    }
+                    transition: display 300ms ease;
                 }
                 
                 a {
-                    bottom: 25px;
-                    left: 40px;
-                    color: $white;
-                    display: none;
+                    transition: display 300ms ease;
                 }
 
-
-                // &:hover {
-                //     p, a {
-                //         display: block;
-                //     }
-                // }
             }
 
         }
