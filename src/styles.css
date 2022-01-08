@@ -557,9 +557,9 @@
     padding: 20px auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(15.75rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
-    gap: 1.9rem;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.97rem;
   }
   .mySpecialty div div {
     width: 100%;
@@ -648,20 +648,20 @@
     min-height: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid: 24px;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.97rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 1.8rem;
+    margin-bottom: 3.5rem;
   }
   .selectedProjects .projectDiv .myFeatProj {
     width: 100%;
-    margin: 1.56rem 0;
+    margin: 0.46rem 0;
     min-height: 249.997px;
   }
   .selectedProjects .projectDiv .myFeatProj * {
@@ -811,20 +811,20 @@
     margin: 0 auto 0 auto;
   }
   .Home .mainSection .mainHero h3 {
-    font-size: 4vw;
+    font-size: 50.5px;
     text-transform: capitalize;
     font-weight: 700;
     color: #ffffff;
     line-height: 4.375rem;
-    max-width: 37.5rem;
-    margin: 207.998px auto 32.003px auto;
+    max-width: 33.5rem;
+    margin: 180.998px auto 32.003px auto;
     text-align: center;
     -webkit-transition: font-size 300ms ease;
     transition: font-size 300ms ease;
   }
   .Home .mainSection .mainHero p {
-    color: white;
-    font-size: 2vw;
+    color: #cac9c9;
+    font-size: 25px;
     max-width: 39.75rem;
     line-height: 2.5rem;
     font-weight: 400;
@@ -856,7 +856,7 @@
         -ms-flex-align: center;
             align-items: center;
     background: #F8F5F2;
-    padding: 72px 28.748px;
+    padding: 72px 50.2px;
     z-index: 1;
   }
   .whatIDo .whatIDoLeft {
@@ -919,7 +919,7 @@
     background-color: #ffffff;
     min-height: auto;
     max-width: 100%;
-    padding: 72px 28.748px;
+    padding: 72px 50.2px;
     text-align: center;
   }
   .mySkills h3 {
@@ -967,43 +967,53 @@
   .mySpecialty {
     min-height: 75vh;
     background-color: #F8F5F2;
-    padding: 72px 28.748px;
+    padding: 72px 50.2px;
     width: 100%;
   }
   .mySpecialty div {
     text-align: center;
     min-height: auto;
     max-width: 100%;
-    padding: 20.002px auto;
+    padding: 20px auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(15.75rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .mySpecialty div div {
-    width: 100%;
+    width: 90%;
     background-color: #ebebeb;
     border: 0.998px solid #ebebeb;
-    padding: 3.4vw 5vw;
+    padding: 28px 30px;
     border-radius: 0.275rem;
     -webkit-transition: -webkit-box-shadow 300ms ease;
     transition: -webkit-box-shadow 300ms ease;
     transition: box-shadow 300ms ease;
     transition: box-shadow 300ms ease, -webkit-box-shadow 300ms ease;
-  }
-  .mySpecialty div div:not(:last-child) {
-    margin: 0 auto 2rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mySpecialty div div i {
-    font-size: 8vw;
+    font-size: 50px;
   }
   .mySpecialty div div h3 {
-    font-size: 4.2vw;
+    font-size: 25.5px;
+    font-weight: 600;
     color: #000000;
-    font-weight: 543;
   }
   .mySpecialty div div p {
-    font-size: 2.9vw;
+    font-size: 19.5px;
   }
   .mySpecialty div div a {
     display: -webkit-box;
@@ -1020,7 +1030,7 @@
     margin: auto;
     border-radius: 50%;
     text-decoration: none;
-    font-size: 4.3vw;
+    font-size: 19.5px;
     background-color: #000000;
     color: #ffffff;
   }
@@ -1040,7 +1050,7 @@
     color: #ffffff;
   }
   .selectedProjects {
-    padding: 72px 28.2px;
+    padding: 72px 50.2px;
     min-height: auto;
     max-width: 100%;
     margin: auto;
@@ -1054,19 +1064,20 @@
     min-height: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(15.75rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
-    grid: 24px;
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2.5rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 3.5rem;
   }
   .selectedProjects .projectDiv .myFeatProj {
-    max-width: 100%;
-    margin: 1.56rem 0;
+    width: 100%;
+    margin: 0.46rem 0;
     min-height: 249.997px;
   }
   .selectedProjects .projectDiv .myFeatProj * {
@@ -1115,7 +1126,6 @@
     background-color: #000000;
   }
   .selectedProjects .viewAllProjects {
-    margin-top: 4rem;
     text-decoration: none;
     background-color: #212122;
     border: 1px solid #212122;
@@ -1125,6 +1135,7 @@
     font-weight: 700;
     -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
+    margin: 4rem 0 0 0;
     padding: 1rem 1.3rem;
   }
   .selectedProjects .viewAllProjects:hover {
@@ -1139,7 +1150,7 @@
         grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
   }
   .preFooter div {
-    padding: 72px 28.748px;
+    padding: 72px 50.2px;
     color: #ffffff;
   }
   .preFooter div i {

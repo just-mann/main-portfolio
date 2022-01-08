@@ -185,8 +185,8 @@
             max-width: 100%;
             padding: 20px auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
-            gap: 1.9rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.97rem;
             
             
             div {
@@ -271,16 +271,16 @@
             max-width: 100%;
             min-height: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.97rem;
             justify-content: center;
             align-items: center;
-            margin-bottom: 1.8rem;
+            margin-bottom: 3.5rem;
 
 
             .myFeatProj {
                 width: 100%;
-                margin: 1.56rem 0;
+                margin: 0.46rem 0;
                 min-height: 249.997px;
                 
                 
@@ -421,20 +421,20 @@
                 margin: 0 auto 0 auto;
 
                 h3 {
-                    font-size: 4vw;
+                    font-size: 50.5px;
                     text-transform: capitalize;
                     font-weight: 700;
                     color: $white;
                     line-height: 4.375rem;
-                    max-width: 37.5rem;
-                    margin: 207.998px auto 32.003px auto;
+                    max-width: 33.5rem;
+                    margin: 180.998px auto 32.003px auto;
                     text-align: center;
                     transition: font-size 300ms ease;
                 }
 
                 p {
-                    color: white;
-                    font-size: 2vw;
+                    color: $hoverWhite;
+                    font-size: 25px;
                     max-width: 39.75rem;
                     line-height: 2.5rem;
                     font-weight: 400;
@@ -459,7 +459,7 @@
         height: auto;
         align-items: center;
         background: #F8F5F2;
-        padding: 72px 28.748px;
+        padding: 72px 50.2px;
         z-index: 1;
 
         .whatIDoLeft {
@@ -518,7 +518,7 @@
         background-color: $white;
         min-height: auto;
         max-width: 100%;
-        padding: 72px 28.748px;
+        padding: 72px 50.2px;
         text-align: center;
 
 
@@ -561,47 +561,48 @@
     .mySpecialty {
         min-height: 75vh;
         background-color: #F8F5F2;
-        padding: 72px 28.748px;
+        padding: 72px 50.2px;
         width: 100%;
-        // background: lightblue;
         
         div {
             text-align: center;
             min-height: auto;
             max-width: 100%;
-            padding: 20.002px auto;
+            padding: 20px auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            // gap: 1.37rem;
             
             
             div {
-                width: 100%;
+                width: 90%;
                 background-color: #ebebeb;
                 border: 0.998px solid #ebebeb;
-                padding: 3.4vw 5vw;
+                padding: 28px 30px;
                 border-radius: 0.275rem;
                 transition: box-shadow 300ms ease;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 
                 
-                &:not(:last-child) {
-                    margin: 0 auto 2rem auto;
-                }
+                // &:not(:last-child) {
+                //     margin: 0 auto 0.4rem auto;
+                // }
 
                 i {
-                    font-size: 8vw;
-    
+                    font-size: 50px;
                 }
     
                 h3 {
-                    font-size: 4.2vw;
-                    color: $darkBlack;
-                    font-weight: 543;
-
-                    
+                    font-size: 25.5px;
+                    font-weight: 600;
+                    color: $darkBlack;                   
                 }
     
                 p {
-                    font-size: 2.9vw;
+                    font-size: 19.5px;
                 }
     
                 a {
@@ -613,13 +614,12 @@
                     margin: auto;
                     border-radius: 50%;
                     text-decoration: none;
-                    font-size: 4.3vw;
+                    font-size: 19.5px;
                     background-color: $darkBlack;
                     color: $white;
                     
     
                     * {
-                        // font-size: 6vw;
                         color: $white;
                     }
                 }
@@ -642,7 +642,7 @@
     }
 
     .selectedProjects {
-        padding: 72px 28.2px;
+        padding: 72px 50.2px;
         min-height: auto;
         max-width: 100%;
         margin: auto;
@@ -656,15 +656,16 @@
             max-width: 100%;
             min-height: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
-            grid: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2.5rem;
             justify-content: center;
             align-items: center;
+            margin-bottom: 3.5rem;
 
 
             .myFeatProj {
-                max-width: 100%;
-                margin: 1.56rem 0;
+                width: 100%;
+                margin: 0.46rem 0;
                 min-height: 249.997px;
                 
                 
@@ -706,8 +707,8 @@
         }
         
         .viewAllProjects {
-            margin-top: 4rem;
             @include blackBtnStyle;
+            margin: 4rem 0 0 0;
             padding: 1rem 1.3rem;
 
             &:hover {
@@ -723,7 +724,7 @@
         grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
 
         div {
-            padding: 72px 28.748px;
+            padding: 72px 50.2px;
             color: $white;
 
             i {
