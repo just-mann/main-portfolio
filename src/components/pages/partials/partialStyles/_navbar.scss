@@ -188,7 +188,7 @@
                     text-decoration: none;
                     color: $white;
                     background-color: $secondColor;
-                    padding: 0.5rem 1.82rem;
+                    padding: 0.3rem 1.82rem;
                     border-radius: 0.2rem;
                     font-weight: 700;
                     transition: background-color 300ms ease-in-out;
@@ -268,7 +268,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.85rem 3rem;
+            padding: 1.25rem 3rem;
 
 
             .myLogo {
@@ -298,10 +298,13 @@
 
                 .contact {
                     @include redBtnStyle;
+                    padding: 0.43rem 1.2rem;
 
                     &:hover {
                         color: $white;
-                        background-color: #b92f31;
+                        // border: #b92f31 1px solid;
+                        // background-color: #b92f31;
+                        opacity: 0.8;
                     }
                 }
             }

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Navbar from './partials/Navbar';
+import Footer from './partials/Footer';
 import bgImage from './images/lineBg.jpeg';
 import {Link} from 'react-router-dom';
 import {FaReact, FaGit, FaGithub, FaNodeJs, FaFigma,} from 'react-icons/fa';
@@ -7,7 +8,8 @@ import {SiJquery, SiExpress, SiCsswizardry} from 'react-icons/si';
 import {BsBootstrap, BsArrowRight} from 'react-icons/bs';
 import {BiCodeAlt} from 'react-icons/bi';
 import {MdMobileFriendly} from 'react-icons/md';
-import {IoLogoJavascript, IoLogoSass} from 'react-icons/io';
+import {GiNetworkBars} from 'react-icons/gi';
+import {IoLogoJavascript, IoLogoSass, IoMdContacts} from 'react-icons/io';
 
 class Home extends Component {
     
@@ -118,19 +120,37 @@ class Home extends Component {
                     </div>
                 </section>
                 <section className="selectedProjects">
+                    <h3>Selected Work</h3>
                     <div className="projectDiv">
                         {
-                            this.state.projects.map(project => {
+                            this.state.projects.slice(0, 4).map(project => {
                                 return (
                                     <div key={project.id} className='myFeatProj'>
                                         <img src={project.projectImg1} alt={project.name} />
-                                        <p>{project.projectKind}</p>
-                                        <a href={project.projectUrl}>{project.name}</a>
+                                        <div className='bottomSection'>
+                                            <p className='projectName'>{project.name}</p>
+                                            <a className='projectUrl' href={project.projectUrl}>Live Demo</a>
+                                        </div>
                                     </div>
                                 )
                             })
                         }
                     </div>
+                    <Link to='/portfolio' className='viewAllProjects'>All Projects</Link>
+                </section>
+                <section className="preFooter">
+                        <div className='getInTouch'>
+                            <i><GiNetworkBars /></i>
+                            <p>Let's Work Together</p>
+                            <h3>Have a Project?</h3>
+                            <Link to="/contact">Get In Touch</Link>
+                        </div>
+                        <div className='dnlResume'>
+                            <i><IoMdContacts /></i>
+                            <p>I'm A Team Player</p>
+                            <h3>Have A Job?</h3>
+                            <Link to="/">See Resume</Link>
+                        </div>
                 </section>
             </div>
         )
