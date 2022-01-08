@@ -19,24 +19,17 @@
         .mainSection {
             display: flex;
             max-width: 100%;
-            min-height: 100vh;
+            height: 100%;
             margin: auto;
-            //padding-top: 2rem;
             z-index: 1;
             text-align: center;
-            align-items: center;
 
             * {
                 z-index: 1;
             }
     
             .mainHero {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                //background-color: yellow;
-                max-width: 100%;
+                max-width: 104.6875rem;
                 min-height: 6.25rem;
                 padding: 0 48px;
                 margin: 0 auto 0 auto;
@@ -48,7 +41,7 @@
                     color: $white;
                     line-height: 3.375rem;
                     width: 20.5rem;
-                    margin: 30px auto 32.003px auto;
+                    margin: 250px auto 32.003px auto;
                     text-align: center;
                     transition: font-size 300ms ease;
                 }
@@ -725,14 +718,13 @@
     }
 
     .preFooter {
-        min-height: 50vh;
+        min-height: 75vh;
         max-width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
 
-
         div {
-            padding: 100px 50.2px 72px 50.2px;
+            padding: 72px 50.2px;
             color: $white;
 
             i {

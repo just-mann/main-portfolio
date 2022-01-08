@@ -4,7 +4,7 @@ import Footer from './partials/Footer';
 import bgImage from './images/lineBg.jpeg';
 import {Link} from 'react-router-dom';
 import {FaReact, FaGit, FaGithub, FaNodeJs, FaFigma,} from 'react-icons/fa';
-import {SiJquery, SiExpress, SiCsswizardry, SiMongodb} from 'react-icons/si';
+import {SiJquery, SiExpress, SiCsswizardry} from 'react-icons/si';
 import {BsBootstrap, BsArrowRight} from 'react-icons/bs';
 import {BiCodeAlt} from 'react-icons/bi';
 import {MdMobileFriendly} from 'react-icons/md';
@@ -79,17 +79,17 @@ class Home extends Component {
                 <section className="mySkills">
                     <h3>My Skills</h3>
                     <div className='skillsContainer'>
-                        <div className="skill" title='CSS3'><SiCsswizardry /></div>
+                        <div className="skill" title='JavaScript'><IoLogoJavascript /></div>
+                        <div className="skill" title='ReactJS'><FaReact /></div>
+                        <div className="skill" title='NodeJS'><FaNodeJs /></div>
                         <div className="skill" title='Sass'><IoLogoSass /></div>
                         <div className="skill" title='Bootstrap'><BsBootstrap /></div>
-                        <div className="skill" title='JavaScript'><IoLogoJavascript /></div>
                         <div className="skill" title='jQuery'><SiJquery /></div>
-                        <div className="skill" title='ReactJS'><FaReact /></div>
                         <div className="skill" title='Git'><FaGit /></div>
                         <div className="skill" title='Github'><FaGithub /></div>
-                        <div className="skill" title='NodeJS'><FaNodeJs /></div>
                         <div className="skill" title='Express'><SiExpress /></div>
-                        <div className="skill" title='MongoDB'><SiMongodb /></div>
+                        <div className="skill" title='CSS3'><SiCsswizardry /></div>
+                        <div className="skill" title='MongoDB'><SiCsswizardry /></div>
                     </div>
                 </section>
                 <section className="mySpecialty">

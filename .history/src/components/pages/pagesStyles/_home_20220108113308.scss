@@ -21,22 +21,17 @@
             max-width: 100%;
             min-height: 100vh;
             margin: auto;
-            //padding-top: 2rem;
+            padding-top: 2rem;
             z-index: 1;
             text-align: center;
-            align-items: center;
 
             * {
                 z-index: 1;
             }
     
             .mainHero {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                //background-color: yellow;
-                max-width: 100%;
+                background-color: yellow;
+                max-width: 104.6875rem;
                 min-height: 6.25rem;
                 padding: 0 48px;
                 margin: 0 auto 0 auto;
@@ -48,7 +43,7 @@
                     color: $white;
                     line-height: 3.375rem;
                     width: 20.5rem;
-                    margin: 30px auto 32.003px auto;
+                    margin: 250px auto 32.003px auto;
                     text-align: center;
                     transition: font-size 300ms ease;
                 }

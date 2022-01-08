@@ -79,16 +79,16 @@ class Home extends Component {
                 <section className="mySkills">
                     <h3>My Skills</h3>
                     <div className='skillsContainer'>
-                        <div className="skill" title='CSS3'><SiCsswizardry /></div>
+                        <div className="skill" title='JavaScript'><IoLogoJavascript /></div>
+                        <div className="skill" title='ReactJS'><FaReact /></div>
+                        <div className="skill" title='NodeJS'><FaNodeJs /></div>
                         <div className="skill" title='Sass'><IoLogoSass /></div>
                         <div className="skill" title='Bootstrap'><BsBootstrap /></div>
-                        <div className="skill" title='JavaScript'><IoLogoJavascript /></div>
                         <div className="skill" title='jQuery'><SiJquery /></div>
-                        <div className="skill" title='ReactJS'><FaReact /></div>
                         <div className="skill" title='Git'><FaGit /></div>
                         <div className="skill" title='Github'><FaGithub /></div>
-                        <div className="skill" title='NodeJS'><FaNodeJs /></div>
                         <div className="skill" title='Express'><SiExpress /></div>
+                        <div className="skill" title='CSS3'><SiCsswizardry /></div>
                         <div className="skill" title='MongoDB'><SiMongodb /></div>
                     </div>
                 </section>
