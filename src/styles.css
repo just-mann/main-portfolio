@@ -327,23 +327,24 @@
     margin: 0 auto;
     background-color: yellow;
     z-index: 1;
-    align-items: center;
   }
   .About .aboutContainer * {
     z-index: 1;
   }
   .About .aboutContainer__myName {
-    margin-top: 100px;
+    margin-top: 95px;
     text-align: center;
   }
   .About .aboutContainer__subHeader {
-    font-size: 23px;
+    font-size: 15.8px;
+    font-weight: 560;
   }
   .About .aboutContainer__header {
     font-size: 25px;
+    font-weight: 500;
   }
   .About .aboutContainer__description {
-    font-size: 18px;
+    font-size: 14.5px;
   }
   .About .aboutContainer__image {
     max-width: 100%;

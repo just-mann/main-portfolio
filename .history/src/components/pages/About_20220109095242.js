@@ -18,7 +18,7 @@ const About = () => {
                 <div className="aboutContainer__intro">
                     <h2 className='aboutContainer__myName'>Justin Kollie</h2>
                     <h3 className='aboutContainer__subHeader'>Hey there</h3>
-                    <h2 className='aboutContainer__header'>Let's work together to give your business a new creative start right away</h2>
+                    <h2 className='aboutContainer__header'>Let's give your business a new creative start right away</h2>
                     <p className='aboutContainer__description'>
                         Donec hendrerit diam. Pellentesque egestas risus a cursus 
                         nisl aliquam malesuada. Donec suscipit posuere fringilla. 
@@ -29,7 +29,7 @@ const About = () => {
                 </div>
             </section>
             <section className="achievements">
-                <h3 className="achievements__subHeading">My Achievements</h3>
+                <h3 className="achievements__subHeading"></h3>
                 <h2 className="achievements__heading">Personal Achievements</h2>
                 <p className="achievements__detail">
                     Nullam arcu enim, dictum at pharetra pharetra, 
