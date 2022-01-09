@@ -95,7 +95,6 @@
             @include mobilePadding;
 
             h3 {
-                text-transform: capitalize;
                 text-align: center;
             }
 
@@ -109,17 +108,8 @@
                     
                     .fullName, .email, .message {
                         width: 100%;
-                        padding: 0.75rem 1.2rem;
-                        border: 1px solid $hoverWhite;
+                        padding: 0.4rem 1.2rem;
                         border-radius: 0.24rem;
-                        font-size: 13px;
-                        outline: none;
-
-                        &::placeholder {
-                            font-size: 13px;
-                            color: $lightGray;
-                            font-weight: 500;
-                        }
                     }
                 }
 
@@ -133,10 +123,6 @@
                 
                 .messageDiv {
                     margin: 1rem 0 0 0;
-
-                    textarea {
-                        resize: none;
-                    }
                 }
 
                 .consentDiv {
@@ -162,14 +148,13 @@
                     }
 
                     .submitBtn {
-                        padding: 0.55rem 1.2rem; 
+                        padding: 0.4rem 1.2rem; 
                         max-width: 150px;
-                        font-size: 13px;
                         text-align: center;
                         color: $white;
-                        border: 1px solid $lightGray;
+                        border: 1px solid $secondColor;
                         border-radius: 0.24rem;
-                        background-color: $lightGray;
+                        background-color: $secondColor;
                     }
                 }
             }

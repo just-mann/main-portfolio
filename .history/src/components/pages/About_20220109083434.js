@@ -1,16 +1,8 @@
 import React from 'react';
 import Navbar from './partials/Navbar';
 import myImage from './images/myBubble.jpeg';
-import $ from 'jquery';
 
 const About = () => {
-
-    $(() => {
-        let submitBtn = $('.submitBtn');
-
-
-    })
-
     return (
         <div className='About'>
             <Navbar />
@@ -41,22 +33,19 @@ const About = () => {
 
             </section>
             <section className="connectSection">
-                <h3>contact Me</h3>
+                <h3>Contact Me</h3>
                 <form action="">
-                    <div className='nameDiv'>
-                        <input type="text" name="fullName" id="fullName" className='fullName' placeholder='Your Name' />
+                    <div>
+                        <input type="text" name="fullName" id="fullName" className='fullName' />
                     </div>
-                    <div className='emailDiv'>
-                        <input type="email" name="email" id="email" className='email' placeholder='Your Email' />
+                    <div>
+                        <input type="email" name="email" id="email" className='email' />
                     </div>
-                    <div className='messageDiv'>
-                        <textarea name="message" id="message" className='message' cols="30" rows="5" aria-invalid="fals" placeholder='Message'></textarea>
+                    <div>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     </div>
-                    <div className='consentDiv'>
-                        <div>
-                            <input type="checkbox" name="consent" id="consent" className='consent' />
-                            <label htmlFor="consent">I agree that my submitted data is being collected and stored</label>
-                        </div>
+                    <div>
+                        <input type="checkbox" name="consent" id="consent" className='consent' />
                         <input type="submit" className='submitBtn' id='submitBtn' value='Send Message' />
                     </div>
                 </form>

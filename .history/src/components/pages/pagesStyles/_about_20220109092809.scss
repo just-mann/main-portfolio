@@ -95,7 +95,6 @@
             @include mobilePadding;
 
             h3 {
-                text-transform: capitalize;
                 text-align: center;
             }
 
@@ -113,11 +112,10 @@
                         border: 1px solid $hoverWhite;
                         border-radius: 0.24rem;
                         font-size: 13px;
-                        outline: none;
 
                         &::placeholder {
                             font-size: 13px;
-                            color: $lightGray;
+                            color: $hoverWhite;
                             font-weight: 500;
                         }
                     }

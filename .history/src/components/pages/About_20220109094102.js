@@ -41,7 +41,7 @@ const About = () => {
 
             </section>
             <section className="connectSection">
-                <h3>contact Me</h3>
+                <h3>Let's Talk</h3>
                 <form action="">
                     <div className='nameDiv'>
                         <input type="text" name="fullName" id="fullName" className='fullName' placeholder='Your Name' />

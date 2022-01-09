@@ -41,7 +41,7 @@ const About = () => {
 
             </section>
             <section className="connectSection">
-                <h3>contact Me</h3>
+                <h3>Contact Me</h3>
                 <form action="">
                     <div className='nameDiv'>
                         <input type="text" name="fullName" id="fullName" className='fullName' placeholder='Your Name' />
@@ -50,7 +50,7 @@ const About = () => {
                         <input type="email" name="email" id="email" className='email' placeholder='Your Email' />
                     </div>
                     <div className='messageDiv'>
-                        <textarea name="message" id="message" className='message' cols="30" rows="5" aria-invalid="fals" placeholder='Message'></textarea>
+                        <textarea name="message" id="message" className='message' cols="30" rows="5" aria-invalid='false' placeholder='Message'></textarea>
                     </div>
                     <div className='consentDiv'>
                         <div>

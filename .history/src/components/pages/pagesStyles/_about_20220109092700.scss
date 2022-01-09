@@ -95,7 +95,6 @@
             @include mobilePadding;
 
             h3 {
-                text-transform: capitalize;
                 text-align: center;
             }
 
@@ -109,16 +108,15 @@
                     
                     .fullName, .email, .message {
                         width: 100%;
-                        padding: 0.75rem 1.2rem;
+                        padding: 0.4rem 1.2rem;
                         border: 1px solid $hoverWhite;
                         border-radius: 0.24rem;
                         font-size: 13px;
-                        outline: none;
+                        color: red;
 
                         &::placeholder {
                             font-size: 13px;
-                            color: $lightGray;
-                            font-weight: 500;
+                            color: red;
                         }
                     }
                 }
