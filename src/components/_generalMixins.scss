@@ -36,6 +36,15 @@
 }
 
 
+@mixin mobilePadding {
+    padding: 72px 28.748px;
+}
+
+@mixin desktopPadding {
+    padding: 72px 50.2px;
+}
+
+
 //Responsive Design
 // Breakpoints
 @media (min-width: 64rem){
