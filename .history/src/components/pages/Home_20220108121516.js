@@ -80,8 +80,8 @@ class Home extends Component {
                     <h3>My Skills</h3>
                     <div className='skillsContainer'>
                         <div className="skill" title='CSS3'><SiCsswizardry /></div>
-                        <div className="skill" title='Bootstrap'><BsBootstrapFill /></div>
                         <div className="skill" title='Sass'><FaSass /></div>
+                        <div className="skill" title='Bootstrap'><BsBootstrapFill /></div>
                         <div className="skill" title='JavaScript'><IoLogoJavascript /></div>
                         <div className="skill" title='jQuery'><SiJquery /></div>
                         <div className="skill" title='ReactJS'><FaReact /></div>

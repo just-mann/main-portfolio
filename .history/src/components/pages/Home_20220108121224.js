@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import Navbar from './partials/Navbar';
-//import Footer from './partials/Footer';
+import Footer from './partials/Footer';
 import bgImage from './images/lineBg.jpeg';
 import {Link} from 'react-router-dom';
-import {FaReact, FaGit, FaSass, FaGithub, FaNodeJs, FaFigma, FaWindows} from 'react-icons/fa';
+import {FaReact, FaGit, FaGithub, FaNodeJs, FaFigma,} from 'react-icons/fa';
 import {SiJquery, SiExpress, SiCsswizardry, SiMongodb} from 'react-icons/si';
-import {BsBootstrapFill, BsArrowRight} from 'react-icons/bs';
+import {BsBootstrap, BsArrowRight} from 'react-icons/bs';
 import {BiCodeAlt} from 'react-icons/bi';
 import {MdMobileFriendly} from 'react-icons/md';
 import {GiNetworkBars} from 'react-icons/gi';
-import {IoLogoJavascript, IoMdContacts} from 'react-icons/io';
+import {IoLogoJavascript, IoLogoSass, IoMdContacts} from 'react-icons/io';
 
 class Home extends Component {
     
@@ -80,8 +80,8 @@ class Home extends Component {
                     <h3>My Skills</h3>
                     <div className='skillsContainer'>
                         <div className="skill" title='CSS3'><SiCsswizardry /></div>
-                        <div className="skill" title='Bootstrap'><BsBootstrapFill /></div>
-                        <div className="skill" title='Sass'><FaSass /></div>
+                        <div className="skill" title='Sass'><IoLogoSass /></div>
+                        <div className="skill" title='Bootstrap'><BsBootstrap /></div>
                         <div className="skill" title='JavaScript'><IoLogoJavascript /></div>
                         <div className="skill" title='jQuery'><SiJquery /></div>
                         <div className="skill" title='ReactJS'><FaReact /></div>
@@ -90,7 +90,7 @@ class Home extends Component {
                         <div className="skill" title='NodeJS'><FaNodeJs /></div>
                         <div className="skill" title='Express'><SiExpress /></div>
                         <div className="skill" title='MongoDB'><SiMongodb /></div>
-                        <div className="skill" title='Windows Terminal'><FaWindows /></div>
+                        <div className="skill" title='Windows Terminal'><SiMongodb /></div>
                     </div>
                 </section>
                 <section className="mySpecialty">

@@ -5,7 +5,7 @@ import bgImage from './images/lineBg.jpeg';
 import {Link} from 'react-router-dom';
 import {FaReact, FaGit, FaSass, FaGithub, FaNodeJs, FaFigma, FaWindows} from 'react-icons/fa';
 import {SiJquery, SiExpress, SiCsswizardry, SiMongodb} from 'react-icons/si';
-import {BsBootstrapFill, BsArrowRight} from 'react-icons/bs';
+import {BsBootstrap, BsArrowRight} from 'react-icons/bs';
 import {BiCodeAlt} from 'react-icons/bi';
 import {MdMobileFriendly} from 'react-icons/md';
 import {GiNetworkBars} from 'react-icons/gi';
@@ -80,8 +80,8 @@ class Home extends Component {
                     <h3>My Skills</h3>
                     <div className='skillsContainer'>
                         <div className="skill" title='CSS3'><SiCsswizardry /></div>
-                        <div className="skill" title='Bootstrap'><BsBootstrapFill /></div>
                         <div className="skill" title='Sass'><FaSass /></div>
+                        <div className="skill" title='Bootstrap'><BsBootstrap /></div>
                         <div className="skill" title='JavaScript'><IoLogoJavascript /></div>
                         <div className="skill" title='jQuery'><SiJquery /></div>
                         <div className="skill" title='ReactJS'><FaReact /></div>

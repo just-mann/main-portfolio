@@ -163,16 +163,15 @@
                 font-weight: bold;
                 color: $lightGray;
                 height: 5.5rem;
-                border: 0.125rem solid $lightGray;
+                border: 0625rem solid $lightGray;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: 0.25rem;
-                transition: all 300ms ease-in-out;
+                transition: color 300ms ease-in-out;
 
                 &:hover {
                     color: $darkBlack;
-                    border-color: $darkBlack;
                 }
             }
         }
@@ -550,16 +549,15 @@
                 font-weight: bold;
                 color: $lightGray;
                 height: 5.5rem;
-                border: 0.125rem solid $lightGray;
+                border: 0.0625rem solid $lightGray;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: 0.25rem;
-                transition: all 300ms ease-in-out;
+                transition: color 300ms ease-in-out;
 
                 &:hover {
                     color: $darkBlack;
-                    border-color: $darkBlack;
                 }
             }
         }

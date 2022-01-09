@@ -441,15 +441,16 @@
     font-weight: bold;
     color: #746f6f;
     height: 5.5rem;
-    border: 0.0625rem solid #746f6f;
+    border: 0.125rem solid #746f6f;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.25rem;
-    transition: color 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
   }
   .mySkills .skillsContainer .skill:hover {
     color: #000000;
+    border-color: #000000;
   }
 
   .mySpecialty {
@@ -795,15 +796,16 @@
     font-weight: bold;
     color: #746f6f;
     height: 5.5rem;
-    border: 0.0625rem solid #746f6f;
+    border: 0.125rem solid #746f6f;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.25rem;
-    transition: color 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
   }
   .mySkills .skillsContainer .skill:hover {
     color: #000000;
+    border-color: #000000;
   }
 
   .mySpecialty {
