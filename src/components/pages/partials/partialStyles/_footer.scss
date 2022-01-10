@@ -17,12 +17,33 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $white;
-                font-size: 25px;
-                font-weight: 500;
+                font-size: 23px;
+                font-weight: 530;
 
 
                 &:hover {
                     color: $white;
+                }
+            }
+        }
+
+        &__address {
+            border-bottom: 1px solid $borderGray;
+            padding: 27px 0;
+
+            h3 {
+                font-size: 16px;
+            }
+
+            div {
+                p {
+                    color: $lightGray;
+                    margin-top: 12px;
+                }
+
+                a {
+                    color: $lightGray;
+                    margin-top: 5px;
                 }
             }
         }

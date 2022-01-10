@@ -22,8 +22,11 @@ class Home extends Component {
     }
     // const [projects, setProjects] = useState([]);
 
+    
     componentDidMount() {
-        fetch('https://my-json-server.typicode.com/just-mann/my-database/projects')
+        const URI = 'https://my-json-server.typicode.com/just-mann/my-database/projects';
+
+        fetch(`${URI}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -33,7 +36,6 @@ class Home extends Component {
             })
             .catch(err => console.log(err));
     }
-
     
 
     render() {

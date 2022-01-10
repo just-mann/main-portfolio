@@ -7,8 +7,6 @@ const About = () => {
 
     $(() => {
         let submitBtn = $('.submitBtn');
-
-
     })
 
     return (
