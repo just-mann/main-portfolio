@@ -1,0 +1,22 @@
+// Mobile Responsive Design
+@include breakpoint-mobile(medium) {
+    .Footer {
+        @include mobilePadding;
+        padding-top: 30px;
+        background-color: $darkBlack;
+        min-height: 81.8vh;
+        color: $white;
+
+
+        &__header {
+            border-bottom: 1px solid $borderGray;
+
+            h3 {
+                text-transform: uppercase;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+        
+    }
+}

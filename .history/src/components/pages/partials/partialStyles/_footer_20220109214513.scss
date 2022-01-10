@@ -1,0 +1,8 @@
+// Mobile Responsive Design
+@include breakpoint-mobile(medium) {
+    .Footer {
+        @include mobilePadding;
+        background-color: $darkBlack;
+        min-height: 70vh;
+    }
+}

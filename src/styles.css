@@ -15,12 +15,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 1.5rem;
+    padding: 72px 18.748px;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
   }
   .Navbar .NavbarContainer .myLogo {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.008rem;
     font-weight: 700;
     line-height: 1.512rem;
     font-family: "Source Sans Pro", sans-serif;
@@ -29,9 +30,9 @@
   }
   .Navbar .NavbarContainer .myLogo h3 {
     margin-top: 0.3rem;
-    font-size: 1.5625rem;
+    font-size: 28px;
     font-weight: 600;
-    line-height: 1.3928rem;
+    line-height: 22.2855px;
   }
   .Navbar .NavbarContainer .navLinks {
     display: none;
@@ -43,7 +44,7 @@
   .Navbar .NavbarContainer .toggle {
     width: 28px;
     height: 25px;
-    margin-top: 0.3rem;
+    margin-top: 0.55rem;
     margin-right: 0.25rem;
     display: flex;
     flex-direction: column;
@@ -74,7 +75,7 @@
   }
   .Navbar .respNav {
     position: fixed;
-    top: 80px;
+    top: 62.2px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -162,10 +163,10 @@
   .Navbar .NavbarContainer .toggle {
     width: 28px;
     height: 20px;
-    display: none;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    display: none;
   }
   .Navbar .NavbarContainer .toggle span {
     display: block;
@@ -248,10 +249,10 @@
   .Navbar .NavbarContainer .toggle {
     width: 28px;
     height: 20px;
-    display: none;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    display: none;
   }
   .Navbar .NavbarContainer .toggle span {
     display: block;
@@ -284,157 +285,6 @@
   }
 }
 
-@media (max-width: 63.9375rem) {
-  .About {
-    position: relative;
-    height: 100%;
-    max-width: 100%;
-  }
-  .About .Navbar {
-    background-color: #ffffff;
-  }
-  .About .Navbar * {
-    color: #000000;
-  }
-  .About .Navbar .NavbarContainer .toggle {
-    width: 28px;
-    height: 25px;
-    margin-top: 0.3rem;
-    margin-right: 0.25rem;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  .About .Navbar .NavbarContainer .toggle span {
-    display: block;
-    height: 2px;
-    width: 26px;
-    background: #000000;
-    transform-origin: 3px 1px;
-    transition: all 300ms ease-in-out;
-  }
-  .About .Navbar .NavbarContainer .toggle span:first-child() {
-    margin-top: 10px;
-  }
-  .About .Navbar .NavbarContainer .toggle span:not(:last-child) {
-    margin-bottom: 5px;
-  }
-  .About .aboutContainer {
-    padding: 72px 28.748px;
-    display: flex;
-    max-width: 100%;
-    min-height: 100vh;
-    margin: 0 auto;
-    background-color: yellow;
-    z-index: 1;
-  }
-  .About .aboutContainer * {
-    z-index: 1;
-  }
-  .About .aboutContainer__myName {
-    margin-top: 95px;
-    text-align: center;
-  }
-  .About .aboutContainer__subHeader {
-    font-size: 15.8px;
-    font-weight: 560;
-  }
-  .About .aboutContainer__header {
-    font-size: 25px;
-    font-weight: 500;
-  }
-  .About .aboutContainer__description {
-    font-size: 14.5px;
-  }
-  .About .aboutContainer__image {
-    max-width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .About .achievements {
-    padding: 72px 28.748px;
-  }
-  .About .socialSection {
-    padding: 72px 28.748px;
-  }
-  .About .connectSection {
-    padding: 72px 28.748px;
-  }
-  .About .connectSection h3 {
-    text-transform: capitalize;
-    text-align: center;
-  }
-  .About .connectSection form {
-    max-width: 100%;
-  }
-  .About .connectSection form div {
-    max-width: 100%;
-  }
-  .About .connectSection form div .fullName, .About .connectSection form div .email, .About .connectSection form div .message {
-    width: 100%;
-    padding: 0.75rem 1.2rem;
-    border: 1px solid #cac9c9;
-    border-radius: 0.24rem;
-    font-size: 13px;
-    outline: none;
-  }
-  .About .connectSection form div .fullName::-moz-placeholder, .About .connectSection form div .email::-moz-placeholder, .About .connectSection form div .message::-moz-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form div .fullName:-ms-input-placeholder, .About .connectSection form div .email:-ms-input-placeholder, .About .connectSection form div .message:-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form div .fullName::placeholder, .About .connectSection form div .email::placeholder, .About .connectSection form div .message::placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form .nameDiv {
-    margin: 1rem 0 0 0;
-  }
-  .About .connectSection form .emailDiv {
-    margin: 1rem 0 0 0;
-  }
-  .About .connectSection form .messageDiv {
-    margin: 1rem 0 0 0;
-  }
-  .About .connectSection form .messageDiv textarea {
-    resize: none;
-  }
-  .About .connectSection form .consentDiv {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    margin: 0 auto;
-  }
-  .About .connectSection form .consentDiv div {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin: 1rem 0;
-  }
-  .About .connectSection form .consentDiv div input {
-    margin: 0 10px 0 0;
-  }
-  .About .connectSection form .consentDiv div label {
-    font-size: 12px;
-    font-weight: 600;
-    color: #746f6f;
-  }
-  .About .connectSection form .consentDiv .submitBtn {
-    padding: 0.55rem 1.2rem;
-    max-width: 150px;
-    font-size: 13px;
-    text-align: center;
-    color: #ffffff;
-    border: 1px solid #746f6f;
-    border-radius: 0.24rem;
-    background-color: #746f6f;
-  }
-}
 @media (max-width: 63.9375rem) {
   .Home {
     position: relative;
@@ -486,7 +336,7 @@
   }
   .Home .mainSection .mainHero p {
     color: #cac9c9;
-    font-size: 22px;
+    font-size: 19px;
     max-width: 23.75rem;
     line-height: 1.8rem;
     font-weight: 400;
@@ -503,7 +353,7 @@
     border-radius: 0.2rem;
     font-weight: 700;
     transition: background-color 300ms ease-in-out;
-    padding: 1rem 1.5rem;
+    padding: 0.6rem 1.5rem;
     margin: auto;
   }
 
@@ -592,7 +442,7 @@
     font-weight: bold;
     color: #746f6f;
     height: 5.5rem;
-    border: 0.125rem solid #746f6f;
+    border: 0.12rem solid #746f6f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -943,11 +793,11 @@
   .mySkills .skillsContainer .skill {
     width: 100%;
     margin: auto;
-    font-size: 2.7vw;
+    font-size: 38px;
     font-weight: bold;
     color: #746f6f;
     height: 5.5rem;
-    border: 0.125rem solid #746f6f;
+    border: 0.12rem solid #746f6f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1146,6 +996,242 @@
     background-color: rgba(0, 0, 0, 0.78);
   }
 }
+@media (max-width: 63.9375rem) {
+  .About {
+    position: relative;
+    height: 100%;
+    max-width: 100%;
+  }
+  .About .Navbar {
+    background-color: #ffffff;
+  }
+  .About .Navbar * {
+    color: #000000;
+  }
+  .About .Navbar .NavbarContainer .toggle {
+    width: 28px;
+    height: 25px;
+    margin-top: 0.3rem;
+    margin-right: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .About .Navbar .NavbarContainer .toggle span {
+    display: block;
+    height: 2px;
+    width: 26px;
+    background: #000000;
+    transform-origin: 3px 1px;
+    transition: all 300ms ease-in-out;
+  }
+  .About .Navbar .NavbarContainer .toggle span:first-child() {
+    margin-top: 10px;
+  }
+  .About .Navbar .NavbarContainer .toggle span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .About .aboutContainer {
+    padding: 72px 18.748px;
+    display: flex;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: yellow;
+    z-index: 1;
+  }
+  .About .aboutContainer * {
+    z-index: 1;
+  }
+  .About .aboutContainer__myName {
+    margin-top: 95px;
+    text-align: center;
+  }
+  .About .aboutContainer__subHeader {
+    font-size: 15.8px;
+    font-weight: 560;
+  }
+  .About .aboutContainer__header {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .About .aboutContainer__description {
+    font-size: 14.5px;
+  }
+  .About .aboutContainer__image {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .About .achievements {
+    padding: 72px 18.748px;
+  }
+  .About .socialSection {
+    padding: 72px 18.748px;
+  }
+  .About .connectSection {
+    padding: 72px 18.748px;
+  }
+  .About .connectSection h3 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 26px;
+    margin: 0 auto 2rem 0;
+  }
+  .About .connectSection form {
+    max-width: 100%;
+  }
+  .About .connectSection form div {
+    max-width: 100%;
+  }
+  .About .connectSection form div .fullName, .About .connectSection form div .email, .About .connectSection form div .message {
+    width: 100%;
+    padding: 0.75rem 1.2rem;
+    border: 1px solid #cac9c9;
+    border-radius: 0.24rem;
+    font-size: 13px;
+    outline: none;
+  }
+  .About .connectSection form div .fullName::-moz-placeholder, .About .connectSection form div .email::-moz-placeholder, .About .connectSection form div .message::-moz-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .About .connectSection form div .fullName:-ms-input-placeholder, .About .connectSection form div .email:-ms-input-placeholder, .About .connectSection form div .message:-ms-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .About .connectSection form div .fullName::placeholder, .About .connectSection form div .email::placeholder, .About .connectSection form div .message::placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .About .connectSection form .nameDiv {
+    margin: 1rem 0 0 0;
+  }
+  .About .connectSection form .emailDiv {
+    margin: 1rem 0 0 0;
+  }
+  .About .connectSection form .messageDiv {
+    margin: 2rem 0 1rem 0;
+  }
+  .About .connectSection form .messageDiv textarea {
+    resize: none;
+  }
+  .About .connectSection form .consentDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    margin: 0 auto 2rem 0;
+  }
+  .About .connectSection form .consentDiv div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .About .connectSection form .consentDiv div input {
+    margin: 0 10px 0 0;
+  }
+  .About .connectSection form .consentDiv div label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #746f6f;
+  }
+  .About .connectSection form .consentDiv .submitBtn {
+    padding: 0.75rem 1.2rem;
+    margin: 2rem 0 0 0;
+    max-width: 150px;
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #746f6f;
+    border-radius: 0.24rem;
+    background-color: #746f6f;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+}
+@media (max-width: 63.9375rem) {
+  .Footer {
+    padding: 72px 18.748px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #000000;
+    min-height: auto;
+    color: #ffffff;
+  }
+  .Footer__header {
+    padding: 30px 0;
+    border-bottom: 1px solid #353434;
+  }
+  .Footer__header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .Footer__header a:hover {
+    color: #ffffff;
+  }
+  .Footer__usefulLinks {
+    border-bottom: 1px solid #353434;
+    padding: 27px 0;
+  }
+  .Footer__usefulLinks h3 {
+    font-size: 16px;
+  }
+  .Footer__usefulLinks div {
+    display: flex;
+    flex-direction: column;
+  }
+  .Footer__usefulLinks div a {
+    text-decoration: none;
+    width: 10px;
+    margin-top: 12px;
+    display: inline;
+    color: #746f6f;
+    transition: color 300ms ease;
+  }
+  .Footer__usefulLinks div a:first-child {
+    margin-top: 20px;
+  }
+  .Footer__usefulLinks div a:hover {
+    color: #cac9c9;
+  }
+  .Footer__socialLinks {
+    padding: 27px 0;
+    border-bottom: 1px solid #353434;
+  }
+  .Footer__socialLinks h3 {
+    font-size: 16px;
+  }
+  .Footer__socialLinks div {
+    display: flex;
+    align-items: center;
+  }
+  .Footer__socialLinks div a {
+    text-decoration: none;
+    color: #353434;
+    margin: 10px 15px 0 0;
+    font-size: 17px;
+    transition: color 300ms ease;
+  }
+  .Footer__socialLinks div a:hover {
+    color: #cac9c9;
+  }
+  .Footer__bottom {
+    padding: 27px 0;
+  }
+  .Footer__bottom p {
+    color: #353434;
+    font-weight: 500;
+    font-size: 17px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -1155,4 +1241,21 @@
 
 body {
   position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #474646;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #353434;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #353434;
 }/*# sourceMappingURL=styles.css.map */
