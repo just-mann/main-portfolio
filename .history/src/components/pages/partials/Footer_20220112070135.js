@@ -39,6 +39,8 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/in/justine-kollie-253b40156/" target='_blank' rel='nonopener nonreferrer'><FaLinkedinIn /></a>
                     <a href="https://www.instagram.com/401smooth/" target='_blank' rel='nonopener nonreferrer'><FaInstagram /></a>
                     <a href="https://twitter.com/iamjust_100" target='_blank' rel='nonopener nonreferrer'><FaTwitter /></a>
+
+                    {/* <a href="#"></a> */}
                 </div>
             </div>
             <div className="Footer__bottom">

@@ -20,15 +20,28 @@ const Navbar = () => {
         setHam(!ham);
 
         $(() => {
-
             if (ham === true) {
                 toggle.classList.add('open');
                 $(respNav).slideDown();
+                $(navBar).css('background-color', '#000000');
+                //respNav.classList.add('respNavOpen');
             } else {
                 toggle.classList.remove('open');
                 $(respNav).slideUp();
+                $(navBar).css('background-color', '#212122');
             }
-           
+            
+            $(window).on('scroll', () => {
+                if (window.scrollY > 15) {
+                    $('#NavBar').css('background-color', '#000000');
+                    console.log(window.scrollY);
+                } else {
+                    $("#NavBar").css('background-color', '#212122');
+                    console.log(window.scrollY);
+                }
+            })
+
+
         })
     }
 

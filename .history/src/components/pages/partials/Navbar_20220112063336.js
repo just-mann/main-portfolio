@@ -11,29 +11,25 @@ const Navbar = () => {
     const toggleHam = () => {
         const toggle = document.querySelector('#toggle');
         const respNav = document.querySelector('#respNav');
-        const navBar = document.querySelector('#NavBar');
-        //const scrollPosition = window.onscroll;
-
-
-
     
         setHam(!ham);
 
         $(() => {
-
             if (ham === true) {
                 toggle.classList.add('open');
-                $(respNav).slideDown();
+                //respNav.classList.add('respNavOpen');
+                $(respNav).slideDown()
             } else {
-                toggle.classList.remove('open');
+                toggle.classList.remove('open')
                 $(respNav).slideUp();
             }
-           
+
+            
         })
     }
 
     return (
-        <div className='Navbar' id='NavBar'>
+        <div className='Navbar'>
             <div className='NavbarContainer'>
                 <Link to="/"className="myLogo">
                     <h3>justin</h3>

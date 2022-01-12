@@ -12,7 +12,6 @@ const Navbar = () => {
         const toggle = document.querySelector('#toggle');
         const respNav = document.querySelector('#respNav');
         const navBar = document.querySelector('#NavBar');
-        //const scrollPosition = window.onscroll;
 
 
 
@@ -20,15 +19,18 @@ const Navbar = () => {
         setHam(!ham);
 
         $(() => {
-
             if (ham === true) {
                 toggle.classList.add('open');
-                $(respNav).slideDown();
+                $(respNav).slideDown()
+                $(navBar).css('background-color', 'rgba(#000000, 1)')
+                //respNav.classList.add('respNavOpen');
             } else {
-                toggle.classList.remove('open');
+                toggle.classList.remove('open')
                 $(respNav).slideUp();
+                $(navBar).css('background-color', 'rgba(#000000, 1)')
             }
-           
+
+
         })
     }
 

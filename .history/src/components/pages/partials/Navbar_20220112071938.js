@@ -21,14 +21,29 @@ const Navbar = () => {
 
         $(() => {
 
+            $(window).scroll(() => {
+                if (window.scrollY > 15) {
+                    $(navBar).css('background-color', '#000000');
+                    console.log(window.scrollY);
+                } else {
+                    $(navBar).css('background-color', 'transparent');
+                    console.log(window.scrollY);
+                }
+            })
+
             if (ham === true) {
                 toggle.classList.add('open');
                 $(respNav).slideDown();
+                $("#NavBar").css('background-color', '#000000');
+                //respNav.classList.add('respNavOpen');
             } else {
                 toggle.classList.remove('open');
                 $(respNav).slideUp();
+                $("#NavBar").css('background-color', '#212122');
             }
            
+
+
         })
     }
 

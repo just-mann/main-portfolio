@@ -5,15 +5,15 @@
         max-width: 100%;
 
         .Navbar {
-            //background-color: $white;
+            background-color: $white;
 
             * {
-                color: $white;
+                color: $darkBlack;
             }
 
             .NavbarContainer {
                 .toggle {
-                    //background-color: yellow;
+                    background-color: yellow;
                     width: 28px;
                     height: 25px;
                     margin-top: 0.3rem;
@@ -26,7 +26,7 @@
                         display: block;
                         height: 2px;
                         width: 26px;
-                        background: $white;
+                        background: $darkBlack;
                         transform-origin: 3px 1px;
                         transition: all 300ms ease-in-out;
     

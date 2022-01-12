@@ -12,7 +12,7 @@ const Navbar = () => {
         const toggle = document.querySelector('#toggle');
         const respNav = document.querySelector('#respNav');
         const navBar = document.querySelector('#NavBar');
-        //const scrollPosition = window.onscroll;
+        const scrollPosition = window.onscroll;
 
 
 
@@ -20,15 +20,26 @@ const Navbar = () => {
         setHam(!ham);
 
         $(() => {
-
             if (ham === true) {
                 toggle.classList.add('open');
                 $(respNav).slideDown();
+                $(navBar).css('background-color', '#000000');
+                //respNav.classList.add('respNavOpen');
             } else {
                 toggle.classList.remove('open');
                 $(respNav).slideUp();
+                $(navBar).css('background-color', '#212122');
             }
-           
+            
+            $(window).on('scroll', () => {
+                if (window.scrollY > 5) {
+                    $(navBar).css('background-color', '#000000');
+                } else {
+                    $(navBar).css('background-color', '#212122');
+                }
+            })
+
+
         })
     }
 

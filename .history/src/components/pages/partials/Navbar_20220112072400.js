@@ -24,9 +24,12 @@ const Navbar = () => {
             if (ham === true) {
                 toggle.classList.add('open');
                 $(respNav).slideDown();
+                $(navBar).css('background-color', '#000000');
+                //respNav.classList.add('respNavOpen');
             } else {
                 toggle.classList.remove('open');
                 $(respNav).slideUp();
+                $(navBar).css('background-color', 'transparent');
             }
            
         })

@@ -21,14 +21,20 @@ const Navbar = () => {
 
         $(() => {
 
-            if (ham === true) {
-                toggle.classList.add('open');
-                $(respNav).slideDown();
-            } else {
-                toggle.classList.remove('open');
-                $(respNav).slideUp();
-            }
+            $(window).on('scroll', () => {
+                if (window.scrollY > 15) {
+                    $('#NavBar').css('background-color', '#000000');
+                    console.log(window.scrollY);
+                } else {
+                    $("#NavBar").css('background-color', 'transparent');
+                    console.log(window.scrollY);
+                }
+            })
+
+            
            
+
+
         })
     }
 
