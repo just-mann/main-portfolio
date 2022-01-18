@@ -149,7 +149,7 @@
 
         .skillsContainer {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
             justify-content: center;
             align-items: center;
             gap: 24px;
@@ -157,7 +157,7 @@
             .skill {
                 width: 100%;
                 margin: auto;
-                font-size: 40px;
+                font-size: 35px;
                 font-weight: bold;
                 color: $lightGray;
                 height: 5.5rem;
@@ -522,32 +522,30 @@
 
     .mySkills {
         background-color: $white;
-        min-height: auto;
+        min-height: 75vh;
         max-width: 100%;
         padding: 72px 50.2px;
         text-align: center;
-
-
-        h3 {
-            color: $lightBlack;
-            font-weight: 500;
-            text-align: left;
-        }
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        align-items: center;
+        
 
         .skillsContainer {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(7.75rem, 1fr));
             justify-content: center;
             align-items: center;
+            // min-height: 100%;
             gap: 24px;
             
             .skill {
-                width: 100%;
+                width: 110%;
                 margin: auto;
-                font-size: 38px;
+                font-size: 35px;
                 font-weight: bold;
                 color: $lightGray;
-                height: 5.5rem;
+                height: 4.5rem;
                 border: 0.12rem solid $lightGray;
                 display: flex;
                 justify-content: center;
@@ -560,6 +558,22 @@
                     border-color: $darkBlack;
                 }
             }
+
+        }
+        
+        .skillsDescription {
+            height: 73%;
+            background-color: yellow;
+            margin: 0 0 0 50px;
+            text-align: left;
+            // align-self: flex-start;
+
+
+            h3 {
+                color: $lightBlack;
+                font-weight: 500;
+                text-align: left;
+            }
         }
 
 
@@ -570,6 +584,9 @@
         background-color: #F8F5F2;
         padding: 72px 50.2px;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
         div {
             text-align: center;
@@ -578,6 +595,7 @@
             padding: 20px auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            align-items: center;
             // gap: 1.37rem;
             
             
