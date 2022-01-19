@@ -79,7 +79,6 @@ class Home extends Component {
                     
                 </section>
                 <section className="mySkills">
-                    <h3>My Skills</h3>
                     <div className='skillsContainer'>
                         <div className="skill" title='CSS3'><SiCsswizardry /></div>
                         <div className="skill" title='Bootstrap'><BsBootstrapFill /></div>
@@ -94,6 +93,17 @@ class Home extends Component {
                         <div className="skill" title='MongoDB'><SiMongodb /></div>
                         <div className="skill" title='Windows Terminal'><FaWindows /></div>
                     </div>
+                    <div className="skillsDescription">
+                        <h3>My Skills</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Excepturi illo, aliquid facere ipsum incidunt cum neque 
+                            recusandae et tempora consectetur est cumque minus hic 
+                            molestiae iste harum minima, ea nemo aperiam? Magnam minima
+                             excepturi aut quia molestias quas quam doloribus quibusdam. Quos doloremque 
+                            est corrupti repellendus dicta eligendi laboriosam nesciunt?
+                        </p>
+                    </div>
                 </section>
                 <section className="mySpecialty">
                     <div className="specContainer">
@@ -103,7 +113,7 @@ class Home extends Component {
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
                             </p>
-                            <Link to='/'><BsArrowRight /></Link>
+                            {/* <Link to='/'><BsArrowRight /></Link> */}
                         </div>
                         <div className='development'>
                             <i class="fas fa-code">{devImg}</i>
@@ -111,7 +121,7 @@ class Home extends Component {
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
                             </p>
-                            <Link to='/'><BsArrowRight /></Link>
+                            {/* <Link to='/'><BsArrowRight /></Link> */}
                         </div>
                         <div className='design'>
                             <i>{respDesImg}</i>
@@ -119,7 +129,7 @@ class Home extends Component {
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto omnis autem rem tempora. Aliquam.
                             </p>
-                            <Link to='/'><BsArrowRight /></Link>
+                            {/* <Link to='/'><BsArrowRight /></Link> */}
                         </div>
                     </div>
                 </section>
@@ -147,7 +157,7 @@ class Home extends Component {
                             <i><GiNetworkBars /></i>
                             <p>Let's Work Together</p>
                             <h3>Have a Project?</h3>
-                            <Link to="/contact">Get In Touch</Link>
+                            <Link to="/contact-me">Get In Touch</Link>
                         </div>
                         <div className='dnlResume'>
                             <i><IoMdContacts /></i>
