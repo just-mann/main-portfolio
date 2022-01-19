@@ -157,7 +157,7 @@ class Home extends Component {
                             <i><GiNetworkBars /></i>
                             <p>Let's Work Together</p>
                             <h3>Have a Project?</h3>
-                            <Link to="/contact">Get In Touch</Link>
+                            <Link to="/contact-me">Get In Touch</Link>
                         </div>
                         <div className='dnlResume'>
                             <i><IoMdContacts /></i>

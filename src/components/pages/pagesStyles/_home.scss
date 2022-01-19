@@ -527,8 +527,9 @@
         padding: 72px 50.2px;
         text-align: center;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        grid-template-columns: 5.8fr 6fr;
         align-items: center;
+        gap: 80px;
         
 
         .skillsContainer {
@@ -536,7 +537,6 @@
             grid-template-columns: repeat(auto-fit, minmax(7.75rem, 1fr));
             justify-content: center;
             align-items: center;
-            // min-height: 100%;
             gap: 24px;
             
             .skill {
@@ -563,10 +563,8 @@
         
         .skillsDescription {
             height: 73%;
-            background-color: yellow;
-            margin: 0 0 0 50px;
+            // margin: 0 0 0 70px;
             text-align: left;
-            // align-self: flex-start;
 
 
             h3 {

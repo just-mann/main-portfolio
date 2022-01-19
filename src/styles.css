@@ -941,11 +941,12 @@
     text-align: center;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(50%, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    -ms-grid-columns: 5.8fr 6fr;
+        grid-template-columns: 5.8fr 6fr;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 80px;
   }
   .mySkills .skillsContainer {
     display: -ms-grid;
@@ -987,8 +988,6 @@
   }
   .mySkills .skillsDescription {
     height: 73%;
-    background-color: yellow;
-    margin: 0 0 0 50px;
     text-align: left;
   }
   .mySkills .skillsDescription h3 {
