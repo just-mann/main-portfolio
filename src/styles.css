@@ -75,7 +75,7 @@
   }
   .Navbar .respNav {
     position: fixed;
-    top: 66px;
+    top: 73.29px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -362,7 +362,7 @@
     max-width: 100%;
     height: auto;
     align-items: center;
-    background: #F8F5F2;
+    background-color: #F8F5F2;
     padding: 72px 28.748px;
     z-index: 1;
   }
@@ -1064,7 +1064,46 @@
     padding: 72px 18.748px;
   }
   .About .socialSection {
+    background-color: #F8F5F2;
+  }
+  .About .socialSection .socialSectionContainer {
     padding: 72px 18.748px;
+    background-color: #F8F5F2;
+    min-height: 40vh;
+  }
+  .About .socialSection .socialSectionContainer h3 {
+    font-size: 22px;
+    margin: 1px 0 30px auto;
+    text-align: center;
+  }
+  .About .socialSection .socialSectionContainer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .About .socialSection .socialSectionContainer div a {
+    color: #000000;
+    text-decoration: none;
+    margin: 10px 17px 0 0;
+    font-size: 27px;
+    transition: color 300ms ease;
+  }
+  .About .socialSection .socialSectionContainer div a:hover {
+    color: #746f6f;
+  }
+  .About .socialSection .socialSectionContainer p {
+    text-align: center;
+    margin: 1.8rem auto;
+    font-size: 1.5rem;
+  }
+  .About .socialSection .socialSectionContainer p a {
+    text-decoration: underline;
+    color: #000000;
+    transition: color 300ms ease;
+  }
+  .About .socialSection .socialSectionContainer p a:hover {
+    color: #746f6f;
   }
   .About .connectSection {
     padding: 72px 18.748px;
@@ -1073,6 +1112,12 @@
     text-transform: capitalize;
     text-align: center;
     font-size: 26px;
+    margin: 0 auto 2rem 0;
+  }
+  .About .connectSection p {
+    max-width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
     margin: 0 auto 2rem 0;
   }
   .About .connectSection form {
@@ -1165,6 +1210,158 @@
     margin: 0 auto;
     z-index: 1;
     min-height: 80vh;
+  }
+}
+@media (max-width: 63.9375rem) {
+  .Contact {
+    position: relative;
+    height: 100%;
+    max-width: 100%;
+  }
+  .Contact .contactContainer {
+    display: flex;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    z-index: 1;
+    flex-direction: column;
+  }
+  .Contact .contactContainer .socialSection {
+    padding-top: 4rem;
+    background-color: #F8F5F2;
+  }
+  .Contact .contactContainer .socialSection h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer {
+    padding: 72px 18.748px;
+    background-color: #F8F5F2;
+    min-height: 40vh;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer div a {
+    color: #000000;
+    text-decoration: none;
+    margin: 10px 17px 0 0;
+    font-size: 27px;
+    transition: color 300ms ease;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer div a:hover {
+    color: #746f6f;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer p {
+    text-align: center;
+    margin: 1.8rem auto;
+    font-size: 1.5rem;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer p a {
+    text-decoration: underline;
+    color: #000000;
+    transition: color 300ms ease;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer p a:hover {
+    color: #746f6f;
+  }
+  .Contact .contactContainer .connectSection {
+    padding: 72px 18.748px;
+  }
+  .Contact .contactContainer .connectSection h3 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 26px;
+    margin: 0 auto 2rem 0;
+  }
+  .Contact .contactContainer .connectSection p {
+    max-width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0 auto 2rem 0;
+  }
+  .Contact .contactContainer .connectSection form {
+    max-width: 100%;
+  }
+  .Contact .contactContainer .connectSection form div {
+    max-width: 100%;
+  }
+  .Contact .contactContainer .connectSection form div .fullName, .Contact .contactContainer .connectSection form div .email, .Contact .contactContainer .connectSection form div .message {
+    width: 100%;
+    padding: 0.75rem 1.2rem;
+    border: 1px solid #cac9c9;
+    border-radius: 0.24rem;
+    font-size: 13px;
+    outline: none;
+  }
+  .Contact .contactContainer .connectSection form div .fullName::-moz-placeholder, .Contact .contactContainer .connectSection form div .email::-moz-placeholder, .Contact .contactContainer .connectSection form div .message::-moz-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .Contact .contactContainer .connectSection form div .fullName:-ms-input-placeholder, .Contact .contactContainer .connectSection form div .email:-ms-input-placeholder, .Contact .contactContainer .connectSection form div .message:-ms-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .Contact .contactContainer .connectSection form div .fullName::placeholder, .Contact .contactContainer .connectSection form div .email::placeholder, .Contact .contactContainer .connectSection form div .message::placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .Contact .contactContainer .connectSection form .nameDiv {
+    margin: 1rem 0 0 0;
+  }
+  .Contact .contactContainer .connectSection form .emailDiv {
+    margin: 1rem 0 0 0;
+  }
+  .Contact .contactContainer .connectSection form .messageDiv {
+    margin: 2rem 0 1rem 0;
+  }
+  .Contact .contactContainer .connectSection form .messageDiv textarea {
+    resize: none;
+  }
+  .Contact .contactContainer .connectSection form .consentDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    margin: 0 auto 2rem 0;
+  }
+  .Contact .contactContainer .connectSection form .consentDiv div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .Contact .contactContainer .connectSection form .consentDiv div input {
+    margin: 0 10px 0 0;
+  }
+  .Contact .contactContainer .connectSection form .consentDiv div label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #746f6f;
+  }
+  .Contact .contactContainer .connectSection form .consentDiv .submitBtn {
+    padding: 0.75rem 1.2rem;
+    margin: 2rem 0 0 0;
+    max-width: 150px;
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #746f6f;
+    border-radius: 0.24rem;
+    background-color: #746f6f;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 }
 @media (max-width: 63.9375rem) {
