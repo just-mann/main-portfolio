@@ -39,14 +39,24 @@ class Home extends Component {
     }
 
     render() {
+
+        const myBackground = {
+            backgroundImage: `url(${bgImage})`,
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            objectFit: 'cover'
+        }
+    
+        const designImg = <FaFigma />;
+        const devImg = <BiCodeAlt />;
+        const respDesImg = <MdMobileFriendly />;
+
+
         return (
-<<<<<<< HEAD
-            <div className='Home'>
-                <Navbar />
-=======
             <div>
-                <div className='Home' style={myBackground}>
-                    <Navbar />
+            <div className='Home' style={myBackground}>
+                <Navbar />
                     <div className="mainSection">
                         <div className="mainHero">
                             <h3>Hey there, I am Justin Kollie</h3>
@@ -157,7 +167,6 @@ class Home extends Component {
                             <Link to="/">See Resume</Link>
                         </div>
                 </section>
->>>>>>> d290fa7e42a77e2e8035adcede7703609993b456
             </div>
         )
     }
