@@ -134,7 +134,8 @@
   .Navbar {
     max-width: 100%;
     z-index: 500;
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
@@ -519,11 +520,6 @@
     padding: 72px 28.748px;
     text-align: center;
   }
-  .mySkills h3 {
-    color: #212122;
-    font-weight: 500;
-    text-align: left;
-  }
   .mySkills .skillsContainer {
     display: -ms-grid;
     display: grid;
@@ -536,6 +532,9 @@
         -ms-flex-align: center;
             align-items: center;
     gap: 24px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .mySkills .skillsContainer .skill {
     width: 100%;
@@ -561,6 +560,19 @@
   .mySkills .skillsContainer .skill:hover {
     color: #000000;
     border-color: #000000;
+  }
+  .mySkills .skillsDescription {
+    height: auto;
+    margin-bottom: 20px;
+    text-align: left;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .mySkills .skillsDescription h3 {
+    color: #212122;
+    font-weight: 500;
+    text-align: left;
   }
   .mySpecialty {
     min-height: 75vh;
@@ -794,76 +806,6 @@
 }
 
 @media (min-width: 64rem) {
-  .Home {
-    position: relative;
-    min-height: 100vh;
-  }
-  .Home::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(33, 33, 34, 0.94);
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-  }
-  .Home .mainSection {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 100%;
-    height: 100%;
-    margin: auto;
-    z-index: 1;
-    text-align: center;
-  }
-  .Home .mainSection * {
-    z-index: 1;
-  }
-  .Home .mainSection .mainHero {
-    max-width: 104.6875rem;
-    min-height: 6.25rem;
-    padding: 0 48px;
-    margin: 0 auto 0 auto;
-  }
-  .Home .mainSection .mainHero h3 {
-    font-size: 50.5px;
-    text-transform: capitalize;
-    font-weight: 700;
-    color: #ffffff;
-    line-height: 4.375rem;
-    max-width: 33.5rem;
-    margin: 180.998px auto 32.003px auto;
-    text-align: center;
-    -webkit-transition: font-size 300ms ease;
-    transition: font-size 300ms ease;
-  }
-  .Home .mainSection .mainHero p {
-    color: #cac9c9;
-    font-size: 25px;
-    max-width: 39.75rem;
-    line-height: 2.5rem;
-    font-weight: 400;
-    margin: 0 auto 45.998px auto;
-    text-align: center;
-    -webkit-transition: font-size 300ms ease;
-    transition: font-size 300ms ease;
-  }
-  .Home .mainSection .mainHero .contact {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #F9373A;
-    border: 1px solid #F9373A;
-    padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
-    font-weight: 700;
-    -webkit-transition: background-color 300ms ease-in-out;
-    transition: background-color 300ms ease-in-out;
-    padding: 1rem 1.5rem;
-    margin: auto;
-  }
   .whatIDo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -960,6 +902,10 @@
         -ms-flex-align: center;
             align-items: center;
     gap: 24px;
+    height: 75%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .mySkills .skillsContainer .skill {
     width: 110%;
@@ -987,7 +933,10 @@
     border-color: #000000;
   }
   .mySkills .skillsDescription {
-    height: 73%;
+    height: 75%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     text-align: left;
   }
   .mySkills .skillsDescription h3 {
@@ -1025,6 +974,7 @@
   }
   .mySpecialty div div {
     width: 90%;
+    margin: auto;
     background-color: #ebebeb;
     border: 0.998px solid #ebebeb;
     padding: 28px 30px;
@@ -1107,8 +1057,8 @@
     min-height: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 2.5rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1119,9 +1069,9 @@
     margin-bottom: 3.5rem;
   }
   .selectedProjects .projectDiv .myFeatProj {
-    width: 100%;
-    margin: 0.46rem 0;
-    min-height: 249.997px;
+    width: 95%;
+    margin: 0.46rem auto;
+    min-height: 229.997px;
   }
   .selectedProjects .projectDiv .myFeatProj * {
     -webkit-transition: display 300ms ease;
@@ -1129,7 +1079,7 @@
   }
   .selectedProjects .projectDiv .myFeatProj img {
     width: 100%;
-    height: 300px;
+    height: 250px;
     -o-object-fit: fill;
        object-fit: fill;
   }
