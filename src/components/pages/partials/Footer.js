@@ -14,16 +14,18 @@ const Footer = () => {
 
     return(
         <div className='Footer'>
-            <div className="Footer__header">
-                <Link to='/'>Justin</Link>
-            </div>
-            <div className="Footer__address">
-                <h3>Location</h3>
-                <div>
-                    <p>Pawtucket, RI 02860</p>
-                    <a href='mailto:kolliejustin418@gmail.com'>kolliejustin418@gmail.com</a>
+           <div>
+                <div className="Footer__header">
+                    <Link to='/'>Justin</Link>
                 </div>
-            </div>
+                <div className="Footer__address">
+                    <h3>Location</h3>
+                    <div>
+                        <p>Pawtucket, RI 02860</p>
+                        <a href='mailto:kolliejustin418@gmail.com'>kolliejustin418@gmail.com</a>
+                    </div>
+                </div>
+           </div>
             <div className="Footer__usefulLinks">
                 <h3>Links</h3>
                 <div>
