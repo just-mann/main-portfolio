@@ -118,7 +118,6 @@
                 color: $borderGray;
                 font-weight: 500;
                 font-size: 17px;
-                text-align: center;
             }
             
         }
@@ -166,7 +165,6 @@
             // border-bottom: 1px solid $borderGray;
             padding: 27px 0;
             grid-area: location;
-            transition: grid 300ms ease-in-out;
 
             h3 {
                 font-size: 16px;
@@ -189,7 +187,6 @@
             // border-bottom: 1px solid $borderGray;
             padding: 27px 0;
             grid-area: links;
-            transition: grid 300ms ease-in-out;
             
             h3 {
                 font-size: 16px;
@@ -222,7 +219,6 @@
         &__socialLinks {
             padding: 27px 0;
             grid-area: social;
-            transition: grid 300ms ease-in-out;
             
 
             h3 {
@@ -258,14 +254,12 @@
             grid-area: bottom;
             display: grid;
             align-items: center;
-            transition: grid 300ms ease-in-out;
 
             p {
                 color: $borderGray;
                 font-weight: 500;
                 font-size: 17px;
                 text-align: center;
-                align-self: center;
             }
             
         }

@@ -430,16 +430,16 @@
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 30px;
     order: 2;
   }
   .mySkills .skillsContainer .skill {
     width: 100%;
-    margin: auto;
-    font-size: 35px;
+    margin: 5px auto;
+    font-size: 25px;
     font-weight: bold;
     color: #746f6f;
-    height: 5.5rem;
+    height: 3.5rem;
     border: 0.12rem solid #746f6f;
     display: flex;
     justify-content: center;
@@ -453,7 +453,7 @@
   }
   .mySkills .skillsDescription {
     height: auto;
-    margin-bottom: 20px;
+    margin-top: 35px;
     text-align: left;
     order: 1;
   }
@@ -727,16 +727,15 @@
   }
   .mySkills .skillsContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7.75rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     justify-content: center;
-    align-items: center;
     gap: 24px;
     height: 75%;
     order: 1;
   }
   .mySkills .skillsContainer .skill {
     width: 110%;
-    margin: auto;
+    margin: 10px auto;
     font-size: 35px;
     font-weight: bold;
     color: #746f6f;
@@ -1592,12 +1591,13 @@
     color: #353434;
     font-weight: 500;
     font-size: 17px;
+    text-align: center;
   }
 }
 @media (min-width: 64rem) {
   .Footer {
     padding: 72px 50.2px;
-    padding-top: 1px;
+    padding-top: 2rem;
     padding-bottom: 1px;
     background-color: #000000;
     min-height: auto;
@@ -1624,6 +1624,7 @@
   .Footer__address {
     padding: 27px 0;
     grid-area: location;
+    transition: grid 300ms ease-in-out;
   }
   .Footer__address h3 {
     font-size: 16px;
@@ -1639,24 +1640,20 @@
   .Footer__usefulLinks {
     padding: 27px 0;
     grid-area: links;
+    transition: grid 300ms ease-in-out;
   }
   .Footer__usefulLinks h3 {
     font-size: 16px;
   }
   .Footer__usefulLinks div {
     display: flex;
-    flex-direction: column;
   }
   .Footer__usefulLinks div a {
     text-decoration: none;
-    width: 10px;
-    margin-top: 12px;
-    display: inline;
+    margin: 12px 2rem 0 0;
+    display: block;
     color: #746f6f;
     transition: color 300ms ease;
-  }
-  .Footer__usefulLinks div a:first-child {
-    margin-top: 20px;
   }
   .Footer__usefulLinks div a:hover {
     color: #cac9c9;
@@ -1664,6 +1661,7 @@
   .Footer__socialLinks {
     padding: 27px 0;
     grid-area: social;
+    transition: grid 300ms ease-in-out;
   }
   .Footer__socialLinks h3 {
     font-size: 16px;
@@ -1676,7 +1674,7 @@
     text-decoration: none;
     color: #353434;
     margin: 10px 15px 0 0;
-    font-size: 17px;
+    font-size: 1.3rem;
     transition: color 300ms ease;
   }
   .Footer__socialLinks div a:hover {
@@ -1688,12 +1686,16 @@
     max-width: 100%;
     text-align: center;
     grid-area: bottom;
+    display: grid;
+    align-items: center;
+    transition: grid 300ms ease-in-out;
   }
   .Footer__bottom p {
     color: #353434;
     font-weight: 500;
     font-size: 17px;
     text-align: center;
+    align-self: center;
   }
 }
 * {

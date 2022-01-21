@@ -118,7 +118,6 @@
                 color: $borderGray;
                 font-weight: 500;
                 font-size: 17px;
-                text-align: center;
             }
             
         }
@@ -130,7 +129,7 @@
 @include breakpoint-desktop(large) {
     .Footer {
         @include desktopPadding;
-        padding-top: 2rem;
+        padding-top: 1px;
         padding-bottom: 1px;
         background-color: $darkBlack;
         min-height: auto;
@@ -166,7 +165,6 @@
             // border-bottom: 1px solid $borderGray;
             padding: 27px 0;
             grid-area: location;
-            transition: grid 300ms ease-in-out;
 
             h3 {
                 font-size: 16px;
@@ -189,7 +187,6 @@
             // border-bottom: 1px solid $borderGray;
             padding: 27px 0;
             grid-area: links;
-            transition: grid 300ms ease-in-out;
             
             h3 {
                 font-size: 16px;
@@ -197,14 +194,13 @@
             
             div {
                 display: flex;
-                //justify-content: space-between;
-                //grid-template-columns: 1fr 1fr 1fr;
                 //flex-direction: column;
                 
                 a {
                     text-decoration: none;
-                    margin: 12px 2rem 0 0;
-                    display: block;
+                    width: 10px;
+                    margin: 12px 24px 0 0;
+                    display: inline;
                     color: $lightGray;
                     transition: color 300ms ease;
 
@@ -222,9 +218,8 @@
         &__socialLinks {
             padding: 27px 0;
             grid-area: social;
-            transition: grid 300ms ease-in-out;
+            // border-bottom: 1px solid $borderGray;
             
-
             h3 {
                 font-size: 16px;
             }
@@ -237,7 +232,7 @@
                     text-decoration: none;
                     color: $borderGray;
                     margin: 10px 15px 0 0;
-                    font-size: 1.3rem;
+                    font-size: 17px;
                     transition: color 300ms ease;
                     
                     
@@ -256,16 +251,12 @@
             max-width: 100%;
             text-align: center;
             grid-area: bottom;
-            display: grid;
-            align-items: center;
-            transition: grid 300ms ease-in-out;
 
             p {
                 color: $borderGray;
                 font-weight: 500;
                 font-size: 17px;
                 text-align: center;
-                align-self: center;
             }
             
         }

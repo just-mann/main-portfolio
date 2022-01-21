@@ -146,13 +146,13 @@
             grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
             justify-content: center;
             align-items: center;
-            gap: 30px;
+            gap: 24px;
             order: 2;
             
             .skill {
                 width: 100%;
-                margin: 5px auto;
-                font-size: 25px;
+                margin: auto;
+                font-size: 20px;
                 font-weight: bold;
                 color: $lightGray;
                 height: 3.5rem;
@@ -479,19 +479,20 @@
 
         .skillsContainer {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(7.75rem, 1fr));
             justify-content: center;
-            gap: 24px;
+            align-items: center;
+            gap: 30px;
             height: 75%;
             order: 1;
             
             .skill {
                 width: 110%;
-                margin: 10px auto;
-                font-size: 35px;
+                margin: 0 auto 2px 0;
+                font-size: 20px;
                 font-weight: bold;
                 color: $lightGray;
-                height: 4.5rem;
+                height: 3.5rem;
                 border: 0.12rem solid $lightGray;
                 display: flex;
                 justify-content: center;

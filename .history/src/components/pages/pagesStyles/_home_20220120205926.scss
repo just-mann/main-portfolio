@@ -479,8 +479,9 @@
 
         .skillsContainer {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(7.75rem, 1fr));
             justify-content: center;
+            align-items: center;
             gap: 24px;
             height: 75%;
             order: 1;
