@@ -1849,6 +1849,7 @@
   .Footer__header {
     padding: 30px 0;
     border-bottom: 1px solid #353434;
+    display: none;
   }
   .Footer__header a {
     text-decoration: none;
