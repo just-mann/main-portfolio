@@ -5,7 +5,7 @@
         top: 0;
         left: 0;
         right: 0;
-        background-color: rgba($darkBlack, 1);
+        background-color: $darkBlack;
         max-width: 100%;
         z-index: 500;
 
@@ -136,10 +136,10 @@
 
     //Desktop Design
     @include breakpoint-desktop(large) {
-        //sbackground-color: rgba($darkBlack, 1);
+        background-color: $darkBlack;
         max-width: 100%;
         z-index: 500;
-        position: fixed;
+        position: sticky;
         top: 0;
         right: 0;
         left: 0;
@@ -259,10 +259,10 @@
     
     //Desktop Design
     @include breakpoint-desktop(large) {
-        background-color: rgba($darkBlack, 0.9);
+        background-color: $darkBlack;
         max-width: 100%;
         z-index: 200;
-        display: fixed;
+        display: sticky;
 
 
         .NavbarContainer {

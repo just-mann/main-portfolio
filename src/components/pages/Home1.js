@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Navbar from './partials/Navbar';
 //import Footer from './partials/Footer';
 import bgImage from './images/lineBg.jpeg';
@@ -11,10 +11,8 @@ import {MdMobileFriendly} from 'react-icons/md';
 import {GiNetworkBars} from 'react-icons/gi';
 import {IoLogoJavascript, IoMdContacts} from 'react-icons/io';
 
-
-
 class Home extends Component {
-
+    
     constructor(props) {
         super(props)
 
@@ -22,8 +20,9 @@ class Home extends Component {
             projects: []
         }
     }
+    // const [projects, setProjects] = useState([]);
 
-
+    
     componentDidMount() {
         const URI = 'https://my-json-server.typicode.com/just-mann/my-database/projects';
 
@@ -37,6 +36,7 @@ class Home extends Component {
             })
             .catch(err => console.log(err));
     }
+    
 
     render() {
 
@@ -52,11 +52,10 @@ class Home extends Component {
         const devImg = <BiCodeAlt />;
         const respDesImg = <MdMobileFriendly />;
 
-
         return (
             <div>
-            <div className='Home' style={myBackground}>
-                <Navbar />
+                <div className='Home' style={myBackground}>
+                    <Navbar />
                     <div className="mainSection">
                         <div className="mainHero">
                             <h3>Hey there, I am Justin Kollie</h3>
@@ -74,7 +73,7 @@ class Home extends Component {
                     <div className="whatIDoRight">
                         <p className='whoAmI'>Who I Am</p>
                         <h3 className='heading'>I design & build amazing websites</h3>
-                        <p className='description'>I want my clients to feel awesome and unique. Let's work together to bring your projects to another level.</p>
+                        <p className='description'>I want my clients to feel awesome and unique. Let work together to bring your projects to another level.</p>
                         <Link to='/portfolio' className='viewPortfolio'>Portfolio</Link>
                     </div>
                     

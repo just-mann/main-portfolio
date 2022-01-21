@@ -16,10 +16,10 @@ class Contact extends Component {
               <div className="socialSectionContainer">
                 <h3>Follow Me</h3>
                 <div>
-                    <a href="https://github.com/just-mann" target='_blank' rel='nonopener nonreferrer'><FaGithub /></a>
-                    <a href="https://www.linkedin.com/in/justine-kollie-253b40156/" target='_blank' rel='nonopener nonreferrer'><FaLinkedinIn /></a>
-                    <a href="https://www.instagram.com/401smooth/" target='_blank' rel='nonopener nonreferrer'><FaInstagram /></a>
-                    <a href="https://twitter.com/iamjust_100" target='_blank' rel='nonopener nonreferrer'><FaTwitter /></a>
+                    <a className='icon' href="https://github.com/just-mann" target='_blank' rel='nonopener nonreferrer'><FaGithub /></a>
+                    <a className='icon' href="https://www.linkedin.com/in/justine-kollie-253b40156/" target='_blank' rel='nonopener nonreferrer'><FaLinkedinIn /></a>
+                    <a className='icon' href="https://www.instagram.com/401smooth/" target='_blank' rel='nonopener nonreferrer'><FaInstagram /></a>
+                    <a className='icon' href="https://twitter.com/iamjust_100" target='_blank' rel='nonopener nonreferrer'><FaTwitter /></a>
                 </div>
                 <p>
                   Let’s Work Together. <br/>
@@ -38,7 +38,7 @@ class Contact extends Component {
                         <input type="email" name="email" id="email" className='email' placeholder='Your Email' required/>
                     </div>
                     <div className='messageDiv'>
-                        <textarea name="message" id="message" className='message' cols="30" rows="5" aria-invalid="false" placeholder='Message' required></textarea>
+                        <textarea name="message" id="message" className='message' cols="30" rows="8" aria-invalid="false" placeholder='Message' required></textarea>
                     </div>
                     <div className='consentDiv'>
                         <div>
