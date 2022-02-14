@@ -16,9 +16,9 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     .Projects {
-        background-color: rgb(190, 135, 176);
+        background-color: yellow;
         position: relative;
         @include mobilePadding;
         
@@ -32,16 +32,18 @@
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
     .Projects {
-        background-color: rgb(153, 153, 93);
+        background-color: yellow;
+        
         @include mobilePadding;
         
         
 
         .projectsContainer {
             min-height: 80vh;
+            padding: 3rem 0 0 0;
             max-width: 100%;
         }
 
@@ -49,14 +51,11 @@
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
     .Projects {
         background-color: rgb(133, 199, 158);
-        padding: 0;
-        
 
         .projectsContainer {
-            @include desktopPadding;
             min-height: 80vh;
             max-width: 100%;
         }
@@ -66,14 +65,6 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .Projects {
-        background-color: rgb(15, 153, 68);
-        padding: 0;
-        
-        
-        .projectsContainer {
-            @include desktopPadding;
-            min-height: 80vh;
-            max-width: 100%;
-        }
+        background-color: rgb(114, 214, 209);
     }
 }

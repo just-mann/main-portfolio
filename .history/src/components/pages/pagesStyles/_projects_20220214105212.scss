@@ -18,7 +18,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .Projects {
-        background-color: rgb(190, 135, 176);
+        background-color: yellow;
         position: relative;
         @include mobilePadding;
         
@@ -35,7 +35,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .Projects {
-        background-color: rgb(153, 153, 93);
+        background-color: yellow;
         @include mobilePadding;
         
         
@@ -52,7 +52,7 @@
 @media only screen and (min-width: 992px) {
     .Projects {
         background-color: rgb(133, 199, 158);
-        padding: 0;
+        
         
 
         .projectsContainer {

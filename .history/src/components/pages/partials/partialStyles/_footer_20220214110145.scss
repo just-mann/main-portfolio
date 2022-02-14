@@ -224,7 +224,7 @@
                 }
             }
             
-            .Footer__socialLinks {
+            &__socialLinks {
                 padding: 27px 0;
                 grid-area: social;
                 transition: grid 300ms ease-in-out;
@@ -255,7 +255,7 @@
                 
             }
             
-            .Footer__bottom {
+            &__bottom {
                 padding: 27px 0;
                 border-top: 1px solid $borderGray;
                 max-width: 100%;

@@ -148,7 +148,7 @@
                 "bottom bottom bottom";
             
             
-            .Footer__header {
+            &__header {
                 padding: 30px 0;
                 display: none;
                 // border-bottom: 1px solid $borderGray;
@@ -167,7 +167,7 @@
                 }
             }
 
-            .Footer__address {
+            &__address {
                 // border-bottom: 1px solid $borderGray;
                 padding: 27px 0;
                 grid-area: location;
@@ -190,7 +190,7 @@
                 }
             }
 
-            .Footer__usefulLinks {
+            &__usefulLinks {
                 // border-bottom: 1px solid $borderGray;
                 padding: 27px 0;
                 grid-area: links;
@@ -224,7 +224,7 @@
                 }
             }
             
-            .Footer__socialLinks {
+            &__socialLinks {
                 padding: 27px 0;
                 grid-area: social;
                 transition: grid 300ms ease-in-out;
@@ -255,7 +255,7 @@
                 
             }
             
-            .Footer__bottom {
+            &__bottom {
                 padding: 27px 0;
                 border-top: 1px solid $borderGray;
                 max-width: 100%;
