@@ -151,7 +151,7 @@
             
             .skill {
                 width: 250px;
-                margin: auto;
+                margin: 5px auto;
                 font-size: 25px;
                 font-weight: bold;
                 color: $lightGray;
@@ -401,76 +401,7 @@
 //Large Screen Design
 @include breakpoint-desktop(large) {
     .Home {
-        position: relative;
-        min-height: 100vh;
-    
-    
-        &::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba($lightBlack, 0.94);
-            height: 100%;
-            width: 100%;
-            z-index: 1;
-        }
-
-        .mainSection {
-            display: flex;
-            max-width: 100%;
-            min-height: 100vh;
-            margin: auto;
-            z-index: 1;
-            text-align: center;
-            align-items: center;
-
-            * {
-                z-index: 1;
-            }
-    
-            .mainHero {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                max-width: 100%;
-                min-height: 6.25rem;
-                padding: 0 48px;
-                margin: 0 auto 0 auto;
-
-                h3 {
-                    font-size: 42.5px;
-                    text-transform: capitalize;
-                    font-weight: 700;
-                    color: $white;
-                    line-height: 3.375rem;
-                    width: 20.5rem;
-                    margin: 30px auto 32.003px auto;
-                    text-align: center;
-                    transition: font-size 300ms ease;
-                }
-
-                p {
-                    color: $hoverWhite;
-                    font-size: 19px;
-                    max-width: 23.75rem;
-                    line-height: 1.8rem;
-                    font-weight: 400;
-                    margin: 0 auto 56.002px auto;
-                    text-align: center;
-                    transition: font-size 300ms ease;
-                }
-
-                .contact {
-                    @include redBtnStyle;
-                    padding: 0.6rem 1.5rem;
-                    margin: auto;
-                }
-            }
-    
-        }   
+        
     }
 
     .whatIDo {

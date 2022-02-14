@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './partials/Navbar';
 import {FaGithub, FaTwitter, FaLinkedinIn, FaInstagram} from 'react-icons/fa';
-import ContactForm from './partials/ContactForm';
 
 
 
@@ -28,7 +27,7 @@ class Contact extends Component {
                 </p>
               </div>
           </section>
-          <ContactForm />
+          
         </div>
       </div>
     )

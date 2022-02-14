@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './partials/Navbar';
 import {FaGithub, FaTwitter, FaLinkedinIn, FaInstagram} from 'react-icons/fa';
-import ContactForm from './partials/ContactForm';
+import ContactForm from './pagesStyles/ContactForm';
 
 
 
