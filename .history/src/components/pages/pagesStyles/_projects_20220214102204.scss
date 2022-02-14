@@ -8,50 +8,25 @@
         
         .projectsContainer {
             min-height: 80vh;
-            padding: 3rem 0 0 0;
-            max-width: 100%;
         }
 
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-    .Projects {
-        background-color: yellow;
-        position: relative;
-        @include mobilePadding;
-        
-        
-        .projectsContainer {
-            min-height: 80vh;
-            padding: 3rem 0 0 0;
-            max-width: 100%;
-        }
-
-    }
+@media only screen and (min-width: 600px) {
+    
 }
 
-/* Medium devices (landscape tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
     .Projects {
         background-color: yellow;
-        
-        @include mobilePadding;
-        
-        
-
-        .projectsContainer {
-            min-height: 80vh;
-            padding: 3rem 0 0 0;
-            max-width: 100%;
-        }
-
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
     .Projects {
         background-color: rgb(133, 199, 158);
     }
