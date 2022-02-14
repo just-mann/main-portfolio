@@ -1,0 +1,103 @@
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Portfolio {
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+        background-color: yellow;
+        
+        .portfolioContainer {
+            @include mobilePadding;
+            display: flex;
+            max-width: 100%;
+            min-height: 100vh;
+            margin: 0 auto;
+            z-index: 1;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Portfolio {
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+        
+        .portfolioContainer {
+            @include mobilePadding;
+            display: flex;
+            max-width: 100%;
+            min-height: 100vh;
+            margin: 0 auto;
+            background-color: yellow;
+            z-index: 1;
+            min-height: 80vh;
+        }
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .Portfolio {
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+        
+        .portfolioContainer {
+            @include mobilePadding;
+            display: flex;
+            max-width: 100%;
+            min-height: 100vh;
+            margin: 0 auto;
+            background-color: yellow;
+            z-index: 1;
+            min-height: 100vh;
+        }
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .Portfolio {
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+        
+        .portfolioContainer {
+            @include mobilePadding;
+            display: flex;
+            max-width: 100%;
+            min-height: 100vh;
+            margin: 0 auto;
+            background-color: rgb(107, 204, 199);
+            z-index: 1;
+            min-height: 80vh;
+        }
+
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .Portfolio {
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+        
+        .portfolioContainer {
+            @include mobilePadding;
+            display: flex;
+            max-width: 100%;
+            min-height: 100vh;
+            margin: 0 auto;
+            // background-color: yellow;
+            z-index: 1;
+            min-height: 80vh;
+        }
+
+    }
+}

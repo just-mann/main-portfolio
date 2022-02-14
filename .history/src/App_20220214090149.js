@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-import Projects from './components/pages/Projects';
+import Portfolio from './components/pages/Portfolio';
 import Contact from './components/pages/Contact';
 import NotFound from './components/pages/NotFound';
 import Footer from './components/pages/partials/Footer';
@@ -21,8 +21,8 @@ const App = () => {
           <Route exact path="/about-me">
             <About />
           </Route>
-          <Route exact path="/projects">
-            <Projects />
+          <Route exact path="/portfolio">
+            <Portfolio />
           </Route>
           <Route exact path="/contact-me">
             <Contact />

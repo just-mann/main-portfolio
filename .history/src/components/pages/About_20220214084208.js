@@ -4,12 +4,13 @@ import myImage from './images/myBubble.jpeg';
 import $ from 'jquery';
 import {FaGithub, FaTwitter, FaLinkedinIn, FaInstagram} from 'react-icons/fa';
 import ContactForm from './partials/ContactForm';
+import './pagesStyles/_about.scss';
 
 const About = () => {
 
     $(() => {
         let submitBtn = $('.submitBtn');
-    });
+    })
 
     return (
         <div className='About'>

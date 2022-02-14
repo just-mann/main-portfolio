@@ -9,7 +9,7 @@ const About = () => {
 
     $(() => {
         let submitBtn = $('.submitBtn');
-    });
+    })
 
     return (
         <div className='About'>
