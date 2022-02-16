@@ -5,6 +5,7 @@
         position: relative;
         height: 100%;
         max-width: 100%;
+        background-color: skyblue;
 
         .Navbar {
 
@@ -87,31 +88,6 @@
 
         .achievements {
             @include mobilePadding;
-
-            &__heading, &__subHeading, &__detail {
-                text-align: center;
-            }
-
-            &__heading, &__subHeading {
-                margin-bottom: 1rem;
-            }
-
-            &__heading {
-                font-size: 1.8em;
-                font-weight: bold;
-            }
-
-            &__subHeading {
-                margin-bottom: 0.8rem;
-                font-size: 1.4em;
-            }
-
-            &__detail {
-                text-align: center;
-                font-size: 1.1rem;
-                width: 360px;
-                margin: auto;
-            }
         }
 
         .socialSection {
@@ -594,69 +570,59 @@
         }
 
         .socialSection {
-            padding-top: 4rem;
             background-color: #F8F5F2;
-
-            h3 {
-                text-align: center;
-                font-size: 2.5rem;
-                font-weight: 700;
-            }
 
 
             .socialSectionContainer {
-                max-width: 600px;
-                margin: auto;
-                @include mobilePadding;
-                background-color: #F8F5F2;
-                min-height: 40vh;
-
-                h3 {
-                    font-size: 16px;
-                    margin-top: 0.2em;
-                    font-size: 1.6em;
-                    text-align: center;
-                }
-
-                div {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    max-width: 600px;
                     margin: auto;
-                    
-                    a {
-                        color: $darkBlack;
-                        text-decoration: none;
-                        margin: 10px 17px 0 0;
-                        font-size: 27px;
-                        transition: color 300ms ease;
+                    @include mobilePadding;
+                    background-color: #F8F5F2;
+                    min-height: 40vh;
+
+                    h3 {
+                        font-size: 16px;
+                        text-align: center;
+                    }
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: auto;
                         
-                        
-                        &:hover {
-                            color: $lightGray;
+                        a {
+                            color: $darkBlack;
+                            text-decoration: none;
+                            margin: 10px 17px 0 0;
+                            font-size: 27px;
+                            transition: color 300ms ease;
+                            
+                            
+                            &:hover {
+                                color: $lightGray;
+                            }
+                        }
+                    }
+
+                    p {
+                        text-align: center;
+                        font-size: 1.5em;
+                        width: 400px;
+                        margin: 1.8rem auto;
+
+                        a {
+                            text-decoration: underline;
+                            color: $darkBlack;
+                            transition: color 300ms ease;
+
+                            &:hover {
+                                color: $lightGray;
+                            }
                         }
                     }
                 }
-
-                p {
-                    text-align: center;
-                    font-size: 1.5em;
-                    width: 400px;
-                    margin: 1.8rem auto;
-
-                    a {
-                        text-decoration: underline;
-                        color: $darkBlack;
-                        transition: color 300ms ease;
-
-                        &:hover {
-                            color: $lightGray;
-                        }
-                    }
-                }
-            }
-            
-        } 
+        }
         
         
     }

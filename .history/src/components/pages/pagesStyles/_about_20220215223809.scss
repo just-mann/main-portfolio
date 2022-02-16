@@ -87,31 +87,6 @@
 
         .achievements {
             @include mobilePadding;
-
-            &__heading, &__subHeading, &__detail {
-                text-align: center;
-            }
-
-            &__heading, &__subHeading {
-                margin-bottom: 1rem;
-            }
-
-            &__heading {
-                font-size: 1.8em;
-                font-weight: bold;
-            }
-
-            &__subHeading {
-                margin-bottom: 0.8rem;
-                font-size: 1.4em;
-            }
-
-            &__detail {
-                text-align: center;
-                font-size: 1.1rem;
-                width: 360px;
-                margin: auto;
-            }
         }
 
         .socialSection {

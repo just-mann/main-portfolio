@@ -93,24 +93,12 @@
             }
 
             &__heading, &__subHeading {
+                font-weight: bold;
                 margin-bottom: 1rem;
             }
 
             &__heading {
-                font-size: 1.8em;
-                font-weight: bold;
-            }
-
-            &__subHeading {
-                margin-bottom: 0.8rem;
-                font-size: 1.4em;
-            }
-
-            &__detail {
-                text-align: center;
-                font-size: 1.1rem;
-                width: 360px;
-                margin: auto;
+                font-size: 1.6em;
             }
         }
 
