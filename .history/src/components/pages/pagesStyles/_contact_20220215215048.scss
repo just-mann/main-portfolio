@@ -147,7 +147,7 @@
 
                     p {
                         text-align: center;
-                        font-size: 1.5em;
+                        font-size: 1.4em;
                         width: 400px;
                         margin: 1.8rem auto;
 
@@ -172,10 +172,16 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
     .Contact {
         position: relative;
         height: 100%;
         max-width: 100%;
+        background-color: white;
 
 
         .contactContainer {
@@ -185,14 +191,15 @@
             margin: auto;
             z-index: 1;
             flex-direction: column;
+            background-color: #ffffff;
 
             .socialSection {
-                padding-top: 4rem;
+                padding: 0 4rem 0 4rem;
                 background-color: #F8F5F2;
 
                 h3 {
                     text-align: center;
-                    font-size: 2.5rem;
+                    font-size: 3.5rem;
                     font-weight: 700;
                 }
 
@@ -200,14 +207,12 @@
                 .socialSectionContainer {
                     max-width: 600px;
                     margin: auto;
-                    @include mobilePadding;
+                    @include desktopPadding;
+                    padding: 0 auto 0 auto;
                     background-color: #F8F5F2;
-                    min-height: 40vh;
 
                     h3 {
                         font-size: 16px;
-                        margin-top: 1.5em;
-                        font-size: 1.6em;
                         text-align: center;
                     }
 
@@ -217,10 +222,10 @@
                         justify-content: center;
                         margin: auto;
                         
-                        a {
+                        .icon {
                             color: $darkBlack;
                             text-decoration: none;
-                            margin: 10px 17px 0 0;
+                            margin: 10px 17px 1rem 0;
                             font-size: 27px;
                             transition: color 300ms ease;
                             
@@ -233,9 +238,9 @@
 
                     p {
                         text-align: center;
-                        font-size: 1.5em;
-                        width: 400px;
-                        margin: 1.8rem auto;
+                        margin: 0 auto;
+                        font-size: 1.4rem;
+                        
 
                         a {
                             text-decoration: underline;
@@ -252,89 +257,6 @@
             }
             
             
-        }
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .Contact {
-        position: relative;
-        height: 100%;
-        max-width: 100%;
-
-
-        .contactContainer {
-            display: flex;
-            max-width: 100%;
-            min-height: 100vh;
-            margin: auto;
-            z-index: 1;
-            flex-direction: column;
-
-            .socialSection {
-                padding-top: 4rem;
-                background-color: #F8F5F2;
-
-                h3 {
-                    text-align: center;
-                    font-size: 2.5rem;
-                    font-weight: 700;
-                }
-
-
-                .socialSectionContainer {
-                    max-width: 600px;
-                    margin: auto;
-                    @include mobilePadding;
-                    background-color: #F8F5F2;
-                    min-height: 40vh;
-
-                    h3 {
-                        font-size: 16px;
-                        margin-top: 1.3em;
-                        font-size: 1.6em;
-                        text-align: center;
-                    }
-
-                    div {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin: auto;
-                        
-                        a {
-                            color: $darkBlack;
-                            text-decoration: none;
-                            margin: 10px 17px 0 0;
-                            font-size: 27px;
-                            transition: color 300ms ease;
-                            
-                            
-                            &:hover {
-                                color: $lightGray;
-                            }
-                        }
-                    }
-
-                    p {
-                        text-align: center;
-                        font-size: 1.5em;
-                        width: 400px;
-                        margin: 1.8rem auto;
-
-                        a {
-                            text-decoration: underline;
-                            color: $darkBlack;
-                            transition: color 300ms ease;
-
-                            &:hover {
-                                color: $lightGray;
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 }
@@ -345,6 +267,7 @@
         position: relative;
         height: 100%;
         max-width: 100%;
+        background-color: white;
 
 
         .contactContainer {
@@ -354,14 +277,15 @@
             margin: auto;
             z-index: 1;
             flex-direction: column;
+            background-color: #ffffff;
 
             .socialSection {
-                padding-top: 4rem;
+                padding: 0 4rem 0 4rem;
                 background-color: #F8F5F2;
 
                 h3 {
                     text-align: center;
-                    font-size: 2.5rem;
+                    font-size: 3.5rem;
                     font-weight: 700;
                 }
 
@@ -369,14 +293,12 @@
                 .socialSectionContainer {
                     max-width: 600px;
                     margin: auto;
-                    @include mobilePadding;
+                    @include desktopPadding;
+                    padding: 0 auto 0 auto;
                     background-color: #F8F5F2;
-                    min-height: 40vh;
 
                     h3 {
                         font-size: 16px;
-                        margin-top: 0.2em;
-                        font-size: 1.6em;
                         text-align: center;
                     }
 
@@ -386,10 +308,10 @@
                         justify-content: center;
                         margin: auto;
                         
-                        a {
+                        .icon {
                             color: $darkBlack;
                             text-decoration: none;
-                            margin: 10px 17px 0 0;
+                            margin: 10px 17px 1rem 0;
                             font-size: 27px;
                             transition: color 300ms ease;
                             
@@ -402,9 +324,9 @@
 
                     p {
                         text-align: center;
-                        font-size: 1.5em;
-                        width: 400px;
-                        margin: 1.8rem auto;
+                        margin: 0 auto;
+                        font-size: 1.4rem;
+                        
 
                         a {
                             text-decoration: underline;
@@ -418,7 +340,9 @@
                     }
                 }
                 
-            } 
+            }
+            
+            
         }
     }
 

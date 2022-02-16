@@ -1,0 +1,447 @@
+// Extra small devices
+@media only screen and (max-width: 600px) {
+    .connectSection {
+        // background-color: yellow;
+        max-width: 1100px;
+        margin: auto;
+        @include mobilePadding;
+    
+        h3 {
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 2.1em;
+            margin: 0 auto 2rem 0;
+        }
+    
+        p {
+            text-align: center;
+            margin: 0 auto 1.4em auto;
+            font-size: 1.3em;
+            padding: 0 1.2rem;
+            max-width: 500px;
+        }
+    
+        form {
+            max-width: 100%;
+    
+            div {
+                max-width: 100%;
+                
+                .fullName, .email, .message {
+                    width: 100%;
+                    padding: 0.75rem 1.2rem;
+                    border: 1px solid $hoverWhite;
+                    border-radius: 0.24rem;
+                    font-size: 13px;
+                    outline: none;
+    
+                    &::placeholder {
+                        font-size: 13px;
+                        color: $lightGray;
+                        font-weight: 500;
+                    }
+                }
+            }
+    
+            .nameDiv {
+                margin: 1rem 0 0 0;
+            }
+            
+            .emailDiv {
+                margin: 1rem 0 0 0;
+            }
+            
+            .messageDiv {
+                margin: 2rem 0 1rem 0;
+    
+                textarea {
+                    resize: none;
+                }
+            }
+    
+            .consentDiv {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+                margin: 0 auto 2rem 0;
+    
+                div {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 1rem 0;
+                    
+                    input {
+                        margin: 0 10px 0 0;
+                    }
+    
+                    label {
+                        font-size: 12px;
+                        font-weight: 600;
+                        color: $lightGray;
+                    }
+                }
+    
+                .submitBtn {
+                    padding: 0.75rem 1.2rem; 
+                    margin: 2rem 0 0 0;
+                    max-width: 150px;
+                    font-size: 13px;
+                    text-align: center;
+                    color: $white;
+                    border: 1px solid $lightGray;
+                    border-radius: 0.24rem;
+                    background-color: $lightGray;
+                    user-select: none;
+                }
+            }
+        }
+    }
+}
+
+// Small devices
+@media only screen and (min-width: 600px) {
+    .connectSection {
+        // background-color: yellow;
+        max-width: 1100px;
+        margin: auto;
+        @include mobilePadding;
+    
+        h3 {
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 2.6em;
+            margin: 0 auto 2rem 0;
+        }
+    
+        p {
+            text-align: center;
+            max-width: 550px;
+            margin: 0 auto;
+            font-size: 1.4em;
+            line-height: 1.6em;
+        }
+    
+        form {
+            max-width: 100%;
+    
+            div {
+                max-width: 100%;
+                
+                .fullName, .email, .message {
+                    width: 100%;
+                    padding: 0.75rem 1.2rem;
+                    border: 1px solid $hoverWhite;
+                    border-radius: 0.24rem;
+                    font-size: 13px;
+                    outline: none;
+    
+                    &::placeholder {
+                        font-size: 13px;
+                        color: $lightGray;
+                        font-weight: 500;
+                    }
+                }
+            }
+    
+            .nameDiv {
+                margin: 1rem 0 0 0;
+            }
+            
+            .emailDiv {
+                margin: 1rem 0 0 0;
+            }
+            
+            .messageDiv {
+                margin: 2rem 0 1rem 0;
+    
+                textarea {
+                    resize: none;
+                }
+            }
+    
+            .consentDiv {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+                margin: 0 auto 2rem 0;
+    
+                div {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 1rem 0;
+                    
+                    input {
+                        margin: 0 10px 0 0;
+                    }
+    
+                    label {
+                        font-size: 12px;
+                        font-weight: 600;
+                        color: $lightGray;
+                    }
+                }
+    
+                .submitBtn {
+                    padding: 0.75rem 1.2rem; 
+                    margin: 2rem 0 0 0;
+                    max-width: 150px;
+                    font-size: 13px;
+                    text-align: center;
+                    color: $white;
+                    border: 1px solid $lightGray;
+                    border-radius: 0.24rem;
+                    background-color: $lightGray;
+                    user-select: none;
+                }
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+            
+    .connectSection {
+        // background-color: $white;
+        max-width: 1100px;
+        margin: auto;
+        @include mobilePadding;
+
+        h3 {
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 2.4em;
+            margin: 0 auto 2rem 0;
+        }
+
+        p {
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto 1.2rem auto;
+            padding: 0 10rem;
+            font-size: 1.4rem;
+            line-height: 1.6em;
+        }
+
+        form {
+            max-width: 100%;
+            display: grid;
+            grid-template-areas: 
+                "name email"
+                "message message"
+                "bttm bttm";
+
+            div {
+                max-width: 100%;
+                
+                .fullName, .email, .message {
+                    width: 100%;
+                    padding: 1rem 1.2rem;
+                    border: 1px solid $hoverWhite;
+                    border-radius: 0.24rem;
+                    font-size: 13px;
+                    outline: none;
+
+                    &::placeholder {
+                        font-size: 13px;
+                        color: $lightGray;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .nameDiv {
+                margin: 1rem 0 0 0;
+                grid-area: name;
+            }
+            
+            .emailDiv {
+                margin: 1rem 0 0 1rem;
+                grid-area: email;
+            }
+            
+            .messageDiv {
+                margin: 2rem 0 1rem 0;
+                height: 350px;
+                grid-area: message;
+
+                textarea {
+                    resize: none;
+                    height: 100%;
+                }
+            }
+
+            .consentDiv {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "text btn";
+                justify-content: space-between;
+                margin: 0 auto 2rem auto;
+                width: 100%;
+                grid-area: bttm;
+                
+
+                div {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 1rem 0;
+                    grid-area: text;
+                    // background-color: lightblue;
+                    
+                    input {
+                        margin: 0 10px 0 0;
+                    }
+
+                    label {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: $lightGray;
+                    }
+                }
+
+                .submitBtn {
+                    padding: 0.75rem 1.2rem; 
+                    margin: 0;
+                    max-width: 150px;
+                    font-size: 13px;
+                    // text-align: center;
+                    color: $white;
+                    border: 1px solid $lightGray;
+                    border-radius: 0.24rem;
+                    background-color: $lightGray;
+                    user-select: none;
+                    grid-area: btn;
+                    margin-left: auto;
+                    justify-self: flex-end;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+             
+    .connectSection {
+        max-width: 1350px;
+        margin: auto;
+        @include mobilePadding;
+
+        h3 {
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 2.6em;
+            margin: 0 auto 2rem 0;
+        }
+
+        p {
+            text-align: center;
+            max-width: 850px;
+            margin: 1.2rem auto;
+            padding: 0 10rem;
+            font-size: 1.6rem;
+            line-height: 1.6em;
+        }
+
+        form {
+            max-width: 100%;
+            display: grid;
+            grid-template-areas: 
+                "name email"
+                "message message"
+                "bttm bttm";
+
+            div {
+                max-width: 100%;
+                
+                .fullName, .email, .message {
+                    width: 100%;
+                    padding: 1rem 1.2rem;
+                    border: 1px solid $hoverWhite;
+                    border-radius: 0.24rem;
+                    font-size: 13px;
+                    outline: none;
+
+                    &::placeholder {
+                        font-size: 13px;
+                        color: $lightGray;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .nameDiv {
+                margin: 1rem 0 0 0;
+                grid-area: name;
+            }
+            
+            .emailDiv {
+                margin: 1rem 0 0 1rem;
+                grid-area: email;
+            }
+            
+            .messageDiv {
+                margin: 2rem 0 1rem 0;
+                height: 350px;
+                grid-area: message;
+
+                textarea {
+                    resize: none;
+                    height: 100%;
+                }
+            }
+
+            .consentDiv {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "text btn";
+                justify-content: space-between;
+                margin: 0 auto 2rem auto;
+                width: 100%;
+                grid-area: bttm;
+                
+
+                div {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 1rem 0;
+                    grid-area: text;
+                    // background-color: lightblue;
+                    
+                    input {
+                        margin: 0 10px 0 0;
+                    }
+
+                    label {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: $lightGray;
+                    }
+                }
+
+                .submitBtn {
+                    padding: 0.75rem 1.2rem; 
+                    margin: 0;
+                    max-width: 150px;
+                    font-size: 13px;
+                    // text-align: center;
+                    color: $white;
+                    border: 1px solid $lightGray;
+                    border-radius: 0.24rem;
+                    background-color: $lightGray;
+                    user-select: none;
+                    grid-area: btn;
+                    margin-left: auto;
+                    justify-self: flex-end;
+                    align-self: center;
+
+                }
+            }
+        }
+    }
+}

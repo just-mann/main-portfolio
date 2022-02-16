@@ -257,6 +257,7 @@
   }
   .Navbar .NavbarContainer .navLinks .contact:hover {
     color: #ffffff;
+    border: 1px solid #b92f31;
     background-color: #b92f31;
   }
   .Navbar .NavbarContainer .toggle {
@@ -357,15 +358,16 @@
     color: #ffffff;
     background-color: #F9373A;
     border: 1px solid #F9373A;
-    padding: 1rem 2.5rem;
+    padding: 0.3rem 1.82rem;
     border-radius: 0.2rem;
     font-weight: 700;
     -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
-    padding: 0.43rem 1.2rem;
   }
   .Navbar .NavbarContainer .navLinks .contact:hover {
     color: #ffffff;
+    border: 1px solid #b92f31;
+    background-color: #b92f31;
     opacity: 0.8;
   }
   .Navbar .NavbarContainer .toggle {
@@ -1334,9 +1336,6 @@
     max-width: 100%;
     background-color: skyblue;
   }
-  .About .Navbar {
-    background-color: #ffffff;
-  }
   .About .Navbar * {
     color: #ffffff;
   }
@@ -1458,113 +1457,6 @@
   .About .socialSection .socialSectionContainer p a:hover {
     color: #746f6f;
   }
-  .About .connectSection {
-    padding: 72px 18.748px;
-  }
-  .About .connectSection h3 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 26px;
-    margin: 0 auto 2rem 0;
-  }
-  .About .connectSection p {
-    max-width: 100%;
-    text-align: center;
-    font-size: 1.25rem;
-    margin: 0 auto 2rem 0;
-  }
-  .About .connectSection form {
-    max-width: 100%;
-  }
-  .About .connectSection form div {
-    max-width: 100%;
-  }
-  .About .connectSection form div .fullName, .About .connectSection form div .email, .About .connectSection form div .message {
-    width: 100%;
-    padding: 0.75rem 1.2rem;
-    border: 1px solid #cac9c9;
-    border-radius: 0.24rem;
-    font-size: 13px;
-    outline: none;
-  }
-  .About .connectSection form div .fullName::-webkit-input-placeholder, .About .connectSection form div .email::-webkit-input-placeholder, .About .connectSection form div .message::-webkit-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form div .fullName::-moz-placeholder, .About .connectSection form div .email::-moz-placeholder, .About .connectSection form div .message::-moz-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form div .fullName:-ms-input-placeholder, .About .connectSection form div .email:-ms-input-placeholder, .About .connectSection form div .message:-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form div .fullName::-ms-input-placeholder, .About .connectSection form div .email::-ms-input-placeholder, .About .connectSection form div .message::-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form div .fullName::placeholder, .About .connectSection form div .email::placeholder, .About .connectSection form div .message::placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form .nameDiv {
-    margin: 1rem 0 0 0;
-  }
-  .About .connectSection form .emailDiv {
-    margin: 1rem 0 0 0;
-  }
-  .About .connectSection form .messageDiv {
-    margin: 2rem 0 1rem 0;
-  }
-  .About .connectSection form .messageDiv textarea {
-    resize: none;
-  }
-  .About .connectSection form .consentDiv {
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    margin: 0 auto 2rem 0;
-  }
-  .About .connectSection form .consentDiv div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 1rem 0;
-  }
-  .About .connectSection form .consentDiv div input {
-    margin: 0 10px 0 0;
-  }
-  .About .connectSection form .consentDiv div label {
-    font-size: 12px;
-    font-weight: 600;
-    color: #746f6f;
-  }
-  .About .connectSection form .consentDiv .submitBtn {
-    padding: 0.75rem 1.2rem;
-    margin: 2rem 0 0 0;
-    max-width: 150px;
-    font-size: 13px;
-    text-align: center;
-    color: #ffffff;
-    border: 1px solid #746f6f;
-    border-radius: 0.24rem;
-    background-color: #746f6f;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -1572,43 +1464,6 @@
     position: relative;
     height: 100%;
     max-width: 100%;
-    background-color: skyblue;
-  }
-  .About .Navbar {
-    background-color: #ffffff;
-  }
-  .About .Navbar * {
-    color: #ffffff;
-  }
-  .About .Navbar .NavbarContainer .toggle {
-    width: 28px;
-    height: 25px;
-    margin-top: 0.3rem;
-    margin-right: 0.25rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    cursor: pointer;
-  }
-  .About .Navbar .NavbarContainer .toggle span {
-    display: block;
-    height: 2px;
-    width: 26px;
-    background: #ffffff;
-    -webkit-transform-origin: 3px 1px;
-            transform-origin: 3px 1px;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-  }
-  .About .Navbar .NavbarContainer .toggle span:first-child() {
-    margin-top: 10px;
-  }
-  .About .Navbar .NavbarContainer .toggle span:not(:last-child) {
-    margin-bottom: 5px;
   }
   .About .aboutContainer {
     padding: 72px 18.748px;
@@ -1618,7 +1473,6 @@
     max-width: 100%;
     min-height: 100vh;
     margin: 0 auto;
-    background-color: #8ad7dd;
     z-index: 1;
   }
   .About .aboutContainer * {
@@ -1651,13 +1505,14 @@
     background-color: #F8F5F2;
   }
   .About .socialSection .socialSectionContainer {
+    max-width: 600px;
+    margin: auto;
     padding: 72px 18.748px;
     background-color: #F8F5F2;
     min-height: 40vh;
   }
   .About .socialSection .socialSectionContainer h3 {
-    font-size: 22px;
-    margin: 1px 0 30px auto;
+    font-size: 16px;
     text-align: center;
   }
   .About .socialSection .socialSectionContainer div {
@@ -1685,8 +1540,9 @@
   }
   .About .socialSection .socialSectionContainer p {
     text-align: center;
+    font-size: 1.1rem;
+    width: 400px;
     margin: 1.8rem auto;
-    font-size: 1.5rem;
   }
   .About .socialSection .socialSectionContainer p a {
     text-decoration: underline;
@@ -1697,115 +1553,103 @@
   .About .socialSection .socialSectionContainer p a:hover {
     color: #746f6f;
   }
-  .About .connectSection {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .About {
+    position: relative;
+    height: 100%;
+    max-width: 100%;
+  }
+  .About .aboutContainer {
     padding: 72px 18.748px;
-  }
-  .About .connectSection h3 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 26px;
-    margin: 0 auto 2rem 0;
-  }
-  .About .connectSection p {
-    max-width: 100%;
-    text-align: center;
-    font-size: 1.25rem;
-    margin: 0 auto 2rem 0;
-  }
-  .About .connectSection form {
-    max-width: 100%;
-  }
-  .About .connectSection form div {
-    max-width: 100%;
-  }
-  .About .connectSection form div .fullName, .About .connectSection form div .email, .About .connectSection form div .message {
-    width: 100%;
-    padding: 0.75rem 1.2rem;
-    border: 1px solid #cac9c9;
-    border-radius: 0.24rem;
-    font-size: 13px;
-    outline: none;
-  }
-  .About .connectSection form div .fullName::-webkit-input-placeholder, .About .connectSection form div .email::-webkit-input-placeholder, .About .connectSection form div .message::-webkit-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form div .fullName::-moz-placeholder, .About .connectSection form div .email::-moz-placeholder, .About .connectSection form div .message::-moz-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form div .fullName:-ms-input-placeholder, .About .connectSection form div .email:-ms-input-placeholder, .About .connectSection form div .message:-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form div .fullName::-ms-input-placeholder, .About .connectSection form div .email::-ms-input-placeholder, .About .connectSection form div .message::-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form div .fullName::placeholder, .About .connectSection form div .email::placeholder, .About .connectSection form div .message::placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .About .connectSection form .nameDiv {
-    margin: 1rem 0 0 0;
-  }
-  .About .connectSection form .emailDiv {
-    margin: 1rem 0 0 0;
-  }
-  .About .connectSection form .messageDiv {
-    margin: 2rem 0 1rem 0;
-  }
-  .About .connectSection form .messageDiv textarea {
-    resize: none;
-  }
-  .About .connectSection form .consentDiv {
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    margin: 0 auto 2rem 0;
-  }
-  .About .connectSection form .consentDiv div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  .About .aboutContainer * {
+    z-index: 1;
+  }
+  .About .aboutContainer__myName {
+    margin-top: 95px;
+    text-align: center;
+  }
+  .About .aboutContainer__subHeader {
+    font-size: 15.8px;
+    font-weight: 560;
+  }
+  .About .aboutContainer__header {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .About .aboutContainer__description {
+    font-size: 14.5px;
+  }
+  .About .aboutContainer__image {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .About .achievements {
+    padding: 72px 18.748px;
+  }
+  .About .socialSection {
+    background-color: #F8F5F2;
+  }
+  .About .socialSection .socialSectionContainer {
+    max-width: 600px;
+    margin: auto;
+    padding: 72px 18.748px;
+    background-color: #F8F5F2;
+    min-height: 40vh;
+  }
+  .About .socialSection .socialSectionContainer h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .About .socialSection .socialSectionContainer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 1rem 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
   }
-  .About .connectSection form .consentDiv div input {
-    margin: 0 10px 0 0;
+  .About .socialSection .socialSectionContainer div a {
+    color: #000000;
+    text-decoration: none;
+    margin: 10px 17px 0 0;
+    font-size: 27px;
+    -webkit-transition: color 300ms ease;
+    transition: color 300ms ease;
   }
-  .About .connectSection form .consentDiv div label {
-    font-size: 12px;
-    font-weight: 600;
+  .About .socialSection .socialSectionContainer div a:hover {
     color: #746f6f;
   }
-  .About .connectSection form .consentDiv .submitBtn {
-    padding: 0.75rem 1.2rem;
-    margin: 2rem 0 0 0;
-    max-width: 150px;
-    font-size: 13px;
+  .About .socialSection .socialSectionContainer p {
     text-align: center;
-    color: #ffffff;
-    border: 1px solid #746f6f;
-    border-radius: 0.24rem;
-    background-color: #746f6f;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    font-size: 1.1rem;
+    width: 400px;
+    margin: 1.8rem auto;
+  }
+  .About .socialSection .socialSectionContainer p a {
+    text-decoration: underline;
+    color: #000000;
+    -webkit-transition: color 300ms ease;
+    transition: color 300ms ease;
+  }
+  .About .socialSection .socialSectionContainer p a:hover {
+    color: #746f6f;
   }
 }
-/* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Extra small devices (phones, 600px and down) */
@@ -1847,6 +1691,7 @@
   .Contact .contactContainer .socialSection .socialSectionContainer h3 {
     font-size: 16px;
     text-align: center;
+    font-size: 1.6em;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer div {
     display: -webkit-box;
@@ -1885,113 +1730,6 @@
   }
   .Contact .contactContainer .socialSection .socialSectionContainer p a:hover {
     color: #746f6f;
-  }
-  .Contact .contactContainer .connectSection {
-    max-width: 1100px;
-    margin: auto;
-    padding: 72px 18.748px;
-  }
-  .Contact .contactContainer .connectSection h3 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 26px;
-    margin: 0 auto 2rem 0;
-  }
-  .Contact .contactContainer .connectSection p {
-    text-align: center;
-    margin: 0 3rem;
-  }
-  .Contact .contactContainer .connectSection form {
-    max-width: 100%;
-  }
-  .Contact .contactContainer .connectSection form div {
-    max-width: 100%;
-  }
-  .Contact .contactContainer .connectSection form div .fullName, .Contact .contactContainer .connectSection form div .email, .Contact .contactContainer .connectSection form div .message {
-    width: 100%;
-    padding: 0.75rem 1.2rem;
-    border: 1px solid #cac9c9;
-    border-radius: 0.24rem;
-    font-size: 13px;
-    outline: none;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-webkit-input-placeholder, .Contact .contactContainer .connectSection form div .email::-webkit-input-placeholder, .Contact .contactContainer .connectSection form div .message::-webkit-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-moz-placeholder, .Contact .contactContainer .connectSection form div .email::-moz-placeholder, .Contact .contactContainer .connectSection form div .message::-moz-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName:-ms-input-placeholder, .Contact .contactContainer .connectSection form div .email:-ms-input-placeholder, .Contact .contactContainer .connectSection form div .message:-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-ms-input-placeholder, .Contact .contactContainer .connectSection form div .email::-ms-input-placeholder, .Contact .contactContainer .connectSection form div .message::-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::placeholder, .Contact .contactContainer .connectSection form div .email::placeholder, .Contact .contactContainer .connectSection form div .message::placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form .nameDiv {
-    margin: 1rem 0 0 0;
-  }
-  .Contact .contactContainer .connectSection form .emailDiv {
-    margin: 1rem 0 0 0;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv {
-    margin: 2rem 0 1rem 0;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv textarea {
-    resize: none;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv {
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    margin: 0 auto 2rem 0;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 1rem 0;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div input {
-    margin: 0 10px 0 0;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div label {
-    font-size: 12px;
-    font-weight: 600;
-    color: #746f6f;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv .submitBtn {
-    padding: 0.75rem 1.2rem;
-    margin: 2rem 0 0 0;
-    max-width: 150px;
-    font-size: 13px;
-    text-align: center;
-    color: #ffffff;
-    border: 1px solid #746f6f;
-    border-radius: 0.24rem;
-    background-color: #746f6f;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -2032,6 +1770,8 @@
   }
   .Contact .contactContainer .socialSection .socialSectionContainer h3 {
     font-size: 16px;
+    margin-top: 1.5em;
+    font-size: 1.6em;
     text-align: center;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer div {
@@ -2059,7 +1799,7 @@
   }
   .Contact .contactContainer .socialSection .socialSectionContainer p {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.5em;
     width: 400px;
     margin: 1.8rem auto;
   }
@@ -2072,122 +1812,13 @@
   .Contact .contactContainer .socialSection .socialSectionContainer p a:hover {
     color: #746f6f;
   }
-  .Contact .contactContainer .connectSection {
-    max-width: 1100px;
-    margin: auto;
-    padding: 72px 18.748px;
-  }
-  .Contact .contactContainer .connectSection h3 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 26px;
-    margin: 0 auto 2rem 0;
-  }
-  .Contact .contactContainer .connectSection p {
-    text-align: center;
-    margin: 0 3rem;
-  }
-  .Contact .contactContainer .connectSection form {
-    max-width: 100%;
-  }
-  .Contact .contactContainer .connectSection form div {
-    max-width: 100%;
-  }
-  .Contact .contactContainer .connectSection form div .fullName, .Contact .contactContainer .connectSection form div .email, .Contact .contactContainer .connectSection form div .message {
-    width: 100%;
-    padding: 0.75rem 1.2rem;
-    border: 1px solid #cac9c9;
-    border-radius: 0.24rem;
-    font-size: 13px;
-    outline: none;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-webkit-input-placeholder, .Contact .contactContainer .connectSection form div .email::-webkit-input-placeholder, .Contact .contactContainer .connectSection form div .message::-webkit-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-moz-placeholder, .Contact .contactContainer .connectSection form div .email::-moz-placeholder, .Contact .contactContainer .connectSection form div .message::-moz-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName:-ms-input-placeholder, .Contact .contactContainer .connectSection form div .email:-ms-input-placeholder, .Contact .contactContainer .connectSection form div .message:-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-ms-input-placeholder, .Contact .contactContainer .connectSection form div .email::-ms-input-placeholder, .Contact .contactContainer .connectSection form div .message::-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::placeholder, .Contact .contactContainer .connectSection form div .email::placeholder, .Contact .contactContainer .connectSection form div .message::placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form .nameDiv {
-    margin: 1rem 0 0 0;
-  }
-  .Contact .contactContainer .connectSection form .emailDiv {
-    margin: 1rem 0 0 0;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv {
-    margin: 2rem 0 1rem 0;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv textarea {
-    resize: none;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv {
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    margin: 0 auto 2rem 0;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 1rem 0;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div input {
-    margin: 0 10px 0 0;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div label {
-    font-size: 12px;
-    font-weight: 600;
-    color: #746f6f;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv .submitBtn {
-    padding: 0.75rem 1.2rem;
-    margin: 2rem 0 0 0;
-    max-width: 150px;
-    font-size: 13px;
-    text-align: center;
-    color: #ffffff;
-    border: 1px solid #746f6f;
-    border-radius: 0.24rem;
-    background-color: #746f6f;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .Contact {
     position: relative;
     height: 100%;
     max-width: 100%;
-    background-color: white;
   }
   .Contact .contactContainer {
     display: -webkit-box;
@@ -2201,26 +1832,27 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #ffffff;
   }
   .Contact .contactContainer .socialSection {
-    padding: 0 4rem 0 4rem;
+    padding-top: 4rem;
     background-color: #F8F5F2;
   }
   .Contact .contactContainer .socialSection h3 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer {
     max-width: 600px;
     margin: auto;
-    padding: 72px 50.2px;
-    padding: 0 auto 0 auto;
+    padding: 72px 18.748px;
     background-color: #F8F5F2;
+    min-height: 40vh;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer h3 {
     font-size: 16px;
+    margin-top: 1.5em;
+    font-size: 1.6em;
     text-align: center;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer div {
@@ -2235,21 +1867,22 @@
             justify-content: center;
     margin: auto;
   }
-  .Contact .contactContainer .socialSection .socialSectionContainer div .icon {
+  .Contact .contactContainer .socialSection .socialSectionContainer div a {
     color: #000000;
     text-decoration: none;
-    margin: 10px 17px 1rem 0;
+    margin: 10px 17px 0 0;
     font-size: 27px;
     -webkit-transition: color 300ms ease;
     transition: color 300ms ease;
   }
-  .Contact .contactContainer .socialSection .socialSectionContainer div .icon:hover {
+  .Contact .contactContainer .socialSection .socialSectionContainer div a:hover {
     color: #746f6f;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer p {
     text-align: center;
-    margin: 0 auto;
-    font-size: 1.4rem;
+    font-size: 1.5em;
+    width: 400px;
+    margin: 1.8rem auto;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer p a {
     text-decoration: underline;
@@ -2260,135 +1893,86 @@
   .Contact .contactContainer .socialSection .socialSectionContainer p a:hover {
     color: #746f6f;
   }
-  .Contact .contactContainer .connectSection {
-    max-width: 1100px;
-    margin: auto;
-    padding: 72px 18.748px;
-  }
-  .Contact .contactContainer .connectSection h3 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 26px;
-    margin: 0 auto 2rem 0;
-  }
-  .Contact .contactContainer .connectSection p {
-    text-align: center;
-    max-width: 850px;
-    margin: 0 auto 1.2rem auto;
-    padding: 0 10rem;
-    font-size: 1.3rem;
-  }
-  .Contact .contactContainer .connectSection form {
-    max-width: 100%;
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "name email" "message message" "bttm bttm";
-  }
-  .Contact .contactContainer .connectSection form div {
-    max-width: 100%;
-  }
-  .Contact .contactContainer .connectSection form div .fullName, .Contact .contactContainer .connectSection form div .email, .Contact .contactContainer .connectSection form div .message {
-    width: 100%;
-    padding: 1rem 1.2rem;
-    border: 1px solid #cac9c9;
-    border-radius: 0.24rem;
-    font-size: 13px;
-    outline: none;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-webkit-input-placeholder, .Contact .contactContainer .connectSection form div .email::-webkit-input-placeholder, .Contact .contactContainer .connectSection form div .message::-webkit-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-moz-placeholder, .Contact .contactContainer .connectSection form div .email::-moz-placeholder, .Contact .contactContainer .connectSection form div .message::-moz-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName:-ms-input-placeholder, .Contact .contactContainer .connectSection form div .email:-ms-input-placeholder, .Contact .contactContainer .connectSection form div .message:-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-ms-input-placeholder, .Contact .contactContainer .connectSection form div .email::-ms-input-placeholder, .Contact .contactContainer .connectSection form div .message::-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::placeholder, .Contact .contactContainer .connectSection form div .email::placeholder, .Contact .contactContainer .connectSection form div .message::placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form .nameDiv {
-    margin: 1rem 0 0 0;
-    grid-area: name;
-  }
-  .Contact .contactContainer .connectSection form .emailDiv {
-    margin: 1rem 0 0 1rem;
-    grid-area: email;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv {
-    margin: 2rem 0 1rem 0;
-    height: 250px;
-    grid-area: message;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv textarea {
-    resize: none;
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .Contact {
+    position: relative;
     height: 100%;
+    max-width: 100%;
   }
-  .Contact .contactContainer .connectSection form .consentDiv {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-        grid-template-areas: "text btn";
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 0 auto 2rem auto;
-    width: 100%;
-    grid-area: bttm;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div {
+  .Contact .contactContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    z-index: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Contact .contactContainer .socialSection {
+    padding-top: 4rem;
+    background-color: #F8F5F2;
+  }
+  .Contact .contactContainer .socialSection h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer {
+    max-width: 600px;
+    margin: auto;
+    padding: 72px 18.748px;
+    background-color: #F8F5F2;
+    min-height: 40vh;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer h3 {
+    font-size: 16px;
+    margin-top: 1.3em;
+    font-size: 1.6em;
+    text-align: center;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 1rem 0;
-    grid-area: text;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
   }
-  .Contact .contactContainer .connectSection form .consentDiv div input {
-    margin: 0 10px 0 0;
+  .Contact .contactContainer .socialSection .socialSectionContainer div a {
+    color: #000000;
+    text-decoration: none;
+    margin: 10px 17px 0 0;
+    font-size: 27px;
+    -webkit-transition: color 300ms ease;
+    transition: color 300ms ease;
   }
-  .Contact .contactContainer .connectSection form .consentDiv div label {
-    font-size: 1rem;
-    font-weight: 600;
+  .Contact .contactContainer .socialSection .socialSectionContainer div a:hover {
     color: #746f6f;
   }
-  .Contact .contactContainer .connectSection form .consentDiv .submitBtn {
-    padding: 0.75rem 1.2rem;
-    margin: 0;
-    max-width: 150px;
-    font-size: 13px;
-    color: #ffffff;
-    border: 1px solid #746f6f;
-    border-radius: 0.24rem;
-    background-color: #746f6f;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    grid-area: btn;
-    margin-left: auto;
-    justify-self: flex-end;
-    -ms-grid-row-align: center;
-        align-self: center;
+  .Contact .contactContainer .socialSection .socialSectionContainer p {
+    text-align: center;
+    font-size: 1.5em;
+    width: 400px;
+    margin: 1.8rem auto;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer p a {
+    text-decoration: underline;
+    color: #000000;
+    -webkit-transition: color 300ms ease;
+    transition: color 300ms ease;
+  }
+  .Contact .contactContainer .socialSection .socialSectionContainer p a:hover {
+    color: #746f6f;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -2397,7 +1981,6 @@
     position: relative;
     height: 100%;
     max-width: 100%;
-    background-color: white;
   }
   .Contact .contactContainer {
     display: -webkit-box;
@@ -2411,26 +1994,27 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #ffffff;
   }
   .Contact .contactContainer .socialSection {
-    padding: 0 4rem 0 4rem;
+    padding-top: 4rem;
     background-color: #F8F5F2;
   }
   .Contact .contactContainer .socialSection h3 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer {
     max-width: 600px;
     margin: auto;
-    padding: 72px 50.2px;
-    padding: 0 auto 0 auto;
+    padding: 72px 18.748px;
     background-color: #F8F5F2;
+    min-height: 40vh;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer h3 {
     font-size: 16px;
+    margin-top: 0.2em;
+    font-size: 1.6em;
     text-align: center;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer div {
@@ -2445,21 +2029,22 @@
             justify-content: center;
     margin: auto;
   }
-  .Contact .contactContainer .socialSection .socialSectionContainer div .icon {
+  .Contact .contactContainer .socialSection .socialSectionContainer div a {
     color: #000000;
     text-decoration: none;
-    margin: 10px 17px 1rem 0;
+    margin: 10px 17px 0 0;
     font-size: 27px;
     -webkit-transition: color 300ms ease;
     transition: color 300ms ease;
   }
-  .Contact .contactContainer .socialSection .socialSectionContainer div .icon:hover {
+  .Contact .contactContainer .socialSection .socialSectionContainer div a:hover {
     color: #746f6f;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer p {
     text-align: center;
-    margin: 0 auto;
-    font-size: 1.4rem;
+    font-size: 1.5em;
+    width: 400px;
+    margin: 1.8rem auto;
   }
   .Contact .contactContainer .socialSection .socialSectionContainer p a {
     text-decoration: underline;
@@ -2469,248 +2054,6 @@
   }
   .Contact .contactContainer .socialSection .socialSectionContainer p a:hover {
     color: #746f6f;
-  }
-  .Contact .contactContainer .connectSection {
-    max-width: 1100px;
-    margin: auto;
-    padding: 72px 18.748px;
-  }
-  .Contact .contactContainer .connectSection h3 {
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 26px;
-    margin: 0 auto 2rem 0;
-  }
-  .Contact .contactContainer .connectSection p {
-    text-align: center;
-    max-width: 850px;
-    margin: 0 auto 1.2rem auto;
-    padding: 0 10rem;
-    font-size: 1.3rem;
-  }
-  .Contact .contactContainer .connectSection form {
-    max-width: 100%;
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "name email" "message message" "bttm bttm";
-  }
-  .Contact .contactContainer .connectSection form div {
-    max-width: 100%;
-  }
-  .Contact .contactContainer .connectSection form div .fullName, .Contact .contactContainer .connectSection form div .email, .Contact .contactContainer .connectSection form div .message {
-    width: 100%;
-    padding: 1rem 1.2rem;
-    border: 1px solid #cac9c9;
-    border-radius: 0.24rem;
-    font-size: 13px;
-    outline: none;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-webkit-input-placeholder, .Contact .contactContainer .connectSection form div .email::-webkit-input-placeholder, .Contact .contactContainer .connectSection form div .message::-webkit-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-moz-placeholder, .Contact .contactContainer .connectSection form div .email::-moz-placeholder, .Contact .contactContainer .connectSection form div .message::-moz-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName:-ms-input-placeholder, .Contact .contactContainer .connectSection form div .email:-ms-input-placeholder, .Contact .contactContainer .connectSection form div .message:-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::-ms-input-placeholder, .Contact .contactContainer .connectSection form div .email::-ms-input-placeholder, .Contact .contactContainer .connectSection form div .message::-ms-input-placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form div .fullName::placeholder, .Contact .contactContainer .connectSection form div .email::placeholder, .Contact .contactContainer .connectSection form div .message::placeholder {
-    font-size: 13px;
-    color: #746f6f;
-    font-weight: 500;
-  }
-  .Contact .contactContainer .connectSection form .nameDiv {
-    margin: 1rem 0 0 0;
-    grid-area: name;
-  }
-  .Contact .contactContainer .connectSection form .emailDiv {
-    margin: 1rem 0 0 1rem;
-    grid-area: email;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv {
-    margin: 2rem 0 1rem 0;
-    height: 250px;
-    grid-area: message;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv textarea {
-    resize: none;
-    height: 100%;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-        grid-template-areas: "text btn";
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 0 auto 2rem auto;
-    width: 100%;
-    grid-area: bttm;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 1rem 0;
-    grid-area: text;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div input {
-    margin: 0 10px 0 0;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div label {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #746f6f;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv .submitBtn {
-    padding: 0.75rem 1.2rem;
-    margin: 0;
-    max-width: 150px;
-    font-size: 13px;
-    color: #ffffff;
-    border: 1px solid #746f6f;
-    border-radius: 0.24rem;
-    background-color: #746f6f;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    grid-area: btn;
-    margin-left: auto;
-    justify-self: flex-end;
-    -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .Contact .contactContainer .connectSection form .nameDiv {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .Contact .contactContainer .connectSection form .emailDiv {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv .submitBtn {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-}
-@media only screen and (min-width: 992px){
-  .Contact .contactContainer .connectSection form .consentDiv div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv .submitBtn {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv .submitBtn {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-}
-@media only screen and (min-width: 1200px){
-  .Contact .contactContainer .connectSection form .consentDiv div {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv .submitBtn {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-}
-@media only screen and (min-width: 992px){
-  .Contact .contactContainer .connectSection form .nameDiv {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .Contact .contactContainer .connectSection form .emailDiv {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-  .Contact .contactContainer .connectSection form .nameDiv {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .Contact .contactContainer .connectSection form .emailDiv {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-}
-@media only screen and (min-width: 1200px){
-  .Contact .contactContainer .connectSection form .nameDiv {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .Contact .contactContainer .connectSection form .emailDiv {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .Contact .contactContainer .connectSection form .messageDiv {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-  .Contact .contactContainer .connectSection form .consentDiv {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
   }
 }
 @media (max-width: 63.9375rem) {
@@ -2964,6 +2307,614 @@
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .connectSection {
+    max-width: 1100px;
+    margin: auto;
+    padding: 72px 18.748px;
+  }
+  .connectSection h3 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2.1em;
+    margin: 0 auto 2rem 0;
+  }
+  .connectSection p {
+    text-align: center;
+    margin: 0 auto 1.4em auto;
+    font-size: 1.3em;
+    padding: 0 1.2rem;
+    max-width: 500px;
+  }
+  .connectSection form {
+    max-width: 100%;
+  }
+  .connectSection form div {
+    max-width: 100%;
+  }
+  .connectSection form div .fullName, .connectSection form div .email, .connectSection form div .message {
+    width: 100%;
+    padding: 0.75rem 1.2rem;
+    border: 1px solid #cac9c9;
+    border-radius: 0.24rem;
+    font-size: 13px;
+    outline: none;
+  }
+  .connectSection form div .fullName::-webkit-input-placeholder, .connectSection form div .email::-webkit-input-placeholder, .connectSection form div .message::-webkit-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::-moz-placeholder, .connectSection form div .email::-moz-placeholder, .connectSection form div .message::-moz-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName:-ms-input-placeholder, .connectSection form div .email:-ms-input-placeholder, .connectSection form div .message:-ms-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::-ms-input-placeholder, .connectSection form div .email::-ms-input-placeholder, .connectSection form div .message::-ms-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::placeholder, .connectSection form div .email::placeholder, .connectSection form div .message::placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form .nameDiv {
+    margin: 1rem 0 0 0;
+  }
+  .connectSection form .emailDiv {
+    margin: 1rem 0 0 0;
+  }
+  .connectSection form .messageDiv {
+    margin: 2rem 0 1rem 0;
+    height: 350px;
+  }
+  .connectSection form .messageDiv textarea {
+    resize: none;
+    height: 100%;
+  }
+  .connectSection form .consentDiv {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    margin: 0 auto 2rem 0;
+  }
+  .connectSection form .consentDiv div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0;
+  }
+  .connectSection form .consentDiv div input {
+    margin: 0 10px 0 0;
+  }
+  .connectSection form .consentDiv div label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #746f6f;
+  }
+  .connectSection form .consentDiv .submitBtn {
+    padding: 0.75rem 1.2rem;
+    margin: 2rem 0 0 0;
+    max-width: 150px;
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #746f6f;
+    border-radius: 0.24rem;
+    background-color: #746f6f;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .connectSection {
+    max-width: 1000px;
+    margin: auto;
+    padding: 72px 18.748px;
+  }
+  .connectSection h3 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2.6em;
+    margin: 0 auto 2rem 0;
+  }
+  .connectSection p {
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto 2.5em auto;
+    font-size: 1.4em;
+    line-height: 1.6em;
+  }
+  .connectSection form {
+    max-width: 100%;
+  }
+  .connectSection form div {
+    max-width: 100%;
+  }
+  .connectSection form div .fullName, .connectSection form div .email, .connectSection form div .message {
+    width: 100%;
+    padding: 0.75rem 1.2rem;
+    border: 1px solid #cac9c9;
+    border-radius: 0.24rem;
+    font-size: 13px;
+    outline: none;
+  }
+  .connectSection form div .fullName::-webkit-input-placeholder, .connectSection form div .email::-webkit-input-placeholder, .connectSection form div .message::-webkit-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::-moz-placeholder, .connectSection form div .email::-moz-placeholder, .connectSection form div .message::-moz-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName:-ms-input-placeholder, .connectSection form div .email:-ms-input-placeholder, .connectSection form div .message:-ms-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::-ms-input-placeholder, .connectSection form div .email::-ms-input-placeholder, .connectSection form div .message::-ms-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::placeholder, .connectSection form div .email::placeholder, .connectSection form div .message::placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form .nameDiv {
+    margin: 1rem 0 0 0;
+  }
+  .connectSection form .emailDiv {
+    margin: 2em 0 0 0;
+  }
+  .connectSection form .messageDiv {
+    margin: 2rem 0 1rem 0;
+    height: 350px;
+  }
+  .connectSection form .messageDiv textarea {
+    resize: none;
+    height: 100%;
+  }
+  .connectSection form .consentDiv {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    margin: 0 auto 2rem 0;
+  }
+  .connectSection form .consentDiv div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0;
+  }
+  .connectSection form .consentDiv div input {
+    margin: 0 10px 0 0;
+  }
+  .connectSection form .consentDiv div label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #746f6f;
+  }
+  .connectSection form .consentDiv .submitBtn {
+    padding: 0.75rem 1.2rem;
+    margin: 2rem 0 0 0;
+    max-width: 150px;
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #746f6f;
+    border-radius: 0.24rem;
+    background-color: #746f6f;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .connectSection {
+    max-width: 1100px;
+    margin: auto;
+    padding: 72px 18.748px;
+  }
+  .connectSection h3 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2.4em;
+    margin: 0 auto 2rem 0;
+  }
+  .connectSection p {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 1.2rem auto;
+    padding: 0 10rem;
+    font-size: 1.4rem;
+    line-height: 1.6em;
+  }
+  .connectSection form {
+    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "name email" "message message" "bttm bttm";
+  }
+  .connectSection form div {
+    max-width: 100%;
+  }
+  .connectSection form div .fullName, .connectSection form div .email, .connectSection form div .message {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border: 1px solid #cac9c9;
+    border-radius: 0.24rem;
+    font-size: 13px;
+    outline: none;
+  }
+  .connectSection form div .fullName::-webkit-input-placeholder, .connectSection form div .email::-webkit-input-placeholder, .connectSection form div .message::-webkit-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::-moz-placeholder, .connectSection form div .email::-moz-placeholder, .connectSection form div .message::-moz-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName:-ms-input-placeholder, .connectSection form div .email:-ms-input-placeholder, .connectSection form div .message:-ms-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::-ms-input-placeholder, .connectSection form div .email::-ms-input-placeholder, .connectSection form div .message::-ms-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::placeholder, .connectSection form div .email::placeholder, .connectSection form div .message::placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form .nameDiv {
+    margin: 1rem 0 0 0;
+    grid-area: name;
+  }
+  .connectSection form .emailDiv {
+    margin: 1rem 0 0 1rem;
+    grid-area: email;
+  }
+  .connectSection form .messageDiv {
+    margin: 2rem 0 1rem 0;
+    height: 350px;
+    grid-area: message;
+  }
+  .connectSection form .messageDiv textarea {
+    resize: none;
+    height: 100%;
+  }
+  .connectSection form .consentDiv {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+        grid-template-areas: "text btn";
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    grid-area: bttm;
+  }
+  .connectSection form .consentDiv div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0;
+    grid-area: text;
+  }
+  .connectSection form .consentDiv div input {
+    margin: 0 10px 0 0;
+  }
+  .connectSection form .consentDiv div label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #746f6f;
+  }
+  .connectSection form .consentDiv .submitBtn {
+    padding: 0.75rem 1.2rem;
+    margin: 0;
+    max-width: 150px;
+    font-size: 13px;
+    color: #ffffff;
+    border: 1px solid #746f6f;
+    border-radius: 0.24rem;
+    background-color: #746f6f;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    grid-area: btn;
+    margin-left: auto;
+    justify-self: flex-end;
+    -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .connectSection {
+    max-width: 1350px;
+    margin: auto;
+    padding: 72px 18.748px;
+  }
+  .connectSection h3 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2.6em;
+    margin: 0 auto 2rem 0;
+  }
+  .connectSection p {
+    text-align: center;
+    max-width: 850px;
+    margin: 1.2rem auto;
+    padding: 0 10rem;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+  }
+  .connectSection form {
+    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "name email" "message message" "bttm bttm";
+  }
+  .connectSection form div {
+    max-width: 100%;
+  }
+  .connectSection form div .fullName, .connectSection form div .email, .connectSection form div .message {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border: 1px solid #cac9c9;
+    border-radius: 0.24rem;
+    font-size: 13px;
+    outline: none;
+  }
+  .connectSection form div .fullName::-webkit-input-placeholder, .connectSection form div .email::-webkit-input-placeholder, .connectSection form div .message::-webkit-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::-moz-placeholder, .connectSection form div .email::-moz-placeholder, .connectSection form div .message::-moz-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName:-ms-input-placeholder, .connectSection form div .email:-ms-input-placeholder, .connectSection form div .message:-ms-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::-ms-input-placeholder, .connectSection form div .email::-ms-input-placeholder, .connectSection form div .message::-ms-input-placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form div .fullName::placeholder, .connectSection form div .email::placeholder, .connectSection form div .message::placeholder {
+    font-size: 13px;
+    color: #746f6f;
+    font-weight: 500;
+  }
+  .connectSection form .nameDiv {
+    margin: 1rem 0 0 0;
+    grid-area: name;
+  }
+  .connectSection form .emailDiv {
+    margin: 1rem 0 0 1rem;
+    grid-area: email;
+  }
+  .connectSection form .messageDiv {
+    margin: 2rem 0 1rem 0;
+    height: 350px;
+    grid-area: message;
+  }
+  .connectSection form .messageDiv textarea {
+    resize: none;
+    height: 100%;
+  }
+  .connectSection form .consentDiv {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+        grid-template-areas: "text btn";
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    grid-area: bttm;
+  }
+  .connectSection form .consentDiv div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem 0;
+    grid-area: text;
+  }
+  .connectSection form .consentDiv div input {
+    margin: 0 10px 0 0;
+  }
+  .connectSection form .consentDiv div label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #746f6f;
+  }
+  .connectSection form .consentDiv .submitBtn {
+    padding: 0.75rem 1.2rem;
+    margin: 0;
+    max-width: 150px;
+    font-size: 13px;
+    color: #ffffff;
+    border: 1px solid #746f6f;
+    border-radius: 0.24rem;
+    background-color: #746f6f;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    grid-area: btn;
+    margin-left: auto;
+    justify-self: flex-end;
+    -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .connectSection form .nameDiv {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .connectSection form .emailDiv {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .connectSection form .messageDiv {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .connectSection form .consentDiv {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .connectSection form .consentDiv div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .connectSection form .consentDiv .submitBtn {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+@media only screen and (min-width: 992px){
+  .connectSection form .consentDiv div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .connectSection form .consentDiv .submitBtn {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .connectSection form .consentDiv div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .connectSection form .consentDiv .submitBtn {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .connectSection form .consentDiv div {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .connectSection form .consentDiv .submitBtn {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+@media only screen and (min-width: 992px){
+  .connectSection form .nameDiv {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .connectSection form .emailDiv {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .connectSection form .messageDiv {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .connectSection form .consentDiv {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .connectSection form .nameDiv {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .connectSection form .emailDiv {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .connectSection form .messageDiv {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .connectSection form .consentDiv {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .connectSection form .nameDiv {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .connectSection form .emailDiv {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .connectSection form .messageDiv {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .connectSection form .consentDiv {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
   }
 }
 * {
