@@ -1,0 +1,21 @@
+//const Style = {
+    //minHeight: "99.5vh",
+    //paddingTop: "7.5em",
+    //paddingLeft: "1em",
+    //paddingRight: "1em",
+    //maxWidth: "1250px",
+    //margin: "auto"
+//}
+
+.NotFound {
+    
+    
+    .NotFoundContainer {
+        min-height: 99.5vh;
+        max-width: 1250px;
+        margin: auto;
+        @include mobilePadding;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
