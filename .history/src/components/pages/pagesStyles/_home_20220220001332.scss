@@ -471,27 +471,19 @@
             }
 
             .heroImg {
-                position: relative;
                 height: 450px;
                 text-align: right;
 
                 .circle {
-                    position: absolute;
-                    background: rgba(#505050, 0.10);
+                    background: $borderGray;
                     height: 170px;
                     width: 170px;
                     border-radius: 50%;
                 }
 
-                .circle2 {
-                    position: absolute;
-                    top: 7rem;
-                }
-
                 img {
                     height: 100%;
-                    max-width: 90%;
-                    z-index: 2;
+                    max-width: 100%;
                 }
             }
         }   

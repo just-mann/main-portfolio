@@ -61,19 +61,17 @@ class Home extends Component {
                     <Navbar />
                     <div className="mainSection">
                         <div className="mainHero">
-                            <h3>I am a Front-end Web Developer from Rhode Island.</h3>
+                            <h3>I am a Front-End Web Developer from Rhode Island.</h3>
                             <p>
                                 A Frontend focused Web Developer 
                                 building the Frontend of Websites 
                                 and Web Applications that leads to 
                                 the success of the overall product
                             </p>
-                            <Link to='/contact-me' className='contact'>See My Resume</Link>
+                            <Link to='/contact-me' className='contact'>Get In Touch</Link>
                             <Link to='/contact-me' className='contact'>Get In Touch</Link>
                         </div>
                         <div className='heroImg'>
-                            <div className="circle"></div>
-                            <div className="circle circle2"></div>
                             <img src={heroImg} alt="" />
                         </div>
                     </div>

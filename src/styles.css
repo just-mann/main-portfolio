@@ -85,8 +85,8 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 72px 18.748px;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
   }
   .Navbar .NavbarContainer .myLogo {
     text-decoration: none;
@@ -194,7 +194,6 @@
 }
 @media (min-width: 64rem) {
   .Navbar {
-    background-color: #000000;
     max-width: 100%;
     z-index: 500;
     position: sticky;
@@ -326,7 +325,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1.25rem 18.748px;
+    padding: 1.4rem 18.748px;
     max-width: 1300px;
   }
   .Navbar .NavbarContainer .myLogo {
@@ -421,7 +420,8 @@
   }
 }
 
-@media (max-width: 63.9375rem) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .Home {
     position: relative;
     min-height: 100vh;
@@ -869,7 +869,8 @@
     background-color: rgba(0, 0, 0, 0.78);
   }
 }
-@media (min-width: 64rem) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   .Home {
     position: relative;
     min-height: 100vh;
@@ -886,14 +887,15 @@
     z-index: 1;
   }
   .Home .mainSection {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1250px;
     min-height: 100vh;
     margin: auto;
     z-index: 1;
-    text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -901,84 +903,80 @@
   .Home .mainSection * {
     z-index: 1;
   }
-  .Home .mainSection .mainHero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    max-width: 100%;
-    min-height: 6.25rem;
-    padding: 0 48px;
-    margin: 0 auto 0 auto;
-  }
   .Home .mainSection .mainHero h3 {
-    font-size: 42.5px;
-    text-transform: capitalize;
-    font-weight: 700;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 500px;
+    line-height: 1.5em;
+    margin: 0 0 0.6em 0;
     color: #ffffff;
-    line-height: 3.375rem;
-    width: 20.5rem;
-    margin: 30px auto 32.003px auto;
-    text-align: center;
-    -webkit-transition: font-size 300ms ease;
-    transition: font-size 300ms ease;
   }
   .Home .mainSection .mainHero p {
-    color: #cac9c9;
-    font-size: 19px;
-    max-width: 23.75rem;
-    line-height: 1.8rem;
-    font-weight: 400;
-    margin: 0 auto 56.002px auto;
-    text-align: center;
-    -webkit-transition: font-size 300ms ease;
-    transition: font-size 300ms ease;
-  }
-  .Home .mainSection .mainHero .contact {
-    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 350;
+    width: 500px;
+    margin: 20px 0 43px;
     color: #ffffff;
-    background-color: #F9373A;
-    border: 1px solid #F9373A;
-    padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
-    font-weight: 700;
-    -webkit-transition: background-color 300ms ease-in-out;
-    transition: background-color 300ms ease-in-out;
-    padding: 0.6rem 1.5rem;
-    margin: auto;
+  }
+  .Home .mainSection .mainHero a {
+    background: #ffffff;
+    text-decoration: none;
+    padding: 15px 25px;
+    color: black;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+  }
+  .Home .mainSection .mainHero a:not(:last-child) {
+    margin-right: 1.5rem;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+  }
+  .Home .mainSection .heroImg {
+    position: relative;
+    height: 450px;
+    text-align: right;
+  }
+  .Home .mainSection .heroImg .circle {
+    position: absolute;
+    background: rgba(80, 80, 80, 0.1);
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+  }
+  .Home .mainSection .heroImg .circle2 {
+    position: absolute;
+    top: 7rem;
+  }
+  .Home .mainSection .heroImg img {
+    height: 100%;
+    max-width: 90%;
+    z-index: 2;
   }
 
   .whatIDo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 100%;
+    max-width: 1250px;
     height: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #F8F5F2;
-    padding: 72px 50.2px;
+    background-color: #F8F5F2;
+    padding: 72px 28.748px;
     z-index: 1;
   }
   .whatIDo .whatIDoLeft {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .whatIDo .whatIDoRight {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .whatIDo .whatIDoRight {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     text-align: left;
   }
   .whatIDo .whatIDoRight .whoAmI {
@@ -987,7 +985,7 @@
     display: -ms-flexbox;
     display: flex;
     color: #000000;
-    font-size: 1.7vw;
+    font-size: 25.25px;
     margin-left: 3.125rem;
     text-transform: capitalize;
     text-align: left;
@@ -1002,12 +1000,12 @@
     background-color: #212122;
   }
   .whatIDo .whatIDoRight h3 {
-    font-size: 2.49vw;
+    font-size: 32.675px;
     margin-bottom: 25.598px;
     font-weight: 450;
   }
   .whatIDo .whatIDoRight .description {
-    font-size: 1.4vw;
+    font-size: 20.5px;
     margin-bottom: 36.803px;
     color: #292C3E;
   }
@@ -1029,18 +1027,10 @@
 
   .mySkills {
     background-color: #ffffff;
-    min-height: 75vh;
+    min-height: auto;
     max-width: 100%;
-    padding: 72px 50.2px;
+    padding: 72px 28.748px;
     text-align: center;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 5.8fr 80px 6fr;
-    grid-template-columns: 5.8fr 6fr;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 80px;
   }
   .mySkills .skillsContainer {
     display: -ms-grid;
@@ -1049,19 +1039,21 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 20px;
-    height: 75%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .mySkills .skillsContainer .skill {
     width: 250px;
-    margin: 10px auto;
-    font-size: 35px;
+    margin: auto;
+    font-size: 25px;
     font-weight: bold;
     color: #746f6f;
-    height: 4.5rem;
+    height: 3.5rem;
     border: 0.12rem solid #746f6f;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1081,11 +1073,12 @@
     border-color: #000000;
   }
   .mySkills .skillsDescription {
-    height: 75%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    height: auto;
+    margin-top: 35px;
     text-align: left;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .mySkills .skillsDescription h3 {
     color: #212122;
@@ -1096,17 +1089,8 @@
   .mySpecialty {
     min-height: 75vh;
     background-color: #F8F5F2;
-    padding: 72px 50.2px;
+    padding: 72px 28.748px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .mySpecialty div {
     text-align: center;
@@ -1115,17 +1099,14 @@
     padding: 20px auto;
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.97rem;
   }
   .mySpecialty div div {
-    width: 90%;
-    margin: auto;
+    width: 100%;
     background-color: #ebebeb;
     border: 0.998px solid #ebebeb;
-    padding: 28px 30px;
+    padding: 28px 35px;
     border-radius: 0.275rem;
     -webkit-transition: -webkit-box-shadow 300ms ease;
     transition: -webkit-box-shadow 300ms ease;
@@ -1144,6 +1125,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .mySpecialty div div:not(:last-child) {
+    margin: 0 auto 0.4rem auto;
   }
   .mySpecialty div div i {
     font-size: 50px;
@@ -1192,7 +1176,7 @@
   }
 
   .selectedProjects {
-    padding: 72px 50.2px;
+    padding: 72px 28.2px;
     min-height: auto;
     max-width: 100%;
     margin: auto;
@@ -1206,8 +1190,8 @@
     min-height: auto;
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.97rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1217,9 +1201,9 @@
     margin-bottom: 3.5rem;
   }
   .selectedProjects .projectDiv .myFeatProj {
-    width: 95%;
-    margin: 0.46rem auto;
-    min-height: 229.997px;
+    width: 100%;
+    margin: 0.46rem 0;
+    min-height: 249.997px;
   }
   .selectedProjects .projectDiv .myFeatProj * {
     -webkit-transition: display 300ms ease;
@@ -1227,7 +1211,7 @@
   }
   .selectedProjects .projectDiv .myFeatProj img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     -o-object-fit: fill;
        object-fit: fill;
   }
@@ -1284,14 +1268,14 @@
   }
 
   .preFooter {
-    min-height: 50vh;
+    min-height: 70vh;
     max-width: 100%;
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
   }
   .preFooter div {
-    padding: 100px 50.2px 72px 50.2px;
+    padding: 72px 28.748px;
     color: #ffffff;
   }
   .preFooter div i {
@@ -1323,14 +1307,416 @@
     opacity: 0.75;
   }
   .preFooter .getInTouch {
-    min-height: 100%;
+    min-height: 50%;
     background-color: rgba(0, 0, 0, 0.72);
   }
   .preFooter .dnlResume {
-    min-height: 100%;
+    min-height: 50%;
     background-color: rgba(0, 0, 0, 0.78);
   }
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .Home {
+    position: relative;
+    min-height: 100vh;
+  }
+  .Home::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 33, 34, 0.94);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .Home .mainSection {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    gap: 30px;
+    max-width: 1250px;
+    margin: auto;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  .Home .mainSection * {
+    z-index: 1;
+  }
+  .whatIDo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #F8F5F2;
+    padding: 72px 28.748px;
+    z-index: 1;
+  }
+  .whatIDo .whatIDoLeft {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .whatIDo .whatIDoRight {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+  }
+  .whatIDo .whatIDoRight .whoAmI {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #000000;
+    font-size: 25.25px;
+    margin-left: 3.125rem;
+    text-transform: capitalize;
+    text-align: left;
+  }
+  .whatIDo .whatIDoRight .whoAmI:before {
+    position: absolute;
+    content: "";
+    top: 1.25rem;
+    left: -3.125rem;
+    width: 2.1875rem;
+    height: 0.1375rem;
+    background-color: #212122;
+  }
+  .whatIDo .whatIDoRight h3 {
+    font-size: 32.675px;
+    margin-bottom: 25.598px;
+    font-weight: 450;
+  }
+  .whatIDo .whatIDoRight .description {
+    font-size: 20.5px;
+    margin-bottom: 36.803px;
+    color: #292C3E;
+  }
+  .whatIDo .whatIDoRight .viewPortfolio {
+    text-decoration: none;
+    background-color: #212122;
+    border: 1px solid #212122;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+    margin: 48px 0 0 0;
+  }
+  .whatIDo .whatIDoRight .viewPortfolio:hover {
+    background-color: #000000;
+  }
+
+  .mySkills {
+    background-color: #ffffff;
+    min-height: auto;
+    max-width: 100%;
+    padding: 72px 28.748px;
+    text-align: center;
+  }
+  .mySkills .skillsContainer {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .mySkills .skillsContainer .skill {
+    width: 250px;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    color: #746f6f;
+    height: 3.5rem;
+    border: 0.12rem solid #746f6f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0.25rem;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+  .mySkills .skillsContainer .skill:hover {
+    color: #000000;
+    border-color: #000000;
+  }
+  .mySkills .skillsDescription {
+    height: auto;
+    margin-top: 35px;
+    text-align: left;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .mySkills .skillsDescription h3 {
+    color: #212122;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .mySpecialty {
+    min-height: 75vh;
+    background-color: #F8F5F2;
+    padding: 72px 28.748px;
+    width: 100%;
+  }
+  .mySpecialty div {
+    text-align: center;
+    min-height: auto;
+    max-width: 100%;
+    padding: 20px auto;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.97rem;
+  }
+  .mySpecialty div div {
+    width: 100%;
+    background-color: #ebebeb;
+    border: 0.998px solid #ebebeb;
+    padding: 28px 35px;
+    border-radius: 0.275rem;
+    -webkit-transition: -webkit-box-shadow 300ms ease;
+    transition: -webkit-box-shadow 300ms ease;
+    transition: box-shadow 300ms ease;
+    transition: box-shadow 300ms ease, -webkit-box-shadow 300ms ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mySpecialty div div:not(:last-child) {
+    margin: 0 auto 0.4rem auto;
+  }
+  .mySpecialty div div i {
+    font-size: 50px;
+  }
+  .mySpecialty div div h3 {
+    font-size: 25.5px;
+    font-weight: 600;
+    color: #000000;
+  }
+  .mySpecialty div div p {
+    font-size: 19.5px;
+  }
+  .mySpecialty div div a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 39.998px;
+    height: 39.998px;
+    margin: auto;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 19.5px;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .mySpecialty div div a * {
+    color: #ffffff;
+  }
+  .mySpecialty div div:hover {
+    -webkit-box-shadow: 0.802px 3px 8.002px rgba(33, 33, 34, 0.2);
+            box-shadow: 0.802px 3px 8.002px rgba(33, 33, 34, 0.2);
+  }
+  .mySpecialty div .development {
+    border-color: #F9373A;
+    background-color: #F9373A;
+    color: #ffffff;
+  }
+  .mySpecialty div .development * {
+    color: #ffffff;
+  }
+
+  .selectedProjects {
+    padding: 72px 28.2px;
+    min-height: auto;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .selectedProjects h3 {
+    text-align: left;
+  }
+  .selectedProjects .projectDiv {
+    max-width: 100%;
+    min-height: auto;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.97rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3.5rem;
+  }
+  .selectedProjects .projectDiv .myFeatProj {
+    width: 100%;
+    margin: 0.46rem 0;
+    min-height: 249.997px;
+  }
+  .selectedProjects .projectDiv .myFeatProj * {
+    -webkit-transition: display 300ms ease;
+    transition: display 300ms ease;
+  }
+  .selectedProjects .projectDiv .myFeatProj img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .selectedProjects .projectDiv .myFeatProj .bottomSection {
+    padding: 0.2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .selectedProjects .projectDiv .myFeatProj .bottomSection p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .selectedProjects .projectDiv .myFeatProj .bottomSection a {
+    text-decoration: none;
+    background-color: #212122;
+    border: 1px solid #212122;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+    padding: 0.54rem 1rem;
+    margin: 0.2rem 0 0 0;
+  }
+  .selectedProjects .projectDiv .myFeatProj .bottomSection a:hover {
+    background-color: #000000;
+  }
+  .selectedProjects .viewAllProjects {
+    text-decoration: none;
+    background-color: #212122;
+    border: 1px solid #212122;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+    margin: 4rem 0 0 0;
+    padding: 1rem 1.3rem;
+  }
+  .selectedProjects .viewAllProjects:hover {
+    background-color: #000000;
+  }
+
+  .preFooter {
+    min-height: 70vh;
+    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
+  }
+  .preFooter div {
+    padding: 72px 28.748px;
+    color: #ffffff;
+  }
+  .preFooter div i {
+    font-size: 2.5rem;
+  }
+  .preFooter div p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.75rem 0 0 0;
+  }
+  .preFooter div h3 {
+    font-weight: 600;
+    font-size: 1.65rem;
+    margin: 0.5rem 0 2rem 0;
+  }
+  .preFooter div a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #F9373A;
+    border: 1px solid #F9373A;
+    padding: 1rem 2.5rem;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+    padding: 0.85rem 1.5rem;
+  }
+  .preFooter div a:hover {
+    opacity: 0.75;
+  }
+  .preFooter .getInTouch {
+    min-height: 50%;
+    background-color: rgba(0, 0, 0, 0.72);
+  }
+  .preFooter .dnlResume {
+    min-height: 50%;
+    background-color: rgba(0, 0, 0, 0.78);
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .About {

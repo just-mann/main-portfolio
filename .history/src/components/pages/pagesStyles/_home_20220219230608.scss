@@ -419,87 +419,14 @@
         }
 
         .mainSection {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            max-width: 1250px;
-            min-height: 100vh;
-            margin: auto;
-            z-index: 1;
-            align-items: center;
-
-            * {
-                z-index: 1;
-            }
-
-            .mainHero {
-                //background: yellow;
-
-                h3 {
-                    font-size: 2.5em;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                    width: 500px;
-                    line-height: 1.5em;
-                    margin: 0 0 0.6em 0;
-                    color: $white; 
-                }
-
-                p {
-                    font-size: 1.4rem;
-                    font-weight: 350;
-                    width: 500px;
-                    margin: 20px 0 43px;
-                    color: $white;
-                }
-
-                a {
-                    background: $white;
-                    text-decoration: none;
-                    padding: 15px 25px;
-                    color: black;
-                    border: 2px solid $white;
-                    font-weight: bold;
-
-                    &:not(:last-child) {
-                        margin-right: 1.5rem;
-                        background: transparent;
-                        border: 2px solid $white;
-                        color: $white;
-                    }
-                }
-            }
-
-            .heroImg {
-                position: relative;
-                height: 450px;
-                text-align: right;
-
-                .circle {
-                    position: absolute;
-                    background: rgba(#505050, 0.10);
-                    height: 170px;
-                    width: 170px;
-                    border-radius: 50%;
-                }
-
-                .circle2 {
-                    position: absolute;
-                    top: 7rem;
-                }
-
-                img {
-                    height: 100%;
-                    max-width: 90%;
-                    z-index: 2;
-                }
-            }
+            
+    
         }   
     }
 
     .whatIDo {
         display: flex;
-        max-width: 1250px;
+        max-width: 100%;
         height: auto;
         align-items: center;
         background-color: #F8F5F2;
@@ -844,7 +771,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             justify-content: space-between;
-            //background-color: green;
+            background-color: green;
             padding: 0;
             gap: 30px;
             max-width: 1250px;
@@ -857,9 +784,42 @@
             }
     
             .mainHero {
+                background-color: yellow;
+                min-height: 6.25rem;
+                padding: 0;
+                margin: 0;
 
+                h3 {
+                    font-size: 42.5px;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    color: $white;
+                    padding: 0;
+                    line-height: 3.375rem;
+                    width: 20.5rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                    text-align: left;
+                    transition: font-size 300ms ease;
+                }
+
+                p {
+                    color: $hoverWhite;
+                    font-size: 19px;
+                    line-height: 1.8rem;
+                    font-weight: 400;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding: 0;
+                    text-align: left;
+                    transition: font-size 300ms ease;
+                }
+
+                .contact {
+                    
+                }
             }
-                
+    
         }   
     }
 

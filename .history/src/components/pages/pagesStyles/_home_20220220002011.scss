@@ -477,20 +477,15 @@
 
                 .circle {
                     position: absolute;
-                    background: rgba(#505050, 0.10);
+                    background: rgba(#8b8b8d, 0.10);
                     height: 170px;
                     width: 170px;
                     border-radius: 50%;
                 }
 
-                .circle2 {
-                    position: absolute;
-                    top: 7rem;
-                }
-
                 img {
                     height: 100%;
-                    max-width: 90%;
+                    max-width: 100%;
                     z-index: 2;
                 }
             }

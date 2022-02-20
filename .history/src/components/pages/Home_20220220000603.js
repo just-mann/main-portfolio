@@ -72,8 +72,6 @@ class Home extends Component {
                             <Link to='/contact-me' className='contact'>Get In Touch</Link>
                         </div>
                         <div className='heroImg'>
-                            <div className="circle"></div>
-                            <div className="circle circle2"></div>
                             <img src={heroImg} alt="" />
                         </div>
                     </div>

@@ -436,20 +436,15 @@
                 //background: yellow;
 
                 h3 {
-                    font-size: 2.5em;
-                    text-transform: uppercase;
-                    font-weight: 400;
-                    width: 500px;
-                    line-height: 1.5em;
-                    margin: 0 0 0.6em 0;
+                    font-size: 3em;
+                    margin: 0 0 1em 0;
                     color: $white; 
                 }
 
                 p {
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                     font-weight: 350;
-                    width: 500px;
-                    margin: 20px 0 43px;
+                    margin: 25px 0 40px;
                     color: $white;
                 }
 
@@ -459,7 +454,6 @@
                     padding: 15px 25px;
                     color: black;
                     border: 2px solid $white;
-                    font-weight: bold;
 
                     &:not(:last-child) {
                         margin-right: 1.5rem;
@@ -467,31 +461,6 @@
                         border: 2px solid $white;
                         color: $white;
                     }
-                }
-            }
-
-            .heroImg {
-                position: relative;
-                height: 450px;
-                text-align: right;
-
-                .circle {
-                    position: absolute;
-                    background: rgba(#505050, 0.10);
-                    height: 170px;
-                    width: 170px;
-                    border-radius: 50%;
-                }
-
-                .circle2 {
-                    position: absolute;
-                    top: 7rem;
-                }
-
-                img {
-                    height: 100%;
-                    max-width: 90%;
-                    z-index: 2;
                 }
             }
         }   
@@ -844,7 +813,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             justify-content: space-between;
-            //background-color: green;
+            background-color: green;
             padding: 0;
             gap: 30px;
             max-width: 1250px;

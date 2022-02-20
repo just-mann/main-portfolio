@@ -68,12 +68,10 @@ class Home extends Component {
                                 and Web Applications that leads to 
                                 the success of the overall product
                             </p>
-                            <Link to='/contact-me' className='contact'>See My Resume</Link>
                             <Link to='/contact-me' className='contact'>Get In Touch</Link>
+                            <Link to='/contact-me' className='contact'>See My Resume</Link>
                         </div>
                         <div className='heroImg'>
-                            <div className="circle"></div>
-                            <div className="circle circle2"></div>
                             <img src={heroImg} alt="" />
                         </div>
                     </div>

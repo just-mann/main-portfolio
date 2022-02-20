@@ -73,7 +73,6 @@ class Home extends Component {
                         </div>
                         <div className='heroImg'>
                             <div className="circle"></div>
-                            <div className="circle circle2"></div>
                             <img src={heroImg} alt="" />
                         </div>
                     </div>
