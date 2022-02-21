@@ -393,64 +393,11 @@
         }   
     }
 
-    .mySpecialty {
-        max-width: 100%;
-        //background-color: #F8F5F2;
-        height: 40vh;
-        @include mobilePadding;
-        padding-top: 0;
-        padding-bottom: 0;
-
-
-
-        .specContainer {
-            max-width: 1250px;
-            margin: 0 auto;
-            height: 100%;
-            padding-bottom: 0;
-
-            > div {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-                min-height: 100%;
-                align-items: center;
-
-                .gridDiv {
-                    text-align: center;
-                    padding: 4rem 2.3rem;
-                    min-height: 100%;
-                    //background-color: $hoverWhite;
-
-                    i {
-                        font-size: 3em;
-                        margin: 3rem 0 3rem 0;
-                    }
-
-                    h3 {
-                        font-size: 1.4em;
-                    }
-
-                    p {
-                        font-size: 1.06em;
-                        line-height: 1.6em;
-                    }
-
-                    &:nth-child(2) {
-                        border-left: 1px solid #f3f3f3;
-                        border-right: 1px solid #f3f3f3;
-                        //background-color: $secondColor;
-                        //color: $white;
-                    }
-                }
-            }
-        }
-    }
-
     .whatIDo {
         max-width: 100%;
         height: auto;
         align-items: center;
-        background-color: #ffffff;
+        background-color: #F8F5F2;
         @include mobilePadding;
         z-index: 1;
 
@@ -463,7 +410,6 @@
     .mySkills {
         min-height: 50vh;
         max-width: 100%;
-        background-color: #F8F5F2;
         @include mobilePadding;
 
         > div {
@@ -490,7 +436,51 @@
         }
     }
 
-    
+    .mySpecialty {
+        max-width: 100%;
+        background-color: #F8F5F2;
+        min-height: 65vh;
+        //@include mobilePadding;
+
+        .specContainer {
+            max-width: 1250px;
+            margin: auto;
+
+            > div {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                //gap: 1.3rem;
+
+                .gridDiv {
+                    text-align: center;
+                    padding: 2em 25px;
+                    min-height: auto;
+                    //background-color: $hoverWhite;
+
+                    i {
+                        font-size: 2.5em;
+                        margin: 0 0 3.5rem 0;
+                    }
+
+                    h3 {
+                        font-size: 1.4em;
+                    }
+
+                    p {
+                        font-size: 1.06em;
+                        line-height: 1.6em;
+                    }
+
+                    &:nth-child(2) {
+                        border-left: 1px solid $hoverWhite;
+                        border-right: 1px solid $hoverWhite;
+                        //background-color: $secondColor;
+                        //color: $white;
+                    }
+                }
+            }
+        }
+    }
 
     .selectedProjects {
         padding: 72px 28.2px;

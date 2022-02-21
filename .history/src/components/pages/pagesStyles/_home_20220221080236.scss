@@ -396,16 +396,18 @@
     .mySpecialty {
         max-width: 100%;
         //background-color: #F8F5F2;
-        height: 40vh;
+        height: 45vh;
         @include mobilePadding;
         padding-top: 0;
         padding-bottom: 0;
+        background: yellow;
 
 
 
         .specContainer {
             max-width: 1250px;
             margin: 0 auto;
+            background: lightblue;
             height: 100%;
             padding-bottom: 0;
 
@@ -436,8 +438,8 @@
                     }
 
                     &:nth-child(2) {
-                        border-left: 1px solid #f3f3f3;
-                        border-right: 1px solid #f3f3f3;
+                        border-left: 1px solid #e4ded9;
+                        border-right: 1px solid #e4ded9;
                         //background-color: $secondColor;
                         //color: $white;
                     }
