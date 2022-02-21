@@ -79,7 +79,7 @@
         height: auto;
         align-items: center;
         background-color: #F8F5F2;
-        padding: 40px 28.748px;
+        padding: 72px 28.748px;
         z-index: 1;
 
         .whatIDoContainer {
@@ -109,9 +109,9 @@
                 .skill {
                     border: 2px solid $borderGray;
                     text-align: center;
-                    padding: 10px 25px;
+                    padding: 15px 25px;
                     border-radius: 5px;
-                    font-size: 1.4rem;
+                    font-size: 1.6rem;
                     font-weight: bold;
                 }
             }
@@ -454,12 +454,11 @@
     }
 
     .whatIDo {
-        display: flex;
         max-width: 100%;
         height: auto;
         align-items: center;
-        background-color: #F8F5F2;
-        padding: 40px 28.748px;
+        background-color: #ffffff;
+        @include mobilePadding;
         z-index: 1;
 
         .whatIDoContainer {

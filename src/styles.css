@@ -520,7 +520,7 @@
         -ms-flex-align: center;
             align-items: center;
     background-color: #F8F5F2;
-    padding: 72px 28.748px;
+    padding: 40px 28.748px;
     z-index: 1;
   }
   .whatIDo .whatIDoContainer {
@@ -551,45 +551,55 @@
   .mySkills > div .skillsContainer .skill {
     border: 2px solid #353434;
     text-align: center;
-    padding: 15px 25px;
+    padding: 10px 25px;
     border-radius: 5px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
   }
 
   .mySpecialty {
     max-width: 100%;
-    min-height: 70vh;
+    min-height: auto;
     padding: 72px 18.748px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .mySpecialty .specContainer {
     max-width: 1250px;
-    margin: auto;
+    margin: 0 auto;
     min-height: 100%;
+    padding-bottom: 0;
   }
   .mySpecialty .specContainer > div {
     display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1.3rem;
+    min-height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mySpecialty .specContainer > div .gridDiv {
     text-align: center;
-    padding: 2em 25px;
-    min-height: auto;
-    background-color: #cac9c9;
+    padding: 4rem 2.3rem;
+    min-height: 100%;
   }
   .mySpecialty .specContainer > div .gridDiv i {
-    font-size: 2.2em;
-    font-weight: bold;
-    margin: 0 0 3rem 0;
+    font-size: 3em;
+    margin: 3rem 0 3rem 0;
   }
   .mySpecialty .specContainer > div .gridDiv h3 {
     font-size: 1.4em;
   }
   .mySpecialty .specContainer > div .gridDiv p {
-    font-size: 1.02em;
+    font-size: 1.06em;
+    line-height: 1.6em;
   }
+  .mySpecialty .specContainer > div .gridDiv:nth-child(2) {
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+  }
+
   .selectedProjects {
     padding: 72px 28.2px;
     min-height: auto;
@@ -821,7 +831,7 @@
 
   .mySpecialty {
     max-width: 100%;
-    height: 40vh;
+    min-height: auto;
     padding: 72px 18.748px;
     padding-top: 0;
     padding-bottom: 0;
@@ -829,7 +839,7 @@
   .mySpecialty .specContainer {
     max-width: 1250px;
     margin: 0 auto;
-    height: 100%;
+    min-height: 100%;
     padding-bottom: 0;
   }
   .mySpecialty .specContainer > div {
@@ -863,13 +873,16 @@
   }
 
   .whatIDo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     max-width: 100%;
     height: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #ffffff;
-    padding: 72px 18.748px;
+    background-color: #F8F5F2;
+    padding: 40px 28.748px;
     z-index: 1;
   }
   .whatIDo .whatIDoContainer {
@@ -880,7 +893,6 @@
   .mySkills {
     min-height: 50vh;
     max-width: 100%;
-    background-color: #F8F5F2;
     padding: 72px 18.748px;
   }
   .mySkills > div {
