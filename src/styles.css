@@ -85,8 +85,8 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 72px 18.748px;
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
   }
   .Navbar .NavbarContainer .myLogo {
     text-decoration: none;
@@ -155,7 +155,7 @@
   }
   .Navbar .respNav {
     position: fixed;
-    top: 73.29px;
+    top: 65.29px;
     left: 0;
     right: 0;
     -webkit-box-orient: vertical;
@@ -211,7 +211,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 3rem;
+    padding: 2rem 0;
+    padding: 72px 18.748px;
     max-width: 1675px;
     margin: auto;
   }
@@ -310,7 +311,7 @@
 }
 @media (min-width: 64rem) {
   .Navbar {
-    background-color: #000000;
+    background-color: rgba(33, 33, 34, 0.6);
     max-width: 100%;
     z-index: 200;
     position: fixed;
@@ -325,7 +326,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1.4rem 18.748px;
+    padding: 1.6rem 18.748px;
     max-width: 1300px;
   }
   .Navbar .NavbarContainer .myLogo {
@@ -522,210 +523,75 @@
     padding: 72px 28.748px;
     z-index: 1;
   }
-  .whatIDo .whatIDoLeft {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .whatIDo .whatIDoRight {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    text-align: left;
-  }
-  .whatIDo .whatIDoRight .whoAmI {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    color: #000000;
-    font-size: 25.25px;
-    margin-left: 3.125rem;
-    text-transform: capitalize;
-    text-align: left;
-  }
-  .whatIDo .whatIDoRight .whoAmI:before {
-    position: absolute;
-    content: "";
-    top: 1.25rem;
-    left: -3.125rem;
-    width: 2.1875rem;
-    height: 0.1375rem;
-    background-color: #212122;
-  }
-  .whatIDo .whatIDoRight h3 {
-    font-size: 32.675px;
-    margin-bottom: 25.598px;
-    font-weight: 450;
-  }
-  .whatIDo .whatIDoRight .description {
-    font-size: 20.5px;
-    margin-bottom: 36.803px;
-    color: #292C3E;
-  }
-  .whatIDo .whatIDoRight .viewPortfolio {
-    text-decoration: none;
-    background-color: #212122;
-    border: 1px solid #212122;
-    color: #ffffff;
-    padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
-    font-weight: 700;
-    -webkit-transition: background-color 300ms ease-in-out;
-    transition: background-color 300ms ease-in-out;
-    margin: 48px 0 0 0;
-  }
-  .whatIDo .whatIDoRight .viewPortfolio:hover {
-    background-color: #000000;
+  .whatIDo .whatIDoContainer {
+    max-width: 1250px;
+    margin: auto;
   }
 
   .mySkills {
-    background-color: #ffffff;
-    min-height: auto;
+    min-height: 50vh;
     max-width: 100%;
-    padding: 72px 28.748px;
-    text-align: center;
+    padding: 72px 18.748px;
+    background-color: #F8F5F2;
   }
-  .mySkills .skillsContainer {
+  .mySkills > div {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 30px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .mySkills .skillsContainer .skill {
-    width: 250px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    max-width: 1250px;
     margin: auto;
-    font-size: 25px;
+  }
+  .mySkills > div .skillsContainer {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.1em;
+  }
+  .mySkills > div .skillsContainer .skill {
+    border: 2px solid #353434;
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.6rem;
     font-weight: bold;
-    color: #746f6f;
-    height: 3.5rem;
-    border: 0.12rem solid #746f6f;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-radius: 0.25rem;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-  }
-  .mySkills .skillsContainer .skill:hover {
-    color: #000000;
-    border-color: #000000;
-  }
-  .mySkills .skillsDescription {
-    height: auto;
-    margin-top: 35px;
-    text-align: left;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .mySkills .skillsDescription h3 {
-    color: #212122;
-    font-weight: 500;
-    text-align: left;
   }
 
   .mySpecialty {
-    min-height: 75vh;
-    background-color: #F8F5F2;
-    padding: 72px 28.748px;
-    width: 100%;
-  }
-  .mySpecialty div {
-    text-align: center;
-    min-height: auto;
     max-width: 100%;
-    padding: 20px auto;
+    min-height: 70vh;
+    padding: 72px 18.748px;
+  }
+  .mySpecialty .specContainer {
+    max-width: 1250px;
+    margin: auto;
+    min-height: 100%;
+  }
+  .mySpecialty .specContainer > div {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.97rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.3rem;
   }
-  .mySpecialty div div {
-    width: 100%;
-    background-color: #ebebeb;
-    border: 0.998px solid #ebebeb;
-    padding: 28px 35px;
-    border-radius: 0.275rem;
-    -webkit-transition: -webkit-box-shadow 300ms ease;
-    transition: -webkit-box-shadow 300ms ease;
-    transition: box-shadow 300ms ease;
-    transition: box-shadow 300ms ease, -webkit-box-shadow 300ms ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .mySpecialty .specContainer > div .gridDiv {
+    text-align: center;
+    padding: 2em 25px;
+    min-height: auto;
+    background-color: #cac9c9;
   }
-  .mySpecialty div div:not(:last-child) {
-    margin: 0 auto 0.4rem auto;
+  .mySpecialty .specContainer > div .gridDiv i {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: 0 0 3rem 0;
   }
-  .mySpecialty div div i {
-    font-size: 50px;
+  .mySpecialty .specContainer > div .gridDiv h3 {
+    font-size: 1.4em;
   }
-  .mySpecialty div div h3 {
-    font-size: 25.5px;
-    font-weight: 600;
-    color: #000000;
+  .mySpecialty .specContainer > div .gridDiv p {
+    font-size: 1.02em;
   }
-  .mySpecialty div div p {
-    font-size: 19.5px;
-  }
-  .mySpecialty div div a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 39.998px;
-    height: 39.998px;
-    margin: auto;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 19.5px;
-    background-color: #000000;
-    color: #ffffff;
-  }
-  .mySpecialty div div a * {
-    color: #ffffff;
-  }
-  .mySpecialty div div:hover {
-    -webkit-box-shadow: 0.802px 3px 8.002px rgba(33, 33, 34, 0.2);
-            box-shadow: 0.802px 3px 8.002px rgba(33, 33, 34, 0.2);
-  }
-  .mySpecialty div .development {
-    border-color: #F9373A;
+  .mySpecialty .specContainer > div .gridDiv:nth-child(2) {
     background-color: #F9373A;
-    color: #ffffff;
-  }
-  .mySpecialty div .development * {
     color: #ffffff;
   }
 
@@ -874,6 +740,9 @@
   .Home {
     position: relative;
     min-height: 100vh;
+    padding: 72px 18.748px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .Home::before {
     position: absolute;
@@ -956,222 +825,83 @@
   }
 
   .whatIDo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 1250px;
+    max-width: 100%;
     height: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     background-color: #F8F5F2;
-    padding: 72px 28.748px;
+    padding: 72px 18.748px;
     z-index: 1;
   }
-  .whatIDo .whatIDoLeft {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .whatIDo .whatIDoRight {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    text-align: left;
-  }
-  .whatIDo .whatIDoRight .whoAmI {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    color: #000000;
-    font-size: 25.25px;
-    margin-left: 3.125rem;
-    text-transform: capitalize;
-    text-align: left;
-  }
-  .whatIDo .whatIDoRight .whoAmI:before {
-    position: absolute;
-    content: "";
-    top: 1.25rem;
-    left: -3.125rem;
-    width: 2.1875rem;
-    height: 0.1375rem;
-    background-color: #212122;
-  }
-  .whatIDo .whatIDoRight h3 {
-    font-size: 32.675px;
-    margin-bottom: 25.598px;
-    font-weight: 450;
-  }
-  .whatIDo .whatIDoRight .description {
-    font-size: 20.5px;
-    margin-bottom: 36.803px;
-    color: #292C3E;
-  }
-  .whatIDo .whatIDoRight .viewPortfolio {
-    text-decoration: none;
-    background-color: #212122;
-    border: 1px solid #212122;
-    color: #ffffff;
-    padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
-    font-weight: 700;
-    -webkit-transition: background-color 300ms ease-in-out;
-    transition: background-color 300ms ease-in-out;
-    margin: 48px 0 0 0;
-  }
-  .whatIDo .whatIDoRight .viewPortfolio:hover {
-    background-color: #000000;
+  .whatIDo .whatIDoContainer {
+    max-width: 1250px;
+    margin: auto;
   }
 
   .mySkills {
-    background-color: #ffffff;
-    min-height: auto;
+    min-height: 50vh;
     max-width: 100%;
-    padding: 72px 28.748px;
-    text-align: center;
+    padding: 72px 18.748px;
   }
-  .mySkills .skillsContainer {
+  .mySkills > div {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 30px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .mySkills .skillsContainer .skill {
-    width: 250px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    max-width: 1250px;
     margin: auto;
-    font-size: 25px;
-    font-weight: bold;
-    color: #746f6f;
-    height: 3.5rem;
-    border: 0.12rem solid #746f6f;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-radius: 0.25rem;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
   }
-  .mySkills .skillsContainer .skill:hover {
-    color: #000000;
-    border-color: #000000;
+  .mySkills > div .skillsContainer {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.1em;
   }
-  .mySkills .skillsDescription {
-    height: auto;
-    margin-top: 35px;
-    text-align: left;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .mySkills .skillsDescription h3 {
-    color: #212122;
-    font-weight: 500;
-    text-align: left;
+  .mySkills > div .skillsContainer .skill {
+    border: 2px solid #353434;
+    text-align: center;
+    padding: 7px 25px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    -webkit-transition: font-size 300ms ease;
+    transition: font-size 300ms ease;
   }
 
   .mySpecialty {
-    min-height: 75vh;
-    background-color: #F8F5F2;
-    padding: 72px 28.748px;
-    width: 100%;
-  }
-  .mySpecialty div {
-    text-align: center;
-    min-height: auto;
     max-width: 100%;
-    padding: 20px auto;
+    background-color: #F8F5F2;
+    padding: 72px 18.748px;
+  }
+  .mySpecialty .specContainer {
+    max-width: 1250px;
+    margin: auto;
+  }
+  .mySpecialty .specContainer > div {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.97rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.3rem;
   }
-  .mySpecialty div div {
-    width: 100%;
-    background-color: #ebebeb;
-    border: 0.998px solid #ebebeb;
-    padding: 28px 35px;
-    border-radius: 0.275rem;
-    -webkit-transition: -webkit-box-shadow 300ms ease;
-    transition: -webkit-box-shadow 300ms ease;
-    transition: box-shadow 300ms ease;
-    transition: box-shadow 300ms ease, -webkit-box-shadow 300ms ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .mySpecialty .specContainer > div .gridDiv {
+    text-align: center;
+    padding: 2em 25px;
+    min-height: auto;
+    background-color: #cac9c9;
   }
-  .mySpecialty div div:not(:last-child) {
-    margin: 0 auto 0.4rem auto;
+  .mySpecialty .specContainer > div .gridDiv i {
+    font-size: 2.5em;
+    margin: 0 0 3.5rem 0;
   }
-  .mySpecialty div div i {
-    font-size: 50px;
+  .mySpecialty .specContainer > div .gridDiv h3 {
+    font-size: 1.4em;
   }
-  .mySpecialty div div h3 {
-    font-size: 25.5px;
-    font-weight: 600;
-    color: #000000;
+  .mySpecialty .specContainer > div .gridDiv p {
+    font-size: 1.06em;
+    line-height: 1.6em;
   }
-  .mySpecialty div div p {
-    font-size: 19.5px;
-  }
-  .mySpecialty div div a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 39.998px;
-    height: 39.998px;
-    margin: auto;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 19.5px;
-    background-color: #000000;
-    color: #ffffff;
-  }
-  .mySpecialty div div a * {
-    color: #ffffff;
-  }
-  .mySpecialty div div:hover {
-    -webkit-box-shadow: 0.802px 3px 8.002px rgba(33, 33, 34, 0.2);
-            box-shadow: 0.802px 3px 8.002px rgba(33, 33, 34, 0.2);
-  }
-  .mySpecialty div .development {
-    border-color: #F9373A;
+  .mySpecialty .specContainer > div .gridDiv:nth-child(2) {
     background-color: #F9373A;
-    color: #ffffff;
-  }
-  .mySpecialty div .development * {
     color: #ffffff;
   }
 
@@ -1190,7 +920,7 @@
     min-height: auto;
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1.97rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1351,229 +1081,74 @@
     z-index: 1;
   }
   .whatIDo {
+    max-width: 100%;
+    height: 50vh;
+    background-color: #F8F5F2;
+    padding: 72px 18.748px;
+    z-index: 1;
+  }
+  .whatIDo .whatIDoContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 100%;
-    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #F8F5F2;
-    padding: 72px 28.748px;
-    z-index: 1;
-  }
-  .whatIDo .whatIDoLeft {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .whatIDo .whatIDoRight {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    text-align: left;
-  }
-  .whatIDo .whatIDoRight .whoAmI {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    color: #000000;
-    font-size: 25.25px;
-    margin-left: 3.125rem;
-    text-transform: capitalize;
-    text-align: left;
-  }
-  .whatIDo .whatIDoRight .whoAmI:before {
-    position: absolute;
-    content: "";
-    top: 1.25rem;
-    left: -3.125rem;
-    width: 2.1875rem;
-    height: 0.1375rem;
-    background-color: #212122;
-  }
-  .whatIDo .whatIDoRight h3 {
-    font-size: 32.675px;
-    margin-bottom: 25.598px;
-    font-weight: 450;
-  }
-  .whatIDo .whatIDoRight .description {
-    font-size: 20.5px;
-    margin-bottom: 36.803px;
-    color: #292C3E;
-  }
-  .whatIDo .whatIDoRight .viewPortfolio {
-    text-decoration: none;
-    background-color: #212122;
-    border: 1px solid #212122;
-    color: #ffffff;
-    padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
-    font-weight: 700;
-    -webkit-transition: background-color 300ms ease-in-out;
-    transition: background-color 300ms ease-in-out;
-    margin: 48px 0 0 0;
-  }
-  .whatIDo .whatIDoRight .viewPortfolio:hover {
-    background-color: #000000;
+    gap: 4rem;
+    max-width: 1250px;
+    margin: auto;
   }
 
   .mySkills {
-    background-color: #ffffff;
-    min-height: auto;
+    min-height: 50vh;
     max-width: 100%;
-    padding: 72px 28.748px;
-    text-align: center;
+    padding: 72px 18.748px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .mySkills .skillsContainer {
+  .mySkills > div {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 30px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .mySkills .skillsContainer .skill {
-    width: 250px;
+    -ms-grid-columns: 1fr 4rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1250px;
     margin: auto;
-    font-size: 25px;
-    font-weight: bold;
-    color: #746f6f;
-    height: 3.5rem;
-    border: 0.12rem solid #746f6f;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-radius: 0.25rem;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
   }
-  .mySkills .skillsContainer .skill:hover {
-    color: #000000;
-    border-color: #000000;
-  }
-  .mySkills .skillsDescription {
-    height: auto;
-    margin-top: 35px;
-    text-align: left;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .mySkills .skillsDescription h3 {
-    color: #212122;
-    font-weight: 500;
-    text-align: left;
-  }
-
-  .mySpecialty {
-    min-height: 75vh;
-    background-color: #F8F5F2;
-    padding: 72px 28.748px;
-    width: 100%;
-  }
-  .mySpecialty div {
-    text-align: center;
-    min-height: auto;
-    max-width: 100%;
-    padding: 20px auto;
+  .mySkills > div .skillsContainer {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.97rem;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    gap: 1.1em;
   }
-  .mySpecialty div div {
-    width: 100%;
-    background-color: #ebebeb;
-    border: 0.998px solid #ebebeb;
-    padding: 28px 35px;
-    border-radius: 0.275rem;
-    -webkit-transition: -webkit-box-shadow 300ms ease;
-    transition: -webkit-box-shadow 300ms ease;
-    transition: box-shadow 300ms ease;
-    transition: box-shadow 300ms ease, -webkit-box-shadow 300ms ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .mySpecialty div div:not(:last-child) {
-    margin: 0 auto 0.4rem auto;
-  }
-  .mySpecialty div div i {
-    font-size: 50px;
-  }
-  .mySpecialty div div h3 {
-    font-size: 25.5px;
-    font-weight: 600;
-    color: #000000;
-  }
-  .mySpecialty div div p {
-    font-size: 19.5px;
-  }
-  .mySpecialty div div a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 39.998px;
-    height: 39.998px;
-    margin: auto;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 19.5px;
-    background-color: #000000;
-    color: #ffffff;
-  }
-  .mySpecialty div div a * {
-    color: #ffffff;
-  }
-  .mySpecialty div div:hover {
-    -webkit-box-shadow: 0.802px 3px 8.002px rgba(33, 33, 34, 0.2);
-            box-shadow: 0.802px 3px 8.002px rgba(33, 33, 34, 0.2);
-  }
-  .mySpecialty div .development {
-    border-color: #F9373A;
-    background-color: #F9373A;
-    color: #ffffff;
-  }
-  .mySpecialty div .development * {
-    color: #ffffff;
+  .mySkills > div .skillsContainer .skill {
+    border: 2px solid #353434;
+    text-align: center;
+    padding: 7px 25px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    -webkit-transition: font-size 300ms ease;
+    transition: font-size 300ms ease;
   }
 
   .selectedProjects {
     padding: 72px 28.2px;
     min-height: auto;
-    max-width: 100%;
+    width: 1250px;
     margin: auto;
     text-align: center;
   }
@@ -1726,6 +1301,9 @@
   }
   .About .Navbar * {
     color: #ffffff;
+  }
+  .About .Navbar .NavbarContainer {
+    background-color: #000000;
   }
   .About .Navbar .NavbarContainer .toggle {
     width: 28px;
@@ -2192,6 +1770,9 @@
     height: 100%;
     max-width: 100%;
   }
+  .About .NavbarContainer, .About .Navbar {
+    background-color: #000000;
+  }
   .About .aboutContainer {
     padding: 72px 18.748px;
     display: -webkit-box;
@@ -2315,6 +1896,9 @@
     position: relative;
     height: 100%;
     max-width: 100%;
+  }
+  .About .NavbarContainer, .About .Navbar {
+    background-color: #000000;
   }
   .About .aboutContainer {
     padding: 72px 18.748px;
@@ -2440,6 +2024,9 @@
     height: 100%;
     max-width: 100%;
   }
+  .Contact .NavbarContainer, .Contact .Navbar {
+    background-color: #000000;
+  }
   .Contact .contactContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2519,6 +2106,9 @@
     position: relative;
     height: 100%;
     max-width: 100%;
+  }
+  .Contact .NavbarContainer, .Contact .Navbar {
+    background-color: #000000;
   }
   .Contact .contactContainer {
     display: -webkit-box;
