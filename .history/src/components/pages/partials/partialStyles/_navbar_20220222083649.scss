@@ -191,8 +191,9 @@
                     text-decoration: none;
                     color: $white;
                     background-color: $secondColor;
+                    
                     font-size: 1rem;
-                    //font-weight: 700;
+                    font-weight: 700;
                     transition: background-color 300ms ease-in-out;
     
                     &:hover {
@@ -288,6 +289,7 @@
                     text-decoration: none;
                     //text-transform: uppercase;
                     font-size: 18px;
+                    line-height: 40px;
                     font-weight: 700;
                     margin: 0 0 0 3rem;
                     transition: color 300ms ease-in-out;
@@ -304,7 +306,6 @@
                     background-color: $secondColor;
                     border: 1px solid $secondColor;
                     padding: 16px 30px;
-                    font-size: 1rem;
                     font-size: 1rem;
                     font-weight: 700;
                     transition: background-color 300ms ease-in-out;

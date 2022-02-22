@@ -113,12 +113,13 @@ class Home extends Component {
                         {
                             this.state.projects.slice(0, 4).map(project => {
                                 return (
-                                    <Link to={project.projectUrl} key={project.id} className='myFeatProj'>
+                                    <div key={project.id} className='myFeatProj'>
                                         <img src={project.projectImg1} alt={project.name} />
                                         <div className='bottomSection'>
-                                            
+                                            <p className='projectName'>{project.name}</p>
+                                            <a className='projectUrl' href={project.projectUrl}>Live Demo</a>
                                         </div>
-                                    </Link>
+                                    </div>
                                 )
                             })
                         }

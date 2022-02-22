@@ -340,19 +340,18 @@
                 //background: yellow;
 
                 h3 {
-                    font-family: $primaryFont;
-                    font-size: 46px;
+                    font-size: 45px;
                     text-transform: uppercase;
                     font-weight: 400;
-                    width: 550px;
-                    line-height: 1.3em;
+                    width: 500px;
+                    line-height: 26px;
                     margin: 3rem 0 0.6em 0;
                     color: $white; 
                 }
 
                 p {
-                    font-size: 17px;
-                    font-weight: 400;
+                    font-size: 1.4rem;
+                    font-weight: 350;
                     width: 500px;
                     margin: 20px 0 43px;
                     color: $white;
@@ -361,8 +360,7 @@
                 a {
                     background: $white;
                     text-decoration: none;
-                    padding: 16px 30px;
-                    font-size: 1rem;
+                    padding: 15px 25px;
                     color: black;
                     border: 2px solid $white;
                     font-weight: bold;
@@ -387,7 +385,6 @@
                     height: 170px;
                     width: 170px;
                     border-radius: 50%;
-                    z-index: 1;
                 }
 
                 .circle2 {
@@ -396,9 +393,8 @@
                 }
 
                 img {
-                    height: 90%;
+                    height: 100%;
                     max-width: 90%;
-                    margin-top: 3rem;
                     z-index: 2;
                 }
             }
@@ -434,19 +430,17 @@
                     //background-color: $hoverWhite;
 
                     i {
-                        font-size: 60px;
-                        margin: 1rem 0 3rem 0;
+                        font-size: 3em;
+                        margin: 3rem 0 3rem 0;
                     }
 
                     h3 {
-                        font-size: 24px;
-                        line-height: 30px;
-                        margin: 24px 0;
+                        font-size: 1.4em;
                     }
 
                     p {
-                        font-size: 15px;
-                        line-height: 26px;
+                        font-size: 1.06em;
+                        line-height: 1.6em;
                     }
 
                     &:nth-child(2) {
@@ -637,7 +631,7 @@
 @media only screen and (min-width: 768px) {
     .Home {
         position: relative;
-        min-height: 80vh;
+        min-height: 85vh;
     
     
         &::before {
@@ -656,6 +650,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             justify-content: space-between;
+            //background-color: green;
             padding: 0;
             gap: 30px;
             max-width: 1120px;

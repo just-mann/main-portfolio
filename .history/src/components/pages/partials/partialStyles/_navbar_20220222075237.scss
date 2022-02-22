@@ -151,6 +151,7 @@
             //padding: 2rem 0;
             width: 1120px;
             margin: auto;
+            background-color: yellow;
 
 
             .myLogo {
@@ -178,7 +179,6 @@
                     text-decoration: none;
                     font-size: 1.08rem;
                     margin: 0 0 0 3rem;
-                    text-transform: uppercase;
                     transition: color 300ms ease-in-out;
 
 
@@ -191,8 +191,9 @@
                     text-decoration: none;
                     color: $white;
                     background-color: $secondColor;
-                    font-size: 1rem;
-                    //font-weight: 700;
+                    padding: 0.3rem 1.82rem;
+                    border-radius: 0.2rem;
+                    font-weight: 700;
                     transition: background-color 300ms ease-in-out;
     
                     &:hover {
@@ -200,7 +201,9 @@
                         border: 1px solid #b92f31;
                         background-color: #b92f31;
                     }
-                } 
+                }
+
+                
             }
 
             
@@ -269,7 +272,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.60rem 0;
+            
             max-width: 1300px;
 
 
@@ -303,9 +306,8 @@
                     color: $white;
                     background-color: $secondColor;
                     border: 1px solid $secondColor;
-                    padding: 16px 30px;
-                    font-size: 1rem;
-                    font-size: 1rem;
+                    padding: 0.3rem 1.82rem;
+                    border-radius: 0.2rem;
                     font-weight: 700;
                     transition: background-color 300ms ease-in-out;
     
