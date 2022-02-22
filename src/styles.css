@@ -250,6 +250,7 @@
     color: #ffffff;
     background-color: #F9373A;
     font-size: 1rem;
+    font-weight: 700;
     -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
   }
@@ -357,8 +358,7 @@
     color: #ffffff;
     background-color: #F9373A;
     border: 1px solid #F9373A;
-    padding: 16px 30px;
-    font-size: 1rem;
+    padding: 11px 30px;
     font-size: 1rem;
     font-weight: 700;
     -webkit-transition: background-color 300ms ease-in-out;
