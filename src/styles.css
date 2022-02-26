@@ -46,6 +46,9 @@
   .Projects {
     padding: 72px 18.748px;
   }
+  .Projects .Navbar {
+    background-color: #000000;
+  }
   .Projects .projectsContainer {
     min-height: 80vh;
     max-width: 100%;
@@ -85,8 +88,8 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 72px 18.748px;
-    padding-top: 1.1rem;
-    padding-bottom: 1.1rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
   }
   .Navbar .NavbarContainer .myLogo {
     text-decoration: none;
@@ -155,7 +158,7 @@
   }
   .Navbar .respNav {
     position: fixed;
-    top: 65.29px;
+    top: 75.5px;
     left: 0;
     right: 0;
     -webkit-box-orient: vertical;
@@ -194,12 +197,13 @@
 }
 @media (min-width: 64rem) {
   .Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
     max-width: 100%;
     z-index: 500;
-    position: sticky;
-    top: 0;
-    right: 0;
-    left: 0;
   }
   .Navbar .NavbarContainer {
     display: -webkit-box;
@@ -208,7 +212,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 1120px;
+    max-width: 1120px;
     margin: auto;
   }
   .Navbar .NavbarContainer .myLogo {
@@ -308,10 +312,11 @@
 }
 @media (min-width: 64rem) {
   .Navbar {
-    background-color: rgba(33, 33, 34, 0.6);
+    background-color: #000000;
     max-width: 100%;
     z-index: 200;
     position: fixed;
+    padding: 25px 20px;
   }
   .Navbar .NavbarContainer {
     display: -webkit-box;
@@ -323,8 +328,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1.6rem 0;
-    max-width: 1300px;
+    max-width: 1120px;
+    margin: auto;
   }
   .Navbar .NavbarContainer .myLogo {
     text-decoration: none;
@@ -417,12 +422,14 @@
     display: none;
   }
 }
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .Home {
     position: relative;
     min-height: 100vh;
+    padding: 72px 18.748px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .Home::before {
     position: absolute;
@@ -436,14 +443,16 @@
     z-index: 1;
   }
   .Home .mainSection {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 1250px;
     min-height: 100vh;
     margin: auto;
+    padding-bottom: 3.5rem;
     z-index: 1;
-    text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -451,60 +460,63 @@
   .Home .mainSection * {
     z-index: 1;
   }
-  .Home .mainSection .mainHero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    max-width: 100%;
-    min-height: 6.25rem;
-    padding: 0 48px;
-    margin: 0 auto 0 auto;
-  }
-  .Home .mainSection .mainHero h3 {
-    font-size: 42.5px;
+  .Home .mainSection .mainHero h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
     text-transform: capitalize;
-    font-weight: 700;
+    font-weight: 400;
+    margin: 160px 0 8px 0;
     color: #ffffff;
-    line-height: 3.375rem;
-    width: 20.5rem;
-    margin: 30px auto 32.003px auto;
-    text-align: center;
-    -webkit-transition: font-size 300ms ease;
-    transition: font-size 300ms ease;
   }
   .Home .mainSection .mainHero p {
-    color: #cac9c9;
-    font-size: 19px;
-    max-width: 23.75rem;
-    line-height: 1.8rem;
-    font-weight: 400;
-    margin: 0 auto 56.002px auto;
-    text-align: center;
-    -webkit-transition: font-size 300ms ease;
-    transition: font-size 300ms ease;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 420px;
+    text-align: left;
+    margin: 24px 0 3rem;
+    color: #a5a3a3;
   }
-  .Home .mainSection .mainHero .contact {
+  .Home .mainSection .mainHero a {
+    background: #ffffff;
     text-decoration: none;
+    padding: 16px 30px;
+    font-size: 1rem;
+    color: black;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+    width: 30%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .Home .mainSection .mainHero a:not(:last-child) {
+    margin-right: 1.5rem;
+    background: transparent;
+    border: 2px solid #ffffff;
     color: #ffffff;
-    background-color: #F9373A;
-    border: 1px solid #F9373A;
-    padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
-    font-weight: 700;
-    -webkit-transition: background-color 300ms ease-in-out;
-    transition: background-color 300ms ease-in-out;
-    padding: 0.6rem 1.5rem;
-    margin: auto;
+  }
+  .Home .mainSection .heroImg {
+    position: relative;
+    height: 450px;
+    text-align: center;
+  }
+  .Home .mainSection .heroImg .circle {
+    position: absolute;
+    background: rgba(80, 80, 80, 0.1);
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .Home .mainSection .heroImg .circle2 {
+    position: absolute;
+    top: 7rem;
+  }
+  .Home .mainSection .heroImg img {
+    height: 80%;
+    width: 100%;
+    margin-top: 3rem;
+    z-index: 2;
   }
 
   .whatIDo {
@@ -529,7 +541,6 @@
     min-height: 50vh;
     max-width: 100%;
     padding: 72px 18.748px;
-    background-color: #F8F5F2;
   }
   .mySkills > div {
     display: -ms-grid;
@@ -538,6 +549,18 @@
     grid-template-columns: 1fr;
     max-width: 1250px;
     margin: auto;
+  }
+  .mySkills > div .whatIDoLeft .viewMe {
+    display: inline-block;
+    margin-bottom: 2em;
+    text-decoration: none;
+    background-color: #212122;
+    border: 1px solid #212122;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
   }
   .mySkills > div .skillsContainer {
     display: -ms-grid;
@@ -549,7 +572,6 @@
     border: 2px solid #353434;
     text-align: center;
     padding: 10px 25px;
-    border-radius: 5px;
     font-size: 1.4rem;
     font-weight: bold;
   }
@@ -586,11 +608,11 @@
     margin: 3rem 0 3rem 0;
   }
   .mySpecialty .specContainer > div .gridDiv h3 {
-    font-size: 1.4em;
+    font-size: 23.8px;
   }
   .mySpecialty .specContainer > div .gridDiv p {
-    font-size: 1.06em;
-    line-height: 1.6em;
+    font-size: 16px;
+    line-height: 27.5px;
   }
   .mySpecialty .specContainer > div .gridDiv:nth-child(2) {
     border-top: 1px solid #f3f3f3;
@@ -599,14 +621,47 @@
 
   .selectedProjects {
     background-color: #F8F5F2;
-    padding: 72px 28.2px;
+    padding: 72px 18.748px;
     min-height: auto;
     max-width: 100%;
     margin: auto;
-    text-align: center;
-  }
-  .selectedProjects h3 {
     text-align: left;
+  }
+  .selectedProjects h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .selectedProjects .upperPart {
+    min-height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 8px 0px 30px;
+  }
+  .selectedProjects .upperPart p {
+    text-align: left;
+    font-size: 16px;
+  }
+  .selectedProjects .upperPart .viewAllProjects {
+    background: black;
+    color: white;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #212122;
+    border: 1px solid #212122;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
   }
   .selectedProjects .projectDiv {
     max-width: 100%;
@@ -621,7 +676,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 0rem;
   }
   .selectedProjects .projectDiv .myFeatProj {
     width: 100%;
@@ -663,7 +718,6 @@
     border: 1px solid #212122;
     color: #ffffff;
     padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
     font-weight: 700;
     -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
@@ -671,22 +725,6 @@
     margin: 0.2rem 0 0 0;
   }
   .selectedProjects .projectDiv .myFeatProj .bottomSection a:hover {
-    background-color: #000000;
-  }
-  .selectedProjects .viewAllProjects {
-    text-decoration: none;
-    background-color: #212122;
-    border: 1px solid #212122;
-    color: #ffffff;
-    padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
-    font-weight: 700;
-    -webkit-transition: background-color 300ms ease-in-out;
-    transition: background-color 300ms ease-in-out;
-    margin: 4rem 0 0 0;
-    padding: 1rem 1.3rem;
-  }
-  .selectedProjects .viewAllProjects:hover {
     background-color: #000000;
   }
 
@@ -720,7 +758,6 @@
     background-color: #F9373A;
     border: 1px solid #F9373A;
     padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
     font-weight: 700;
     -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
@@ -761,8 +798,8 @@
   .Home .mainSection {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 30px 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
     max-width: 1250px;
     min-height: 100vh;
@@ -775,21 +812,23 @@
   .Home .mainSection * {
     z-index: 1;
   }
-  .Home .mainSection .mainHero h3 {
+  .Home .mainSection .mainHero h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 46px;
-    text-transform: uppercase;
+    font-size: 57px;
+    text-transform: capitalize;
     font-weight: 400;
-    width: 550px;
-    line-height: 1.3em;
-    margin: 3rem 0 0.6em 0;
+    line-height: 60px;
+    margin: 10px 0 8px 0;
     color: #ffffff;
   }
   .Home .mainSection .mainHero p {
     font-size: 17px;
     font-weight: 400;
-    width: 500px;
-    margin: 20px 0 43px;
+    line-height: 26px;
+    font-style: normal;
+    max-width: 420px;
+    text-align: left;
+    margin: 24px 0 3rem;
     color: #ffffff;
   }
   .Home .mainSection .mainHero a {
@@ -800,6 +839,9 @@
     color: black;
     border: 2px solid #ffffff;
     font-weight: bold;
+    width: 30%;
+    margin-bottom: 1rem;
+    text-align: center;
   }
   .Home .mainSection .mainHero a:not(:last-child) {
     margin-right: 1.5rem;
@@ -810,7 +852,7 @@
   .Home .mainSection .heroImg {
     position: relative;
     height: 450px;
-    text-align: right;
+    text-align: center;
   }
   .Home .mainSection .heroImg .circle {
     position: absolute;
@@ -825,8 +867,8 @@
     top: 7rem;
   }
   .Home .mainSection .heroImg img {
-    height: 90%;
-    max-width: 90%;
+    height: 80%;
+    max-width: 70%;
     margin-top: 3rem;
     z-index: 2;
   }
@@ -917,7 +959,6 @@
     border: 2px solid #353434;
     text-align: center;
     padding: 7px 25px;
-    border-radius: 5px;
     font-size: 1.5rem;
     -webkit-transition: font-size 300ms ease;
     transition: font-size 300ms ease;
@@ -929,11 +970,58 @@
     margin: auto;
     text-align: center;
     background-color: #F8F5F2;
+    padding: 72px 18.748px;
   }
-  .selectedProjects h3 {
+  .selectedProjects > div {
+    max-width: 1120px;
+    margin: auto;
+  }
+  .selectedProjects > div h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
     text-align: left;
+    margin-bottom: 16px;
   }
-  .selectedProjects .projectDiv {
+  .selectedProjects > div .upperPart {
+    min-height: 75px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4.7fr 5.5rem 1fr;
+    grid-template-columns: 4.7fr 1fr;
+    gap: 5.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 8px 0px 24px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .selectedProjects > div .upperPart p {
+    text-align: left;
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .selectedProjects > div .upperPart .viewAllProjects {
+    margin: 2rem 0 0 0;
+    padding: 11px 30px;
+    width: 200px;
+    font-size: 1rem;
+    line-height: 24px;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    -webkit-transition: background-color 300ms ease-in;
+    transition: background-color 300ms ease-in;
+  }
+  .selectedProjects > div .upperPart .viewAllProjects:hover {
+    background-color: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+  }
+  .selectedProjects > div .projectDiv {
     max-width: 100%;
     min-height: auto;
     display: -ms-grid;
@@ -948,22 +1036,22 @@
             align-items: center;
     margin-bottom: 3.5rem;
   }
-  .selectedProjects .projectDiv .myFeatProj {
+  .selectedProjects > div .projectDiv .myFeatProj {
     width: 100%;
     margin: 0.46rem 0;
     min-height: 249.997px;
   }
-  .selectedProjects .projectDiv .myFeatProj * {
+  .selectedProjects > div .projectDiv .myFeatProj * {
     -webkit-transition: display 300ms ease;
     transition: display 300ms ease;
   }
-  .selectedProjects .projectDiv .myFeatProj img {
+  .selectedProjects > div .projectDiv .myFeatProj img {
     width: 100%;
     height: 300px;
     -o-object-fit: fill;
        object-fit: fill;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection {
     padding: 0.2rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -975,43 +1063,26 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection p {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection p {
     font-size: 1.5rem;
     margin-top: 1rem;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection a {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a {
     text-decoration: none;
     background-color: #212122;
     border: 1px solid #212122;
     color: #ffffff;
     padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
     font-weight: 700;
     -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
     padding: 0.54rem 1rem;
     margin: 0.2rem 0 0 0;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection a:hover {
-    background-color: #000000;
-  }
-  .selectedProjects .viewAllProjects {
-    text-decoration: none;
-    background-color: #212122;
-    border: 1px solid #212122;
-    color: #ffffff;
-    padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
-    font-weight: 700;
-    -webkit-transition: background-color 300ms ease-in-out;
-    transition: background-color 300ms ease-in-out;
-    margin: 4rem 0 0 0;
-    padding: 1rem 1.3rem;
-  }
-  .selectedProjects .viewAllProjects:hover {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a:hover {
     background-color: #000000;
   }
 
@@ -1045,7 +1116,6 @@
     background-color: #F9373A;
     border: 1px solid #F9373A;
     padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
     font-weight: 700;
     -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
@@ -1067,7 +1137,7 @@
 @media only screen and (min-width: 768px) {
   .Home {
     position: relative;
-    min-height: 80vh;
+    min-height: auto;
   }
   .Home::before {
     position: absolute;
@@ -1137,7 +1207,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #F8F5F2;
   }
   .mySkills > div {
     display: -ms-grid;
@@ -1147,6 +1216,18 @@
     gap: 4rem;
     max-width: 1120px;
     margin: auto;
+  }
+  .mySkills > div .whatIDoLeft .viewMe {
+    display: inline-block;
+    margin-bottom: 2em;
+    text-decoration: none;
+    background-color: #212122;
+    border: 1px solid #212122;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    -webkit-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
   }
   .mySkills > div .skillsContainer {
     display: -ms-grid;
@@ -1158,29 +1239,66 @@
     border: 2px solid #353434;
     text-align: center;
     padding: 7px 25px;
-    border-radius: 5px;
     font-size: 1.5rem;
     -webkit-transition: font-size 300ms ease;
     transition: font-size 300ms ease;
   }
 
   .selectedProjects {
-    padding: 72px 28.2px;
     min-height: auto;
     max-width: 100%;
     margin: auto;
     text-align: center;
+    background-color: #F8F5F2;
+    padding: 72px 18.748px;
   }
-  .selectedProjects h3 {
-    text-align: left;
-  }
-  .selectedProjects .projectDiv {
+  .selectedProjects > div {
     max-width: 1120px;
     margin: auto;
+  }
+  .selectedProjects > div h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .selectedProjects > div .upperPart {
+    min-height: 75px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4.7fr 5.5rem 1fr;
+    grid-template-columns: 4.7fr 1fr;
+    gap: 5.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 8px 0px 50px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .selectedProjects > div .upperPart p {
+    text-align: left;
+    font-size: 23.8px;
+    width: 510px;
+    line-height: 35px;
+  }
+  .selectedProjects > div .upperPart .viewAllProjects {
+    margin: 4rem 0 0 0;
+    padding: 11px 30px;
+    width: 200px;
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .selectedProjects > div .upperPart .viewAllProjects:hover {
+    background-color: #000000;
+  }
+  .selectedProjects > div .projectDiv {
+    max-width: 100%;
     min-height: auto;
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 1.97rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1190,22 +1308,21 @@
             align-items: center;
     margin-bottom: 3.5rem;
   }
-  .selectedProjects .projectDiv .myFeatProj {
+  .selectedProjects > div .projectDiv .myFeatProj {
     width: 100%;
     margin: 0.46rem 0;
-    min-height: 249.997px;
   }
-  .selectedProjects .projectDiv .myFeatProj * {
+  .selectedProjects > div .projectDiv .myFeatProj * {
     -webkit-transition: display 300ms ease;
     transition: display 300ms ease;
   }
-  .selectedProjects .projectDiv .myFeatProj img {
+  .selectedProjects > div .projectDiv .myFeatProj img {
     width: 100%;
-    height: 300px;
-    -o-object-fit: fill;
-       object-fit: fill;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection {
     padding: 0.2rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1217,48 +1334,31 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection p {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection p {
     font-size: 1.5rem;
     margin-top: 1rem;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection a {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a {
     text-decoration: none;
     background-color: #212122;
     border: 1px solid #212122;
     color: #ffffff;
     padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
     font-weight: 700;
     -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
     padding: 0.54rem 1rem;
     margin: 0.2rem 0 0 0;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection a:hover {
-    background-color: #000000;
-  }
-  .selectedProjects .viewAllProjects {
-    text-decoration: none;
-    background-color: #212122;
-    border: 1px solid #212122;
-    color: #ffffff;
-    padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
-    font-weight: 700;
-    -webkit-transition: background-color 300ms ease-in-out;
-    transition: background-color 300ms ease-in-out;
-    margin: 4rem 0 0 0;
-    padding: 1rem 1.3rem;
-  }
-  .selectedProjects .viewAllProjects:hover {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a:hover {
     background-color: #000000;
   }
 
   .preFooter {
-    min-height: 70vh;
+    min-height: auto;
     max-width: 100%;
     display: -ms-grid;
     display: grid;
@@ -1287,7 +1387,6 @@
     background-color: #F9373A;
     border: 1px solid #F9373A;
     padding: 1rem 2.5rem;
-    border-radius: 0.2rem;
     font-weight: 700;
     -webkit-transition: background-color 300ms ease-in-out;
     transition: background-color 300ms ease-in-out;
@@ -1306,6 +1405,26 @@
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mainSection {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    gap: 30px;
+    max-width: 1120px;
+    margin: auto;
+    min-height: 85vh;
+    z-index: 1;
+  }
+  .mainSection * {
+    z-index: 1;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
