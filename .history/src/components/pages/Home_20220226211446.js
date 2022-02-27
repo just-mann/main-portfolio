@@ -69,7 +69,7 @@ class Home extends Component {
                                 and Web Applications that leads to 
                                 the success of the overall product
                             </p>
-                            <a href={resumePdf} className='contact'>See My Resume</a>
+                            <Link href={resumePdf} className='contact'>See My Resume</Link>
                             <Link to='/contact-me' className='contact'>Get In Touch</Link>
                         </div>
                         <div className='heroImg'>
@@ -152,7 +152,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </section>
-                {/* <section className="preFooter">
+                <section className="preFooter">
                         <div className='getInTouch'>
                             <i><GiNetworkBars /></i>
                             <p>Let's Work Together</p>
@@ -165,7 +165,7 @@ class Home extends Component {
                             <h3>Have A Job?</h3>
                             <Link to="/">See Resume</Link>
                         </div>
-                </section> */}
+                </section>
             </div>
         )
     }

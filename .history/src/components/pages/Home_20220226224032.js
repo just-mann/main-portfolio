@@ -113,7 +113,7 @@ class Home extends Component {
                         <h4>Selected Work</h4>
                         <div className='upperPart'>
                             <p>A collection of some of my recently completed projects, covering a wide range of design disciplines</p>
-                            <Link to='/projects' className='viewAllProjects'>All Projects</Link>
+                            <Link to='/projects' className='viewAllProjects'>Projects</Link>
                         </div>
                         <div className="projectDiv">
                             {

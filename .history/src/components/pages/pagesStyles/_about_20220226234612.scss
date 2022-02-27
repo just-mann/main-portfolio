@@ -208,7 +208,7 @@
             @include mobilePadding;
             display: flex;
             flex-direction: column;
-            width: 1120px;
+            max-width: 100%;
             min-height: auto;
             margin: 0 auto;
             z-index: 1;
@@ -361,7 +361,7 @@
         .aboutContainer {
             @include mobilePadding;
             display: flex;
-            width: 1120px;
+            max-width: 1120px;
             min-height: 100vh;
             margin: 0 auto;
             z-index: 1;
@@ -435,7 +435,7 @@
 
         .achievements {
             padding: 0;
-            width: 1120px;
+            max-width: 1250px;
             margin: auto;
         }
 
@@ -523,7 +523,7 @@
         .aboutContainer {
             @include mobilePadding;
             display: flex;
-            width: 1120px;
+            max-width: 100%;
             min-height: 100vh;
             margin: 0 auto;
             z-index: 1;
@@ -661,7 +661,7 @@
         .aboutContainer {
             @include mobilePadding;
             display: flex;
-            width: 1120px;
+            max-width: 100%;
             min-height: 100vh;
             margin: 0 auto;
             z-index: 1;
@@ -717,7 +717,7 @@
             @include mobilePadding;
             padding-left: 0;
             padding-right: 0;
-            width: 1120px;
+            max-width: 1250px;
             margin: auto;
         }
 

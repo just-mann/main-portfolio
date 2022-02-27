@@ -384,7 +384,8 @@
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba($lightBlack, 0.94);
+            background: red;
+            //background-color: rgba($lightBlack, 0.94);
             height: 100%;
             width: 100%;
             z-index: 1;
@@ -775,15 +776,17 @@
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba($lightBlack, 0.94);
+            background: rgb(233, 233, 124);
+            // background-color: rgba($lightBlack, 0.94);
             height: 100%;
             width: 100%;
             z-index: 1;
         }
 
         .mainSection {
+            background-color: lightblue;
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 30px;
             max-width: 1120px;
             min-height: 100vh;
@@ -805,7 +808,7 @@
                     text-transform: capitalize;
                     font-weight: 400;
                     line-height: 60px;
-                    margin: 135px 0 8px 0;
+                    margin: 35px 0 8px 0;
                     color: $white; 
                 }
     
@@ -858,7 +861,7 @@
     
                 .circle2 {
                     position: absolute;
-                    top: 8rem;
+                    top: 7rem;
                 }
     
                 img {
@@ -867,7 +870,9 @@
                     margin-top: 3rem;
                     z-index: 2;
                 }
-            }
+            }  
+
+
         }
     }
 
@@ -1104,111 +1109,25 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     
-    .Home {
-        position: relative;
-        min-height: auto;
-    
-    
-        &::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba($lightBlack, 0.94);
-            height: 100%;
-            width: 100%;
+    .mainSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        padding: 0;
+        gap: 30px;
+        max-width: 1120px;
+        margin: auto;
+        min-height: 85vh;
+        z-index: 1;
+
+        * {
             z-index: 1;
         }
 
-        .mainSection {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            max-width: 1120px;
-            min-height: 100vh;
-            margin: auto;
-            z-index: 1;
-            align-items: center;
+        .mainHero {
 
-            * {
-                z-index: 1;
-            }
-
-            .mainHero {
-                //background: yellow;
-    
-                h2 {
-                    font-family: $primaryFont;
-                    font-size: 45px;
-                    width: 550px;
-                    text-transform: capitalize;
-                    font-weight: 400;
-                    line-height: 60px;
-                    margin: 40px 0 8px 0;
-                    color: $white; 
-                }
-    
-                p {
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 26px;
-                    font-style: normal;
-                    max-width: 420px;
-                    text-align: left;
-                    margin: 24px 0 3rem;
-                    color: $white;
-                }
-    
-                a {
-                    background: $white;
-                    text-decoration: none;
-                    padding: 16px 30px;
-                    font-size: 1rem;
-                    color: black;
-                    border: 2px solid $white;
-                    font-weight: bold;
-                    width: 30%;
-                    margin-bottom: 1rem;
-                    //display: block;
-                    text-align: center;
-    
-                    &:not(:last-child) {
-                        margin-right: 1.5rem;
-                        background: transparent;
-                        border: 2px solid $white;
-                        color: $white;
-                    }
-                }
-            }
-
-            .heroImg {
-                position: relative;
-                height: 450px;
-                text-align: center;
-    
-                .circle {
-                    position: absolute;
-                    background: rgba(#505050, 0.10);
-                    height: 170px;
-                    width: 170px;
-                    border-radius: 50%;
-                    z-index: 1;
-                }
-    
-                .circle2 {
-                    position: absolute;
-                    top: 8rem;
-                }
-    
-                img {
-                    height: 90%;
-                    width: 100%;
-                    margin-top: 3rem;
-                    z-index: 2;
-                }
-            }
         }
+                
     }
     
     .mySpecialty {

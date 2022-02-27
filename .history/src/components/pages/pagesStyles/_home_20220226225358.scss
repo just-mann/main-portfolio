@@ -782,6 +782,7 @@
         }
 
         .mainSection {
+            //background-color: lightblue;
             display: grid;
             grid-template-columns: 1fr;
             gap: 30px;
@@ -1126,7 +1127,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 30px;
             max-width: 1120px;
-            min-height: 100vh;
+            min-height: 85vh;
             margin: auto;
             z-index: 1;
             align-items: center;
@@ -1202,7 +1203,7 @@
                 }
     
                 img {
-                    height: 90%;
+                    height: 80%;
                     width: 100%;
                     margin-top: 3rem;
                     z-index: 2;

@@ -76,12 +76,12 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .Projects {
+        //background-color: rgb(15, 153, 68);
         @include mobilePadding;
         max-width: 100%;
         
         
         .projectsContainer {
-            background-color: rgb(15, 153, 68);
             //@include desktopPadding;
             min-height: 80vh;
             max-width: 1250px;

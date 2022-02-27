@@ -384,7 +384,8 @@
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba($lightBlack, 0.94);
+            background: red;
+            //background-color: rgba($lightBlack, 0.94);
             height: 100%;
             width: 100%;
             z-index: 1;
@@ -775,13 +776,15 @@
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba($lightBlack, 0.94);
+            background: rgb(233, 233, 124);
+            // background-color: rgba($lightBlack, 0.94);
             height: 100%;
             width: 100%;
             z-index: 1;
         }
 
         .mainSection {
+            background-color: lightblue;
             display: grid;
             grid-template-columns: 1fr;
             gap: 30px;
@@ -1115,18 +1118,20 @@
             top: 0;
             left: 0;
             right: 0;
-            background-color: rgba($lightBlack, 0.94);
+            background: rgb(232, 153, 235);
+            // background-color: rgba($lightBlack, 0.94);
             height: 100%;
             width: 100%;
             z-index: 1;
         }
 
         .mainSection {
+            background-color: lightblue;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
             max-width: 1120px;
-            min-height: 100vh;
+            min-height: 70vh;
             margin: auto;
             z-index: 1;
             align-items: center;
@@ -1202,7 +1207,7 @@
                 }
     
                 img {
-                    height: 90%;
+                    height: 80%;
                     width: 100%;
                     margin-top: 3rem;
                     z-index: 2;
