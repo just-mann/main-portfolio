@@ -1,0 +1,111 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Projects {
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .projectsContainer {
+            background-color: yellow;
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            width: 1120px;
+            margin: auto;
+        }
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Projects {
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .projectsContainer {
+            background-color: rgb(190, 135, 176);
+            min-height: 86vh;
+            padding: 5.5rem 0 0 0;
+            width: 1120px;
+            margin: auto;
+        }
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .Projects {
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        
+        .projectsContainer {
+            background-color: rgb(153, 153, 93);
+            min-height: 80vh;
+            max-width: 1120px;
+            margin: auto;
+
+            .projectDiv {
+                //max-width: 100%;
+
+                .myFeatProj {
+                    //max-width: 100%;
+
+                    > div {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 1fr 4fr;
+
+                        .left {
+                            
+                            img {
+                                height: 100%;
+                                width: 50px;
+                            }
+                        }
+
+                        .right {
+
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .Projects {
+        @include mobilePadding;
+        max-width: 100%;
+        
+        .Navbar {
+            background-color: $darkBlack;
+        }
+        
+        .projectsContainer {
+            
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .Projects {
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .projectsContainer {
+            
+        }
+    }
+}
