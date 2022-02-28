@@ -70,11 +70,11 @@
                 .myFeatProj {
                     max-width: 100%;
                     border-bottom: 1px solid lightgray;
-                    min-height: 340px;
+                    min-height: 350px;
                     display: grid;
                     padding: 2.5rem 0;
                     grid-template-columns: 4fr 3fr;
-                    gap: 35px;
+                    gap: 20px;
 
                     &:first-child {
                         .left {
@@ -86,13 +86,10 @@
                     }
                     
                     &:last-child {
-                        border: none;
-
-                        
                         .left {
 
                             a {
-                                background: rgb(219, 224, 224);
+                                background: rgb(142, 172, 172);
                             }
                         }
                     }
@@ -121,26 +118,14 @@
                             text-align: left;
                             color: black;
                             padding: 0 0 0 15px;
-
-                            p {
-                                font-size: 17px;
-                                line-height: 22.4px;
-                                text-transform: capitalize;
-
-                                &:first-child {
-                                    text-transform: uppercase;
-                                }
-                            }
                         }
                     }
 
                     .right {
-                        margin: 0 0 0 20px;
-
                         p {
                             font-size: 19px;
                             line-height: 28.8px;
-
+                            
                         }
                     }
                 }

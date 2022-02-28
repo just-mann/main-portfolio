@@ -56,17 +56,20 @@
   .Projects .projectsContainer .projectDiv .myFeatProj {
     max-width: 100%;
     border-bottom: 1px solid lightgray;
-    min-height: 350px;
+    min-height: 340px;
     display: grid;
     padding: 2.5rem 0;
     grid-template-columns: 4fr 3fr;
-    gap: 20px;
+    gap: 35px;
   }
   .Projects .projectsContainer .projectDiv .myFeatProj:first-child .left a {
     background: #e4e481;
   }
+  .Projects .projectsContainer .projectDiv .myFeatProj:last-child {
+    border: none;
+  }
   .Projects .projectsContainer .projectDiv .myFeatProj:last-child .left a {
-    background: #8eacac;
+    background: #dbe0e0;
   }
   .Projects .projectsContainer .projectDiv .myFeatProj .left {
     display: grid;
@@ -92,6 +95,21 @@
     text-align: left;
     color: black;
     padding: 0 0 0 15px;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc p {
+    font-size: 17px;
+    line-height: 22.4px;
+    text-transform: capitalize;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc p:first-child {
+    text-transform: uppercase;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .right {
+    margin: 0 0 0 20px;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .right p {
+    font-size: 19px;
+    line-height: 28.8px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
