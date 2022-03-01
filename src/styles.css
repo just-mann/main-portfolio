@@ -624,6 +624,14 @@
   }
   .selectedProjects .upperPart .viewAllProjects {
     display: inline-block;
+    margin-bottom: 2em;
+    text-decoration: none;
+    background-color: #212122;
+    border: 1px solid #212122;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    transition: background-color 300ms ease-in-out;
   }
   .selectedProjects .projectDiv {
     max-width: 100%;
