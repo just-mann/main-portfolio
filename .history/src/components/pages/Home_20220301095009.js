@@ -69,7 +69,7 @@ class Home extends Component {
                                 and Web Applications that leads to 
                                 the success of the overall product
                             </p>
-                            <a href={resumePdf} className='contact' target="_blank" rel="noopener noreferrer">See My Resume</a>
+                            <a href={resumePdf} className='contact' target="_blank">See My Resume</a>
                             <Link to='/contact-me' className='contact'>Get In Touch</Link>
                         </div>
                         <div className='heroImg'>

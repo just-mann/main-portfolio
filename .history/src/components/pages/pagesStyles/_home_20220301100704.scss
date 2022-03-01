@@ -243,7 +243,9 @@
 
         .upperPart {
             min-height: auto;
+            display: flex;
             flex-direction: column;
+            margin: 8px 0px 30px;
 
             p {
                 text-align: left;
@@ -252,6 +254,10 @@
 
             .viewAllProjects {
                 display: inline-block;
+                background: black;
+                color: white;
+                text-align: center;
+                //@include blackBtnStyle;
             }
         }
 
@@ -633,7 +639,8 @@
 
                 .viewAllProjects {
                     margin: 10px 0 0 0;
-                    padding: 11px 20px;
+                    padding: 11px 30px;
+                    width: 200px;
                     font-size: 1rem;
                     line-height: 24px;
                     text-decoration: none;
@@ -961,8 +968,10 @@
 
             .upperPart {
                 min-height: 75px;
+                display: grid;
                 grid-template-columns: 4.7fr 1fr;
                 gap: 5.5rem;
+                align-items: center;
                 margin: 8px 0px 50px;
                 justify-content: space-between;
 
@@ -974,7 +983,9 @@
                 }
 
                 .viewAllProjects {
-                    padding: 11px 15px;
+                    margin: 4rem 0 0 0;
+                    padding: 11px 30px;
+                    width: 200px;
                     font-size: 1rem;
                     line-height: 24px;
         

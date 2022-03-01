@@ -252,6 +252,8 @@
 
             .viewAllProjects {
                 display: inline-block;
+                margin-bottom: 2em;
+                @include blackBtnStyle;
             }
         }
 
