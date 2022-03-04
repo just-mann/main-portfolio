@@ -1,0 +1,85 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .ProjDetails {
+        //background-color: yellow;
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .ProjDetContainer {
+            min-height: 86vh;
+            padding: 5rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+        }
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .ProjDetails {
+        //background-color: yellow;
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .ProjDetContainer {
+            min-height: 86vh;
+            padding: 5rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+        }
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .ProjDetails {
+        //background-color: yellow;
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .ProjDetContainer {
+            min-height: 86vh;
+            padding: 3.5rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+        }
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .ProjDetails {
+        //background-color: yellow;
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .ProjDetContainer {
+            min-height: 86vh;
+            padding: 3.5rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+        }
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .ProjDetails {
+        //background-color: yellow;
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .ProjDetContainer {
+            min-height: 86vh;
+            padding: 3.5rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+        }
+    }
+}

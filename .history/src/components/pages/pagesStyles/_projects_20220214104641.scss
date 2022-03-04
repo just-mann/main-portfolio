@@ -1,0 +1,78 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Projects {
+        background-color: yellow;
+        position: relative;
+        @include mobilePadding;
+        
+        
+        .projectsContainer {
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            max-width: 100%;
+        }
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .Projects {
+        background-color: yellow;
+        position: relative;
+        @include mobilePadding;
+        
+        
+        .projectsContainer {
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            max-width: 100%;
+        }
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .Projects {
+        background-color: yellow;
+        
+        @include mobilePadding;
+        
+        
+
+        .projectsContainer {
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            max-width: 100%;
+        }
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .Projects {
+        background-color: rgb(133, 199, 158);
+        
+
+        .projectsContainer {
+            min-height: 80vh;
+            max-width: 100%;
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .Projects {
+        background-color: rgb(15, 153, 68);
+        @include desktopPadding;
+        
+
+        .projectsContainer {
+            min-height: 80vh;
+            max-width: 100%;
+        }
+    }
+}

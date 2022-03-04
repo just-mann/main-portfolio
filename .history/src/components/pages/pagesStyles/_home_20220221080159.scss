@@ -1,0 +1,870 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Home {
+        position: relative;
+        min-height: 100vh;
+    
+    
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba($lightBlack, 0.94);
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .mainSection {
+            display: flex;
+            max-width: 100%;
+            min-height: 100vh;
+            margin: auto;
+            z-index: 1;
+            text-align: center;
+            align-items: center;
+
+            * {
+                z-index: 1;
+            }
+    
+            .mainHero {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                max-width: 100%;
+                min-height: 6.25rem;
+                padding: 0 48px;
+                margin: 0 auto 0 auto;
+
+                h3 {
+                    font-size: 42.5px;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    color: $white;
+                    line-height: 3.375rem;
+                    width: 20.5rem;
+                    margin: 30px auto 32.003px auto;
+                    text-align: center;
+                    transition: font-size 300ms ease;
+                }
+
+                p {
+                    color: $hoverWhite;
+                    font-size: 19px;
+                    max-width: 23.75rem;
+                    line-height: 1.8rem;
+                    font-weight: 400;
+                    margin: 0 auto 56.002px auto;
+                    text-align: center;
+                    transition: font-size 300ms ease;
+                }
+
+                .contact {
+                    @include redBtnStyle;
+                    padding: 0.6rem 1.5rem;
+                    margin: auto;
+                }
+            }
+    
+        }   
+    }
+
+    .whatIDo {
+        display: flex;
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        background-color: #F8F5F2;
+        padding: 72px 28.748px;
+        z-index: 1;
+
+        .whatIDoContainer {
+            max-width: 1250px;
+            margin: auto;
+        }
+    }
+
+    .mySkills {
+        min-height: 50vh;
+        max-width: 100%;
+        @include mobilePadding;
+        background-color: #F8F5F2;
+
+        > div {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 1250px;
+            margin: auto;
+
+            .skillsContainer {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1.1em;
+
+
+                .skill {
+                    border: 2px solid $borderGray;
+                    text-align: center;
+                    padding: 15px 25px;
+                    border-radius: 5px;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .mySpecialty {
+        max-width: 100%;
+        min-height: 70vh;
+        @include mobilePadding;
+       // background-color: #F8F5F2;
+
+        .specContainer {
+            max-width: 1250px;
+            margin: auto;
+            min-height: 100%;
+
+            > div {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 1.3rem;
+
+                .gridDiv {
+                    text-align: center;
+                    padding: 2em 25px;
+                    min-height: auto;
+                    background-color: $hoverWhite;
+
+                    i {
+                        font-size: 2.2em;
+                        font-weight: bold;
+                        margin: 0 0 3rem 0;
+                    }
+
+                    h3 {
+                        font-size: 1.4em;
+                    }
+
+                    p {
+                        font-size: 1.02em;
+                    }
+
+                    &:nth-child(2) {
+                        //background-color: $secondColor;
+                        //color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .selectedProjects {
+        padding: 72px 28.2px;
+        min-height: auto;
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+
+        h3 {
+            text-align: left;
+        }
+
+        .projectDiv {
+            max-width: 100%;
+            min-height: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.97rem;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3.5rem;
+
+
+            .myFeatProj {
+                width: 100%;
+                margin: 0.46rem 0;
+                min-height: 249.997px;
+                
+                
+                * {
+                    transition: display 300ms ease;
+                }
+
+
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: fill;
+                }
+
+                .bottomSection {
+                    padding: 0.2rem 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        font-size: 1.5rem;
+                        margin-top: 1rem;
+                        align-self: center;
+                    }
+                    
+                    a {
+                        @include blackBtnStyle;
+                        padding: 0.54rem 1rem;
+                        margin: 0.2rem 0 0 0;
+                    
+                        &:hover {
+                            background-color: $darkBlack;
+                        }
+                    }
+                }
+
+            }
+        }
+        
+        .viewAllProjects {
+            @include blackBtnStyle;
+            margin: 4rem 0 0 0;
+            padding: 1rem 1.3rem;
+
+            &:hover {
+                background-color: $darkBlack;
+            }
+        }
+    }
+
+    .preFooter {
+        min-height: 70vh;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
+
+        div {
+            padding: 72px 28.748px;
+            color: $white;
+
+            i {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 600;
+                margin: 0.75rem 0 0 0;
+            }
+
+            h3 {
+                font-weight: 600;
+              font-size: 1.65rem;
+              margin: 0.5rem 0 2rem 0;
+            }
+
+            a {
+                @include redBtnStyle;
+                padding: 0.85rem 1.5rem;
+
+
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+        
+        .getInTouch {
+            min-height: 50%;
+            background-color: rgba($darkBlack, 0.72);
+        }
+        
+        .dnlResume {
+            min-height: 50%;
+            background-color: rgba($darkBlack, 0.78);
+        }
+    }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Home {
+        position: relative;
+        min-height: 100vh;
+        @include mobilePadding;
+        padding-top: 0;
+        padding-bottom: 0;
+    
+    
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba($lightBlack, 0.94);
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .mainSection {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 1250px;
+            min-height: 100vh;
+            margin: auto;
+            z-index: 1;
+            align-items: center;
+
+            * {
+                z-index: 1;
+            }
+
+            .mainHero {
+                //background: yellow;
+
+                h3 {
+                    font-size: 2.5em;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    width: 500px;
+                    line-height: 1.5em;
+                    margin: 0 0 0.6em 0;
+                    color: $white; 
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    font-weight: 350;
+                    width: 500px;
+                    margin: 20px 0 43px;
+                    color: $white;
+                }
+
+                a {
+                    background: $white;
+                    text-decoration: none;
+                    padding: 15px 25px;
+                    color: black;
+                    border: 2px solid $white;
+                    font-weight: bold;
+
+                    &:not(:last-child) {
+                        margin-right: 1.5rem;
+                        background: transparent;
+                        border: 2px solid $white;
+                        color: $white;
+                    }
+                }
+            }
+
+            .heroImg {
+                position: relative;
+                height: 450px;
+                text-align: right;
+
+                .circle {
+                    position: absolute;
+                    background: rgba(#505050, 0.10);
+                    height: 170px;
+                    width: 170px;
+                    border-radius: 50%;
+                }
+
+                .circle2 {
+                    position: absolute;
+                    top: 7rem;
+                }
+
+                img {
+                    height: 100%;
+                    max-width: 90%;
+                    z-index: 2;
+                }
+            }
+        }   
+    }
+
+    .mySpecialty {
+        max-width: 100%;
+        //background-color: #F8F5F2;
+        height: 45vh;
+        @include mobilePadding;
+        padding-top: 0;
+        padding-bottom: 0;
+        background: yellow;
+
+
+
+        .specContainer {
+            max-width: 1250px;
+            margin: 0 auto;
+            background: lightblue;
+            height: 100%;
+            padding-bottom: 0;
+
+            > div {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                min-height: 100%;
+                justify-content: center;
+                align-items: center;
+
+                .gridDiv {
+                    text-align: center;
+                    padding: 4rem 2.3rem;
+                    min-height: 100%;
+                    background-color: lightgreen;
+                    //background-color: $hoverWhite;
+
+                    i {
+                        font-size: 3em;
+                        margin: 3rem 0 3rem 0;
+                    }
+
+                    h3 {
+                        font-size: 1.4em;
+                    }
+
+                    p {
+                        font-size: 1.06em;
+                        line-height: 1.6em;
+                    }
+
+                    &:nth-child(2) {
+                        border-left: 1px solid #e4ded9;
+                        border-right: 1px solid #e4ded9;
+                        //background-color: $secondColor;
+                        //color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .whatIDo {
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        background-color: #ffffff;
+        @include mobilePadding;
+        z-index: 1;
+
+        .whatIDoContainer {
+            max-width: 1250px;
+            margin: auto;
+        }
+    }
+
+    .mySkills {
+        min-height: 50vh;
+        max-width: 100%;
+        background-color: #F8F5F2;
+        @include mobilePadding;
+
+        > div {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 1250px;
+            margin: auto;
+
+            .skillsContainer {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 1.1em;
+
+
+                .skill {
+                    border: 2px solid $borderGray;
+                    text-align: center;
+                    padding: 7px 25px;
+                    border-radius: 5px;
+                    font-size: 1.5rem;
+                    transition: font-size 300ms ease;
+                }
+            }
+        }
+    }
+
+    
+
+    .selectedProjects {
+        padding: 72px 28.2px;
+        min-height: auto;
+        max-width: 100%;
+        margin: auto;
+        text-align: center;
+
+        h3 {
+            text-align: left;
+        }
+
+        .projectDiv {
+            max-width: 100%;
+            min-height: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.97rem;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3.5rem;
+
+
+            .myFeatProj {
+                width: 100%;
+                margin: 0.46rem 0;
+                min-height: 249.997px;
+                
+                
+                * {
+                    transition: display 300ms ease;
+                }
+
+
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: fill;
+                }
+
+                .bottomSection {
+                    padding: 0.2rem 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        font-size: 1.5rem;
+                        margin-top: 1rem;
+                        align-self: center;
+                    }
+                    
+                    a {
+                        @include blackBtnStyle;
+                        padding: 0.54rem 1rem;
+                        margin: 0.2rem 0 0 0;
+                    
+                        &:hover {
+                            background-color: $darkBlack;
+                        }
+                    }
+                }
+
+            }
+        }
+        
+        .viewAllProjects {
+            @include blackBtnStyle;
+            margin: 4rem 0 0 0;
+            padding: 1rem 1.3rem;
+
+            &:hover {
+                background-color: $darkBlack;
+            }
+        }
+    }
+
+    .preFooter {
+        min-height: 70vh;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
+
+        div {
+            padding: 72px 28.748px;
+            color: $white;
+
+            i {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 600;
+                margin: 0.75rem 0 0 0;
+            }
+
+            h3 {
+                font-weight: 600;
+              font-size: 1.65rem;
+              margin: 0.5rem 0 2rem 0;
+            }
+
+            a {
+                @include redBtnStyle;
+                padding: 0.85rem 1.5rem;
+
+
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+        
+        .getInTouch {
+            min-height: 50%;
+            background-color: rgba($darkBlack, 0.72);
+        }
+        
+        .dnlResume {
+            min-height: 50%;
+            background-color: rgba($darkBlack, 0.78);
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .Home {
+        position: relative;
+        min-height: 100vh;
+    
+    
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba($lightBlack, 0.94);
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .mainSection {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            //background-color: green;
+            padding: 0;
+            gap: 30px;
+            max-width: 1250px;
+            margin: auto;
+            min-height: 100vh;
+            z-index: 1;
+
+            * {
+                z-index: 1;
+            }
+    
+            .mainHero {
+
+            }
+                
+        }   
+    }
+
+    .whatIDo {
+        max-width: 100%;
+        height: 50vh;
+        background-color: #F8F5F2;
+        @include mobilePadding;
+        z-index: 1;
+
+        .whatIDoContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4rem;
+            max-width: 1250px;
+            margin: auto;
+        }
+    }
+
+    .mySkills {
+        min-height: 50vh;
+        max-width: 100%;
+        @include mobilePadding;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1250px;
+            margin: auto;
+
+            .skillsContainer {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+                gap: 1.1em;
+
+
+                .skill {
+                    border: 2px solid $borderGray;
+                    text-align: center;
+                    padding: 7px 25px;
+                    border-radius: 5px;
+                    font-size: 1.5rem;
+                    transition: font-size 300ms ease;
+                }
+            }
+        }
+    }
+
+    .mySpecialty {
+        
+    }
+
+    .selectedProjects {
+        padding: 72px 28.2px;
+        min-height: auto;
+        width: 1250px;
+        margin: auto;
+        text-align: center;
+
+        h3 {
+            text-align: left;
+        }
+
+        .projectDiv {
+            max-width: 100%;
+            min-height: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.97rem;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3.5rem;
+
+
+            .myFeatProj {
+                width: 100%;
+                margin: 0.46rem 0;
+                min-height: 249.997px;
+                
+                
+                * {
+                    transition: display 300ms ease;
+                }
+
+
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: fill;
+                }
+
+                .bottomSection {
+                    padding: 0.2rem 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        font-size: 1.5rem;
+                        margin-top: 1rem;
+                        align-self: center;
+                    }
+                    
+                    a {
+                        @include blackBtnStyle;
+                        padding: 0.54rem 1rem;
+                        margin: 0.2rem 0 0 0;
+                    
+                        &:hover {
+                            background-color: $darkBlack;
+                        }
+                    }
+                }
+
+            }
+        }
+        
+        .viewAllProjects {
+            @include blackBtnStyle;
+            margin: 4rem 0 0 0;
+            padding: 1rem 1.3rem;
+
+            &:hover {
+                background-color: $darkBlack;
+            }
+        }
+    }
+
+    .preFooter {
+        min-height: 70vh;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
+
+        div {
+            padding: 72px 28.748px;
+            color: $white;
+
+            i {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 600;
+                margin: 0.75rem 0 0 0;
+            }
+
+            h3 {
+                font-weight: 600;
+              font-size: 1.65rem;
+              margin: 0.5rem 0 2rem 0;
+            }
+
+            a {
+                @include redBtnStyle;
+                padding: 0.85rem 1.5rem;
+
+
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+        
+        .getInTouch {
+            min-height: 50%;
+            background-color: rgba($darkBlack, 0.72);
+        }
+        
+        .dnlResume {
+            min-height: 50%;
+            background-color: rgba($darkBlack, 0.78);
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .mySpecialty {
+        
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+//@media only screen and (max-width: 600px) {...}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+//@media only screen and (min-width: 600px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+//@media only screen and (min-width: 768px) {...}
+/* Large devices (laptops/desktops, 992px and up) */
+//@media only screen and (min-width: 992px) {...}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+//@media only screen and (min-width: 1200px) {...}

@@ -1,0 +1,46 @@
+@import './components/pages/pagesStyles/variables';
+@import './components/generalMixins';
+@import './components/pages/pagesStyles/projects';
+@import './components/pages/partials/partialStyles/navbar';
+@import'./components/pages/pagesStyles/home';
+@import'./components/pages/pagesStyles/about';
+@import'./components/pages/pagesStyles/contact';
+@import './components/pages/partials/partialStyles/footer';
+@import './components/page/partials/contact-form'
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $primaryFont;
+}
+
+body {
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #474646;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $borderGray; 
+    border-radius: 6px;
+}   
+
+::-webkit-scrollbar-thumb:hover {
+    background: $borderGray;
+}
+
+

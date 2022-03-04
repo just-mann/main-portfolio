@@ -1,0 +1,146 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Projects {
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .projectsContainer {
+            background-color: yellow;
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            width: 1120px;
+            margin: auto;
+        }
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Projects {
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .projectsContainer {
+            //background-color: rgb(190, 135, 176);
+            min-height: 100vh;
+            padding: 5.5rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+        }
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .Projects {
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        
+        .projectsContainer {
+            //background-color: rgb(153, 153, 93);
+            min-height: 100vh;
+            max-width: 1120px;
+            margin: auto;
+
+            .projectDiv {
+                //max-width: 100%;
+
+                .myFeatProj {
+                    max-width: 100%;
+                    border-bottom: 1px solid lightgray;
+                    min-height: 300px;
+                    display: grid;
+                    padding: 2.5em 0;
+                    grid-template-columns: 4fr 3fr;
+                    gap: 20px;
+
+                    &:first-child {
+                        .left {
+                            
+                            a {
+                                background: rgb(228, 228, 129);
+                            }
+                        }
+                    }
+                    
+                    &:last-child {
+                        .left {
+
+                            a {
+                                background: rgb(142, 172, 172);
+                            }
+                        }
+                    }
+
+                    .left {
+                        //background: lightblue;
+                        display: grid;
+                        grid-template-columns: 3.1fr 3fr;
+
+                        a {
+                            height: 100%;
+                            max-width: 100%;
+                            padding: 1.5rem;
+                            background: lightgreen;
+
+                            img {
+                                height: 100%;
+                                max-width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .shortDesc {
+                            //background: lightgreen;
+                            text-align: left;
+                            color: black;
+                            padding: 0 0 0 15px;
+                        }
+                    }
+
+                    .right {
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .Projects {
+        @include mobilePadding;
+        max-width: 100%;
+        
+        .Navbar {
+            background-color: $darkBlack;
+        }
+        
+        .projectsContainer {
+            //background-color: yellow;
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .Projects {
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .projectsContainer {
+            
+        }
+    }
+}

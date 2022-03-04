@@ -1,0 +1,60 @@
+
+.NotFound {
+    max-width: 100%;
+    
+    .NotFoundContainer {
+        position: relative;
+        min-height: 93.5vh;
+        max-width: 1250px;
+        margin: 2em auto;
+        @include mobilePadding;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            position: absolute;
+            top: 2.5em;
+            text-align: center;
+            text-transform: uppercase;
+            z-index: 10;
+            font-family: $pageNotFound;
+            color: #3f3d56;
+            font-size: 4em;
+        }
+        
+        h3 {
+            position: absolute;
+            top: 1em;
+            text-align: center;
+            text-transform: uppercase;
+            z-index: 10;
+            font-family: $pageNotFound;
+            color: #3f3d56;
+            font-size: 4em;
+        }
+
+        div {
+            max-width: 100%;
+            min-height: 100%;
+            z-index: 1;
+
+            img {
+                max-width: 100%;
+                min-height: 60%;
+                object-fit: cover;
+                z-index: 1;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            border: 2px solid #3F3D56;
+            background-color: #3F3D56;
+            padding: 10px 15px;
+            color: white;
+            margin-top: 2.5em;
+        }
+    }
+}
