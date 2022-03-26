@@ -1,0 +1,422 @@
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .About {
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .aboutContainer {
+            background-color: yellow;
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+
+            
+
+            .aboutCards {
+                max-width: 100%;
+
+                .aboutCardsDiv1, .aboutCardsDiv2 {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 5rem 0;
+    
+                    
+                    >div {
+                        padding: 3rem 0;
+                    }
+    
+                }
+    
+                .aboutCardsDiv1 {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+    
+                    img {
+                        max-width: 100%;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+                    
+                    >div {
+                        padding: 1rem 0;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                }
+                
+                .aboutCardsDiv2 {
+                    display: flex;
+                    margin: 0;
+    
+                    
+                    >div {
+                        order: 2;
+                        padding: 3rem 0;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                    img {
+                        order: 1;
+                        max-width: 100%;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+    
+                }
+            }
+        }
+
+    }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .About {
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .aboutContainer {
+            background-color: yellow;
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+
+            
+
+            .aboutCards {
+                max-width: 100%;
+
+                .aboutCardsDiv1, .aboutCardsDiv2 {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 5rem 0;
+    
+                    
+                    >div {
+                        padding: 3rem 0;
+                    }
+    
+                }
+    
+                .aboutCardsDiv1 {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+    
+                    img {
+                        max-width: 100%;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+                    
+                    >div {
+                        padding: 1rem 0;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                }
+                
+                .aboutCardsDiv2 {
+                    display: flex;
+                    margin: 0;
+    
+                    
+                    >div {
+                        order: 2;
+                        padding: 3rem 0;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                    img {
+                        order: 1;
+                        max-width: 100%;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+    
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .About {
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .aboutContainer {
+            background-color: rgb(120, 176, 209);
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+
+            
+
+            .aboutCards {
+                max-width: 100%;
+
+                .aboutCardsDiv1, .aboutCardsDiv2 {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 5rem 0;
+    
+                    
+                    >div {
+                        padding: 3rem 0;
+                    }
+    
+                }
+    
+                .aboutCardsDiv1 {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+    
+                    img {
+                        max-width: 100%;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+                    
+                    >div {
+                        padding: 1rem 0;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                }
+                
+                .aboutCardsDiv2 {
+                    display: flex;
+                    margin: 0;
+    
+                    
+                    >div {
+                        order: 2;
+                        padding: 3rem 0;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                    img {
+                        order: 1;
+                        max-width: 100%;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+    
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .About {
+        background-color: rgb(153, 153, 93);
+        min-height: 100vh;
+        max-width: 1120px;
+        margin: auto;
+
+        h3, h4 {
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            line-height: 44.8px;
+            letter-spacing: 1px;
+            max-width: 690px;
+            margin: 1.4rem auto 3.4rem auto;
+        }
+        .aboutCards {
+
+            .aboutCardsDiv1, .aboutCardsDiv2 {
+                display: flex;
+                margin: 5rem 0;
+
+                
+                >div {
+                    padding: 3rem;
+                }
+
+            }
+
+            .aboutCardsDiv1 {
+                display: flex;
+                margin: 5rem 0 0 2.5rem;
+
+                img {
+                    width: 500px;
+                    min-height: 300px;
+                    object-fit: cover;
+                }
+                
+                >div {
+                    padding: 1rem 3rem;
+                    text-align: center;
+
+                    p {
+                        text-align: left;
+                    }
+                }
+
+            }
+            
+            .aboutCardsDiv2 {
+                display: flex;
+                margin: 5rem 2.5rem 0 0;
+
+                
+                >div {
+                    padding: 3rem;
+                    text-align: center;
+
+                    p {
+                        text-align: left;
+                    }
+                }
+
+                img {
+                    width: 500px;
+                    min-height: 300px;
+                    object-fit: cover;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .About {
+        //background-color: rgb(153, 153, 93);
+        min-height: 100vh;
+        max-width: 1120px;
+        margin: auto;
+
+        h3, h4 {
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            line-height: 44.8px;
+            letter-spacing: 1px;
+            max-width: 690px;
+            margin: 1.4rem auto 3.4rem auto;
+        }
+
+        .aboutCards {
+
+            .aboutCardsDiv1, .aboutCardsDiv2 {
+                display: flex;
+                margin: 5rem 0;
+
+                
+                >div {
+                    padding: 3rem;
+                }
+
+            }
+
+            .aboutCardsDiv1 {
+                display: flex;
+                margin: 5rem 0 0 2.5rem;
+
+                img {
+                    width: 500px;
+                    min-height: 300px;
+                    object-fit: cover;
+                }
+                
+                >div {
+                    padding: 1rem 3rem;
+                    text-align: center;
+
+                    p {
+                        text-align: left;
+                    }
+                }
+
+            }
+            
+            .aboutCardsDiv2 {
+                display: flex;
+                margin: 5rem 2.5rem 0 0;
+
+                
+                >div {
+                    padding: 3rem;
+                    text-align: center;
+
+                    p {
+                        text-align: left;
+                    }
+                }
+
+                img {
+                    width: 500px;
+                    min-height: 300px;
+                    object-fit: cover;
+                }
+
+            }
+        }
+    }
+
+
+}

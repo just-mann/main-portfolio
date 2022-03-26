@@ -582,12 +582,13 @@
   }
   .mySkills > div .skillsContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1.1em;
   }
   .mySkills > div .skillsContainer .skill {
     border: 2px solid #353434;
     text-align: center;
+    max-width: 50%;
     padding: 10px 15px;
     font-size: 0.85rem;
     font-weight: bold;
@@ -677,38 +678,57 @@
     max-width: 100%;
     min-height: auto;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: yellow;
+  }
+  .selectedProjects .projectDiv .skill {
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #746f6f;
+    height: 5rem;
+    border: 0.0625rem solid #212122;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    transition: color 300ms ease-in-out;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.97rem;
     justify-content: center;
     align-items: center;
     margin-bottom: 0rem;
   }
-  .selectedProjects .projectDiv .myFeatProj {
+  .selectedProjects .projectDiv .skill .myFeatProj {
     width: 100%;
     margin: 0.46rem 0;
     min-height: 249.997px;
   }
-  .selectedProjects .projectDiv .myFeatProj * {
+  .selectedProjects .projectDiv .skill .myFeatProj * {
     transition: display 300ms ease;
   }
-  .selectedProjects .projectDiv .myFeatProj img {
+  .selectedProjects .projectDiv .skill .myFeatProj img {
     width: 100%;
     height: 300px;
     -o-object-fit: fill;
        object-fit: fill;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection {
+  .selectedProjects .projectDiv .skill .myFeatProj .bottomSection {
     padding: 0.2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection p {
+  .selectedProjects .projectDiv .skill .myFeatProj .bottomSection p {
     font-size: 1.5rem;
     margin-top: 1rem;
     align-self: center;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection a {
+  .selectedProjects .projectDiv .skill .myFeatProj .bottomSection a {
     text-decoration: none;
     background-color: #212122;
     border: 2px solid #212122;
@@ -719,40 +739,39 @@
     padding: 0.54rem 1rem;
     margin: 0.2rem 0 0 0;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection a:hover {
+  .selectedProjects .projectDiv .skill .myFeatProj .bottomSection a:hover {
     background-color: transparent;
     border: 2px solid #212122;
     color: #212122;
     font-weight: 700;
   }
-  .selectedProjects .projectDiv .myFeatProj .bottomSection a:hover {
+  .selectedProjects .projectDiv .skill .myFeatProj .bottomSection a:hover {
     background-color: #000000;
   }
-
-  .preFooter {
+  .selectedProjects .preFooter {
     min-height: 70vh;
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
   }
-  .preFooter div {
+  .selectedProjects .preFooter div {
     padding: 72px 28.748px;
     color: #ffffff;
   }
-  .preFooter div i {
+  .selectedProjects .preFooter div i {
     font-size: 2.5rem;
   }
-  .preFooter div p {
+  .selectedProjects .preFooter div p {
     font-size: 1rem;
     font-weight: 600;
     margin: 0.75rem 0 0 0;
   }
-  .preFooter div h3 {
+  .selectedProjects .preFooter div h3 {
     font-weight: 600;
     font-size: 1.65rem;
     margin: 0.5rem 0 2rem 0;
   }
-  .preFooter div a {
+  .selectedProjects .preFooter div a {
     text-decoration: none;
     color: #ffffff;
     background-color: #F9373A;
@@ -762,365 +781,20 @@
     transition: background-color 300ms ease-in-out;
     padding: 0.85rem 1.5rem;
   }
-  .preFooter div a:hover {
+  .selectedProjects .preFooter div a:hover {
     opacity: 0.75;
   }
-  .preFooter .getInTouch {
+  .selectedProjects .preFooter .getInTouch {
     min-height: 50%;
     background-color: rgba(0, 0, 0, 0.72);
   }
-  .preFooter .dnlResume {
+  .selectedProjects .preFooter .dnlResume {
     min-height: 50%;
     background-color: rgba(0, 0, 0, 0.78);
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .Home {
-    position: relative;
-    min-height: 100vh;
-    padding: 72px 18.748px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .Home::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(33, 33, 34, 0.94);
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-  }
-  .Home .mainSection {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    max-width: 1250px;
-    min-height: 100vh;
-    margin: auto;
-    z-index: 1;
-    align-items: center;
-  }
-  .Home .mainSection * {
-    z-index: 1;
-  }
-  .Home .mainSection .mainHero h2 {
-    font-family: "Poppins", sans-serif;
-    font-size: 43px;
-    width: 550px;
-    text-transform: capitalize;
-    font-weight: 400;
-    line-height: 60px;
-    margin: 150px 0 8px 0;
-    color: #ffffff;
-  }
-  .Home .mainSection .mainHero p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-    font-style: normal;
-    max-width: 420px;
-    text-align: left;
-    margin: 24px 0 3rem;
-    color: #ffffff;
-  }
-  .Home .mainSection .mainHero a {
-    background: #ffffff;
-    text-decoration: none;
-    padding: 16px 30px;
-    font-size: 1rem;
-    color: black;
-    border: 2px solid #ffffff;
-    font-weight: bold;
-    width: 30%;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  .Home .mainSection .mainHero a:not(:last-child) {
-    margin-right: 1.5rem;
-    background: transparent;
-    border: 2px solid #ffffff;
-    color: #ffffff;
-  }
-  .Home .mainSection .heroImg {
-    position: relative;
-    height: 450px;
-    text-align: center;
-  }
-  .Home .mainSection .heroImg .circle {
-    position: absolute;
-    background: rgba(80, 80, 80, 0.1);
-    height: 170px;
-    width: 170px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  .Home .mainSection .heroImg .circle2 {
-    position: absolute;
-    top: 7rem;
-  }
-  .Home .mainSection .heroImg img {
-    height: 70%;
-    max-width: 90%;
-    margin-top: 3rem;
-    z-index: 2;
-  }
-
-  .mySpecialty {
-    max-width: 100%;
-    min-height: auto;
-    padding: 72px 18.748px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .mySpecialty .specContainer {
-    max-width: 1120px;
-    margin: 0 auto;
-    min-height: 100%;
-    padding-bottom: 0;
-  }
-  .mySpecialty .specContainer > div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    min-height: 100%;
-    align-items: center;
-  }
-  .mySpecialty .specContainer > div .gridDiv {
-    text-align: center;
-    padding: 4rem 2.3rem;
-    min-height: 100%;
-  }
-  .mySpecialty .specContainer > div .gridDiv i {
-    font-size: 60px;
-    margin: 1rem 0 3rem 0;
-  }
-  .mySpecialty .specContainer > div .gridDiv h3 {
-    font-size: 24px;
-    line-height: 30px;
-    margin: 24px 0;
-  }
-  .mySpecialty .specContainer > div .gridDiv p {
-    font-size: 15px;
-    line-height: 26px;
-  }
-  .mySpecialty .specContainer > div .gridDiv:nth-child(2) {
-    border-left: 1px solid #f3f3f3;
-    border-right: 1px solid #f3f3f3;
-  }
-
-  .whatIDo {
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    align-items: center;
-    background-color: #F8F5F2;
-    padding: 40px 28.748px;
-    z-index: 1;
-  }
-  .whatIDo .whatIDoContainer {
-    max-width: 1250px;
-    margin: auto;
-  }
-
-  .mySkills {
-    min-height: 50vh;
-    max-width: 100%;
-    background-color: #F8F5F2;
-    padding: 72px 18.748px;
-  }
-  .mySkills > div {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 1120px;
-    margin: auto;
-  }
-  .mySkills > div .whatIDoLeft .viewMe {
-    display: inline-block;
-    margin-bottom: 2em;
-    text-decoration: none;
-    background-color: #212122;
-    border: 2px solid #212122;
-    color: #ffffff;
-    padding: 1rem 2.5rem;
-    font-weight: 700;
-    transition: all 300ms ease-in-out;
-  }
-  .mySkills > div .whatIDoLeft .viewMe:hover {
-    background-color: transparent;
-    border: 2px solid #212122;
-    color: #212122;
-    font-weight: 700;
-  }
-  .mySkills > div .skillsContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 1.1em;
-  }
-  .mySkills > div .skillsContainer .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    border: 2px solid #353434;
-    text-align: center;
-    padding: 7px 15px;
-    font-size: 1rem;
-    transition: font-size 300ms ease;
-  }
-
-  .selectedProjects {
-    min-height: auto;
-    max-width: 100%;
-    margin: auto;
-    text-align: center;
-    padding: 72px 18.748px;
-  }
-  .selectedProjects > div {
-    max-width: 1120px;
-    margin: auto;
-  }
-  .selectedProjects > div h4 {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: capitalize;
-    text-align: left;
-    margin-bottom: 16px;
-  }
-  .selectedProjects > div .upperPart {
-    min-height: 75px;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    margin: 8px 0px 24px;
-    justify-content: space-between;
-  }
-  .selectedProjects > div .upperPart p {
-    text-align: left;
-    font-size: 35px;
-    line-height: 50px;
-  }
-  .selectedProjects > div .upperPart .viewAllProjects {
-    margin: 10px 0 0 0;
-    padding: 11px 20px;
-    font-size: 1rem;
-    line-height: 24px;
-    text-decoration: none;
-    background: transparent;
-    border: 2px solid #000000;
-    color: #000000;
-    transition: background-color 300ms ease-in;
-  }
-  .selectedProjects > div .upperPart .viewAllProjects:hover {
-    background-color: #000000;
-    border: 2px solid #000000;
-    color: #ffffff;
-  }
-  .selectedProjects > div .projectDiv {
-    max-width: 100%;
-    min-height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1.97rem;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3.5rem;
-  }
-  .selectedProjects > div .projectDiv .myFeatProj {
-    width: 100%;
-    margin: 0.46rem 0;
-    min-height: 249.997px;
-  }
-  .selectedProjects > div .projectDiv .myFeatProj * {
-    transition: display 300ms ease;
-  }
-  .selectedProjects > div .projectDiv .myFeatProj img {
-    width: 100%;
-    height: 300px;
-    -o-object-fit: fill;
-       object-fit: fill;
-  }
-  .selectedProjects > div .projectDiv .myFeatProj .bottomSection {
-    padding: 0.2rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .selectedProjects > div .projectDiv .myFeatProj .bottomSection p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    align-self: center;
-  }
-  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a {
-    text-decoration: none;
-    background-color: #212122;
-    border: 2px solid #212122;
-    color: #ffffff;
-    padding: 1rem 2.5rem;
-    font-weight: 700;
-    transition: all 300ms ease-in-out;
-    padding: 0.54rem 1rem;
-    margin: 0.2rem 0 0 0;
-  }
-  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a:hover {
-    background-color: transparent;
-    border: 2px solid #212122;
-    color: #212122;
-    font-weight: 700;
-  }
-  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a:hover {
-    background-color: #000000;
-  }
-
-  .preFooter {
-    min-height: 70vh;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
-  }
-  .preFooter div {
-    padding: 72px 28.748px;
-    color: #ffffff;
-  }
-  .preFooter div i {
-    font-size: 2.5rem;
-  }
-  .preFooter div p {
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0.75rem 0 0 0;
-  }
-  .preFooter div h3 {
-    font-weight: 600;
-    font-size: 1.65rem;
-    margin: 0.5rem 0 2rem 0;
-  }
-  .preFooter div a {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #F9373A;
-    border: 1px solid #F9373A;
-    padding: 1rem 2.5rem;
-    font-weight: 700;
-    transition: background-color 300ms ease-in-out;
-    padding: 0.85rem 1.5rem;
-  }
-  .preFooter div a:hover {
-    opacity: 0.75;
-  }
-  .preFooter .getInTouch {
-    min-height: 50%;
-    background-color: rgba(0, 0, 0, 0.72);
-  }
-  .preFooter .dnlResume {
-    min-height: 50%;
-    background-color: rgba(0, 0, 0, 0.78);
-  }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
   .Home {
     position: relative;
     min-height: auto;
@@ -1415,6 +1089,318 @@
     background-color: rgba(0, 0, 0, 0.78);
   }
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .Home {
+    position: relative;
+    min-height: auto;
+  }
+  .Home::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 33, 34, 0.94);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .Home .mainSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 1120px;
+    min-height: 100vh;
+    margin: auto;
+    z-index: 1;
+    align-items: center;
+  }
+  .Home .mainSection * {
+    z-index: 1;
+  }
+  .Home .mainSection .mainHero h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    width: 550px;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 135px 0 8px 0;
+    color: #ffffff;
+  }
+  .Home .mainSection .mainHero p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    font-style: normal;
+    max-width: 420px;
+    text-align: left;
+    margin: 24px 0 3rem;
+    color: #ffffff;
+  }
+  .Home .mainSection .mainHero a {
+    background: #ffffff;
+    text-decoration: none;
+    padding: 16px 30px;
+    font-size: 1rem;
+    color: black;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+    width: 30%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .Home .mainSection .mainHero a:not(:last-child) {
+    margin-right: 1.5rem;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+  }
+  .Home .mainSection .heroImg {
+    position: relative;
+    height: 450px;
+    text-align: center;
+  }
+  .Home .mainSection .heroImg .circle {
+    position: absolute;
+    background: rgba(80, 80, 80, 0.1);
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .Home .mainSection .heroImg .circle2 {
+    position: absolute;
+    top: 8rem;
+  }
+  .Home .mainSection .heroImg img {
+    height: 70%;
+    width: 100%;
+    margin-top: 3rem;
+    z-index: 2;
+  }
+
+  .whatIDo {
+    max-width: 100%;
+    height: 50vh;
+    background-color: #ffffff;
+    padding: 72px 18.748px;
+    z-index: 1;
+  }
+  .whatIDo .whatIDoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1120px;
+    margin: auto;
+  }
+
+  .mySkills {
+    min-height: 50vh;
+    max-width: 100%;
+    padding: 72px 18.748px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mySkills > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1120px;
+    margin: auto;
+  }
+  .mySkills > div .whatIDoLeft .viewMe {
+    display: inline-block;
+    margin-bottom: 2em;
+    text-decoration: none;
+    background-color: #212122;
+    border: 2px solid #212122;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+  }
+  .mySkills > div .whatIDoLeft .viewMe:hover {
+    background-color: transparent;
+    border: 2px solid #212122;
+    color: #212122;
+    font-weight: 700;
+  }
+  .mySkills > div .skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    gap: 1.1em;
+  }
+  .mySkills > div .skillsContainer .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #353434;
+    text-align: center;
+    align-self: center;
+    padding: 7px 15px;
+    font-size: 1rem;
+    transition: font-size 300ms ease;
+  }
+
+  .mySpecialty {
+    min-height: auto;
+    max-width: 100%;
+    margin: auto;
+    padding: 72px 18.748px;
+  }
+  .mySpecialty .specContainer {
+    max-width: 1120px;
+    margin: auto;
+  }
+  .mySpecialty .specContainer > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+  }
+
+  .selectedProjects {
+    min-height: auto;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 72px 18.748px;
+  }
+  .selectedProjects > div {
+    max-width: 1120px;
+    margin: auto;
+  }
+  .selectedProjects > div h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .selectedProjects > div .upperPart {
+    min-height: 75px;
+    grid-template-columns: 4.7fr 1fr;
+    gap: 5.5rem;
+    margin: 8px 0px 50px;
+    justify-content: space-between;
+  }
+  .selectedProjects > div .upperPart p {
+    text-align: left;
+    font-size: 23.8px;
+    width: 510px;
+    line-height: 35px;
+  }
+  .selectedProjects > div .upperPart .viewAllProjects {
+    padding: 11px 15px;
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .selectedProjects > div .upperPart .viewAllProjects:hover {
+    background-color: #000000;
+  }
+  .selectedProjects > div .projectDiv {
+    max-width: 100%;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1.97rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.5rem;
+  }
+  .selectedProjects > div .projectDiv .myFeatProj {
+    width: 100%;
+    margin: 0.46rem 0;
+  }
+  .selectedProjects > div .projectDiv .myFeatProj * {
+    transition: display 300ms ease;
+  }
+  .selectedProjects > div .projectDiv .myFeatProj img {
+    width: 100%;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection {
+    padding: 0.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    align-self: center;
+  }
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a {
+    text-decoration: none;
+    background-color: #212122;
+    border: 2px solid #212122;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+    padding: 0.54rem 1rem;
+    margin: 0.2rem 0 0 0;
+  }
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a:hover {
+    background-color: transparent;
+    border: 2px solid #212122;
+    color: #212122;
+    font-weight: 700;
+  }
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a:hover {
+    background-color: #000000;
+  }
+
+  .preFooter {
+    min-height: auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
+  }
+  .preFooter div {
+    padding: 72px 28.748px;
+    color: #ffffff;
+  }
+  .preFooter div i {
+    font-size: 2.5rem;
+  }
+  .preFooter div p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.75rem 0 0 0;
+  }
+  .preFooter div h3 {
+    font-weight: 600;
+    font-size: 1.65rem;
+    margin: 0.5rem 0 2rem 0;
+  }
+  .preFooter div a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #F9373A;
+    border: 1px solid #F9373A;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    transition: background-color 300ms ease-in-out;
+    padding: 0.85rem 1.5rem;
+  }
+  .preFooter div a:hover {
+    opacity: 0.75;
+  }
+  .preFooter .getInTouch {
+    min-height: 50%;
+    background-color: rgba(0, 0, 0, 0.72);
+  }
+  .preFooter .dnlResume {
+    min-height: 50%;
+    background-color: rgba(0, 0, 0, 0.78);
+  }
+}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .Home {
@@ -1507,653 +1493,304 @@
     z-index: 2;
   }
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .About {
     position: relative;
-    height: 100%;
+    padding: 72px 18.748px;
     max-width: 100%;
   }
-  .About .Navbar * {
-    color: #ffffff;
-  }
-  .About .Navbar .NavbarContainer {
-    background-color: #000000;
-  }
-  .About .Navbar .NavbarContainer .toggle {
-    width: 28px;
-    height: 25px;
-    margin-top: 0.3rem;
-    margin-right: 0.25rem;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  .About .Navbar .NavbarContainer .toggle span {
-    display: block;
-    height: 2px;
-    width: 26px;
-    background: #ffffff;
-    transform-origin: 3px 1px;
-    transition: all 300ms ease-in-out;
-  }
-  .About .Navbar .NavbarContainer .toggle span:first-child() {
-    margin-top: 10px;
-  }
-  .About .Navbar .NavbarContainer .toggle span:not(:last-child) {
-    margin-bottom: 5px;
-  }
   .About .aboutContainer {
-    padding: 72px 18.748px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: auto;
-    margin: 0 auto;
-    z-index: 1;
+    min-height: 80vh;
+    padding: 3rem 0 0 0;
+    max-width: 1120px;
+    margin: auto;
+  }
+  .About .aboutContainer .title, .About .aboutContainer .subTitle {
+    text-align: center;
+  }
+  .About .aboutContainer .title {
+    font-size: 2.1em;
+  }
+  .About .aboutContainer .subTitle {
+    max-width: 360px;
+    margin: 1rem auto;
     color: #746f6f;
   }
-  .About .aboutContainer * {
-    z-index: 1;
+  .About .aboutContainer .aboutCards {
+    max-width: 100%;
   }
-  .About .aboutContainer__myTitle {
-    margin: 50px 0 35px 0;
-    text-align: left;
-    font-weight: 600;
-    position: relative;
-    color: #000000;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1, .About .aboutContainer .aboutCards .aboutCardsDiv2 {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
   }
-  .About .aboutContainer__myTitle::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 36px;
-    height: 5px;
-    width: 32px;
-    border-radius: 1000px;
-    background: #746f6f;
-    transition: width 300ms ease;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 > div, .About .aboutContainer .aboutCards .aboutCardsDiv2 > div {
+    padding: 3rem 0;
   }
-  .About .aboutContainer__subHeader {
-    font-size: 15.8px;
-    font-weight: 560;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
   }
-  .About .aboutContainer__header {
-    font-size: 25px;
-    font-weight: 500;
-  }
-  .About .aboutContainer__description {
-    font-size: 1.07rem;
-    line-height: 1.53em;
-    transition: font-size 300ms ease;
-  }
-  .About .aboutContainer__image {
-    width: 100%;
-    margin: 1rem auto 1.8em auto;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 img {
+    max-width: 100%;
+    min-height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .About .achievements__heading, .About .achievements__subHeading, .About .achievements__detail {
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 > div {
+    padding: 1rem 0;
     text-align: center;
   }
-  .About .achievements__heading, .About .achievements__subHeading {
-    margin-bottom: 1rem;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 > div p {
+    text-align: left;
   }
-  .About .achievements__heading {
-    font-size: 1.8em;
-    font-weight: bold;
-  }
-  .About .achievements__subHeading {
-    margin-bottom: 0.8rem;
-    font-size: 1.4em;
-  }
-  .About .achievements__detail {
-    text-align: center;
-    font-size: 1.1rem;
-    width: 360px;
-    margin: auto;
-  }
-  .About .socialSection {
-    padding-top: 3rem;
-  }
-  .About .socialSection h3 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  .About .socialSection .socialSectionContainer {
-    max-width: 600px;
-    margin: auto;
-    padding: 72px 18.748px;
-    background-color: #F8F5F2;
-    min-height: 40vh;
-  }
-  .About .socialSection .socialSectionContainer h3 {
-    font-size: 16px;
-    text-align: center;
-    font-size: 1.6em;
-  }
-  .About .socialSection .socialSectionContainer div {
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+    margin: 0;
   }
-  .About .socialSection .socialSectionContainer div a {
-    color: #000000;
-    text-decoration: none;
-    margin: 10px 17px 0 0;
-    font-size: 27px;
-    transition: color 300ms ease;
-  }
-  .About .socialSection .socialSectionContainer div a:hover {
-    color: #746f6f;
-  }
-  .About .socialSection .socialSectionContainer p {
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 > div {
+    order: 2;
+    padding: 3rem 0;
     text-align: center;
-    font-size: 1.1rem;
-    width: 400px;
-    margin: 1.8rem auto;
   }
-  .About .socialSection .socialSectionContainer p a {
-    text-decoration: underline;
-    color: #000000;
-    transition: color 300ms ease;
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 > div p {
+    text-align: left;
   }
-  .About .socialSection .socialSectionContainer p a:hover {
-    color: #746f6f;
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 img {
+    order: 1;
+    max-width: 100%;
+    min-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .About {
     position: relative;
-    height: 100%;
+    padding: 72px 18.748px;
     max-width: 100%;
-    color: #746f6f;
   }
   .About .aboutContainer {
-    padding: 72px 18.748px;
-    display: flex;
-    flex-direction: column;
-    width: 1120px;
-    min-height: auto;
-    margin: 0 auto;
-    z-index: 1;
+    min-height: 80vh;
+    padding: 3rem 0 0 0;
+    max-width: 1120px;
+    margin: auto;
+  }
+  .About .aboutContainer .title, .About .aboutContainer .subTitle {
+    text-align: center;
+  }
+  .About .aboutContainer .subTitle {
+    max-width: 370px;
+    margin: 1rem auto;
     color: #746f6f;
   }
-  .About .aboutContainer * {
-    z-index: 1;
+  .About .aboutContainer .aboutCards {
+    max-width: 100%;
   }
-  .About .aboutContainer__myTitle {
-    margin: 50px 0 45px 0;
-    text-align: left;
-    font-weight: 600;
-    position: relative;
-    color: #000000;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1, .About .aboutContainer .aboutCards .aboutCardsDiv2 {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
   }
-  .About .aboutContainer__myTitle::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 40px;
-    height: 5px;
-    width: 32px;
-    border-radius: 1000px;
-    background: #746f6f;
-    transition: width 300ms ease;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 > div, .About .aboutContainer .aboutCards .aboutCardsDiv2 > div {
+    padding: 3rem 0;
   }
-  .About .aboutContainer__subHeader {
-    font-size: 15.8px;
-    font-weight: 560;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
   }
-  .About .aboutContainer__header {
-    font-size: 25px;
-    font-weight: 500;
-  }
-  .About .aboutContainer__description {
-    font-size: 1.17rem;
-    line-height: 1.6em;
-    margin: 1.8rem 0;
-    transition: font-size 300ms ease;
-  }
-  .About .aboutContainer__image {
-    width: 100%;
-    margin: 1rem auto 1.8em auto;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 img {
+    max-width: 100%;
+    min-height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .About .aboutContainer .aboutContainer__intro {
-    max-width: 1250px;
-    margin: 3px auto;
-  }
-  .About .aboutContainer .aboutContainer__intro .imgGrid {
-    display: grid;
-    max-width: 100%;
-    margin: auto;
-    gap: 10px;
-  }
-  .About .aboutContainer .aboutContainer__intro .imgGrid .description2 {
-    order: 1;
-  }
-  .About .achievements {
-    padding: 72px 18.748px;
-  }
-  .About .socialSection {
-    padding-top: 4rem;
-    background-color: #F8F5F2;
-  }
-  .About .socialSection h3 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  .About .socialSection .socialSectionContainer {
-    max-width: 600px;
-    margin: auto;
-    padding: 72px 18.748px;
-    background-color: #F8F5F2;
-    min-height: 40vh;
-  }
-  .About .socialSection .socialSectionContainer h3 {
-    font-size: 16px;
-    margin-top: 1.5em;
-    font-size: 1.6em;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 > div {
+    padding: 1rem 0;
     text-align: center;
   }
-  .About .socialSection .socialSectionContainer div {
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 > div p {
+    text-align: left;
+  }
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+    margin: 0;
   }
-  .About .socialSection .socialSectionContainer div a {
-    color: #000000;
-    text-decoration: none;
-    margin: 10px 17px 0 0;
-    font-size: 27px;
-    transition: color 300ms ease;
-  }
-  .About .socialSection .socialSectionContainer div a:hover {
-    color: #746f6f;
-  }
-  .About .socialSection .socialSectionContainer p {
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 > div {
+    order: 2;
+    padding: 3rem 0;
     text-align: center;
-    font-size: 1.5em;
-    width: 400px;
-    margin: 1.8rem auto;
   }
-  .About .socialSection .socialSectionContainer p a {
-    text-decoration: underline;
-    color: #000000;
-    transition: color 300ms ease;
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 > div p {
+    text-align: left;
   }
-  .About .socialSection .socialSectionContainer p a:hover {
-    color: #746f6f;
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 img {
+    order: 1;
+    max-width: 100%;
+    min-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .About {
     position: relative;
-    height: 100%;
+    padding: 72px 18.748px;
     max-width: 100%;
   }
   .About .aboutContainer {
-    padding: 72px 18.748px;
-    display: flex;
-    width: 1120px;
-    min-height: 100vh;
-    margin: 0 auto;
-    z-index: 1;
+    min-height: 80vh;
+    padding: 5rem 0 0 0;
+    max-width: 1120px;
+    margin: auto;
   }
-  .About .aboutContainer * {
-    z-index: 1;
+  .About .aboutContainer .title, .About .aboutContainer .subTitle {
+    text-align: center;
   }
-  .About .aboutContainer__myTitle {
-    margin: 50px 0 35px 0;
-    text-align: left;
-    font-weight: 600;
-    position: relative;
-    color: #000000;
+  .About .aboutContainer .title {
+    font-size: 2.6em;
   }
-  .About .aboutContainer__myTitle::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 36px;
-    height: 5px;
-    width: 32px;
-    border-radius: 1000px;
-    background: #746f6f;
-    transition: width 300ms ease;
+  .About .aboutContainer .subTitle {
+    max-width: 390px;
+    margin: 1rem auto;
+    color: #746f6f;
   }
-  .About .aboutContainer__subHeader {
-    font-size: 15.8px;
-    font-weight: 560;
-  }
-  .About .aboutContainer__header {
-    font-size: 25px;
-    font-weight: 500;
-  }
-  .About .aboutContainer__description {
-    font-size: 1.35rem;
-    line-height: 1.6em;
-    transition: font-size 300ms ease;
-  }
-  .About .aboutContainer .aboutContainer__intro {
-    max-width: 1250px;
-    margin: 3px auto;
-  }
-  .About .aboutContainer .aboutContainer__intro .imgGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
+  .About .aboutContainer .aboutCards {
     max-width: 100%;
-    margin: 0;
-    gap: 25px;
   }
-  .About .aboutContainer .aboutContainer__intro .imgGrid .description2 {
-    order: 1;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1, .About .aboutContainer .aboutCards .aboutCardsDiv2 {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 0;
   }
-  .About .aboutContainer .aboutContainer__intro .imgGrid img {
-    max-width: 1000%;
-    margin: 0;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 > div, .About .aboutContainer .aboutCards .aboutCardsDiv2 > div {
+    padding: 3rem 0;
+  }
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 0;
+  }
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 img {
+    max-width: 450px;
+    min-height: 450px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .About .achievements {
-    padding: 0;
-    width: 1120px;
-    margin: auto;
-  }
-  .About .socialSection {
-    padding-top: 4rem;
-    background-color: #F8F5F2;
-  }
-  .About .socialSection h3 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  .About .socialSection .socialSectionContainer {
-    max-width: 600px;
-    margin: auto;
-    padding: 72px 18.748px;
-    background-color: #F8F5F2;
-    min-height: 40vh;
-  }
-  .About .socialSection .socialSectionContainer h3 {
-    font-size: 16px;
-    margin-top: 1.5em;
-    font-size: 1.6em;
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 > div {
+    padding: 1rem 1.5rem 0 3rem;
     text-align: center;
   }
-  .About .socialSection .socialSectionContainer div {
+  .About .aboutContainer .aboutCards .aboutCardsDiv1 > div p {
+    text-align: left;
+  }
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+    flex-direction: row;
+    margin: 0;
   }
-  .About .socialSection .socialSectionContainer div a {
-    color: #000000;
-    text-decoration: none;
-    margin: 10px 17px 0 0;
-    font-size: 27px;
-    transition: color 300ms ease;
-  }
-  .About .socialSection .socialSectionContainer div a:hover {
-    color: #746f6f;
-  }
-  .About .socialSection .socialSectionContainer p {
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 > div {
+    order: 1;
+    padding: 3rem 3rem 0 0;
     text-align: center;
-    font-size: 1.5em;
-    width: 400px;
-    margin: 1.8rem auto;
   }
-  .About .socialSection .socialSectionContainer p a {
-    text-decoration: underline;
-    color: #000000;
-    transition: color 300ms ease;
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 > div p {
+    text-align: left;
   }
-  .About .socialSection .socialSectionContainer p a:hover {
-    color: #746f6f;
+  .About .aboutContainer .aboutCards .aboutCardsDiv2 img {
+    order: 2;
+    max-width: 100%;
+    min-height: 300px;
+    margin-right: 2rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .About {
-    position: relative;
-    height: 100%;
-    max-width: 100%;
-  }
-  .About .NavbarContainer, .About .Navbar {
-    background-color: #000000;
-  }
-  .About .aboutContainer {
-    padding: 72px 18.748px;
-    display: flex;
-    width: 1120px;
     min-height: 100vh;
-    margin: 0 auto;
-    z-index: 1;
+    max-width: 1120px;
+    margin: auto;
   }
-  .About .aboutContainer * {
-    z-index: 1;
+  .About .title, .About .subTitle {
+    text-align: center;
   }
-  .About .aboutContainer__myTitle {
-    margin: 50px 0 35px 0;
-    text-align: left;
-    font-weight: 600;
-    position: relative;
-    color: #000000;
+  .About .subTitle {
+    max-width: 370px;
+    margin: 1rem auto;
+    color: #746f6f;
   }
-  .About .aboutContainer__myTitle::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 46px;
-    height: 5px;
-    width: 32px;
-    border-radius: 1000px;
-    background: #746f6f;
-    transition: width 300ms ease;
-  }
-  .About .aboutContainer__subHeader {
-    font-size: 15.8px;
-    font-weight: 560;
-  }
-  .About .aboutContainer__header {
-    font-size: 25px;
-    font-weight: 500;
-  }
-  .About .aboutContainer__description {
-    font-size: 1.4rem;
-    transition: font-size 300ms ease;
-  }
-  .About .aboutContainer__image {
+  .About .aboutCards {
     max-width: 100%;
-    margin: 1.3em 0;
+  }
+  .About .aboutCards .aboutCardsDiv1, .About .aboutCards .aboutCardsDiv2 {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 0;
+  }
+  .About .aboutCards .aboutCardsDiv1 > div, .About .aboutCards .aboutCardsDiv2 > div {
+    padding: 3rem 0;
+  }
+  .About .aboutCards .aboutCardsDiv1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .About .aboutCards .aboutCardsDiv1 img {
+    min-height: 450px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .About .achievements {
-    padding: 0;
-    max-width: 1250px;
-    margin: auto;
-  }
-  .About .socialSection {
-    padding-top: 4rem;
-    background-color: #F8F5F2;
-  }
-  .About .socialSection h3 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  .About .socialSection .socialSectionContainer {
-    max-width: 600px;
-    margin: auto;
-    padding: 72px 18.748px;
-    background-color: #F8F5F2;
-    min-height: 40vh;
-  }
-  .About .socialSection .socialSectionContainer h3 {
-    font-size: 16px;
-    margin-top: 1.3em;
-    font-size: 1.6em;
+  .About .aboutCards .aboutCardsDiv1 > div {
+    padding: 1rem 0;
     text-align: center;
   }
-  .About .socialSection .socialSectionContainer div {
+  .About .aboutCards .aboutCardsDiv1 > div p {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  .About .aboutCards .aboutCardsDiv2 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+    margin: 0;
   }
-  .About .socialSection .socialSectionContainer div a {
-    color: #000000;
-    text-decoration: none;
-    margin: 10px 17px 0 0;
-    font-size: 27px;
-    transition: color 300ms ease;
-  }
-  .About .socialSection .socialSectionContainer div a:hover {
-    color: #746f6f;
-  }
-  .About .socialSection .socialSectionContainer p {
+  .About .aboutCards .aboutCardsDiv2 > div {
+    order: 2;
+    padding: 3rem 0;
     text-align: center;
-    font-size: 1.5em;
-    width: 400px;
-    margin: 1.8rem auto;
   }
-  .About .socialSection .socialSectionContainer p a {
-    text-decoration: underline;
-    color: #000000;
-    transition: color 300ms ease;
+  .About .aboutCards .aboutCardsDiv2 > div p {
+    text-align: left;
+    font-size: 1.1rem;
   }
-  .About .socialSection .socialSectionContainer p a:hover {
-    color: #746f6f;
+  .About .aboutCards .aboutCardsDiv2 img {
+    order: 1;
+    min-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .About {
-    position: relative;
-    height: 100%;
-    max-width: 100%;
-  }
-  .About .NavbarContainer, .About .Navbar {
-    background-color: #000000;
-  }
-  .About .aboutContainer {
-    padding: 72px 18.748px;
-    display: flex;
-    width: 1120px;
     min-height: 100vh;
-    margin: 0 auto;
-    z-index: 1;
-  }
-  .About .aboutContainer * {
-    z-index: 1;
-  }
-  .About .aboutContainer__myTitle {
-    margin: 50px 0 35px 0;
-    text-align: left;
-    font-weight: 600;
-    position: relative;
-    color: #000000;
-  }
-  .About .aboutContainer__myTitle::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 45px;
-    height: 5px;
-    width: 35px;
-    border-radius: 1000px;
-    background: #746f6f;
-    transition: width 300ms ease;
-  }
-  .About .aboutContainer__subHeader {
-    font-size: 15.8px;
-    font-weight: 560;
-  }
-  .About .aboutContainer__header {
-    font-size: 25px;
-    font-weight: 500;
-  }
-  .About .aboutContainer__description {
-    transition: font-size 300ms ease;
-  }
-  .About .aboutContainer__image {
-    max-width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .About .achievements {
-    padding: 72px 18.748px;
-    padding-left: 0;
-    padding-right: 0;
-    width: 1120px;
+    max-width: 1120px;
     margin: auto;
   }
-  .About .socialSection {
-    padding-top: 4rem;
-    background-color: #F8F5F2;
-  }
-  .About .socialSection h3 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-  .About .socialSection .socialSectionContainer {
-    max-width: 600px;
-    margin: auto;
-    padding: 72px 18.748px;
-    background-color: #F8F5F2;
-    min-height: 40vh;
-  }
-  .About .socialSection .socialSectionContainer h3 {
-    font-size: 16px;
-    margin-top: 0.2em;
-    font-size: 1.6em;
+  .About .title, .About .subTitle {
     text-align: center;
   }
-  .About .socialSection .socialSectionContainer div {
+  .About .subTitle {
+    max-width: 370px;
+    margin: 1rem auto;
+    color: #746f6f;
+  }
+  .About .aboutCards .aboutCardsDiv1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-  }
-  .About .socialSection .socialSectionContainer div a {
-    color: #000000;
-    text-decoration: none;
-    margin: 10px 17px 0 0;
-    font-size: 27px;
-    transition: color 300ms ease;
-  }
-  .About .socialSection .socialSectionContainer div a:hover {
-    color: #746f6f;
-  }
-  .About .socialSection .socialSectionContainer p {
-    text-align: center;
-    font-size: 1.5em;
-    width: 400px;
-    margin: 1.8rem auto;
-  }
-  .About .socialSection .socialSectionContainer p a {
-    text-decoration: underline;
-    color: #000000;
-    transition: color 300ms ease;
-  }
-  .About .socialSection .socialSectionContainer p a:hover {
-    color: #746f6f;
+    flex-direction: row;
   }
 }
 /* Extra small devices (phones, 600px and down) */
@@ -2777,7 +2414,7 @@
 }
 @media only screen and (max-width: 600px) {
   .connectSection {
-    max-width: 1100px;
+    max-width: 1120px;
     margin: auto;
     padding: 72px 18.748px;
   }
@@ -2873,7 +2510,7 @@
 }
 @media only screen and (min-width: 600px) {
   .connectSection {
-    max-width: 1100px;
+    max-width: 1120px;
     margin: auto;
     padding: 72px 18.748px;
   }
@@ -2970,7 +2607,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .connectSection {
-    max-width: 1100px;
+    max-width: 1120px;
     margin: auto;
     padding: 72px 18.748px;
   }
@@ -3081,7 +2718,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .connectSection {
-    max-width: 1100px;
+    max-width: 1120px;
     margin: auto;
     padding: 72px 18.748px;
   }

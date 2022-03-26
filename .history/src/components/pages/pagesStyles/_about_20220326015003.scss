@@ -1,0 +1,408 @@
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .About {
+        //background-color: yellow;
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .aboutContainer {
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+
+
+            .title, .subTitle {
+                text-align: center;
+            }
+
+            .subTitle {
+                max-width: 360px;
+                margin: 1rem auto;
+                color: $lightGray;
+            }
+            
+
+            .aboutCards {
+                max-width: 100%;
+
+                .aboutCardsDiv1, .aboutCardsDiv2 {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 5rem 0;
+    
+                    
+                    >div {
+                        padding: 3rem 0;
+                    }
+    
+                }
+    
+                .aboutCardsDiv1 {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+    
+                    img {
+                        max-width: 100%;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+                    
+                    >div {
+                        padding: 1rem 0;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                }
+                
+                .aboutCardsDiv2 {
+                    display: flex;
+                    margin: 0;
+    
+                    
+                    >div {
+                        order: 2;
+                        padding: 3rem 0;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                    img {
+                        order: 1;
+                        max-width: 100%;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+    
+                }
+            }
+        }
+
+    }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .About {
+        background-color: rgb(0, 255, 98);
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .aboutContainer {
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+
+            .title, .subTitle {
+                text-align: center;
+            }
+
+            .subTitle {
+                max-width: 370px;
+                margin: 1rem auto;
+                color: $lightGray;
+            }
+
+            
+
+            .aboutCards {
+                max-width: 100%;
+
+                .aboutCardsDiv1, .aboutCardsDiv2 {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 5rem 0;
+    
+                    
+                    >div {
+                        padding: 3rem 0;
+                    }
+    
+                }
+    
+                .aboutCardsDiv1 {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+    
+                    img {
+                        max-width: 100%;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+                    
+                    >div {
+                        padding: 1rem 0;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                }
+                
+                .aboutCardsDiv2 {
+                    display: flex;
+                    margin: 0;
+    
+                    
+                    >div {
+                        order: 2;
+                        padding: 3rem 0;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                    img {
+                        order: 1;
+                        max-width: 100%;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+    
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .About {
+        background-color: rgb(120, 176, 209);
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .aboutContainer {
+            min-height: 80vh;
+            padding: 5rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+
+            .title, .subTitle {
+                text-align: center;
+            }
+
+            .subTitle {
+                max-width: 390px;
+                margin: 1rem auto;
+                color: $lightGray;
+            }
+
+            
+
+            .aboutCards {
+                max-width: 100%;
+
+                .aboutCardsDiv1, .aboutCardsDiv2 {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 5rem 0;
+    
+                    
+                    >div {
+                        padding: 3rem 0;
+                    }
+    
+                }
+    
+                .aboutCardsDiv1 {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 5rem 0 0 0;
+    
+                    img {
+                        max-width: 450px;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+                    
+                    >div {
+                        padding: 1rem 3rem;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                }
+                
+                .aboutCardsDiv2 {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 0;
+    
+                    
+                    >div {
+                        order: 2;
+                        padding: 3rem 0;
+                        text-align: center;
+    
+                        p {
+                            text-align: left;
+                        }
+                    }
+    
+                    img {
+                        order: 1;
+                        max-width: 100%;
+                        min-height: 300px;
+                        object-fit: cover;
+                    }
+    
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .About {
+        background-color: rgb(153, 153, 93);
+        min-height: 100vh;
+        max-width: 1120px;
+        margin: auto;
+
+        .title, .subTitle {
+            text-align: center;
+        }
+
+        .subTitle {
+            max-width: 370px;
+            margin: 1rem auto;
+            color: $lightGray;
+            color: red;
+        }
+
+        .aboutCards {
+            max-width: 100%;
+
+            .aboutCardsDiv1, .aboutCardsDiv2 {
+                display: flex;
+                flex-direction: row;
+                margin: 5rem 0;
+
+                
+                >div {
+                    padding: 3rem 0;
+                }
+
+            }
+
+            .aboutCardsDiv1 {
+                display: flex;
+                flex-direction: row;
+                //1margin: 5rem 0 0 0;
+
+                img {
+                    //max-width: 100%;
+                    min-height: 300px;
+                    object-fit: cover;
+                }
+                
+                >div {
+                    padding: 1rem 0;
+                    text-align: center;
+
+                    p {
+                        text-align: left;
+                    }
+                }
+
+            }
+            
+            .aboutCardsDiv2 {
+                display: flex;
+                margin: 0;
+
+                
+                >div {
+                    order: 2;
+                    padding: 3rem 0;
+                    text-align: center;
+
+                    p {
+                        text-align: left;
+                    }
+                }
+
+                img {
+                    order: 1;
+                    //max-width: 100%;
+                    min-height: 300px;
+                    object-fit: cover;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .About {
+        background-color: rgb(211, 123, 219);
+        min-height: 100vh;
+        max-width: 1120px;
+        margin: auto;
+
+        .title, .subTitle {
+            text-align: center;
+        }
+
+        .subTitle {
+            max-width: 370px;
+            margin: 1rem auto;
+            color: $lightGray;
+        }
+
+        .aboutCards {
+           // max-width: 100%;
+
+            .aboutCardsDiv1 {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        
+    }
+
+
+}

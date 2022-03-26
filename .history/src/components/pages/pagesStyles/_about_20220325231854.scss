@@ -1,0 +1,33 @@
+
+
+
+
+@media only screen and (min-width: 992px) {
+    .About {
+        @include mobilePadding;
+        max-width: 100%;
+        
+        .Navbar {
+            background-color: $darkBlack;
+        }
+        
+        .aboutContainer {
+            //background-color: yellow;
+        }
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .About {
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .aboutContainer {
+            
+        }
+    }
+}

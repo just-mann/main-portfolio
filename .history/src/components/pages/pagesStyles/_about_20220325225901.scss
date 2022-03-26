@@ -1,0 +1,781 @@
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .About {
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+
+        .Navbar {
+
+            * {
+                color: $white;
+            }
+
+            .NavbarContainer {
+                background-color: $darkBlack;
+                .toggle {
+                    //background-color: yellow;
+                    width: 28px;
+                    height: 25px;
+                    margin-top: 0.3rem;
+                    margin-right: 0.25rem;
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    span {
+                        display: block;
+                        height: 2px;
+                        width: 26px;
+                        background: $white;
+                        transform-origin: 3px 1px;
+                        transition: all 300ms ease-in-out;
+
+                        &:first-child() {
+                            margin-top: 10px;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .aboutContainer {
+            @include mobilePadding;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: auto;
+            margin: 0 auto;
+            z-index: 1;
+            color: $lightGray;
+
+            * {
+                z-index: 1;
+            }
+
+            &__myTitle {
+                margin: 50px 0 35px 0;
+                text-align: left;
+                font-weight: 600;
+                position: relative;
+                color: $darkBlack;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    top: 36px;
+                    height: 5px;
+                    width: 32px;
+                    border-radius: 1000px;
+                    background: $lightGray;
+                    transition: width 300ms ease;
+                }
+            }
+
+            &__subHeader {
+                font-size: 15.8px;
+                font-weight: 560;
+            }
+
+            &__header {
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            &__description {
+                font-size: 1.07rem;
+                line-height: 1.53em;
+                transition: font-size 300ms ease;
+            }
+
+            &__image {
+                width: 100%;
+                margin: 1rem auto 1.8em auto;
+                object-fit: cover;
+            } 
+        }   
+
+        .achievements {
+
+            &__heading, &__subHeading, &__detail {
+                text-align: center;
+            }
+
+            &__heading, &__subHeading {
+                margin-bottom: 1rem;
+            }
+
+            &__heading {
+                font-size: 1.8em;
+                font-weight: bold;
+            }
+
+            &__subHeading {
+                margin-bottom: 0.8rem;
+                font-size: 1.4em;
+            }
+
+            &__detail {
+                text-align: center;
+                font-size: 1.1rem;
+                width: 360px;
+                margin: auto;
+            }
+        }
+
+        .socialSection {
+            padding-top: 3rem;
+
+            h3 {
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+
+            .socialSectionContainer {
+                max-width: 600px;
+                margin: auto;
+                @include mobilePadding;
+                background-color: #F8F5F2;
+                min-height: 40vh;
+
+                h3 {
+                    font-size: 16px;
+                    text-align: center;
+                    font-size: 1.6em;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+                    
+                    a {
+                        color: $darkBlack;
+                        text-decoration: none;
+                        margin: 10px 17px 0 0;
+                        font-size: 27px;
+                        transition: color 300ms ease;
+                        
+                        
+                        &:hover {
+                            color: $lightGray;
+                        }
+                    }
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 1.1rem;
+                    width: 400px;
+                    margin: 1.8rem auto;
+
+                    a {
+                        text-decoration: underline;
+                        color: $darkBlack;
+                        transition: color 300ms ease;
+
+                        &:hover {
+                            color: $lightGray;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .About {
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+        color: $lightGray;
+    
+
+        .aboutContainer {
+            @include mobilePadding;
+            display: flex;
+            flex-direction: column;
+            width: 1120px;
+            min-height: auto;
+            margin: 0 auto;
+            z-index: 1;
+            color: $lightGray;
+
+            * {
+                z-index: 1;
+            }
+
+            &__myTitle {
+                margin: 50px 0 45px 0;
+                text-align: left;
+                font-weight: 600;
+                position: relative;
+                color: $darkBlack;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    top: 40px;
+                    height: 5px;
+                    width: 32px;
+                    border-radius: 1000px;
+                    background: $lightGray;
+                    transition: width 300ms ease;
+                }
+            }
+
+            &__subHeader {
+                font-size: 15.8px;
+                font-weight: 560;
+            }
+
+            &__header {
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            &__description {
+                font-size: 1.17rem;
+                line-height: 1.6em;
+                margin: 1.8rem 0;
+                transition: font-size 300ms ease;
+            }
+
+            &__image {
+                width: 100%;
+                margin: 1rem auto 1.8em auto;
+                object-fit: cover;
+            }
+
+            .aboutContainer__intro {
+                max-width: 1250px;
+                margin: 3px auto;
+
+                .imgGrid {
+                    display: grid;
+                    //grid-template-columns: repeat(auto-fit, minmax(50%));
+                    max-width: 100%;
+                    margin: auto;
+                    gap: 10px;
+
+                    .description2 {
+                        order: 1;
+                    }   
+                }
+            }
+        }
+
+        .achievements {
+            @include mobilePadding;
+        }
+
+        .socialSection {
+            padding-top: 4rem;
+            background-color: #F8F5F2;
+
+            h3 {
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+
+            .socialSectionContainer {
+                max-width: 600px;
+                margin: auto;
+                @include mobilePadding;
+                background-color: #F8F5F2;
+                min-height: 40vh;
+
+                h3 {
+                    font-size: 16px;
+                    margin-top: 1.5em;
+                    font-size: 1.6em;
+                    text-align: center;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+                    
+                    a {
+                        color: $darkBlack;
+                        text-decoration: none;
+                        margin: 10px 17px 0 0;
+                        font-size: 27px;
+                        transition: color 300ms ease;
+                        
+                        
+                        &:hover {
+                            color: $lightGray;
+                        }
+                    }
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 1.5em;
+                    width: 400px;
+                    margin: 1.8rem auto;
+
+                    a {
+                        text-decoration: underline;
+                        color: $darkBlack;
+                        transition: color 300ms ease;
+
+                        &:hover {
+                            color: $lightGray;
+                        }
+                    }
+                }
+            }
+            
+        }   
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .About {
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+    
+
+        .aboutContainer {
+            @include mobilePadding;
+            display: flex;
+            width: 1120px;
+            min-height: 100vh;
+            margin: 0 auto;
+            z-index: 1;
+
+            * {
+                z-index: 1;
+            }
+
+            &__myTitle {
+                margin: 50px 0 35px 0;
+                text-align: left;
+                font-weight: 600;
+                position: relative;
+                color: $darkBlack;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    top: 36px;
+                    height: 5px;
+                    width: 32px;
+                    border-radius: 1000px;
+                    background: $lightGray;
+                    transition: width 300ms ease;
+                }
+            }
+
+            &__subHeader {
+                font-size: 15.8px;
+                font-weight: 560;
+            }
+
+            &__header {
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            &__description {
+                font-size: 1.35rem;
+                line-height: 1.6em;
+                transition: font-size 300ms ease;
+            }
+            
+            .aboutContainer__intro {
+                max-width: 1250px;
+                margin: 3px auto;
+
+                h3, h4 {
+                    text-align: center;
+                }
+                
+
+                .imgGrid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    justify-content: space-between;
+                    max-width: 100%;
+                    margin: 0;
+                    gap: 25px;
+
+                    .description2 {
+                        order: 1;
+                    }
+
+                    img {
+                        max-width: 1000%;
+                        margin: 0;
+                        object-fit: cover;
+                    }
+                }
+            }
+            
+        }   
+
+        .achievements {
+            padding: 0;
+            width: 1120px;
+            margin: auto;
+        }
+
+        .socialSection {
+            padding-top: 4rem;
+            background-color: #F8F5F2;
+
+            h3 {
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+
+            .socialSectionContainer {
+                max-width: 600px;
+                margin: auto;
+                @include mobilePadding;
+                background-color: #F8F5F2;
+                min-height: 40vh;
+
+                h3 {
+                    font-size: 16px;
+                    margin-top: 1.5em;
+                    font-size: 1.6em;
+                    text-align: center;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+                    
+                    a {
+                        color: $darkBlack;
+                        text-decoration: none;
+                        margin: 10px 17px 0 0;
+                        font-size: 27px;
+                        transition: color 300ms ease;
+                        
+                        
+                        &:hover {
+                            color: $lightGray;
+                        }
+                    }
+
+                    
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 1.5em;
+                    width: 400px;
+                    margin: 1.8rem auto;
+
+                    a {
+                        text-decoration: underline;
+                        color: $darkBlack;
+                        transition: color 300ms ease;
+
+                        &:hover {
+                            color: $lightGray;
+                        }
+                    }
+                }
+            }   
+        } 
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .About {
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+
+        .NavbarContainer, .Navbar {
+            background-color: $darkBlack;
+        }
+    
+
+        .aboutContainer {
+            @include mobilePadding;
+            display: flex;
+            width: 1120px;
+            min-height: 100vh;
+            margin: 0 auto;
+            z-index: 1;
+            position: relative;
+
+            * {
+                z-index: 1;
+            }
+
+            h3 {
+                margin: 5.5rem 0 35px 0;
+                text-align: center;
+                font-weight: 600;
+                position: absolute;
+                color: $darkBlack;
+
+                
+            }
+
+            &__subHeader {
+                font-size: 15.8px;
+                font-weight: 560;
+            }
+
+            &__header {
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            &__description {
+                font-size: 1.4rem;
+                transition: font-size 300ms ease;
+            }
+
+            &__image {
+                max-width: 100%;
+                margin: 1.3em 0;
+                object-fit: cover;
+            }
+    
+        }   
+
+        .achievements {
+            padding: 0;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .socialSection {
+            padding-top: 4rem;
+            background-color: #F8F5F2;
+
+            h3 {
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+
+            .socialSectionContainer {
+                max-width: 600px;
+                margin: auto;
+                @include mobilePadding;
+                background-color: #F8F5F2;
+                min-height: 40vh;
+
+                h3 {
+                    font-size: 16px;
+                    margin-top: 1.3em;
+                    font-size: 1.6em;
+                    text-align: center;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+                    
+                    a {
+                        color: $darkBlack;
+                        text-decoration: none;
+                        margin: 10px 17px 0 0;
+                        font-size: 27px;
+                        transition: color 300ms ease;
+                        
+                        
+                        &:hover {
+                            color: $lightGray;
+                        }
+                    }
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 1.5em;
+                    width: 400px;
+                    margin: 1.8rem auto;
+
+                    a {
+                        text-decoration: underline;
+                        color: $darkBlack;
+                        transition: color 300ms ease;
+
+                        &:hover {
+                            color: $lightGray;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .About {
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+    
+        .NavbarContainer, .Navbar {
+            background-color: $darkBlack;
+        }
+
+        .aboutContainer {
+            @include mobilePadding;
+            display: flex;
+            width: 1120px;
+            min-height: 100vh;
+            margin: 0 auto;
+            z-index: 1;
+
+            * {
+                z-index: 1;
+            }
+
+            h3 {
+                margin: 15.5rem 0 35px 0;
+                text-align: center;
+                font-weight: 600;
+                position: relative;
+                color: $darkBlack;   
+            }
+            
+
+            
+
+            &__subHeader {
+                font-size: 15.8px;
+                font-weight: 560;
+            }
+
+            &__header {
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            &__description {
+                
+                transition: font-size 300ms ease;
+            }
+
+            &__image {
+                max-width: 100%;
+                object-fit: cover;
+            }
+    
+            
+        }   
+
+        .achievements {
+            @include mobilePadding;
+            padding-left: 0;
+            padding-right: 0;
+            width: 1120px;
+            margin: auto;
+        }
+
+        .socialSection {
+            padding-top: 4rem;
+            background-color: #F8F5F2;
+
+            h3 {
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+
+            .socialSectionContainer {
+                max-width: 600px;
+                margin: auto;
+                @include mobilePadding;
+                background-color: #F8F5F2;
+                min-height: 40vh;
+
+                h3 {
+                    font-size: 16px;
+                    margin-top: 0.2em;
+                    font-size: 1.6em;
+                    text-align: center;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+                    
+                    a {
+                        color: $darkBlack;
+                        text-decoration: none;
+                        margin: 10px 17px 0 0;
+                        font-size: 27px;
+                        transition: color 300ms ease;
+                        
+                        
+                        &:hover {
+                            color: $lightGray;
+                        }
+                    }
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 1.5em;
+                    width: 400px;
+                    margin: 1.8rem auto;
+
+                    a {
+                        text-decoration: underline;
+                        color: $darkBlack;
+                        transition: color 300ms ease;
+
+                        &:hover {
+                            color: $lightGray;
+                        }
+                    }
+                }
+            } 
+        }
+    }   
+}
+
+
+
+
+
+
+

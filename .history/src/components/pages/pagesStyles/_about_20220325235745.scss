@@ -1,0 +1,161 @@
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .About {
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .aboutContainer {
+            background-color: yellow;
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            width: 1120px;
+            margin: auto;
+        }
+
+    }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .About {
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .aboutContainer {
+            //background-color: rgb(190, 135, 176);
+            min-height: 100vh;
+            padding: 5.5rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+        }
+
+    }
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .About {
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        
+        .aboutContainer {
+            //background-color: rgb(153, 153, 93);
+            min-height: 100vh;
+            max-width: 1120px;
+            margin: auto;
+
+            h3, h4 {
+                text-align: center;
+            }
+
+            h4 {
+                font-size: 2rem;
+                text-transform: capitalize;
+                line-height: 44.8px;
+                letter-spacing: 1px;
+                max-width: 690px;
+                margin: 1.4rem auto 3.4rem auto;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .About {
+        //background-color: rgb(153, 153, 93);
+        min-height: 100vh;
+        max-width: 1120px;
+        margin: auto;
+
+        h3, h4 {
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            line-height: 44.8px;
+            letter-spacing: 1px;
+            max-width: 690px;
+            margin: 1.4rem auto 3.4rem auto;
+        }
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .About {
+        //background-color: rgb(153, 153, 93);
+        min-height: 100vh;
+        max-width: 1120px;
+        margin: auto;
+
+        h3, h4 {
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            line-height: 44.8px;
+            letter-spacing: 1px;
+            max-width: 690px;
+            margin: 1.4rem auto 3.4rem auto;
+        }
+
+        .aboutCards {
+            .aboutCardsDiv1, .aboutCardsDiv2 {
+                display: flex;
+                margin: 5rem 0;
+
+                
+                >div {
+                    padding: 3rem;
+                }
+
+            }
+
+            .aboutCardsDiv1 {
+                display: flex;
+                margin: 5rem 0 0 2.5rem;
+
+                
+                >div {
+                    padding: 3rem;
+                }
+
+            }
+            
+            .aboutCardsDiv2 {
+                display: flex;
+                margin: 5rem 2.5rem 0 0;
+
+                
+                >div {
+                    padding: 3rem;
+                }
+
+            }
+        }
+    }
+}
