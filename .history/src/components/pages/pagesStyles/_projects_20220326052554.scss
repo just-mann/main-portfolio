@@ -1,0 +1,400 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Projects {
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+
+        .Navbar {
+            background-color: $white;
+
+            .myLogo h3 {
+                color: $lightBlack;
+            }
+
+            .navLinks  {
+                color: $lightBlack;
+                
+                a {
+                    color: $lightBlack;
+                }
+
+                .contact {
+                    color: $white;
+                }
+            }
+
+            .toggle .lines {
+                background-color: $lightBlack;
+            }
+
+            .respNav {
+                background-color: $white;
+
+                a {
+                    color: $lightBlack;
+
+                    &:hover {
+                        color: rgb(119, 119, 119);
+                        background-color: rgb(224, 224, 224);
+                    }
+                }
+            }
+        }
+        
+        
+        .projectsContainer {
+            background-color: yellow;
+            min-height: 80vh;
+            padding: 3rem 0 0 0;
+            width: 1120px;
+            margin: auto;
+        }
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Projects {
+        position: relative;
+        @include mobilePadding;
+        max-width: 100%;
+
+        .Navbar {
+            background-color: $white;
+
+            .myLogo h3 {
+                color: $lightBlack;
+            }
+
+            .navLinks  {
+                color: $lightBlack;
+                
+                a {
+                    color: $lightBlack;
+                }
+
+                .contact {
+                    color: $white;
+                }
+            }
+
+            .toggle .lines {
+                background-color: $lightBlack;
+            }
+
+            .respNav {
+                background-color: $white;
+
+                a {
+                    color: $lightBlack;
+
+                    &:hover {
+                        color: rgb(119, 119, 119);
+                        background-color: rgb(224, 224, 224);
+                    }
+                }
+            }
+        }
+        
+        
+        .projectsContainer {
+            //background-color: rgb(190, 135, 176);
+            min-height: 100vh;
+            padding: 5.5rem 0 0 0;
+            max-width: 1120px;
+            margin: auto;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .Projects {
+        @include mobilePadding;
+        max-width: 100%;
+        
+
+        .Navbar {
+            background-color: $white;
+
+            .myLogo h3 {
+                color: $lightBlack;
+            }
+
+            .navLinks  {
+                color: $lightBlack;
+                
+                a {
+                    color: $lightBlack;
+                }
+
+                .contact {
+                    color: $white;
+                }
+            }
+
+            .toggle .lines {
+                background-color: $lightBlack;
+            }
+
+            .respNav {
+                background-color: $white;
+
+                a {
+                    color: $lightBlack;
+
+                    &:hover {
+                        color: rgb(119, 119, 119);
+                        background-color: rgb(224, 224, 224);
+                    }
+                }
+            }
+        }
+        
+        
+        .projectsContainer {
+            //background-color: rgb(153, 153, 93);
+            min-height: 100vh;
+            max-width: 1120px;
+            margin: auto;
+
+            h3, h4 {
+                text-align: center;
+            }
+
+            h4 {
+                font-size: 2rem;
+                text-transform: capitalize;
+                line-height: 44.8px;
+                letter-spacing: 1px;
+                max-width: 690px;
+                margin: 1.4rem auto 3.4rem auto;
+            }
+
+
+            .projectDiv {
+                //max-width: 100%;
+
+                .myFeatProj {
+                    max-width: 100%;
+                    border-bottom: 1px solid lightgray;
+                    min-height: 340px;
+                    display: grid;
+                    padding: 2.5rem 0;
+                    grid-template-columns: 4fr 3fr;
+                    gap: 35px;
+
+                    &:first-child {
+                        .left {
+                            
+                            a {
+                                background: rgb(228, 228, 129);
+                            }
+                        }
+                    }
+                    
+                    &:last-child {
+                        border: none;
+
+                        
+                        .left {
+
+                            a {
+                                background: rgb(219, 224, 224);
+                            }
+                        }
+                    }
+
+                    .left {
+                        //background: lightblue;
+                        display: grid;
+                        grid-template-columns: 4fr 3fr;
+
+                        a {
+                            height: 100%;
+                            max-width: 100%;
+                            padding: 1.5rem;
+                            background: lightgreen;
+                            user-select: none;
+
+                            img {
+                                height: 100%;
+                                max-width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .shortDesc {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            text-align: left;
+                            color: black;
+                            padding: 10px 0 10px 15px;
+
+
+                            .div1 {
+                                p {
+                                    font-size: 17px;
+                                    line-height: 22.4px;
+                                    text-transform: capitalize;
+    
+                                    &:first-child {
+                                        text-transform: uppercase;
+                                    }
+                                }
+                            }
+
+                            .div2 {
+                                a {
+                                    text-decoration: none;
+                                    background-color: $darkBlack;
+                                    border: 2px solid $darkBlack;
+                                    color: $white;
+                                    padding: 10px 25px;
+                                    transition: all 300ms ease;
+
+                                    &:hover {
+                                        background: transparent;
+                                        border: 2px solid $darkBlack;
+                                        color: $darkBlack;
+                                    }
+
+                                    &:not(:last-child) {
+                                        background: transparent;
+                                        border: 2px solid $darkBlack;
+                                        color: $darkBlack;
+                                        margin-right: 1.5rem;
+                                        transition: all 300ms ease;
+
+                                        &:hover {
+                                            background: $darkBlack;
+                                            border: 2px solid $darkBlack;
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .right {
+                        margin: 0 0 0 20px;
+
+                        p {
+                            font-size: 19px;
+                            line-height: 28.8px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .Projects {
+        @include mobilePadding;
+        max-width: 100%;
+        
+        .Navbar {
+            background-color: $white;
+
+            .myLogo h3 {
+                color: $lightBlack;
+            }
+
+            .navLinks  {
+                color: $lightBlack;
+
+                a {
+                    color: $lightBlack;
+                }
+
+                .contact {
+                    color: $white;
+                }
+            }
+
+            .toggle .lines {
+                background-color: $lightBlack;
+            }
+
+            .respNav {
+                background-color: $white;
+
+                a {
+                    color: $lightBlack;
+
+                    &:hover {
+                        color: rgb(119, 119, 119);
+                        background-color: rgb(224, 224, 224);
+                    }
+                }
+            }
+        }
+        
+        .projectsContainer {
+            //background-color: yellow;
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .Projects {
+        @include mobilePadding;
+        max-width: 100%;
+        
+        
+        .Navbar {
+            background-color: $white;
+
+            .NavbarContainer {
+                .myLogo { 
+
+                    h3 {
+                        color: $lightBlack;
+                    }
+
+                }
+    
+                .navLinks  {
+                    color: $lightBlack;
+                    
+                    a {
+                        color: $lightBlack;
+                    }
+
+                    .contact {
+                        color: $white;
+                    }
+                }
+                .toggle .lines {
+                    background-color: $lightBlack;
+                }
+    
+                .respNav {
+                    background-color: $white;
+    
+                    a {
+                        color: $lightBlack;
+    
+                        &:hover {
+                            color: rgb(119, 119, 119);
+                            background-color: rgb(224, 224, 224);
+                        }
+                    }
+                }
+            }
+        }
+
+        .projectsContainer {
+            
+        }
+    }
+}

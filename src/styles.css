@@ -9,26 +9,289 @@
     padding: 72px 18.748px;
     max-width: 100%;
   }
+  .Projects .Navbar {
+    background-color: #ffffff;
+  }
+  .Projects .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks a {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .Projects .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Projects .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Projects .Navbar .respNav a {
+    color: #212122;
+  }
+  .Projects .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
   .Projects .projectsContainer {
-    background-color: yellow;
     min-height: 80vh;
     padding: 3rem 0 0 0;
-    width: 1120px;
+    max-width: 1120px;
     margin: auto;
+  }
+  .Projects .projectsContainer h3, .Projects .projectsContainer h4 {
+    text-align: center;
+  }
+  .Projects .projectsContainer h3 {
+    font-size: 2.6em;
+  }
+  .Projects .projectsContainer h4 {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    line-height: 25px;
+    letter-spacing: 1px;
+    max-width: 300px;
+    margin: 1.4rem auto 3.4rem auto;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj {
+    max-width: 100%;
+    border-bottom: 1px solid lightgray;
+    min-height: 340px;
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 2rem 0;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj:first-child .left a {
+    background: #e4e481;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj:last-child {
+    border: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj:last-child .left a {
+    background: #dbe0e0;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left {
+    background: lightblue;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left a {
+    min-height: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+    background: lightgreen;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left a img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: black;
+    padding: 10px 0 10px 15px;
+    display: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div1 p {
+    font-size: 17px;
+    line-height: 22.4px;
+    text-transform: capitalize;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div1 p:first-child {
+    text-transform: uppercase;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a {
+    text-decoration: none;
+    background-color: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+    padding: 10px 25px;
+    transition: all 300ms ease;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a:hover {
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a:not(:last-child) {
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    margin-right: 1.5rem;
+    transition: all 300ms ease;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a:not(:last-child):hover {
+    background: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .right {
+    margin: 0 0 0 20px;
+    display: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .right p {
+    font-size: 19px;
+    line-height: 28.8px;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .Projects {
-    position: relative;
     padding: 72px 18.748px;
     max-width: 100%;
   }
+  .Projects .Navbar {
+    background-color: #ffffff;
+  }
+  .Projects .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks a {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .Projects .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Projects .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Projects .Navbar .respNav a {
+    color: #212122;
+  }
+  .Projects .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
   .Projects .projectsContainer {
-    min-height: 100vh;
-    padding: 5.5rem 0 0 0;
+    min-height: 80vh;
+    padding: 3rem 0 0 0;
     max-width: 1120px;
     margin: auto;
+  }
+  .Projects .projectsContainer h3, .Projects .projectsContainer h4 {
+    text-align: center;
+  }
+  .Projects .projectsContainer h3 {
+    font-size: 2.6em;
+  }
+  .Projects .projectsContainer h4 {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    line-height: 25px;
+    letter-spacing: 1px;
+    max-width: 300px;
+    margin: 1.4rem auto 3.4rem auto;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj {
+    max-width: 100%;
+    border-bottom: 1px solid lightgray;
+    min-height: 340px;
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 2rem 0;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj:first-child .left a {
+    background: #e4e481;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj:last-child {
+    border: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj:last-child .left a {
+    background: #dbe0e0;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left a {
+    min-height: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+    background: lightgreen;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left a img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: black;
+    padding: 10px 0 10px 15px;
+    display: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div1 p {
+    font-size: 17px;
+    line-height: 22.4px;
+    text-transform: capitalize;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div1 p:first-child {
+    text-transform: uppercase;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a {
+    text-decoration: none;
+    background-color: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+    padding: 10px 25px;
+    transition: all 300ms ease;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a:hover {
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a:not(:last-child) {
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    margin-right: 1.5rem;
+    transition: all 300ms ease;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a:not(:last-child):hover {
+    background: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .right {
+    margin: 0 0 0 20px;
+    display: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .right p {
+    font-size: 19px;
+    line-height: 28.8px;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -37,6 +300,179 @@
     padding: 72px 18.748px;
     max-width: 100%;
   }
+  .Projects .Navbar {
+    background-color: #ffffff;
+  }
+  .Projects .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks a {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .Projects .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Projects .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Projects .Navbar .respNav a {
+    color: #212122;
+  }
+  .Projects .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
+  .Projects .projectsContainer {
+    min-height: 80vh;
+    padding: 5rem 0 0 0;
+    max-width: 1120px;
+    margin: auto;
+  }
+  .Projects .projectsContainer h3, .Projects .projectsContainer h4 {
+    text-align: center;
+  }
+  .Projects .projectsContainer h3 {
+    font-size: 2.6em;
+  }
+  .Projects .projectsContainer h4 {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    line-height: 25px;
+    letter-spacing: 1px;
+    max-width: 300px;
+    margin: 1.4rem auto 3.4rem auto;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj {
+    max-width: 100%;
+    border-bottom: 1px solid lightgray;
+    min-height: 340px;
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 2rem 0;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj:first-child .left a {
+    background: #e4e481;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj:last-child {
+    border: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj:last-child .left a {
+    background: #dbe0e0;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left a {
+    min-height: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+    background: lightgreen;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left a img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: black;
+    padding: 10px 0 10px 15px;
+    display: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div1 p {
+    font-size: 17px;
+    line-height: 22.4px;
+    text-transform: capitalize;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div1 p:first-child {
+    text-transform: uppercase;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a {
+    text-decoration: none;
+    background-color: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+    padding: 10px 25px;
+    transition: all 300ms ease;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a:hover {
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a:not(:last-child) {
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    margin-right: 1.5rem;
+    transition: all 300ms ease;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .left .shortDesc .div2 a:not(:last-child):hover {
+    background: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .right {
+    margin: 0 0 0 20px;
+    display: none;
+  }
+  .Projects .projectsContainer .projectDiv .myFeatProj .right p {
+    font-size: 19px;
+    line-height: 28.8px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .Projects {
+    padding: 72px 18.748px;
+    max-width: 100%;
+  }
+  .Projects .Navbar {
+    background-color: #ffffff;
+  }
+  .Projects .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks a {
+    color: #212122;
+  }
+  .Projects .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .Projects .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Projects .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Projects .Navbar .respNav a {
+    color: #212122;
+  }
+  .Projects .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
   .Projects .projectsContainer {
     min-height: 100vh;
     max-width: 1120px;
@@ -44,6 +480,9 @@
   }
   .Projects .projectsContainer h3, .Projects .projectsContainer h4 {
     text-align: center;
+  }
+  .Projects .projectsContainer h3 {
+    font-size: 2.6em;
   }
   .Projects .projectsContainer h4 {
     font-size: 2rem;
@@ -134,20 +573,11 @@
   }
   .Projects .projectsContainer .projectDiv .myFeatProj .right {
     margin: 0 0 0 20px;
+    display: block;
   }
   .Projects .projectsContainer .projectDiv .myFeatProj .right p {
     font-size: 19px;
     line-height: 28.8px;
-  }
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .Projects {
-    padding: 72px 18.748px;
-    max-width: 100%;
-  }
-  .Projects .Navbar {
-    background-color: #000000;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -155,6 +585,121 @@
   .Projects {
     padding: 72px 18.748px;
     max-width: 100%;
+  }
+  .Projects .Navbar {
+    background-color: #ffffff;
+  }
+  .Projects .Navbar .NavbarContainer .myLogo h3 {
+    color: #212122;
+  }
+  .Projects .Navbar .NavbarContainer .navLinks {
+    color: #212122;
+  }
+  .Projects .Navbar .NavbarContainer .navLinks a {
+    color: #212122;
+  }
+  .Projects .Navbar .NavbarContainer .navLinks .contact {
+    color: #ffffff;
+  }
+  .Projects .Navbar .NavbarContainer .toggle .lines {
+    background-color: #212122;
+  }
+  .Projects .Navbar .NavbarContainer .respNav {
+    background-color: #ffffff;
+  }
+  .Projects .Navbar .NavbarContainer .respNav a {
+    color: #212122;
+  }
+  .Projects .Navbar .NavbarContainer .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
+  .Projects .projectDiv .myFeatProj {
+    max-width: 100%;
+    border-bottom: 1px solid lightgray;
+    min-height: 340px;
+    display: grid;
+    padding: 2.5rem 0;
+    grid-template-columns: 4fr 3fr;
+    gap: 35px;
+  }
+  .Projects .projectDiv .myFeatProj:first-child .left a {
+    background: #e4e481;
+  }
+  .Projects .projectDiv .myFeatProj:last-child {
+    border: none;
+  }
+  .Projects .projectDiv .myFeatProj:last-child .left a {
+    background: #dbe0e0;
+  }
+  .Projects .projectDiv .myFeatProj .left {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+  }
+  .Projects .projectDiv .myFeatProj .left a {
+    height: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .Projects .projectDiv .myFeatProj .left a img {
+    height: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .Projects .projectDiv .myFeatProj .left .shortDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: black;
+    padding: 10px 0 10px 15px;
+    display: block;
+  }
+  .Projects .projectDiv .myFeatProj .left .shortDesc .div1 p {
+    font-size: 17px;
+    line-height: 22.4px;
+    text-transform: capitalize;
+  }
+  .Projects .projectDiv .myFeatProj .left .shortDesc .div1 p:first-child {
+    text-transform: uppercase;
+  }
+  .Projects .projectDiv .myFeatProj .left .shortDesc .div2 a {
+    text-decoration: none;
+    background-color: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+    padding: 10px 25px;
+    transition: all 300ms ease;
+  }
+  .Projects .projectDiv .myFeatProj .left .shortDesc .div2 a:hover {
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+  }
+  .Projects .projectDiv .myFeatProj .left .shortDesc .div2 a:not(:last-child) {
+    background: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    margin-right: 1.5rem;
+    transition: all 300ms ease;
+  }
+  .Projects .projectDiv .myFeatProj .left .shortDesc .div2 a:not(:last-child):hover {
+    background: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+  }
+  .Projects .projectDiv .myFeatProj .right {
+    margin: 0 0 0 20px;
+    display: block;
+  }
+  .Projects .projectDiv .myFeatProj .right p {
+    font-size: 19px;
+    line-height: 28.8px;
   }
 }
 @media (max-width: 63.9375rem) {
@@ -454,6 +999,34 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+  .Home .Navbar {
+    background-color: #ffffff;
+  }
+  .Home .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks a {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .Home .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Home .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Home .Navbar .respNav a {
+    color: #212122;
+  }
+  .Home .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
   .Home::before {
     position: absolute;
     content: "";
@@ -565,7 +1138,7 @@
   }
   .mySkills > div .whatIDoLeft .viewMe {
     display: inline-block;
-    margin-bottom: 2em;
+    margin: 0.5rem 0 2em 0;
     text-decoration: none;
     background-color: #212122;
     border: 2px solid #212122;
@@ -573,6 +1146,7 @@
     padding: 1rem 2.5rem;
     font-weight: 700;
     transition: all 300ms ease-in-out;
+    background-color: #212122;
   }
   .mySkills > div .whatIDoLeft .viewMe:hover {
     background-color: transparent;
@@ -580,15 +1154,19 @@
     color: #212122;
     font-weight: 700;
   }
+  .mySkills > div .whatIDoLeft .viewMe:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
   .mySkills > div .skillsContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1.1em;
   }
   .mySkills > div .skillsContainer .skill {
     border: 2px solid #353434;
     text-align: center;
-    max-width: 50%;
+    max-width: 100%;
     padding: 10px 15px;
     font-size: 0.85rem;
     font-weight: bold;
@@ -615,7 +1193,7 @@
   }
   .mySpecialty .specContainer > div .gridDiv {
     text-align: center;
-    padding: 4rem 2.3rem;
+    padding: 4rem 2.3rem 0 2.3rem;
     min-height: 100%;
   }
   .mySpecialty .specContainer > div .gridDiv i {
@@ -635,31 +1213,39 @@
   }
 
   .selectedProjects {
-    background-color: #F8F5F2;
-    padding: 72px 18.748px;
     min-height: auto;
     max-width: 100%;
     margin: auto;
-    text-align: left;
+    text-align: center;
+    padding: 72px 18.748px;
   }
-  .selectedProjects h4 {
-    font-size: 16px;
-    font-weight: bold;
+  .selectedProjects > div {
+    max-width: 1120px;
+    margin: auto;
+  }
+  .selectedProjects > div h4 {
+    font-size: 1.4rem;
     text-transform: capitalize;
     text-align: left;
     margin-bottom: 16px;
   }
-  .selectedProjects .upperPart {
-    min-height: auto;
-    flex-direction: column;
+  .selectedProjects > div .upperPart {
+    max-width: 100%;
+    min-height: 75px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.1em;
   }
-  .selectedProjects .upperPart p {
+  .selectedProjects > div .upperPart p {
+    align-self: center;
     text-align: left;
-    font-size: 16px;
+    font-size: 20.8px;
+    line-height: 30px;
+    color: #746f6f;
   }
-  .selectedProjects .upperPart .viewAllProjects {
-    display: inline-block;
-    margin-bottom: 2em;
+  .selectedProjects > div .upperPart .viewAllProjects {
+    background-color: #212122;
+    color: #ffffff;
     text-decoration: none;
     background-color: #212122;
     border: 2px solid #212122;
@@ -667,68 +1253,57 @@
     padding: 1rem 2.5rem;
     font-weight: 700;
     transition: all 300ms ease-in-out;
+    align-self: end;
+    margin-bottom: 1rem;
+    justify-self: start;
+    max-width: 50%;
+    transition: all 300ms ease;
   }
-  .selectedProjects .upperPart .viewAllProjects:hover {
+  .selectedProjects > div .upperPart .viewAllProjects:hover {
     background-color: transparent;
     border: 2px solid #212122;
     color: #212122;
     font-weight: 700;
   }
-  .selectedProjects .projectDiv {
+  .selectedProjects > div .upperPart .viewAllProjects:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
+  .selectedProjects > div .projectDiv {
     max-width: 100%;
     min-height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    background-color: yellow;
-  }
-  .selectedProjects .projectDiv .skill {
-    width: 100%;
-    margin: auto;
-    font-size: 15px;
-    font-weight: bold;
-    color: #746f6f;
-    height: 5rem;
-    border: 0.0625rem solid #212122;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.25rem;
-    transition: color 300ms ease-in-out;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 1.97rem;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0rem;
+    margin-bottom: 3.5rem;
   }
-  .selectedProjects .projectDiv .skill .myFeatProj {
+  .selectedProjects > div .projectDiv .myFeatProj {
     width: 100%;
     margin: 0.46rem 0;
-    min-height: 249.997px;
   }
-  .selectedProjects .projectDiv .skill .myFeatProj * {
+  .selectedProjects > div .projectDiv .myFeatProj * {
     transition: display 300ms ease;
   }
-  .selectedProjects .projectDiv .skill .myFeatProj img {
+  .selectedProjects > div .projectDiv .myFeatProj img {
     width: 100%;
-    height: 300px;
-    -o-object-fit: fill;
-       object-fit: fill;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-  .selectedProjects .projectDiv .skill .myFeatProj .bottomSection {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection {
     padding: 0.2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .selectedProjects .projectDiv .skill .myFeatProj .bottomSection p {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection p {
     font-size: 1.5rem;
     margin-top: 1rem;
     align-self: center;
   }
-  .selectedProjects .projectDiv .skill .myFeatProj .bottomSection a {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a {
     text-decoration: none;
     background-color: #212122;
     border: 2px solid #212122;
@@ -739,58 +1314,14 @@
     padding: 0.54rem 1rem;
     margin: 0.2rem 0 0 0;
   }
-  .selectedProjects .projectDiv .skill .myFeatProj .bottomSection a:hover {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a:hover {
     background-color: transparent;
     border: 2px solid #212122;
     color: #212122;
     font-weight: 700;
   }
-  .selectedProjects .projectDiv .skill .myFeatProj .bottomSection a:hover {
+  .selectedProjects > div .projectDiv .myFeatProj .bottomSection a:hover {
     background-color: #000000;
-  }
-  .selectedProjects .preFooter {
-    min-height: 70vh;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(399.998px, 1fr));
-  }
-  .selectedProjects .preFooter div {
-    padding: 72px 28.748px;
-    color: #ffffff;
-  }
-  .selectedProjects .preFooter div i {
-    font-size: 2.5rem;
-  }
-  .selectedProjects .preFooter div p {
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0.75rem 0 0 0;
-  }
-  .selectedProjects .preFooter div h3 {
-    font-weight: 600;
-    font-size: 1.65rem;
-    margin: 0.5rem 0 2rem 0;
-  }
-  .selectedProjects .preFooter div a {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #F9373A;
-    border: 1px solid #F9373A;
-    padding: 1rem 2.5rem;
-    font-weight: 700;
-    transition: background-color 300ms ease-in-out;
-    padding: 0.85rem 1.5rem;
-  }
-  .selectedProjects .preFooter div a:hover {
-    opacity: 0.75;
-  }
-  .selectedProjects .preFooter .getInTouch {
-    min-height: 50%;
-    background-color: rgba(0, 0, 0, 0.72);
-  }
-  .selectedProjects .preFooter .dnlResume {
-    min-height: 50%;
-    background-color: rgba(0, 0, 0, 0.78);
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -798,6 +1329,34 @@
   .Home {
     position: relative;
     min-height: auto;
+  }
+  .Home .Navbar {
+    background-color: #ffffff;
+  }
+  .Home .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks a {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .Home .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Home .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Home .Navbar .respNav a {
+    color: #212122;
+  }
+  .Home .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
   }
   .Home::before {
     position: absolute;
@@ -912,14 +1471,14 @@
   }
   .mySkills > div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 4rem;
     max-width: 1120px;
     margin: auto;
   }
   .mySkills > div .whatIDoLeft .viewMe {
     display: inline-block;
-    margin-bottom: 2em;
+    margin: 0.5rem 0 2em 0;
     text-decoration: none;
     background-color: #212122;
     border: 2px solid #212122;
@@ -927,12 +1486,17 @@
     padding: 1rem 2.5rem;
     font-weight: 700;
     transition: all 300ms ease-in-out;
+    background-color: #212122;
   }
   .mySkills > div .whatIDoLeft .viewMe:hover {
     background-color: transparent;
     border: 2px solid #212122;
     color: #212122;
     font-weight: 700;
+  }
+  .mySkills > div .whatIDoLeft .viewMe:hover {
+    color: #ffffff;
+    background-color: #000000;
   }
   .mySkills > div .skillsContainer {
     display: grid;
@@ -951,6 +1515,46 @@
     transition: font-size 300ms ease;
   }
 
+  .mySpecialty {
+    max-width: 100%;
+    min-height: auto;
+    padding: 72px 18.748px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .mySpecialty .specContainer {
+    max-width: 1250px;
+    margin: 0 auto;
+    min-height: 100%;
+    padding-bottom: 0;
+  }
+  .mySpecialty .specContainer > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    min-height: 100%;
+    align-items: center;
+  }
+  .mySpecialty .specContainer > div .gridDiv {
+    text-align: center;
+    padding: 4rem 2.3rem;
+    min-height: 100%;
+  }
+  .mySpecialty .specContainer > div .gridDiv i {
+    font-size: 3em;
+    margin: 3rem 0 3rem 0;
+  }
+  .mySpecialty .specContainer > div .gridDiv h3 {
+    font-size: 23.8px;
+  }
+  .mySpecialty .specContainer > div .gridDiv p {
+    font-size: 16px;
+    line-height: 27.5px;
+  }
+  .mySpecialty .specContainer > div .gridDiv:nth-child(2) {
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+  }
+
   .selectedProjects {
     min-height: auto;
     max-width: 100%;
@@ -963,30 +1567,51 @@
     margin: auto;
   }
   .selectedProjects > div h4 {
-    font-size: 20px;
+    font-size: 2.4rem;
     text-transform: capitalize;
     text-align: left;
     margin-bottom: 16px;
   }
   .selectedProjects > div .upperPart {
     min-height: 75px;
-    grid-template-columns: 4.7fr 1fr;
+    display: grid;
+    grid-template-columns: 4.7fr 3fr;
     gap: 5.5rem;
-    margin: 8px 0px 50px;
     justify-content: space-between;
+    align-items: center;
   }
   .selectedProjects > div .upperPart p {
+    align-self: center;
     text-align: left;
     font-size: 23.8px;
     width: 510px;
     line-height: 35px;
+    color: #746f6f;
   }
   .selectedProjects > div .upperPart .viewAllProjects {
-    padding: 11px 15px;
-    font-size: 1rem;
-    line-height: 24px;
+    background-color: #212122;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #212122;
+    border: 2px solid #212122;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
+    align-self: end;
+    margin-bottom: 1rem;
+    justify-self: end;
+    max-width: 50%;
+    transition: all 300ms ease;
   }
   .selectedProjects > div .upperPart .viewAllProjects:hover {
+    background-color: transparent;
+    border: 2px solid #212122;
+    color: #212122;
+    font-weight: 700;
+  }
+  .selectedProjects > div .upperPart .viewAllProjects:hover {
+    color: #ffffff;
     background-color: #000000;
   }
   .selectedProjects > div .projectDiv {
@@ -1095,6 +1720,34 @@
     position: relative;
     min-height: auto;
   }
+  .Home .Navbar {
+    background-color: #ffffff;
+  }
+  .Home .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks a {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .Home .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Home .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Home .Navbar .respNav a {
+    color: #212122;
+  }
+  .Home .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
   .Home::before {
     position: absolute;
     content: "";
@@ -1106,79 +1759,45 @@
     width: 100%;
     z-index: 1;
   }
-  .Home .mainSection {
+  .Home .mySpecialty {
+    max-width: 100%;
+    min-height: auto;
+    padding: 72px 18.748px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .Home .mySpecialty .specContainer {
+    max-width: 1250px;
+    margin: 0 auto;
+    min-height: 100%;
+    padding-bottom: 0;
+  }
+  .Home .mySpecialty .specContainer > div {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    max-width: 1120px;
-    min-height: 100vh;
-    margin: auto;
-    z-index: 1;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    min-height: 100%;
     align-items: center;
   }
-  .Home .mainSection * {
-    z-index: 1;
-  }
-  .Home .mainSection .mainHero h2 {
-    font-family: "Poppins", sans-serif;
-    font-size: 45px;
-    width: 550px;
-    text-transform: capitalize;
-    font-weight: 400;
-    line-height: 60px;
-    margin: 135px 0 8px 0;
-    color: #ffffff;
-  }
-  .Home .mainSection .mainHero p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-    font-style: normal;
-    max-width: 420px;
-    text-align: left;
-    margin: 24px 0 3rem;
-    color: #ffffff;
-  }
-  .Home .mainSection .mainHero a {
-    background: #ffffff;
-    text-decoration: none;
-    padding: 16px 30px;
-    font-size: 1rem;
-    color: black;
-    border: 2px solid #ffffff;
-    font-weight: bold;
-    width: 30%;
-    margin-bottom: 1rem;
+  .Home .mySpecialty .specContainer > div .gridDiv {
     text-align: center;
+    padding: 4rem 2.3rem;
+    min-height: 100%;
   }
-  .Home .mainSection .mainHero a:not(:last-child) {
-    margin-right: 1.5rem;
-    background: transparent;
-    border: 2px solid #ffffff;
-    color: #ffffff;
+  .Home .mySpecialty .specContainer > div .gridDiv i {
+    font-size: 3em;
+    margin: 3rem 0 3rem 0;
   }
-  .Home .mainSection .heroImg {
-    position: relative;
-    height: 450px;
-    text-align: center;
+  .Home .mySpecialty .specContainer > div .gridDiv h3 {
+    font-size: 23.8px;
   }
-  .Home .mainSection .heroImg .circle {
-    position: absolute;
-    background: rgba(80, 80, 80, 0.1);
-    height: 170px;
-    width: 170px;
-    border-radius: 50%;
-    z-index: 1;
+  .Home .mySpecialty .specContainer > div .gridDiv p {
+    font-size: 16px;
+    line-height: 27.5px;
+    color: #746f6f;
   }
-  .Home .mainSection .heroImg .circle2 {
-    position: absolute;
-    top: 8rem;
-  }
-  .Home .mainSection .heroImg img {
-    height: 70%;
-    width: 100%;
-    margin-top: 3rem;
-    z-index: 2;
+  .Home .mySpecialty .specContainer > div .gridDiv:nth-child(2) {
+    border-left: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
   }
 
   .whatIDo {
@@ -1205,6 +1824,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F8F5F2;
   }
   .mySkills > div {
     display: grid;
@@ -1213,9 +1833,12 @@
     max-width: 1120px;
     margin: auto;
   }
+  .mySkills > div .whatIDoLeft .description {
+    margin-bottom: 1rem;
+  }
   .mySkills > div .whatIDoLeft .viewMe {
     display: inline-block;
-    margin-bottom: 2em;
+    margin: 0.5rem 0 2em 0;
     text-decoration: none;
     background-color: #212122;
     border: 2px solid #212122;
@@ -1223,6 +1846,7 @@
     padding: 1rem 2.5rem;
     font-weight: 700;
     transition: all 300ms ease-in-out;
+    background-color: #212122;
   }
   .mySkills > div .whatIDoLeft .viewMe:hover {
     background-color: transparent;
@@ -1230,10 +1854,14 @@
     color: #212122;
     font-weight: 700;
   }
+  .mySkills > div .whatIDoLeft .viewMe:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
   .mySkills > div .skillsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
-    gap: 1.1em;
+    gap: 1em;
   }
   .mySkills > div .skillsContainer .skill {
     display: flex;
@@ -1257,12 +1885,12 @@
     max-width: 1120px;
     margin: auto;
   }
-  .mySpecialty .specContainer > div {
+  .mySpecialty .specContainer .specContDiv {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 30px;
+    gap: 40px;
+    margin: 0 1rem;
   }
-
   .selectedProjects {
     min-height: auto;
     max-width: 100%;
@@ -1282,7 +1910,7 @@
   }
   .selectedProjects > div .upperPart {
     min-height: 75px;
-    grid-template-columns: 4.7fr 1fr;
+    grid-template-columns: 4.7fr 3fr;
     gap: 5.5rem;
     margin: 8px 0px 50px;
     justify-content: space-between;
@@ -1294,11 +1922,25 @@
     line-height: 35px;
   }
   .selectedProjects > div .upperPart .viewAllProjects {
-    padding: 11px 15px;
-    font-size: 1rem;
-    line-height: 24px;
+    background: yellow;
+    display: inline-block;
+    margin: 0.1rem 0;
+    text-decoration: none;
+    background-color: #212122;
+    border: 2px solid #212122;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    transition: all 300ms ease-in-out;
   }
   .selectedProjects > div .upperPart .viewAllProjects:hover {
+    background-color: transparent;
+    border: 2px solid #212122;
+    color: #212122;
+    font-weight: 700;
+  }
+  .selectedProjects > div .upperPart .viewAllProjects:hover {
+    color: #ffffff;
     background-color: #000000;
   }
   .selectedProjects > div .projectDiv {
@@ -1406,6 +2048,34 @@
   .Home {
     position: relative;
     min-height: auto;
+  }
+  .Home .Navbar {
+    background-color: #ffffff;
+  }
+  .Home .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks a {
+    color: #212122;
+  }
+  .Home .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .Home .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Home .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Home .Navbar .respNav a {
+    color: #212122;
+  }
+  .Home .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
   }
   .Home::before {
     position: absolute;
@@ -1492,6 +2162,47 @@
     margin-top: 3rem;
     z-index: 2;
   }
+
+  .mySpecialty {
+    max-width: 100%;
+    min-height: auto;
+    padding: 72px 18.748px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .mySpecialty .specContainer {
+    max-width: 1250px;
+    margin: 0 auto;
+    min-height: 100%;
+    padding-bottom: 0;
+  }
+  .mySpecialty .specContainer > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    min-height: 100%;
+    align-items: center;
+  }
+  .mySpecialty .specContainer > div .gridDiv {
+    text-align: center;
+    padding: 4rem 2.3rem;
+    min-height: 100%;
+  }
+  .mySpecialty .specContainer > div .gridDiv i {
+    font-size: 3em;
+    margin: 3rem 0 3rem 0;
+  }
+  .mySpecialty .specContainer > div .gridDiv h3 {
+    font-size: 23.8px;
+  }
+  .mySpecialty .specContainer > div .gridDiv p {
+    font-size: 16px;
+    line-height: 27.5px;
+    color: #746f6f;
+  }
+  .mySpecialty .specContainer > div .gridDiv:nth-child(2) {
+    border-left: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
+  }
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -1499,6 +2210,28 @@
     position: relative;
     padding: 72px 18.748px;
     max-width: 100%;
+  }
+  .About .Navbar {
+    background-color: #ffffff;
+  }
+  .About .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .About .Navbar .navLinks a {
+    color: #353434;
+  }
+  .About .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .About .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .About .Navbar .respNav a {
+    color: #212122;
+  }
+  .About .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
   }
   .About .aboutContainer {
     min-height: 80vh;
@@ -1573,6 +2306,28 @@
     padding: 72px 18.748px;
     max-width: 100%;
   }
+  .About .Navbar {
+    background-color: #ffffff;
+  }
+  .About .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .About .Navbar .navLinks a {
+    color: #353434;
+  }
+  .About .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .About .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .About .Navbar .respNav a {
+    color: #212122;
+  }
+  .About .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
   .About .aboutContainer {
     min-height: 80vh;
     padding: 3rem 0 0 0;
@@ -1642,6 +2397,12 @@
     position: relative;
     padding: 72px 18.748px;
     max-width: 100%;
+  }
+  .About .Navbar {
+    background-color: #ffffff;
+  }
+  .About .Navbar .navLinks a {
+    color: #353434;
   }
   .About .aboutContainer {
     min-height: 80vh;
@@ -1717,6 +2478,12 @@
     max-width: 1120px;
     margin: auto;
   }
+  .About .Navbar {
+    background-color: #ffffff;
+  }
+  .About .Navbar .navLinks a {
+    color: #353434;
+  }
   .About .title, .About .subTitle {
     text-align: center;
   }
@@ -1735,6 +2502,9 @@
   }
   .About .aboutCards .aboutCardsDiv1 > div, .About .aboutCards .aboutCardsDiv2 > div {
     padding: 3rem 0;
+  }
+  .About .aboutCards .aboutCardsDiv1 > div p, .About .aboutCards .aboutCardsDiv2 > div p {
+    color: #746f6f;
   }
   .About .aboutCards .aboutCardsDiv1 {
     display: flex;
@@ -1780,6 +2550,12 @@
     max-width: 1120px;
     margin: auto;
   }
+  .About .Navbar {
+    background-color: #ffffff;
+  }
+  .About .Navbar .navLinks a {
+    color: #353434;
+  }
   .About .title, .About .subTitle {
     text-align: center;
   }
@@ -1800,8 +2576,27 @@
     height: 100%;
     max-width: 100%;
   }
-  .Contact .NavbarContainer, .Contact .Navbar {
-    background-color: #000000;
+  .Contact .Navbar {
+    background-color: #ffffff;
+  }
+  .Contact .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Contact .Navbar .navLinks a {
+    color: #212122;
+  }
+  .Contact .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Contact .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Contact .Navbar .respNav a {
+    color: #212122;
+  }
+  .Contact .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
   }
   .Contact .contactContainer {
     display: flex;
@@ -1870,8 +2665,27 @@
     height: 100%;
     max-width: 100%;
   }
-  .Contact .NavbarContainer, .Contact .Navbar {
-    background-color: #000000;
+  .Contact .Navbar {
+    background-color: #ffffff;
+  }
+  .Contact .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Contact .Navbar .navLinks a {
+    color: #353434;
+  }
+  .Contact .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Contact .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Contact .Navbar .respNav a {
+    color: #212122;
+  }
+  .Contact .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
   }
   .Contact .contactContainer {
     display: flex;
@@ -1941,6 +2755,28 @@
     height: 100%;
     max-width: 100%;
   }
+  .Contact .Navbar {
+    background-color: #ffffff;
+  }
+  .Contact .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Contact .Navbar .navLinks a {
+    color: #353434;
+  }
+  .Contact .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Contact .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Contact .Navbar .respNav a {
+    color: #212122;
+  }
+  .Contact .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
   .Contact .contactContainer {
     display: flex;
     max-width: 100%;
@@ -2008,6 +2844,28 @@
     position: relative;
     height: 100%;
     max-width: 100%;
+  }
+  .Contact .Navbar {
+    background-color: #ffffff;
+  }
+  .Contact .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Contact .Navbar .navLinks a {
+    color: #353434;
+  }
+  .Contact .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Contact .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Contact .Navbar .respNav a {
+    color: #212122;
+  }
+  .Contact .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
   }
   .Contact .contactContainer {
     display: flex;
@@ -2077,6 +2935,28 @@
     height: 100%;
     max-width: 100%;
   }
+  .Contact .Navbar {
+    background-color: #ffffff;
+  }
+  .Contact .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .Contact .Navbar .navLinks a {
+    color: #353434;
+  }
+  .Contact .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .Contact .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .Contact .Navbar .respNav a {
+    color: #212122;
+  }
+  .Contact .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
   .Contact .contactContainer {
     display: flex;
     max-width: 100%;
@@ -2145,6 +3025,34 @@
     padding: 72px 18.748px;
     max-width: 100%;
   }
+  .ProjDetails .Navbar {
+    background-color: #ffffff;
+  }
+  .ProjDetails .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks a {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .ProjDetails .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .ProjDetails .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .ProjDetails .Navbar .respNav a {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
   .ProjDetails .ProjDetContainer {
     min-height: 86vh;
     padding: 5.5rem 0 0 0;
@@ -2158,6 +3066,34 @@
     position: relative;
     padding: 72px 18.748px;
     max-width: 100%;
+  }
+  .ProjDetails .Navbar {
+    background-color: #ffffff;
+  }
+  .ProjDetails .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks a {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .ProjDetails .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .ProjDetails .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .ProjDetails .Navbar .respNav a {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
   }
   .ProjDetails .ProjDetContainer {
     min-height: 86vh;
@@ -2173,6 +3109,34 @@
     padding: 72px 18.748px;
     max-width: 100%;
   }
+  .ProjDetails .Navbar {
+    background-color: #ffffff;
+  }
+  .ProjDetails .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks a {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .ProjDetails .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .ProjDetails .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .ProjDetails .Navbar .respNav a {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
   .ProjDetails .ProjDetContainer {
     min-height: 86vh;
     padding: 3.5rem 0 0 0;
@@ -2187,6 +3151,34 @@
     padding: 72px 18.748px;
     max-width: 100%;
   }
+  .ProjDetails .Navbar {
+    background-color: #ffffff;
+  }
+  .ProjDetails .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks a {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .ProjDetails .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .ProjDetails .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .ProjDetails .Navbar .respNav a {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
+  }
   .ProjDetails .ProjDetContainer {
     min-height: 86vh;
     padding: 3.5rem 0 0 0;
@@ -2200,6 +3192,34 @@
     position: relative;
     padding: 72px 18.748px;
     max-width: 100%;
+  }
+  .ProjDetails .Navbar {
+    background-color: #ffffff;
+  }
+  .ProjDetails .Navbar .myLogo h3 {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks a {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .navLinks .contact {
+    color: #ffffff;
+  }
+  .ProjDetails .Navbar .toggle .lines {
+    background-color: #212122;
+  }
+  .ProjDetails .Navbar .respNav {
+    background-color: #ffffff;
+  }
+  .ProjDetails .Navbar .respNav a {
+    color: #212122;
+  }
+  .ProjDetails .Navbar .respNav a:hover {
+    color: #777777;
+    background-color: #e0e0e0;
   }
   .ProjDetails .ProjDetContainer {
     min-height: 86vh;
